@@ -1,0 +1,17 @@
+.carouselitem {
+    font-size: 30px;
+    background: rgba(151, 206, 237, 0.8);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+}
+
+.carouselitem:hover{
+    background: rgba(83, 112, 129, 1);
+}
+
+.aboutSection {
+    width: 80%;
+    margin: auto;
+}
+
