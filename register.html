@@ -41,6 +41,8 @@
 	</nav>
 
 	
+
+	
 	<div style="width: 100%; margin:auto; background-color: rgb(214, 184, 224); padding-top: 100px;">
 		<h1 style="text-align:center; padding-bottom: 60px;">Convocatoria de Mesas <img src="./style/img/clipboard.png" alt="clipboard" style="height: 60px; display: inline;"> </h1>
 		
@@ -50,6 +52,53 @@
 				width="1000" height="1500" frameborder="0" marginheight="0" marginwidth="0"
 				style="display: block; margin: auto;">Cargando…</iframe>
 		</div>
+
+		<div id="smart-button-container">
+			<div style="text-align: center;">
+			  <div id="paypal-button-container"></div>
+			</div>
+		  </div>
+		<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+		<script>
+		  function initPayPalButton() {
+			paypal.Buttons({
+			  style: {
+				shape: 'rect',
+				color: 'gold',
+				layout: 'vertical',
+				label: 'paypal',
+				
+			  },
+	  
+			  createOrder: function(data, actions) {
+				return actions.order.create({
+				  purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
+				});
+			  },
+	  
+			  onApprove: function(data, actions) {
+				return actions.order.capture().then(function(orderData) {
+				  
+				  // Full available details
+				  console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+	  
+				  // Show a success message within this page, e.g.
+				  const element = document.getElementById('paypal-button-container');
+				  element.innerHTML = '';
+				  element.innerHTML = '<h3>Thank you for your payment!</h3>';
+	  
+				  // Or go to another URL:  actions.redirect('thank_you.html');
+				  
+				});
+			  },
+	  
+			  onError: function(err) {
+				console.log(err);
+			  }
+			}).render('#paypal-button-container');
+		  }
+		  initPayPalButton();
+		</script>
 
 	</div>
 
@@ -61,6 +110,8 @@
 		</div>
 		<!-- Copyright -->
 	</footer>
+
+	
 
 
 </body>
