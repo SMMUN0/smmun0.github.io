@@ -49,39 +49,7 @@
 		<!-- Google Forms -->
 		<div>
 
-			<!-- Display the countdown timer in an element -->
-			<h1 style="text-align:center; padding-bottom: 60px;" id="demo"></h1>
-
-			<script>
-			// Set the date we're counting down to
-			var countDownDate = new Date("Oct 11, 2021 9:00:00").getTime();
-
-			// Update the count down every 1 second
-			var x = setInterval(function() {
-
-			// Get today's date and time
-			var now = new Date().getTime();
-
-			// Find the distance between now and the count down date
-			var distance = countDownDate - now;
-
-			// Time calculations for days, hours, minutes and seconds
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-			// Display the result in the element with id="demo"
-			document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-			+ minutes + "m " + seconds + "s ";
-
-			// If the count down is finished, write some text 
-			if (distance < 0) {
-				clearInterval(x);
-				document.getElementById("demo").innerHTML = "EXPIRED";
-			}
-			}, 1000);
-			</script>
+			<iframe style="display: block; margin: auto;" src="https://docs.google.com/forms/d/e/1FAIpQLSeoaz18ajHTWmbxCDhHz9MHpJ4KLjT6rz2HF8fNID-6RS_rLg/viewform?embedded=true" width="640" height="1800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
 
 		</div>
 
