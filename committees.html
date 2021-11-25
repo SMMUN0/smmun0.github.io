@@ -8,9 +8,13 @@
 	<title>Comités</title>
 	<link rel="shortcut icon" href="./style/img/logos/logoSMMUN.png">
 	<link rel="stylesheet" href="./style/css/committees.css">
+
+	<script src="./style/js/committees.js"></script>
 </head>
 
-<body>
+
+
+<body onload="addElement()">
 
 
 	<nav class="navbar navbar-expand navbar-light bg-light">
@@ -39,13 +43,15 @@
 		</div>
 	</nav>
 
-	<div style="background-color: rgb(151, 206, 237); width: 100%; height: 350px;">
+	<div id="committees"></div>
+
+	<!-- <div style="background-color: rgb(151, 206, 237); width: 100%; height: 350px;">
 		<div style="float: left; margin-left: 20%;">
 			<img src="./style/img/committees/UNSC.png" alt="UNSC" style="height: 250px;">
 			<h1>UNSC</h1>
 		</div>
 		<div style="float: right; margin-right: 20%;">
-			<img src="./style/img/committees/UNFPA.png" alt="UNW" style="height:250px;">
+			<img src="./style/img/committees/UNFPA.png" alt="UNW" style="height:215px;">
 			<h1>UNFPA</h1>
 		</div>
 		
@@ -88,7 +94,7 @@
 			<img src="./style/img/committees/Prensa.png" alt="Prensa" style="height: 250px; display: block; margin: auto;">
 			<h1>Prensa</h1>
 		</div>
-	</div>
+	</div> -->
 
 
 
@@ -106,14 +112,5 @@
 </body>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-</script>
 
 </html>

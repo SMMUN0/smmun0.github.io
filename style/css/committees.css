@@ -6,3 +6,39 @@ h1{
     font-weight: bold; 
     letter-spacing: -1px;
 }
+
+div.group {
+    width: 100%; height: 300px;
+    background: rgb(39, 99, 107);
+}
+
+div.committee-left{
+    float: left; 
+    margin-left: 15%;
+    /* margin-right: 5%; */
+    width: 30%;
+}
+
+div.committee-rigth{
+    float: right; 
+    margin-right: 15%;
+    /* margin-left: 5%; */
+    width: 30%;
+}
+
+div.committee-middle{
+    margin: auto;
+    width: 30%;
+    padding-bottom: 5em;
+    
+}
+
+img.committee{
+    height: 15em;
+    display: block;
+    margin: auto;
+    padding-top: 5em;
+    
+}
+
+/* https://coder-coder.com/display-divs-side-by-side/#float-method */
