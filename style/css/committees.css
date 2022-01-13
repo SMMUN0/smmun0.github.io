@@ -1,3 +1,13 @@
+h2{
+    margin: 0;
+    text-align: center;
+    color: rgb(255, 255, 255); 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold; 
+    letter-spacing: -1px;
+    padding-top: 5px;
+}
+
 h1{
     margin: 0;
     text-align: center;
@@ -38,7 +48,4 @@ img.committee{
     display: block;
     margin: auto;
     padding-top: 5em;
-    
 }
-
-/* https://coder-coder.com/display-divs-side-by-side/#float-method */
