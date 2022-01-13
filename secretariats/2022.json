@@ -42,6 +42,13 @@
         "ID":"GVHA0222"
     },
     {
+        "Nombre":"Renata Valentina",
+        "Primer Apellido":"Minaya",
+        "Segundo Apellido":"Quijano",
+        "Secretaria":"Secreataría Académica",
+        "ID":"RNQA0322"
+    },
+    {
         "Nombre":"Abril Natalí",
         "Primer Apellido":"Ramírez",
         "Segundo Apellido":"Vadillo",
@@ -61,5 +68,12 @@
         "Segundo Apellido":"Escalante",
         "Secretaria":"Secreataría de Logística",
         "ID":"AHEL0122"
+    },
+    {
+        "Nombre":"Katherin",
+        "Primer Apellido":"Viana",
+        "Segundo Apellido":"Castillo",
+        "Secretaria":"Secreataría de Logística",
+        "ID":"KVCL0222"
     }
 ]
