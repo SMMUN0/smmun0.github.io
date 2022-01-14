@@ -14,6 +14,13 @@
         "ID":"ALNG0222"
     },
     {
+        "Nombre":"José Rubén",
+        "Primer Apellido":"Ruiz",
+        "Segundo Apellido":"Garrido",
+        "Secretaria":"Secreataría de Protocolo y Vinculación Internacional",
+        "ID":"JSGP0122"
+    },
+    {
         "Nombre":"Gabriela",
         "Primer Apellido":"Zamora",
         "Segundo Apellido":"Estefani",
@@ -63,13 +70,6 @@
         "ID":"AMCF0222"
     },
     {
-        "Nombre":"José Rubén",
-        "Primer Apellido":"Ruiz",
-        "Segundo Apellido":"Garrido",
-        "Secretaria":"Secreataría de Protocolo",
-        "ID":"JSGP0122"
-    },
-    {
         "Nombre":"Alonso",
         "Primer Apellido":"Huerta",
         "Segundo Apellido":"Escalante",
@@ -82,5 +82,26 @@
         "Segundo Apellido":"Castillo",
         "Secretaria":"Secreataría de Logística",
         "ID":"KVCL0222"
+    },
+    {
+        "Nombre":"Violeta Aurora",
+        "Primer Apellido":"Olivas",
+        "Segundo Apellido":"Ramos",
+        "Secretaria":"Secreataría de Difusión",
+        "ID":"VORD0122"
+    },
+    {
+        "Nombre":"Natasha Citlali",
+        "Primer Apellido":"Niquete",
+        "Segundo Apellido":"Durán",
+        "Secretaria":"Secreataría de Imagen",
+        "ID":"NNDI0122"
+    },
+    {
+        "Nombre":"Violeta Aurora",
+        "Primer Apellido":"Olivas",
+        "Segundo Apellido":"Ramos",
+        "Secretaria":"Secreataría de Imagen",
+        "ID":"VORD0122"
     }
 ]
