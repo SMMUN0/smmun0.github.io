@@ -1,81 +1,82 @@
-var committees = ["UNFPA", "UNSC", "ACNUDH", "UNW", "UNESCO", "ECOSOC", "Tercera Comisión", "CPI", "Prensa"];
-
 function addElement () {
 
-    var currentDiv = document.getElementById("committees");
+    fetch("./committees/2022.json")
+    .then(response => {
+        return response.json();
+    })
+    .then(response => {
+        var committees = response;
 
-    console.log("HERE");
+        var currentDiv = document.getElementById("committees");
 
-    for(var i = 0; i < committees.length; i+=2){
+        console.log("HERE");
 
-        var newDiv = document.createElement("div");
-        newDiv.classList.add("group");
-        if(i+1 == committees.length){
-            // single committee
-            var middleDiv = document.createElement("div");
-            middleDiv.classList.add("committee-middle");
+        for(var i = 0; i < committees.length; i+=2){
 
-            var img = document.createElement("img");
-            img.src = "./style/img/committees/" + committees[i] + ".png";
-            img.classList.add("committee")
+            var newDiv = document.createElement("div");
+            newDiv.classList.add("group");
+            if(i+1 == committees.length){
+                // single committee
+                var middleDiv = document.createElement("div");
+                middleDiv.classList.add("committee-middle");
 
-            var link = document.createElement("a");
-            link.href = "/committees/" + committees[i] + ".html";
-            link.appendChild(img);
+                var img = document.createElement("img");
+                img.src = "./style/img/committees/" + committees[i]["CODE"] + ".png";
+                img.classList.add("committee")
 
-            var header = document.createElement("h1");
-            header.innerHTML = committees[i];
+                var link = document.createElement("a");
+                link.href = "/committees/" + committees[i]["CODE"] + ".html";
+                link.appendChild(img);
 
-            middleDiv.appendChild(link);
-            middleDiv.appendChild(header);
-            newDiv.appendChild(middleDiv);
-        }else{
-            // double committe
-            var leftDiv = document.createElement("div");
-            leftDiv.classList.add("committee-left");
-            var rigthDiv = document.createElement("div");
-            rigthDiv.classList.add("committee-rigth");
+                var header = document.createElement("h1");
+                header.innerHTML = committees[i]["NAME"];
+                header.className = "committee";
 
-            var imgL = document.createElement("img");
-            var headerL = document.createElement("h1");
-            imgL.classList.add("committee")
-            imgL.src = "./style/img/committees/" + committees[i+1] + ".png";
+                middleDiv.appendChild(link);
+                middleDiv.appendChild(header);
+                newDiv.appendChild(middleDiv);
+            }else{
+                // double committe
+                var leftDiv = document.createElement("div");
+                leftDiv.classList.add("committee-left");
+                var rigthDiv = document.createElement("div");
+                rigthDiv.classList.add("committee-rigth");
 
-            var linkL = document.createElement("a");
-            linkL.href = "/committees/" + committees[i+1] + ".html";
-            linkL.appendChild(imgL);
+                var imgL = document.createElement("img");
+                var headerL = document.createElement("h1");
+                imgL.classList.add("committee")
+                imgL.src = "./style/img/committees/" + committees[i+1]["CODE"] + ".png";
 
-            headerL.innerHTML = committees[i+1];
-            leftDiv.appendChild(linkL);
-            leftDiv.appendChild(headerL);
-            newDiv.appendChild(leftDiv);
+                var linkL = document.createElement("a");
+                linkL.href = "/committees/" + committees[i+1]["CODE"] + ".html";
+                linkL.appendChild(imgL);
 
-            var imgR = document.createElement("img");
-            var headerR = document.createElement("h1");
-            imgR.classList.add("committee")
-            imgR.src = "./style/img/committees/" + committees[i] + ".png";
+                headerL.className = "committee";
+                headerL.innerHTML = committees[i+1]["NAME"];
+                leftDiv.appendChild(linkL);
+                leftDiv.appendChild(headerL);
+                newDiv.appendChild(leftDiv);
 
-            var linkR = document.createElement("a");
-            linkR.href = "/committees/" + committees[i] + ".html";
-            linkR.appendChild(imgR);
+                var imgR = document.createElement("img");
+                var headerR = document.createElement("h1");
+                imgR.classList.add("committee")
+                imgR.src = "./style/img/committees/" + committees[i]["CODE"] + ".png";
 
-            headerR.innerHTML = committees[i];
-            rigthDiv.appendChild(linkR);
-            rigthDiv.appendChild(headerR);
-            newDiv.appendChild(rigthDiv);
-            
+                var linkR = document.createElement("a");
+                linkR.href = "/committees/" + committees[i]["CODE"] + ".html";
+                linkR.appendChild(imgR);
+
+                headerR.className = "committee";
+                headerR.innerHTML = committees[i]["NAME"];
+                rigthDiv.appendChild(linkR);
+                rigthDiv.appendChild(headerR);
+                newDiv.appendChild(rigthDiv);
+                
+            }
+
+            currentDiv.appendChild(newDiv);
         }
 
-        currentDiv.appendChild(newDiv);
-    }
+    })
 
-//   // crea un nuevo div
-//   // y añade contenido
-//   var newDiv = document.createElement("div");
-//   var newContent = document.createTextNode("Hola!¿Qué tal?");
-//   newDiv.appendChild(newContent); //añade texto al div creado.
-
-//   // añade el elemento creado y su contenido al DOM
-//   var currentDiv = document.getElementById("div1");
-//   document.body.insertBefore(newDiv, currentDiv);
 }

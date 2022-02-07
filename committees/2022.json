@@ -1,0 +1,293 @@
+[
+    {
+    "CODE":"UNFPA",
+    "NAME":"Fondo de Población de las Naciones Unidas",
+    "LAN":"Español",
+    "INFO":"El Fondo de Población de las Naciones Unidas, FPNU, es una agencia especializada de las Naciones Unidas que comenzó a patrocinar programas de política demográfica en 1967. Está dirigida por Natalia Kanem. Es uno de los organismos dependientes de la Asamblea General de las Naciones Unidas y tiene su sede en Nueva York.",
+    "TOPICS":
+    {
+        "A":"Topico A",
+        "B":"Topico B"
+    },
+    "DELEGATIONS":
+    [
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur",
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur",
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur"
+    ]
+    },
+    {
+    "CODE":"UNSC",
+    "NAME":"United Nations Security Council",
+    "LAN":"English",
+    "INFO":"El Consejo de Seguridad de Naciones Unidas es el organismo de las Naciones Unidas encargado de mantener la paz y seguridad en el mundo.",
+    "TOPICS":
+    {
+        "A":"Topico A",
+        "B":"Topico B"
+    },
+    "DELEGATIONS":
+    [
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur",
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur",
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur"
+    ]
+    },
+    {
+    "CODE":"ACNUDH",
+    "NAME":"Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos",
+    "LAN":"Español",
+    "INFO":"La Oficina del Alto Comisionado para los Derechos Humanos es un organismo especializado del sistema de Naciones Unidas que tiene como objetivo promover y proteger los derechos humanos en el mundo.​",
+    "TOPICS":
+    {
+        "A":"Topico A",
+        "B":"Topico B"
+    },
+    "DELEGATIONS":
+        [
+            "Argentina",
+            "Canadá",
+            "Childe",
+            "China",
+            "Colombia",
+            "Corea del Sur",
+            "Argentina",
+            "Canadá",
+            "Childe",
+            "China",
+            "Colombia",
+            "Corea del Sur",
+            "Argentina",
+            "Canadá",
+            "Childe",
+            "China",
+            "Colombia",
+            "Corea del Sur"
+        ]
+    },
+    {
+    "CODE":"UNW",
+    "NAME":"United Nations Women",
+    "LAN":"English",
+    "INFO":"La Entidad de la ONU para la Igualdad de Género y el Empoderamiento de la Mujer, también conocida como ONU Mujeres es una organismo de la Organización de las Naciones Unidas destinada a fomentar el empoderamiento de la mujer y la igualdad de género. Su actual directora ejecutiva es la jordana Sima Sami Bahous.​",
+    "TOPICS":
+    {
+        "A":"Topico A",
+        "B":"Topico B"
+    },
+    "DELEGATIONS":
+    [
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur",
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur",
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur"
+    ]
+    },
+    {
+    "CODE":"UNESCO",
+    "NAME":"Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura",
+    "LAN":"Español",
+    "INFO":"La Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura, conocida abreviadamente como Unesco, ​ es un organismo especializado de las Naciones Unidas.",
+    "TOPICS":
+    {
+        "A":"Topico A",
+        "B":"Topico B"
+    },
+    "DELEGATIONS":
+    [
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur",
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur",
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur"
+    ]
+    },
+    {
+    "CODE":"ECOSOC",
+    "NAME":"Consejo Económico y Social",
+    "LAN":"Español",
+    "INFO":"El Consejo Económico y Social de la Organización de las Naciones Unidas asiste a la Asamblea General para promover la cooperación y desarrollo económico, social e internacional. Los recursos humanos y financieros de todo el sistema de las Naciones Unidas.",
+    "TOPICS":
+    {
+        "A":"Topico A",
+        "B":"Topico B"
+    },
+    "DELEGATIONS":
+    [
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur",
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur",
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur"
+    ]
+    },
+    {
+    "CODE":"Tercera Comisión",
+    "NAME":"Tercera Comisión de la Asamblea General",
+    "LAN":"Español",
+    "INFO":"La Tercera Comisión es una de las seis Principales Comisiones de la Asamblea General a la cual se le han asignado los temas del programa relacionados con los Asuntos Sociales, Humanitarios y Culturales, incluyendo los derechos humanos.",
+    "TOPICS":
+    {
+        "A":"Topico A",
+        "B":"Topico B"
+    },
+    "DELEGATIONS":
+        [
+            "Argentina",
+            "Canadá",
+            "Childe",
+            "China",
+            "Colombia",
+            "Corea del Sur",
+            "Argentina",
+            "Canadá",
+            "Childe",
+            "China",
+            "Colombia",
+            "Corea del Sur",
+            "Argentina",
+            "Canadá",
+            "Childe",
+            "China",
+            "Colombia",
+            "Corea del Sur"
+        ]
+    },
+    {
+    "CODE":"CPI",
+    "NAME":"Corte Penal Internacional",
+    "LAN":"Español",
+    "INFO":"La Corte Penal Internacional (CPI) es un tribunal de última instancia para el enjuiciamiento de crímenes graves internacionales, como el genocidio, los crímenes de guerra y los delitos de lesa humanidad. Su tratado, el Estatuto de Roma, fue adoptado en julio de 1998.",
+    "TOPICS":
+    {
+        "A":"Topico A",
+        "B":"Topico B"
+    },
+    "DELEGATIONS":
+    [
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur",
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur",
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur"
+    ]
+    },
+    {
+    "CODE":"Prensa",
+    "NAME":"Comité de Prensa",
+    "LAN":"Español",
+    "INFO":"Este comité busca visibilizar la importancia y el impacto del periodismo y los medios dentro de las Naciones Unidas.",
+    "TOPICS":
+    {
+        "A":"Topico A",
+        "B":"Topico B"
+    },
+    "DELEGATIONS":
+    [
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur",
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur",
+        "Argentina",
+        "Canadá",
+        "Childe",
+        "China",
+        "Colombia",
+        "Corea del Sur"
+    ]
+    }
+
+    
+
+]
