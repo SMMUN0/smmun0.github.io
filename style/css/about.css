@@ -1,0 +1,51 @@
+div.gallery {
+    display: block;
+    margin: 5px;
+    float: left;
+    width: 300px;
+  }
+  
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.newGallery{
+  display: block;
+  margin: auto; 
+  min-width: 500px; 
+  width: 1240px; 
+  padding-top: 50px ; 
+  padding-bottom: 100px; 
+  height: 475px;
+}
+
+p{
+    color: white;
+}
+
+h1 {
+    color: rgb(92, 154, 190);
+    font-weight: bold; 
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    color: rgb(92, 154, 190);
+    font-weight: bold; 
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1.model {
+    color: rgb(197, 155, 87);
+}
