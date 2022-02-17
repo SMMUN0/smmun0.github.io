@@ -25,7 +25,7 @@ function addElement () {
                 img.classList.add("committee")
 
                 var link = document.createElement("a");
-                link.href = "/committees/" + committees[i]["CODE"] + ".html";
+                link.href = "/committees/" + committees[i]["CODE"] + "/"+ committees[i]["CODE"] + ".html";
                 link.appendChild(img);
 
                 var header = document.createElement("h1");
@@ -48,7 +48,7 @@ function addElement () {
                 imgL.src = "./style/img/committees/" + committees[i+1]["CODE"] + ".png";
 
                 var linkL = document.createElement("a");
-                linkL.href = "/committees/" + committees[i+1]["CODE"] + ".html";
+                linkL.href = "/committees/" + committees[i+1]["CODE"] + "/"+ committees[i+1]["CODE"] + ".html";
                 linkL.appendChild(imgL);
 
                 headerL.className = "committee";
@@ -63,7 +63,7 @@ function addElement () {
                 imgR.src = "./style/img/committees/" + committees[i]["CODE"] + ".png";
 
                 var linkR = document.createElement("a");
-                linkR.href = "/committees/" + committees[i]["CODE"] + ".html";
+                linkR.href = "/committees/" + committees[i]["CODE"] + "/" + committees[i]["CODE"] + ".html";
                 linkR.appendChild(imgR);
 
                 headerR.className = "committee";

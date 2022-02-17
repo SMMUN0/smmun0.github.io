@@ -1,15 +1,20 @@
 img.committee{
-    padding-top: 400px;
     height: 20em;
     display: block;
     margin: auto;
-    padding-top: 5em;
+    padding-top: 4em;
+}
+
+img.chair{
+    height: 15em;
+    display: block;
+    margin: auto;
 }
 
 h2.committee{
     margin: 0;
     text-align: center;
-    color: rgb(255, 255, 255); 
+    color: rgb(197, 155, 87);
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold; 
     letter-spacing: -1px;
@@ -26,6 +31,23 @@ h1.committee{
     letter-spacing: -1px;
     font-size: 3em;
     width: 40%;
+}
+
+h3.committee{
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255); 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold; 
+    letter-spacing: -1px;
+}
+
+h4.committee{
+    text-align: center;
+    color: rgb(255, 255, 255); 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold; 
+    letter-spacing: -1px;
 }
 
 p.committee{
@@ -47,4 +69,12 @@ ul.committee{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 60%;
+    columns: 3;
 }
+
+ul.chair {
+    list-style-type: none;
+    columns: 3;
+    width: 70%;
+  }

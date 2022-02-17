@@ -29,7 +29,12 @@
         "China",
         "Colombia",
         "Corea del Sur"
-    ]
+    ],
+    "CHAIR":{
+        "PRES":"Alonso Huerta",
+        "MOD":"Alonso Huerta",
+        "OFI":"Alonso Huerta"
+    }
     },
     {
     "CODE":"UNSC",
@@ -61,13 +66,18 @@
         "China",
         "Colombia",
         "Corea del Sur"
-    ]
+    ],
+    "CHAIR":{
+        "PRES":"Alonso Huerta",
+        "MOD":"Alonso Huerta",
+        "OFI":"Alonso Huerta"
+    }
     },
     {
     "CODE":"ACNUDH",
     "NAME":"Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos",
     "LAN":"Español",
-    "INFO":"La Oficina del Alto Comisionado para los Derechos Humanos es un organismo especializado del sistema de Naciones Unidas que tiene como objetivo promover y proteger los derechos humanos en el mundo.​",
+    "INFO":"La Oficina del Alto Comisionado para los Derechos Humanos es un organismo especializado del sistema de Naciones Unidas que tiene como objetivo promover y proteger los derechos humanos en el mundo.",
     "TOPICS":
     {
         "A":"Topico A",
@@ -93,13 +103,18 @@
             "China",
             "Colombia",
             "Corea del Sur"
-        ]
+        ],
+        "CHAIR":{
+            "PRES":"Alonso Huerta",
+            "MOD":"Alonso Huerta",
+            "OFI":"Alonso Huerta"
+        }
     },
     {
     "CODE":"UNW",
     "NAME":"United Nations Women",
     "LAN":"English",
-    "INFO":"La Entidad de la ONU para la Igualdad de Género y el Empoderamiento de la Mujer, también conocida como ONU Mujeres es una organismo de la Organización de las Naciones Unidas destinada a fomentar el empoderamiento de la mujer y la igualdad de género. Su actual directora ejecutiva es la jordana Sima Sami Bahous.​",
+    "INFO":"La Entidad de la ONU para la Igualdad de Género y el Empoderamiento de la Mujer, también conocida como ONU Mujeres es una organismo de la Organización de las Naciones Unidas destinada a fomentar el empoderamiento de la mujer y la igualdad de género. Su actual directora ejecutiva es la jordana Sima Sami Bahous.",
     "TOPICS":
     {
         "A":"Topico A",
@@ -125,7 +140,12 @@
         "China",
         "Colombia",
         "Corea del Sur"
-    ]
+    ],
+    "CHAIR":{
+        "PRES":"Alonso Huerta",
+        "MOD":"Alonso Huerta",
+        "OFI":"Alonso Huerta"
+    }
     },
     {
     "CODE":"UNESCO",
@@ -157,7 +177,12 @@
         "China",
         "Colombia",
         "Corea del Sur"
-    ]
+    ],
+    "CHAIR":{
+        "PRES":"Alonso Huerta",
+        "MOD":"Alonso Huerta",
+        "OFI":"Alonso Huerta"
+    }
     },
     {
     "CODE":"ECOSOC",
@@ -189,7 +214,12 @@
         "China",
         "Colombia",
         "Corea del Sur"
-    ]
+    ],
+    "CHAIR":{
+        "PRES":"Alonso Huerta",
+        "MOD":"Alonso Huerta",
+        "OFI":"Alonso Huerta"
+    }
     },
     {
     "CODE":"Tercera Comisión",
@@ -221,7 +251,12 @@
             "China",
             "Colombia",
             "Corea del Sur"
-        ]
+        ],
+        "CHAIR":{
+            "PRES":"Alonso Huerta",
+            "MOD":"Alonso Huerta",
+            "OFI":"Alonso Huerta"
+        }
     },
     {
     "CODE":"CPI",
@@ -253,7 +288,12 @@
         "China",
         "Colombia",
         "Corea del Sur"
-    ]
+    ],
+    "CHAIR":{
+        "PRES":"Alonso Huerta",
+        "MOD":"Alonso Huerta",
+        "OFI":"Alonso Huerta"
+    }
     },
     {
     "CODE":"Prensa",
@@ -285,9 +325,11 @@
         "China",
         "Colombia",
         "Corea del Sur"
-    ]
+    ],
+    "CHAIR":{
+        "PRES":"Alonso Huerta",
+        "MOD":"Alonso Huerta",
+        "OFI":"Alonso Huerta"
     }
-
-    
-
+    }
 ]
