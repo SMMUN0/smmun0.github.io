@@ -11,12 +11,12 @@ div.gallery:hover {
 
 div.gallery img {
   display: block;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
 div.desc {
-  padding: 15px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -26,7 +26,7 @@ div.newGallery{
   min-width: 500px; 
   width: 1240px; 
   padding-top: 50px ; 
-  padding-bottom: 100px; 
+  padding-bottom: 0; 
   height: 475px;
 }
 
@@ -46,6 +46,26 @@ h2 {
     font-family: 'Helvetica Neue', sans-serif;
 }
 
+h3 {
+    color: rgb(92, 154, 190);
+    font-weight: bold; 
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
 h1.model {
     color: rgb(197, 155, 87);
+}
+
+h2.name{
+    font-size: 1.6em;
+    color: rgb(197, 155, 87);
+}
+
+h3.poss {
+    font-size: 1.2em;
+    color: white;
+}
+
+div.carousel-item {
+    height: 400px;
 }

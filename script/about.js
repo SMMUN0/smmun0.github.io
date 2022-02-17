@@ -47,7 +47,7 @@ function setUpImage() {
 
             var desc = document.createElement("div");
             desc.classList.add("desc");
-            desc.innerHTML = "<h2>"+person["Nombre"]+" "+person["Primer Apellido"]+" "+person["Segundo Apellido"]+"</h2>"+"<h3>"+person["Secretaria"]+"<\h3>";
+            desc.innerHTML = "<h2 class='name'>"+person["Nombre"]+" "+person["Primer Apellido"]+" "+person["Segundo Apellido"]+"</h2>"+"<h3 class='poss'>"+person["Secretaria"]+"<\h3>";
 
 
             a.appendChild(img);
