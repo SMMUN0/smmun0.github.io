@@ -29,3 +29,23 @@ div.newGallery{
   padding-bottom: 100px; 
   height: 475px;
 }
+
+p{
+    color: white;
+}
+
+h1 {
+    color: rgb(92, 154, 190);
+    font-weight: bold; 
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    color: rgb(92, 154, 190);
+    font-weight: bold; 
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1.model {
+    color: rgb(197, 155, 87);
+}
