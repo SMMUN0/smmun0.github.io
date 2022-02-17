@@ -11,7 +11,7 @@ h2{
 h1{
     margin: 0;
     text-align: center;
-    color: rgb(255, 255, 255); 
+    color: rgb(197, 155, 87); 
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold; 
     font-size: 4em;
@@ -19,44 +19,30 @@ h1{
 }
 
 h1.committee{
+    padding-top: 25px;
     margin: 0;
     text-align: center;
-    color: rgb(255, 255, 255); 
+    color: rgb(197, 155, 87);
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold; 
     letter-spacing: -1px;
-    font-size: 145%;
-}
-
-div.group {
-    width: 100%; height: 300px;
-    background: rgba(249, 213, 156);
-}
-
-div.committee-left{
-    float: left; 
-    margin-left: 15%;
-    /* margin-right: 5%; */
-    width: 30%;
-}
-
-div.committee-rigth{
-    float: right; 
-    margin-right: 15%;
-    /* margin-left: 5%; */
-    width: 30%;
-}
-
-div.committee-middle{
-    margin: auto;
-    width: 30%;
-    padding-bottom: 5em;
-    
+    font-size: 2.5em;
 }
 
 img.committee{
-    height: 15em;
+    height: 22em;
     display: block;
     margin: auto;
     padding-top: 5em;
+    max-width: 320px;
 }
+
+ul.committee {
+    list-style-type: none;
+    columns: 2;
+    width: 85%;
+  }
+
+  li.committee{
+      padding-bottom: 50px;
+  }
