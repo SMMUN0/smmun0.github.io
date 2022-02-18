@@ -31,9 +31,9 @@
         "Corea del Sur"
     ],
     "CHAIR":{
-        "PRES":"Alonso Huerta",
-        "MOD":"Alonso Huerta",
-        "OFI":"Alonso Huerta"
+        "PRES":"Camila Darina Escalante Martín",
+        "MOD":"Evee Noh Panti",
+        "OFI":"Maria Fernanda Gamboa Góngora"
     }
     },
     {
@@ -68,9 +68,9 @@
         "Corea del Sur"
     ],
     "CHAIR":{
-        "PRES":"Alonso Huerta",
-        "MOD":"Alonso Huerta",
-        "OFI":"Alonso Huerta"
+        "PRES":"Cristina Denis Burgos",
+        "MOD":"Ale Moguel Villaseñor",
+        "OFI":"María Fernanda Cano Cañete"
     }
     },
     {
@@ -105,9 +105,9 @@
             "Corea del Sur"
         ],
         "CHAIR":{
-            "PRES":"Alonso Huerta",
-            "MOD":"Alonso Huerta",
-            "OFI":"Alonso Huerta"
+            "PRES":"Ángel Jacobo Pérez Méndez",
+            "MOD":"Yoloxi Nayeli Paz Jiménez",
+            "OFI":"Celso José Carbajal Pech"
         }
     },
     {
@@ -142,9 +142,9 @@
         "Corea del Sur"
     ],
     "CHAIR":{
-        "PRES":"Alonso Huerta",
-        "MOD":"Alonso Huerta",
-        "OFI":"Alonso Huerta"
+        "PRES":"Dana Estefanía Barrero García",
+        "MOD":"Lirio Cristina Araiza Corín",
+        "OFI":"Valeria Mejía Quiñones"
     }
     },
     {
@@ -179,9 +179,9 @@
         "Corea del Sur"
     ],
     "CHAIR":{
-        "PRES":"Alonso Huerta",
-        "MOD":"Alonso Huerta",
-        "OFI":"Alonso Huerta"
+        "PRES":"Miroslava García Nájera",
+        "MOD":"Manuel Alexander Uc Lizárraga",
+        "OFI":"María Jimena Diego Azcorra"
     }
     },
     {
@@ -216,13 +216,13 @@
         "Corea del Sur"
     ],
     "CHAIR":{
-        "PRES":"Alonso Huerta",
-        "MOD":"Alonso Huerta",
-        "OFI":"Alonso Huerta"
+        "PRES":"Diana Elena Herrera Campos",
+        "MOD":"Hugo Enrique Cisneros Monforte",
+        "OFI":"Juan Alberto Elgueta Pedrero"
     }
     },
     {
-    "CODE":"Tercera Comisión",
+    "CODE":"Tercera Asamblea",
     "NAME":"Tercera Comisión de la Asamblea General",
     "LAN":"Español",
     "INFO":"La Tercera Comisión es una de las seis Principales Comisiones de la Asamblea General a la cual se le han asignado los temas del programa relacionados con los Asuntos Sociales, Humanitarios y Culturales, incluyendo los derechos humanos.",
@@ -253,9 +253,9 @@
             "Corea del Sur"
         ],
         "CHAIR":{
-            "PRES":"Alonso Huerta",
-            "MOD":"Alonso Huerta",
-            "OFI":"Alonso Huerta"
+            "PRES":"Arkin DaSilva Morgan",
+            "MOD":"Maria Guadalupe Rosado Tello",
+            "OFI":"Cristian José Soberanis Chí"
         }
     },
     {
@@ -290,9 +290,9 @@
         "Corea del Sur"
     ],
     "CHAIR":{
-        "PRES":"Alonso Huerta",
-        "MOD":"Alonso Huerta",
-        "OFI":"Alonso Huerta"
+        "PRES":"Valeria Ceh Canto",
+        "MOD":"Valeria Ruby Perera Bastarrachea ",
+        "OFI":"Ana Cristina Tun Anguas"
     }
     },
     {
@@ -327,9 +327,10 @@
         "Corea del Sur"
     ],
     "CHAIR":{
-        "PRES":"Alonso Huerta",
-        "MOD":"Alonso Huerta",
-        "OFI":"Alonso Huerta"
+        "P1":"Mayanin Chan Cabrera",
+        "P2":"Kelly Guadalupe Puc Vázquez",
+        "P3":"Elias Simón Cámara ",
+        "P4":"Aurora Berenice Góngora May"
     }
     }
 ]
