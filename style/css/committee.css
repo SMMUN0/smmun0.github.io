@@ -78,3 +78,9 @@ ul.chair {
     columns: 3;
     width: 70%;
   }
+
+ul.chair.prensa {
+    list-style-type: none;
+    columns: 4;
+    width: 70%;
+  }
