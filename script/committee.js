@@ -27,6 +27,9 @@ function load(code) {
             document.getElementById("PRESNAME").innerHTML = committee["CHAIR"]["PRES"];
             document.getElementById("MODNAME").innerHTML = committee["CHAIR"]["MOD"];
             document.getElementById("OFINAME").innerHTML = committee["CHAIR"]["OFI"];
+            for(var del in committee["DELEGATIONS"]){
+                document.getElementById("DELEGATIONS").innerHTML+='<li class="committee">'+committee["DELEGATIONS"][del]+'<\li>';
+            }
         }else{
             document.getElementById("EJ").src = "./chair/EJ.jpg"
             document.getElementById("DR").src = "./chair/DR.jpg"
@@ -36,13 +39,12 @@ function load(code) {
             document.getElementById("DRNAME").innerHTML = committee["CHAIR"]["DR"];
             document.getElementById("CC1NAME").innerHTML = committee["CHAIR"]["CC1"];
             document.getElementById("CC2NAME").innerHTML = committee["CHAIR"]["CC2"];
+            document.getElementById("DELEGATIONS").innerHTML = "Existen 8 perfiles por comité (8 comités). El cupo dependerá de la cantidad de personas que se inscriban al cuerpo de prensa.";
         }
 
         
 
-        for(var del in committee["DELEGATIONS"]){
-            document.getElementById("DELEGATIONS").innerHTML+='<li class="committee">'+committee["DELEGATIONS"][del]+'<\li>';
-        }
+        
     })
 
 }
