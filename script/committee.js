@@ -17,19 +17,27 @@ function load(code) {
         document.getElementById("NAME").innerText = committee["NAME"];
         // document.getElementById("CODE").innerText = committee["CODE"];
         document.getElementById("INFO").innerText = committee["INFO"];
-        document.getElementById("A").innerText = "A: " + committee["TOPICS"]["A"];
-        document.getElementById("B").innerText = "B: " + committee["TOPICS"]["B"];
+        document.getElementById("PDF").src = code+".pdf";
+        
 
         if(code != "Prensa"){
+            if(code != "CPI"){
+                document.getElementById("A").innerText = "A: " + committee["TOPICS"]["A"];
+                document.getElementById("B").innerText = "B: " + committee["TOPICS"]["B"];
+                for(var del in committee["DELEGATIONS"]){
+                    document.getElementById("DELEGATIONS").innerHTML+='<li class="committee">'+committee["DELEGATIONS"][del]+'<\li>';
+                }
+            }else{
+                document.getElementById("DELEGATIONS").innerHTML="La mitad del comité actuará como fiscalía y la otra como defensa.";
+            }
+            
             document.getElementById("PRES").src = "./chair/PRES.jpg"
             document.getElementById("MOD").src = "./chair/MOD.jpg"
             document.getElementById("OFI").src = "./chair/OFI.jpg"
             document.getElementById("PRESNAME").innerHTML = committee["CHAIR"]["PRES"];
             document.getElementById("MODNAME").innerHTML = committee["CHAIR"]["MOD"];
             document.getElementById("OFINAME").innerHTML = committee["CHAIR"]["OFI"];
-            for(var del in committee["DELEGATIONS"]){
-                document.getElementById("DELEGATIONS").innerHTML+='<li class="committee">'+committee["DELEGATIONS"][del]+'<\li>';
-            }
+            
         }else{
             document.getElementById("EJ").src = "./chair/EJ.jpg"
             document.getElementById("DR").src = "./chair/DR.jpg"
@@ -39,7 +47,7 @@ function load(code) {
             document.getElementById("DRNAME").innerHTML = committee["CHAIR"]["DR"];
             document.getElementById("CC1NAME").innerHTML = committee["CHAIR"]["CC1"];
             document.getElementById("CC2NAME").innerHTML = committee["CHAIR"]["CC2"];
-            document.getElementById("DELEGATIONS").innerHTML = "Existen 8 perfiles por comité (8 comités). El cupo dependerá de la cantidad de personas que se inscriban al cuerpo de prensa.";
+            document.getElementById("DELEGATIONS").innerHTML = "Los medios serán asignados en función del orden de registro. El cupo dependerá de la cantidad de personas que se inscriban al cuerpo de prensa.";
         }
 
         

@@ -3,7 +3,7 @@
     "CODE":"UNFPA",
     "NAME":"Fondo de Población de las Naciones Unidas",
     "LAN":"Español",
-    "INFO":"El Fondo de Población de las Naciones Unidas es un órgano subsidiario de la Asamblea General de las Naciones Unidas, el cual se encarga de cuestiones de población y desarrollo, específicamente en temas de salud reproductiva y de igualdad de género",
+    "INFO":"El Fondo de Población de las Naciones Unidas es un órgano subsidiario de la Asamblea General de las Naciones Unidas, el cual se encarga de cuestiones de población y desarrollo, específicamente en temas de salud reproductiva y de igualdad de género.",
     "TOPICS":
     {
         "A":"Topico A",
@@ -84,9 +84,9 @@
     },
     {
     "CODE":"ACNUDH",
-    "NAME":"Este comité representa el compromiso del mundo para la promoción y protección del conjunto total de derechos humanos y libertades establecidos en la Declaración Universal de Derechos Humanos. Dicho comité se esfuerza por ofrecer el mejor asesoramiento experto y apoyo a los diversos mecanismos de supervisión de derechos humanos en el sistema de las Naciones Unidas. ACNUDH tiene la facultad de prevenir los abusos, la desigualdad y la discriminación, proteger a las personas más vulnerables y denunciar a los perpetradores.",
+    "NAME":"Alto Comisionado de las Naciones Unidas para los Derechos Humanos",
     "LAN":"Español",
-    "INFO":"La Oficina del Alto Comisionado para los Derechos Humanos es un organismo especializado del sistema de Naciones Unidas que tiene como objetivo promover y proteger los derechos humanos en el mundo.",
+    "INFO":"Este comité representa el compromiso del mundo para la promoción y protección del conjunto total de derechos humanos y libertades establecidos en la Declaración Universal de Derechos Humanos. Dicho comité se esfuerza por ofrecer el mejor asesoramiento experto y apoyo a los diversos mecanismos de supervisión de derechos humanos en el sistema de las Naciones Unidas. ACNUDH tiene la facultad de prevenir los abusos, la desigualdad y la discriminación, proteger a las personas más vulnerables y denunciar a los perpetradores.",
     "TOPICS":
     {
         "A":"Topico A",
@@ -367,14 +367,7 @@
     },
     "DELEGATIONS":
     [
-        "ACNUDH",
-        "ECOSOC",
-        "UNFPA",
-        "Tercera Asamblea",
-        "UNESCO",
-        "CPI",
-        "UNSC",
-        "UNW"
+        "Los medios serán asignados en función del orden de registro."
     ],
     "CHAIR":{
         "EJ":"Mayanin Chan Cabrera",
