@@ -133,7 +133,7 @@
         "CHAIR":{
             "PRES":"Ángel Jacobo Pérez Méndez",
             "MOD":"Yoloxi Nayeli Paz Jiménez",
-            "OFI":"Celso José Carbajal Pech"
+            "OFI":"Celso José Carvajal Pech"
         }
     },
     {
@@ -181,7 +181,7 @@
     ],
     "CHAIR":{
         "PRES":"Dana Estefanía Barrero García",
-        "MOD":"Lirio Cristina Araiza Corín",
+        "MOD":"Lirio Cristina Araiza Colín",
         "OFI":"Valeria Mejía Quiñones"
     }
     },
@@ -214,10 +214,6 @@
         "Corea del Norte",
         "China",
         "Australia",
-        "Perú",
-        "China",
-        "India",
-        "Afganistán",
         "India",
         "México",
         "Canadá",
@@ -225,8 +221,12 @@
         "Alemania",
         "Suiza",
         "Reino Unido",
-        "Costa Rica",
-        "Indonesia"
+        "Argentina",
+        "Cuba",
+        "Brasil",
+        "Colombia",
+        "Guatemala",
+        "Venezuela"
     ],
     "CHAIR":{
         "PRES":"Miroslava García Nájera",
