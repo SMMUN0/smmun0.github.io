@@ -6,7 +6,7 @@ img.committee{
 }
 
 img.chair{
-    height: 15em;
+    height: 14em;
     display: block;
     margin: auto;
 }
@@ -70,17 +70,21 @@ ul.committee{
     margin: 0;
     padding: 0;
     width: 60%;
-    columns: 3;
+    columns: 1;
 }
 
 ul.chair {
     list-style-type: none;
     columns: 3;
-    width: 70%;
+    width: 80%;
   }
 
 ul.chair.prensa {
     list-style-type: none;
     columns: 4;
     width: 70%;
+  }
+
+  iframe{
+      margin-bottom: 100px;
   }

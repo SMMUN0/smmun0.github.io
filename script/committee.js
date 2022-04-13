@@ -28,7 +28,7 @@ function load(code) {
                     document.getElementById("DELEGATIONS").innerHTML+='<li class="committee">'+committee["DELEGATIONS"][del]+'<\li>';
                 }
             }else{
-                document.getElementById("DELEGATIONS").innerHTML="El Cuerpo de Prensa es una comisión de cobertura especializada y estrategica para la difusión de información y contenido, que tiene como finalidad comunicar lo acontecido durante el flujo del debate y el desarrollo de las hojas de ruta y los acuerdos propuestos. Las Delegaciones representarán a un medio internacional en el ámbito, de acuerdo con un perfil, postura e ideología establecidas, el cual les será asignado. A su vez, tendrán la oportunidad de intervenir en la discusión y búsqueda de información, a través de espacios de diálogo y redacción, conforme a los tópicos a abordar en el Comité asignado.";
+                document.getElementById("DELEGATIONS").innerHTML="Pendiente";
             }
             
             document.getElementById("PRES").src = "./chair/PRES.jpg"
@@ -47,7 +47,7 @@ function load(code) {
             document.getElementById("DRNAME").innerHTML = committee["CHAIR"]["DR"];
             document.getElementById("CC1NAME").innerHTML = committee["CHAIR"]["CC1"];
             document.getElementById("CC2NAME").innerHTML = committee["CHAIR"]["CC2"];
-            document.getElementById("DELEGATIONS").innerHTML = "Los medios serán asignados en función del orden de registro. El cupo dependerá de la cantidad de personas que se inscriban al cuerpo de prensa.";
+            document.getElementById("DELEGATIONS").innerHTML = "El Cuerpo de Prensa es una comisión de cobertura especializada y estrategica para la difusión de información y contenido, que tiene como finalidad comunicar lo acontecido durante el flujo del debate y el desarrollo de las hojas de ruta y los acuerdos propuestos. Las Delegaciones representarán a un medio internacional en el ámbito, de acuerdo con un perfil, postura e ideología establecidas, el cual les será asignado. A su vez, tendrán la oportunidad de intervenir en la discusión y búsqueda de información, a través de espacios de diálogo y redacción, conforme a los tópicos a abordar en el Comité asignado.";
         }
 
         
