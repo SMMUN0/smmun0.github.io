@@ -28,7 +28,7 @@ function load(code) {
                     document.getElementById("DELEGATIONS").innerHTML+='<li class="committee">'+committee["DELEGATIONS"][del]+'<\li>';
                 }
             }else{
-                document.getElementById("DELEGATIONS").innerHTML="Pendiente";
+                document.getElementById("DELEGATIONS").innerHTML="El comité se dividirá en dos equipos, la mitad será quienes representarán a la fiscalía de la Corte Penal Internacional, y la otra mitad serán los representantes de la defensa de la persona imputada. Cada equipo estará conformado por ocho personas, quienes se turnarán para tener el uso de la voz en las sesiones, fungir como asesores jurídicos y la elaboración de las minutas.";
             }
             
             document.getElementById("PRES").src = "./chair/PRES.jpg"
