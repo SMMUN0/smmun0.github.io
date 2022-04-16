@@ -83,13 +83,13 @@ ul.chair {
     list-style-type: none;
     columns: 3;
     width: 80%;
-    height: 20em;
+    /* height: 20em; */
   }
 
 ul.chair.prensa {
     list-style-type: none;
-    columns: 4;
-    width: 70%;
+    columns: 2;
+    width: 50%;
   }
 
   iframe{
