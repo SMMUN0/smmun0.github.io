@@ -19,6 +19,9 @@ h2.committee{
     font-weight: bold; 
     letter-spacing: -1px;
     padding-top: 5px;
+    font-size: 2em;
+    white-space:nowrap;
+    overflow:hidden;
 }
 
 h1.committee{
@@ -35,11 +38,14 @@ h1.committee{
 
 h3.committee{
     padding-top: 10px;
+    font-size: 1.6em;
     text-align: center;
     color: rgb(255, 255, 255); 
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold; 
     letter-spacing: -1px;
+    white-space:nowrap;
+    overflow:hidden;
 }
 
 h4.committee{
@@ -77,6 +83,7 @@ ul.chair {
     list-style-type: none;
     columns: 3;
     width: 80%;
+    height: 20em;
   }
 
 ul.chair.prensa {
