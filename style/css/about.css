@@ -56,3 +56,18 @@ h2.model {
 h1.model {
     color: rgb(197, 155, 87);
 }
+
+ul#secreatariat{
+  margin: auto;
+  list-style: none;
+  columns: 3;
+  width: 60%;
+  min-width: 800px;
+}
+ul  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 20px;
+}
