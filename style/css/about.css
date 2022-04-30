@@ -46,6 +46,13 @@ h2 {
     font-family: 'Helvetica Neue', sans-serif;
 }
 
+h2.model {
+  text-align: center;
+  color: rgb(197, 155, 87);
+  font-weight: bold; 
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
 h1.model {
     color: rgb(197, 155, 87);
 }
