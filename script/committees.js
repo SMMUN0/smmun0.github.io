@@ -1,6 +1,6 @@
-function addElement () {
+function addElement (year) {
 
-    fetch("./committees/2022.json")
+    fetch("./committees/"+year+"/"+year+".json")
     .then(response => {
         return response.json();
     })
@@ -18,7 +18,7 @@ function addElement () {
                 img.classList.add("committee")
 
                 var link = document.createElement("a");
-                link.href = "/committees/" + committees[i]["CODE"] + "/"+ committees[i]["CODE"] + ".html";
+                link.href = "/committees/"+ year + "/" + committees[i]["CODE"] + "/"+ committees[i]["CODE"] + ".html";
                 link.appendChild(img);
 
                 var header = document.createElement("h1");
@@ -38,7 +38,7 @@ function addElement () {
         img.classList.add("committee")
 
         var link = document.createElement("a");
-        link.href = "/committees/" + committees[committees.length-1]["CODE"] + "/"+ committees[i]["CODE"] + ".html";
+        link.href = "/committees/" + year + "/" + committees[committees.length-1]["CODE"] + "/"+ committees[i]["CODE"] + ".html";
         link.appendChild(img);
 
         var header = document.createElement("h1");

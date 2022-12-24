@@ -55,6 +55,7 @@ int main(int argc, char *argv[]){
             json_committees_file <<  "\t\t\t" << "\"A\":\"topico_a\"," << std::endl;
             json_committees_file <<  "\t\t\t" << "\"B\":\"topico_c\"" << std::endl;
             json_committees_file <<  "\t\t" << '}' << ',' << std::endl;
+            json_committees_file <<  "\t\t" << "\"DELEGATIONS\":[]," << std::endl;
             json_committees_file <<  "\t\t" << "\"CHAIR\":" << std::endl;
             json_committees_file <<  "\t\t" << '{' << std::endl;
             json_committees_file <<  "\t\t\t" << "\"PRES\":\"nombre_presidencia\"," << std::endl;
@@ -73,7 +74,7 @@ int main(int argc, char *argv[]){
         {
             std::string in;
             std::ifstream template_in;
-            template_in.open("template.html");
+            template_in.open("./committees/template.html");
             while(!template_in.eof()){
                 getline(template_in, in);
 

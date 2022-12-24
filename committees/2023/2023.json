@@ -1,7 +1,7 @@
 [
 	{
 		"CODE":"ACNUDH",
-		"NAME":"Alto Comisionado de las Naciones Unidas para los Derechos Humanos",
+		"NAME":"nombre_mesa",
 		"LAN":"idioma_mesa",
 		"INFO":"info_mesa",
 		"TOPICS":
@@ -9,6 +9,7 @@
 			"A":"topico_a",
 			"B":"topico_c"
 		},
+		"DELEGATIONS":[],
 		"CHAIR":
 		{
 			"PRES":"nombre_presidencia",
@@ -26,6 +27,7 @@
 			"A":"topico_a",
 			"B":"topico_c"
 		},
+		"DELEGATIONS":[],
 		"CHAIR":
 		{
 			"PRES":"nombre_presidencia",
@@ -43,6 +45,7 @@
 			"A":"topico_a",
 			"B":"topico_c"
 		},
+		"DELEGATIONS":[],
 		"CHAIR":
 		{
 			"PRES":"nombre_presidencia",
@@ -60,6 +63,7 @@
 			"A":"topico_a",
 			"B":"topico_c"
 		},
+		"DELEGATIONS":[],
 		"CHAIR":
 		{
 			"PRES":"nombre_presidencia",
@@ -77,6 +81,7 @@
 			"A":"topico_a",
 			"B":"topico_c"
 		},
+		"DELEGATIONS":[],
 		"CHAIR":
 		{
 			"PRES":"nombre_presidencia",
@@ -94,6 +99,7 @@
 			"A":"topico_a",
 			"B":"topico_c"
 		},
+		"DELEGATIONS":[],
 		"CHAIR":
 		{
 			"PRES":"nombre_presidencia",
@@ -111,6 +117,7 @@
 			"A":"topico_a",
 			"B":"topico_c"
 		},
+		"DELEGATIONS":[],
 		"CHAIR":
 		{
 			"PRES":"nombre_presidencia",
@@ -119,7 +126,7 @@
 		}
 	},
 	{
-		"CODE":"ONU",
+		"CODE":"UNW",
 		"NAME":"nombre_mesa",
 		"LAN":"idioma_mesa",
 		"INFO":"info_mesa",
@@ -128,23 +135,7 @@
 			"A":"topico_a",
 			"B":"topico_c"
 		},
-		"CHAIR":
-		{
-			"PRES":"nombre_presidencia",
-			"MOD":"nombre_moderacion",
-			"OFI":"nombre_oficialia"
-		}
-	},
-	{
-		"CODE":"MUJERES",
-		"NAME":"nombre_mesa",
-		"LAN":"idioma_mesa",
-		"INFO":"info_mesa",
-		"TOPICS":
-		{
-			"A":"topico_a",
-			"B":"topico_c"
-		},
+		"DELEGATIONS":[],
 		"CHAIR":
 		{
 			"PRES":"nombre_presidencia",
@@ -162,6 +153,7 @@
 			"A":"topico_a",
 			"B":"topico_c"
 		},
+		"DELEGATIONS":[],
 		"CHAIR":
 		{
 			"PRES":"nombre_presidencia",
@@ -179,6 +171,7 @@
 			"A":"topico_a",
 			"B":"topico_c"
 		},
+		"DELEGATIONS":[],
 		"CHAIR":
 		{
 			"PRES":"nombre_presidencia",
@@ -196,6 +189,7 @@
 			"A":"topico_a",
 			"B":"topico_c"
 		},
+		"DELEGATIONS":[],
 		"CHAIR":
 		{
 			"PRES":"nombre_presidencia",
@@ -213,6 +207,7 @@
 			"A":"topico_a",
 			"B":"topico_c"
 		},
+		"DELEGATIONS":[],
 		"CHAIR":
 		{
 			"PRES":"nombre_presidencia",

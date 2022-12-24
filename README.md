@@ -61,8 +61,9 @@ año.json
 
 # TODO
 
-- Fix COMMITTE_CODE bug (two words code)
-- Rewrite 2022 `.html` files
 - Document code
 - Change color for committes in each year
 - Add known code names to `.json` generator
+- Add style.css to template for nav bar style
+- Known Country code names, add feature to `year_json_generator.cpp`
+- Fix Committes main page
