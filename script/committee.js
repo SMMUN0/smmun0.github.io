@@ -1,6 +1,9 @@
-function load(code) {
+
+function load(code, year) {
+    console.log("HERE")
+    console.log(year)
     document.title = code;
-    fetch("../../committees/2022.json")
+    fetch("../../../committees/" + year + "/" + year +".json")
     .then(response => {
         return response.json();
     })
@@ -13,10 +16,11 @@ function load(code) {
     })
     .then(committee => {
         console.log(committee["NAME"]);
-        document.getElementById("IMAGE").src = "../../style/img/committees/" + committee["CODE"] + ".png";
+        document.getElementById("IMAGE").src = "../../../style/img/committees/" + committee["CODE"] + ".png";
         document.getElementById("NAME").innerText = committee["NAME"];
         // document.getElementById("CODE").innerText = committee["CODE"];
         document.getElementById("INFO").innerText = committee["INFO"];
+        document.getElementById("pdf").href = code+".pdf";
         document.getElementById("PDF").src = code+".pdf";
         
 
