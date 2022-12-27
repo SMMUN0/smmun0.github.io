@@ -62,8 +62,12 @@ año.json
 # TODO
 
 - Document code
-- Change color for committes in each year
+- Documentation page
 - Add known code names to `.json` generator
 - Add style.css to template for nav bar style
 - Known Country code names, add feature to `year_json_generator.cpp`
 - Fix Committes main page
+- Add new committee logos
+- committees.html version compatability
+- add CPI special case
+- add class name to list item in delegations sections

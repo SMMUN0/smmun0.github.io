@@ -59,4 +59,37 @@ function load(code, year) {
         
     })
 
+    fetch("../../year_configurations.json")
+    .then(response => {
+        return response.json();
+    })
+    .then(response => {
+        console.log(response)
+
+        
+        document.getElementsByClassName("primary")[0].style.backgroundColor = 'rgb(' + response[year]["background_one"][0] + ',' + response[year]["background_one"][1] + ',' + response[year]["background_one"][2] + ')';
+        
+
+        var divs = document.getElementsByClassName("secondary");
+        for(var i = 0; i < divs.length; i++){
+            divs[i].style.backgroundColor = 'rgb(' + response[year]["background_two"][0] + ',' + response[year]["background_two"][1] + ',' + response[year]["background_two"][2] + ')';
+        }
+
+        var divs = document.getElementsByClassName("title");
+        for(var i = 0; i < divs.length; i++){
+            divs[i].style.color = 'rgb(' + response[year]["main_title"][0] + ',' + response[year]["main_title"][1] + ',' + response[year]["main_title"][2] + ')';
+        }
+
+        var divs = document.getElementsByClassName("subtitle");
+        for(var i = 0; i < divs.length; i++){
+            divs[i].style.color = 'rgb(' + response[year]["subtitles"][0] + ',' + response[year]["subtitles"][1] + ',' + response[year]["subtitles"][2] + ')';
+        }
+
+        var divs = document.getElementsByClassName("subsubtitle");
+        for(var i = 0; i < divs.length; i++){
+            divs[i].style.color = 'rgb(' + response[year]["subsubtitles"][0] + ',' + response[year]["subsubtitles"][1] + ',' + response[year]["subsubtitles"][2] + ')';
+        }
+        
+    })
+
 }
