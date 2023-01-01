@@ -6,7 +6,33 @@ const titulos =
     "EJ":"Edición de Jefe",
     "DR":"Dirección de Redacción",
     "CC1":"Coordinación de Contenido",
-    "CC2":"Coordinación de Contenido"
+    "CC2":"Coordinación de Contenido",
+    "MPA":"Magistrada Primera",
+    "MSA":"Magistrada Segunda",
+    "SA":"Secretaría de Audiencia",
+    "MPRESA":"Magistrada Presidenta"
+}
+
+const languages = 
+{
+    'en':"English",
+    'es':"Español",
+}
+
+const modalities = 
+{
+    'en':
+    {
+        "PV":"On-site/Virtual",
+        "P":"On-site",
+        "V":"Virtual",
+    },
+    'es':
+    {
+        "PV":"Presencial/Virtual",
+        "P":"Presencial",
+        "V":"Virtual", 
+    }
 }
 
 function load_committee(code, year) {
@@ -27,6 +53,7 @@ function load_committee(code, year) {
         console.log(committee["NAME"]);
         document.getElementById("IMAGE").src = "../../../style/img/committees/" + committee["CODE"] + ".png";
         document.getElementById("NAME").innerText = committee["NAME"];
+        document.getElementById("LAN/MODALITY").innerText = languages[committee["LAN"]] + " - " + modalities[committee["LAN"]][committee["MODALITY"]]
         document.getElementById("INFO").innerText = committee["INFO"];
         document.getElementById("pdf").href = code+".pdf";
         document.getElementById("PDF").src = code+".pdf";

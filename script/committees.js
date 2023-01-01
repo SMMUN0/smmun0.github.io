@@ -5,48 +5,50 @@ function addElement (year) {
         return response.json();
     })
     .then(response => {
-        var committees = response;
+        const committees = response;
         var currentDiv = document.getElementById("committeesList");
 
-        for(var i = 0; i < committees.length; i++){
+        for(var i = 0; i < committees.length - committees.length%2; i++){
 
             // Single committee
-                var middleDiv = document.createElement("li");
+            var middleDiv = document.createElement("li");
 
-                var img = document.createElement("img");
-                img.src = "./style/img/committees/" + committees[i]["CODE"] + ".png";
-                img.classList.add("committee")
+            var img = document.createElement("img");
+            img.src = "./style/img/committees/" + committees[i]["CODE"] + ".png";
+            img.classList.add("committee")
 
-                var link = document.createElement("a");
-                link.href = "/committees/"+ year + "/" + committees[i]["CODE"] + "/"+ committees[i]["CODE"] + ".html";
-                link.appendChild(img);
+            var link = document.createElement("a");
+            link.href = "/committees/"+ year + "/" + committees[i]["CODE"] + "/"+ committees[i]["CODE"] + ".html";
+            link.appendChild(img);
 
-                var header = document.createElement("h1");
-                header.innerHTML = committees[i]["CODE"];
-                header.className = "committee";
+            var header = document.createElement("h1");
+            header.innerHTML = committees[i]["CODE"];
+            header.className = "committee";
 
-                middleDiv.appendChild(link);
-                middleDiv.appendChild(header);
-                currentDiv.appendChild(middleDiv);
+            middleDiv.appendChild(link);
+            middleDiv.appendChild(header);
+            currentDiv.appendChild(middleDiv);
         }
 
-        // Prensa committee
-        var Prensa = document.getElementById("Prensa");
+        if(committees.length%2){
+            var overflow = document.getElementById("overflow");
 
-        var img = document.createElement("img");
-        img.src = "./style/img/committees/" + committees[committees.length-1]["CODE"] + ".png";
-        img.classList.add("committee")
+            var img = document.createElement("img");
+            img.src = "./style/img/committees/" + committees[committees.length-1]["CODE"] + ".png";
+            img.classList.add("committee")
 
-        var link = document.createElement("a");
-        link.href = "/committees/" + year + "/" + committees[committees.length-1]["CODE"] + "/"+ committees[i]["CODE"] + ".html";
-        link.appendChild(img);
+            var link = document.createElement("a");
+            link.href = "/committees/" + year + "/" + committees[committees.length-1]["CODE"] + "/"+ committees[i]["CODE"] + ".html";
+            link.appendChild(img);
 
-        var header = document.createElement("h1");
-        header.innerHTML = committees[committees.length-1]["CODE"];
-        header.className = "committee";
+            var header = document.createElement("h1");
+            header.innerHTML = committees[committees.length-1]["CODE"];
+            header.className = "committee";
 
-        Prensa.appendChild(link);
-        Prensa.appendChild(header);
+            overflow.appendChild(link);
+            overflow.appendChild(header);
+        }
+        
 
 
     })
@@ -57,7 +59,6 @@ function addElement (year) {
     })
     .then(response => {
         console.log(response)
-
         
         document.getElementById("committees").style.backgroundColor = 'rgb(' + response[year]["background_one"][0] + ',' + response[year]["background_one"][1] + ',' + response[year]["background_one"][2] + ')';
         

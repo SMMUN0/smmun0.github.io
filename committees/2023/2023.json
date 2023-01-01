@@ -3,6 +3,7 @@
 		"CODE":"ACNUDH",
 		"NAME":"nombre_mesa",
 		"LAN":"idioma_mesa",
+		"MODALITY":"modalidad_mesa",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -12,15 +13,16 @@
 		"DELEGATIONS":[],
 		"CHAIR":
 		{
-			"PRES":"nombre_presidencia",
-			"MOD":"nombre_moderacion",
-			"OFI":"nombre_oficialia"
+			"PRES":"Andrea Acosta",
+			"MOD":"Alejandra Moguel",
+			"OFI":"Judith García"
 		}
 	},
 	{
 		"CODE":"CEDAW",
 		"NAME":"nombre_mesa",
 		"LAN":"idioma_mesa",
+		"MODALITY":"modalidad_mesa",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -30,15 +32,16 @@
 		"DELEGATIONS":[],
 		"CHAIR":
 		{
-			"PRES":"nombre_presidencia",
-			"MOD":"nombre_moderacion",
-			"OFI":"nombre_oficialia"
+			"PRES":"Lirio Araiza",
+			"MOD":"Sofía Quiñoes",
+			"OFI":"Valentina Moreno"
 		}
 	},
 	{
 		"CODE":"CPI",
 		"NAME":"nombre_mesa",
 		"LAN":"idioma_mesa",
+		"MODALITY":"modalidad_mesa",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -48,15 +51,17 @@
 		"DELEGATIONS":[],
 		"CHAIR":
 		{
-			"PRES":"nombre_presidencia",
-			"MOD":"nombre_moderacion",
-			"OFI":"nombre_oficialia"
+			"MPA":"Fernanda Ronzón",
+			"MSA":"Regina Solchaga",
+			"MPRESA":"Tanya Aké",
+			"SA":"Heber Canul"
 		}
 	},
 	{
 		"CODE":"ECOSOC",
 		"NAME":"nombre_mesa",
 		"LAN":"idioma_mesa",
+		"MODALITY":"modalidad_mesa",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -66,15 +71,16 @@
 		"DELEGATIONS":[],
 		"CHAIR":
 		{
-			"PRES":"nombre_presidencia",
-			"MOD":"nombre_moderacion",
-			"OFI":"nombre_oficialia"
+			"PRES":"Galilea Silva",
+			"MOD":"Jessica Tejero",
+			"OFI":"Valeria Frías"
 		}
 	},
 	{
 		"CODE":"FCS",
 		"NAME":"nombre_mesa",
 		"LAN":"idioma_mesa",
+		"MODALITY":"modalidad_mesa",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -84,15 +90,16 @@
 		"DELEGATIONS":[],
 		"CHAIR":
 		{
-			"PRES":"nombre_presidencia",
-			"MOD":"nombre_moderacion",
-			"OFI":"nombre_oficialia"
+			"PRES":"Fernanda Calandrino",
+			"MOD":"Ricardo Dzib",
+			"OFI":"Alejandro Mendoza"
 		}
 	},
 	{
 		"CODE":"FPAN",
 		"NAME":"nombre_mesa",
 		"LAN":"idioma_mesa",
+		"MODALITY":"modalidad_mesa",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -102,15 +109,16 @@
 		"DELEGATIONS":[],
 		"CHAIR":
 		{
-			"PRES":"nombre_presidencia",
-			"MOD":"nombre_moderacion",
-			"OFI":"nombre_oficialia"
+			"PRES":"Valentina Martínez",
+			"MOD":"Camila Escalante",
+			"OFI":"Alejandro Canché"
 		}
 	},
 	{
 		"CODE":"INTERPOL",
 		"NAME":"nombre_mesa",
 		"LAN":"idioma_mesa",
+		"MODALITY":"modalidad_mesa",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -120,15 +128,16 @@
 		"DELEGATIONS":[],
 		"CHAIR":
 		{
-			"PRES":"nombre_presidencia",
-			"MOD":"nombre_moderacion",
-			"OFI":"nombre_oficialia"
+			"PRES":"Dalia Estrada",
+			"MOD":"Diana Santana",
+			"OFI":"Wendolyne"
 		}
 	},
 	{
 		"CODE":"UNW",
 		"NAME":"nombre_mesa",
 		"LAN":"idioma_mesa",
+		"MODALITY":"modalidad_mesa",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -138,15 +147,16 @@
 		"DELEGATIONS":[],
 		"CHAIR":
 		{
-			"PRES":"nombre_presidencia",
-			"MOD":"nombre_moderacion",
-			"OFI":"nombre_oficialia"
+			"PRES":"Kelly Puc",
+			"MOD":"Alma Presuel",
+			"OFI":"Ana Ávila"
 		}
 	},
 	{
 		"CODE":"SOCHUM",
 		"NAME":"nombre_mesa",
 		"LAN":"idioma_mesa",
+		"MODALITY":"modalidad_mesa",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -156,15 +166,15 @@
 		"DELEGATIONS":[],
 		"CHAIR":
 		{
-			"PRES":"nombre_presidencia",
-			"MOD":"nombre_moderacion",
-			"OFI":"nombre_oficialia"
+			"PRES":"Faina Couoh",
+			"MOD":"Diego Grajeda"
 		}
 	},
 	{
 		"CODE":"UNICEF",
 		"NAME":"nombre_mesa",
 		"LAN":"idioma_mesa",
+		"MODALITY":"modalidad_mesa",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -175,14 +185,15 @@
 		"CHAIR":
 		{
 			"PRES":"nombre_presidencia",
-			"MOD":"nombre_moderacion",
-			"OFI":"nombre_oficialia"
+			"MOD":"Alejandra Correa",
+			"OFI":"Ana Sofía Pasos"
 		}
 	},
 	{
 		"CODE":"UNSC",
 		"NAME":"nombre_mesa",
 		"LAN":"idioma_mesa",
+		"MODALITY":"modalidad_mesa",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -192,15 +203,16 @@
 		"DELEGATIONS":[],
 		"CHAIR":
 		{
-			"PRES":"nombre_presidencia",
-			"MOD":"nombre_moderacion",
-			"OFI":"nombre_oficialia"
+			"PRES":"Carlos García",
+			"MOD":"Andrea Arreola",
+			"OFI":"Carlos Sevilla"
 		}
 	},
 	{
 		"CODE":"WHO",
 		"NAME":"nombre_mesa",
 		"LAN":"idioma_mesa",
+		"MODALITY":"modalidad_mesa",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -210,8 +222,8 @@
 		"DELEGATIONS":[],
 		"CHAIR":
 		{
-			"PRES":"nombre_presidencia",
-			"MOD":"nombre_moderacion",
+			"PRES":"Violeta Aurora",
+			"MOD":"Camila Melendez",
 			"OFI":"nombre_oficialia"
 		}
 	}

@@ -7,15 +7,18 @@
         <link rel="shortcut icon" href="./style/img/logos/logoSMMUN.png">
         <link rel="stylesheet" href="./style/css/committees.css">
     </head>
-    <body onload="addElement(2022), load('committees')">
+    <body onload="addElement(2023), load('committees')">
         <div id="navBar"></div>
+        <!-- Committees Links -->
         <div id="committees" style="padding-bottom: 150px;">
             <h1 style="text-align:center; padding-top: 80px;" id="title">Comités</h1>
             <h2 id="subtitle"></h2>
+            <!-- Listed even amount of committees -->
             <center>
                 <ul id="committeesList" class="committee"></ul>
             </center>
-            <center id="Prensa" class="committee"></center>
+            <!-- Listed last committee in case of overflow -->
+            <center id="overflow" class="committee"></center>
         </div>
         <div id="footer"></div>
     </body>
