@@ -2,8 +2,8 @@
 	{
 		"CODE":"ACNUDH",
 		"NAME":"nombre_mesa",
-		"LAN":"idioma_mesa",
-		"MODALITY":"modalidad_mesa",
+		"LAN":"es",
+		"MODALITY":"P",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -21,8 +21,8 @@
 	{
 		"CODE":"CEDAW",
 		"NAME":"nombre_mesa",
-		"LAN":"idioma_mesa",
-		"MODALITY":"modalidad_mesa",
+		"LAN":"es",
+		"MODALITY":"P",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -40,8 +40,8 @@
 	{
 		"CODE":"CPI",
 		"NAME":"nombre_mesa",
-		"LAN":"idioma_mesa",
-		"MODALITY":"modalidad_mesa",
+		"LAN":"es",
+		"MODALITY":"P",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -60,8 +60,8 @@
 	{
 		"CODE":"ECOSOC",
 		"NAME":"nombre_mesa",
-		"LAN":"idioma_mesa",
-		"MODALITY":"modalidad_mesa",
+		"LAN":"es",
+		"MODALITY":"P",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -79,8 +79,8 @@
 	{
 		"CODE":"FCS",
 		"NAME":"nombre_mesa",
-		"LAN":"idioma_mesa",
-		"MODALITY":"modalidad_mesa",
+		"LAN":"es",
+		"MODALITY":"P",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -98,8 +98,8 @@
 	{
 		"CODE":"FPAN",
 		"NAME":"nombre_mesa",
-		"LAN":"idioma_mesa",
-		"MODALITY":"modalidad_mesa",
+		"LAN":"es",
+		"MODALITY":"P",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -117,8 +117,8 @@
 	{
 		"CODE":"INTERPOL",
 		"NAME":"nombre_mesa",
-		"LAN":"idioma_mesa",
-		"MODALITY":"modalidad_mesa",
+		"LAN":"es",
+		"MODALITY":"P",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -136,8 +136,8 @@
 	{
 		"CODE":"UNW",
 		"NAME":"nombre_mesa",
-		"LAN":"idioma_mesa",
-		"MODALITY":"modalidad_mesa",
+		"LAN":"es",
+		"MODALITY":"P",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -155,8 +155,8 @@
 	{
 		"CODE":"SOCHUM",
 		"NAME":"nombre_mesa",
-		"LAN":"idioma_mesa",
-		"MODALITY":"modalidad_mesa",
+		"LAN":"es",
+		"MODALITY":"P",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -173,8 +173,8 @@
 	{
 		"CODE":"UNICEF",
 		"NAME":"nombre_mesa",
-		"LAN":"idioma_mesa",
-		"MODALITY":"modalidad_mesa",
+		"LAN":"es",
+		"MODALITY":"P",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -192,8 +192,8 @@
 	{
 		"CODE":"UNSC",
 		"NAME":"nombre_mesa",
-		"LAN":"idioma_mesa",
-		"MODALITY":"modalidad_mesa",
+		"LAN":"es",
+		"MODALITY":"P",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
@@ -211,8 +211,8 @@
 	{
 		"CODE":"WHO",
 		"NAME":"nombre_mesa",
-		"LAN":"idioma_mesa",
-		"MODALITY":"modalidad_mesa",
+		"LAN":"es",
+		"MODALITY":"P",
 		"INFO":"info_mesa",
 		"TOPICS":
 		{
