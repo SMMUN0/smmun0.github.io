@@ -1,6 +1,5 @@
 
-function load(code, year) {
-    console.log("HERE")
+function load_committee(code, year) {
     console.log(year)
     document.title = code;
     fetch("../../../committees/" + year + "/" + year +".json")

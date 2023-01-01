@@ -1,124 +1,76 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="style/css/style.css">
-      <title>¿Quiénes Somos?</title>
-      <link rel="shortcut icon" href="./style/img/logos/logoSMMUN.png">
-      <link rel="stylesheet" href="./style/css/about.css">
-   </head>
-   <body onload="setUpImage()">
-      <!-- Nav Bar -->
-      <nav class="navbar navbar-expand navbar-light bg-light">
-         <a class="navbar-brand" href="./index.html">
-         <img src="./style/img/logos/logoSMMUN.png" width="80" height="auto" class="d-inline-block align-top" alt="SMMUN">
-         </a>
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-               <li class="nav-item">
-                  <a class="nav-link" href="./index.html">Inicio</a>
-               </li>
-               <li class="nav-item active">
-                  <a class="nav-link" href="#">¿Quiénes somos?<span class="sr-only">(current)</span></a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="./register.html">Convocatoria</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="./committees.html">Comités</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="./contact.html">Contacto</a>
-               </li>
-            </ul>
-         </div>
-      </nav>
-      <div style="width:100%; margin: auto; text-align: justify; background-color: rgb(118, 187, 226);">
-         <img src="./style/img/logos/logoSMMUN.png" class="logoDisplay" alt="SMMUN"
-            style="display: block; margin: auto; width: 25%; padding-top: 40px; padding-bottom: 40px;">
-      </div>
-      <!-- Information -->
-      <div
-         style="width:100%; margin: auto; text-align: justify; background-color: rgba(151, 206, 237, 0.8); padding-top: 100px;">
-         <!-- Who are we? -->
-         <div class="aboutSection">
-            <h1 style="text-align: center;">¿Quiénes Somos?</h1>
-            <br>
-            <p>
-               El Modelo de las Naciones Unidas del Sureste Mexicano (o SMMUN por sus siglas en inglés) es un modelo de naciones hecho por y para jóvenes estudiantes con intereses en temas de derecho internacional, relaciones internacionales, derechos humanos y todo lo relacionado a la ONU. Tiene el propósito de otorgarle a las personas participantes una oportunidad para experimentar las sesiones de trabajo llevadas a cabo en las Naciones Unidas en la vida real, tratando temas de suma relevancia internacional, a la par que le permite a los participantes desarrollar habilidades de liderazgo, negociación, diplomacia, trabajo en equipo, investigación, entre otros.
-            </p>
-            <p>
-               Tras el éxito de su primer año en 2016, se llevan a cabo las ediciones anuales del Modelo de Naciones Unidas del Sureste de México en Mérida, Yucatán. Todo estudiante de preparatoria o universidad entre los 15 y 25 años está invitado a participar en el evento que será el máximo representante del sentimiento juvenil de la Organización de las Naciones Unidas en el sureste de México.
-            </p>
-         </div>
-         <div class="aboutSection" style="height: 600px; margin-top: 80px;">
-            <!-- Historia -->
-            <div style="width: 45%; float: left;">
-               <h2>¿Qué es un MUN?</h2>
-               <br>
-               <p>
-                  Un Modelo de Naciones Unidas es una simulación o representación del Sistema de Naciones Unidas en el que participan alumnos de escuelas secundarias, preparatorias o universidades. Los alumnos representan a los delegados de diferentes países e intervienen en debates y negociaciones en los que tratan temas que corresponden a los programas de trabajo de los diferentes órganos y comisiones de las Naciones Unidas.
-                  <br> <br>
-                  Un Modelo es un evento educativo y cultural en el que los jóvenes que participan, además de capacitarse sobre temas de política internacional y sobre el funcionamiento de Naciones Unidas, adquieren una visión global del mundo en donde desarrollan sus vidas. 
-               </p>
-               <p>Para resolver más dudas, puedes entrar a <a target="_blank" href=" http://www.cinu.mx/modelos/preguntas-frecuentes/">este link</a> o contactarnos.</p>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/css/style.css">
+        <title>¿Quiénes Somos?</title>
+        <link rel="shortcut icon" href="./style/img/logos/logoSMMUN.png">
+        <link rel="stylesheet" href="./style/css/about.css">
+    </head>
+    <body onload="setUpImage(), load('about')">
+        <div id="navBar"></div>
+        <div style="width:100%; margin: auto; text-align: justify; background-color: rgb(118, 187, 226);">
+            <img src="./style/img/logos/logoSMMUN.png" class="logoDisplay" alt="SMMUN" style="display: block; margin: auto; width: 25%; padding-top: 40px; padding-bottom: 40px;">
+        </div>
+        <!-- Information -->
+        <div style="width:100%; margin: auto; text-align: justify; background-color: rgba(151, 206, 237, 0.8); padding-top: 100px;">
+            <!-- Who are we? -->
+            <div class="aboutSection">
+                <h1 style="text-align: center;">¿Quiénes Somos?</h1>
+                <br>
+                <p> El Modelo de las Naciones Unidas del Sureste Mexicano (o SMMUN por sus siglas en inglés) es un modelo de naciones hecho por y para jóvenes estudiantes con intereses en temas de derecho internacional, relaciones internacionales, derechos humanos y todo lo relacionado a la ONU. Tiene el propósito de otorgarle a las personas participantes una oportunidad para experimentar las sesiones de trabajo llevadas a cabo en las Naciones Unidas en la vida real, tratando temas de suma relevancia internacional, a la par que le permite a los participantes desarrollar habilidades de liderazgo, negociación, diplomacia, trabajo en equipo, investigación, entre otros. </p>
+                <p> Tras el éxito de su primer año en 2016, se llevan a cabo las ediciones anuales del Modelo de Naciones Unidas del Sureste de México en Mérida, Yucatán. Todo estudiante de preparatoria o universidad entre los 15 y 25 años está invitado a participar en el evento que será el máximo representante del sentimiento juvenil de la Organización de las Naciones Unidas en el sureste de México. </p>
             </div>
-            <!-- What are the ODS? -->
-            <div style="width: 45%; float: right;">
-               <h2>¿Qué son las ODS?</h2>
-               <br>
-               <p>Los Objetivos de Desarrollo Sostenible, también conocidos como Objetivos Mundiales, se adoptaron por todos los Estados Miembros en 2015 como un llamado universal para poner fin a la pobreza, proteger el planeta y garantizar que todas las personas gocen de paz y prosperidad para 2030.</p>
-               <p>Los 17 ODS están integrados, ya que reconocen que las intervenciones en un área afectarán los resultados de otras y que el desarrollo debe equilibrar la sostenibilidad medio ambiental, económica y social.</p>
-               <p>Todo el mundo es necesario para alcanzar estos objetivos ambiciosos. Se necesita la creatividad, el conocimiento, la tecnología y los recursos financieros de toda la sociedad para conseguir los ODS en cada contexto. </p>
-               <p>Para resolver más dudas, puedes entrar a <a target="_blank" href=" https://www1.undp.org/content/undp/es/home/sustainable-development-goals.html">este link</a> o contactarnos.</p>
+            <div class="aboutSection" style="height: 600px; margin-top: 80px;">
+                <!-- Historia -->
+                <div style="width: 45%; float: left;">
+                    <h2>¿Qué es un MUN?</h2>
+                    <br>
+                    <p> Un Modelo de Naciones Unidas es una simulación o representación del Sistema de Naciones Unidas en el que participan alumnos de escuelas secundarias, preparatorias o universidades. Los alumnos representan a los delegados de diferentes países e intervienen en debates y negociaciones en los que tratan temas que corresponden a los programas de trabajo de los diferentes órganos y comisiones de las Naciones Unidas. <br>
+                        <br> Un Modelo es un evento educativo y cultural en el que los jóvenes que participan, además de capacitarse sobre temas de política internacional y sobre el funcionamiento de Naciones Unidas, adquieren una visión global del mundo en donde desarrollan sus vidas.
+                    </p>
+                    <p>Para resolver más dudas, puedes entrar a <a target="_blank" href=" http://www.cinu.mx/modelos/preguntas-frecuentes/">este link</a> o contactarnos. </p>
+                </div>
+                <!-- What are the ODS? -->
+                <div style="width: 45%; float: right;">
+                    <h2>¿Qué son las ODS?</h2>
+                    <br>
+                    <p>Los Objetivos de Desarrollo Sostenible, también conocidos como Objetivos Mundiales, se adoptaron por todos los Estados Miembros en 2015 como un llamado universal para poner fin a la pobreza, proteger el planeta y garantizar que todas las personas gocen de paz y prosperidad para 2030.</p>
+                    <p>Los 17 ODS están integrados, ya que reconocen que las intervenciones en un área afectarán los resultados de otras y que el desarrollo debe equilibrar la sostenibilidad medio ambiental, económica y social.</p>
+                    <p>Todo el mundo es necesario para alcanzar estos objetivos ambiciosos. Se necesita la creatividad, el conocimiento, la tecnología y los recursos financieros de toda la sociedad para conseguir los ODS en cada contexto. </p>
+                    <p>Para resolver más dudas, puedes entrar a <a target="_blank" href=" https://www1.undp.org/content/undp/es/home/sustainable-development-goals.html">este link</a> o contactarnos. </p>
+                </div>
             </div>
-         </div>
-         <div
-            style="width:100%; margin: auto; text-align: justify;     background: rgb(231,113,153);
+            <div style="width:100%; margin: auto; text-align: justify;     background: rgb(231,113,153);
             background: linear-gradient(90deg, rgba(231,113,153,0.5) 0%, rgba(233,136,248,0.5) 33%, rgba(195,134,248,0.5) 66%, rgba(115,122,243,0.5) 100%);padding-top: 10px;
             ; padding-top: 100px; padding-bottom: 100px;">
-            <div class="aboutSection">
-               <h1 style="text-align: center; color: rgb(115, 122, 240)" class="model">SMMUN 2023 For Diversity</h1>
-               <br>
-               <p>Uno de los objetivos de la ONU es defender la diversidad humana. Como parte de esa labor, se ha progresado con la adopción de programas, tratados, resoluciones y otros mecanismos para reconocer la discriminación biológica, racial, sexual, cultural, motriz, económica, entre otras, y erradicarla. El mundo está lejos de ser una utopía de tolerancia y aceptación, los derechos humanos siguen vulnerándose, pero la ONU ha contribuido a reducir el racismo, machismo, homofobia y transfobia entre otras formas de violencia y discriminación a nivel internacional y es el motivo de buscar que el alcance del modelo genere una conciencia en todas, todes y todos desde una perspectiva progresista, respetando las diferencias en las poblaciones, ya que, no solamente es importante en un mundo cada vez más globalizado, sino que prepara a las infancias, juventudes y a la sociedad en general para ser solidarias y, con esto, apoyar y aprender de otras, a ser tolerantes y respetuosas, y a evitar que tomen decisiones basadas en prejuicios, rompiendo con la normalización de los sistemas opresores y que ejercen violencia a los derechos humanos a los que somos acreedoras. </p>
-               <br>
-               <h2 class="model" style="color: rgb(115, 122, 240)">Objetivo General</h2>
-               <br>
-               <p>Llevar el Modelo de las Naciones Unidas del Sureste Mexicano en su octava edición a una escala mayor, llegando a espacios accesibles,  donde pueda tener una influencia significativa, memorable y permanente en las juventudes participantes como delegaciones y en el equipo de trabajo y con esto, crear una marca en el criterio, pensamiento y trayectoria de quienes participen en el modelo desde una postura progresista y consiente de las adversidades que presenciamos día con día y crear conciencia respecto a cuestiones relacionadas a la situación del contexto actual a nivel global, buscando siempre el óptimo desarrollo y progreso de las naciones. 
-               </p>
-               <br>
-               <h2 class="model" style="color: rgb(115, 122, 240)">Justificación del Proyecto</h2>
-               <br>
-               <p>La razón de considerar este tema como protagónico de la Octava Edición del modelo, es el conocimiento del contexto internacional en lo que respecta al desarrollo, seguridad y participación de las poblaciones y grupos diversos, tomando en consideración la diversidad como el espectro que permite visibilizar cuestiones variadas, particulares y abundantes con el fin de dar seguimiento a las vivencias que pertenecen a grupos históricamente desfavorecidos por cuestiones inminentes y ajenas a los sistemas socialmente desarrollados. </p>
-               <br>
-               <!-- <h2 class="model" style="color: rgb(115, 122, 240)">Secreatariado</h2>
-                  <br><br>
-                  <ul id="secreatariat">
-                  	
-                  </ul> -->
+                <div class="aboutSection">
+                    <h1 style="text-align: center; color: rgb(115, 122, 240)" class="model">SMMUN 2023 For Diversity</h1>
+                    <br>
+                    <p>Uno de los objetivos de la ONU es defender la diversidad humana. Como parte de esa labor, se ha progresado con la adopción de programas, tratados, resoluciones y otros mecanismos para reconocer la discriminación biológica, racial, sexual, cultural, motriz, económica, entre otras, y erradicarla. El mundo está lejos de ser una utopía de tolerancia y aceptación, los derechos humanos siguen vulnerándose, pero la ONU ha contribuido a reducir el racismo, machismo, homofobia y transfobia entre otras formas de violencia y discriminación a nivel internacional y es el motivo de buscar que el alcance del modelo genere una conciencia en todas, todes y todos desde una perspectiva progresista, respetando las diferencias en las poblaciones, ya que, no solamente es importante en un mundo cada vez más globalizado, sino que prepara a las infancias, juventudes y a la sociedad en general para ser solidarias y, con esto, apoyar y aprender de otras, a ser tolerantes y respetuosas, y a evitar que tomen decisiones basadas en prejuicios, rompiendo con la normalización de los sistemas opresores y que ejercen violencia a los derechos humanos a los que somos acreedoras. </p>
+                    <br>
+                    <h2 class="model" style="color: rgb(115, 122, 240)">Objetivo General</h2>
+                    <br>
+                    <p>Llevar el Modelo de las Naciones Unidas del Sureste Mexicano en su octava edición a una escala mayor, llegando a espacios accesibles, donde pueda tener una influencia significativa, memorable y permanente en las juventudes participantes como delegaciones y en el equipo de trabajo y con esto, crear una marca en el criterio, pensamiento y trayectoria de quienes participen en el modelo desde una postura progresista y consiente de las adversidades que presenciamos día con día y crear conciencia respecto a cuestiones relacionadas a la situación del contexto actual a nivel global, buscando siempre el óptimo desarrollo y progreso de las naciones. </p>
+                    <br>
+                    <h2 class="model" style="color: rgb(115, 122, 240)">Justificación del Proyecto</h2>
+                    <br>
+                    <p>La razón de considerar este tema como protagónico de la Octava Edición del modelo, es el conocimiento del contexto internacional en lo que respecta al desarrollo, seguridad y participación de las poblaciones y grupos diversos, tomando en consideración la diversidad como el espectro que permite visibilizar cuestiones variadas, particulares y abundantes con el fin de dar seguimiento a las vivencias que pertenecen a grupos históricamente desfavorecidos por cuestiones inminentes y ajenas a los sistemas socialmente desarrollados. </p>
+                    <br>
+                    <!-- <h2 class="model" style="color: rgb(115, 122, 240)">Secreatariado</h2><br><br><ul id="secreatariat"></ul> -->
+                </div>
             </div>
-         </div>
-
-		 <div id="pastModels">
-			
-		</div>
-	</div>
-      <footer class="bg-light text-center text-lg-start">
-         <!-- Copyright -->
-         <div class="text-center p-3 bg-light">
-            ® 2022
-            <a class="text-dark" href="./index.html">SMMUN</a>
-         </div>
-         <!-- Copyright -->
-      </footer>
-   </body>
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   <script type="text/javascript" src="./script/about.js"></script>
+            <div id="pastModels"></div>
+        </div>
+        <div id="footer"></div>
+    </body>
+    <!-- Default required scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Custom scripts -->
+    <!-- Navigation Bar and Footercode -->
+    <script src="./script/navbar.js"></script>
+    <script type="text/javascript" src="./script/about.js"></script>
 </html>

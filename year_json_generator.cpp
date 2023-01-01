@@ -95,7 +95,7 @@ int main(int argc, char *argv[]){
             std::ofstream committee_files;
             committee_files.open("./committees/" + year + "/" + committee_name + "/" + committee_name + ".html");
             committee_files << first;
-            committee_files << "<body onload='load(\"" << committee_name << "\"," << year << ")'>" << std::endl;
+            committee_files << "<body onload=\"load_committee('" << committee_name << "'," << year << "), load('contact', true)\">" << std::endl;
             committee_files << second;
             committee_files.close();
         }
