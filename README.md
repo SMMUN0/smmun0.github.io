@@ -93,9 +93,8 @@ Este código se encarga de generar el código default de cada comité. Lo comit�
 - Known Country code names, add feature to `year_json_generator.cpp`
 - Fix Committes main page
 - Add new committee logos
-- committees.html version compatability
-- add CPI special case
-- add class name to list item in delegations sections
+- Committees.html version compatability
+- Ddd CPI special case
+- Ddd class name to list item in delegations sections
 - Add subscription to footer
-- Update navbar and footer in committees
-- add contact emails with code
+- Ddd contact emails with code
