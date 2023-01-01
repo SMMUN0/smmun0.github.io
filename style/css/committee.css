@@ -81,7 +81,7 @@ ul.chair {
     /* height: 20em; */
   }
 
-ul.chair.prensa {
+ul.chair.plural {
     list-style-type: none;
     columns: 2;
     width: 50%;

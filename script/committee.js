@@ -1,3 +1,13 @@
+const titulos = 
+{
+    "PRES":"Presidencia",
+    "MOD":"Moderación",
+    "OFI":"Oficialía",
+    "EJ":"Edición de Jefe",
+    "DR":"Dirección de Redacción",
+    "CC1":"Coordinación de Contenido",
+    "CC2":"Coordinación de Contenido"
+}
 
 function load_committee(code, year) {
     console.log(year)
@@ -17,40 +27,53 @@ function load_committee(code, year) {
         console.log(committee["NAME"]);
         document.getElementById("IMAGE").src = "../../../style/img/committees/" + committee["CODE"] + ".png";
         document.getElementById("NAME").innerText = committee["NAME"];
-        // document.getElementById("CODE").innerText = committee["CODE"];
         document.getElementById("INFO").innerText = committee["INFO"];
         document.getElementById("pdf").href = code+".pdf";
         document.getElementById("PDF").src = code+".pdf";
-        
 
-        if(code != "Prensa"){
-            if(code != "CPI"){
-                document.getElementById("A").innerText = "A: " + committee["TOPICS"]["A"];
-                document.getElementById("B").innerText = "B: " + committee["TOPICS"]["B"];
-                for(var del in committee["DELEGATIONS"]){
-                    document.getElementById("DELEGATIONS").innerHTML+='<li class="committee">'+committee["DELEGATIONS"][del]+'<\li>';
-                }
-            }else{
-                document.getElementById("DELEGATIONS").innerHTML="El comité se dividirá en dos equipos, la mitad será quienes representarán a la fiscalía de la Corte Penal Internacional, y la otra mitad serán los representantes de la defensa de la persona imputada. Cada equipo estará conformado por ocho personas, quienes se turnarán para tener el uso de la voz en las sesiones, fungir como asesores jurídicos y la elaboración de las minutas.";
-            }
-            
-            document.getElementById("PRES").src = "./chair/PRES.jpg"
-            document.getElementById("MOD").src = "./chair/MOD.jpg"
-            document.getElementById("OFI").src = "./chair/OFI.jpg"
-            document.getElementById("PRESNAME").innerHTML = committee["CHAIR"]["PRES"];
-            document.getElementById("MODNAME").innerHTML = committee["CHAIR"]["MOD"];
-            document.getElementById("OFINAME").innerHTML = committee["CHAIR"]["OFI"];
-            
+
+        for(var del in committee["DELEGATIONS"]){
+                document.getElementById("DELEGATIONS").innerHTML+='<li class="committee subtitle">'+committee["DELEGATIONS"][del]+'<\li>';
+        }
+
+
+        if(Object.keys(committee["TOPICS"]).length > 1){
+            document.getElementById("A").innerText = "A: " + committee["TOPICS"]["A"];
+            document.getElementById("B").innerText = "B: " + committee["TOPICS"]["B"];
         }else{
-            document.getElementById("EJ").src = "./chair/EJ.jpg"
-            document.getElementById("DR").src = "./chair/DR.jpg"
-            document.getElementById("CC1").src = "./chair/CC1.jpg"
-            document.getElementById("CC2").src = "./chair/CC2.jpg"
-            document.getElementById("EJNAME").innerHTML = committee["CHAIR"]["EJ"];
-            document.getElementById("DRNAME").innerHTML = committee["CHAIR"]["DR"];
-            document.getElementById("CC1NAME").innerHTML = committee["CHAIR"]["CC1"];
-            document.getElementById("CC2NAME").innerHTML = committee["CHAIR"]["CC2"];
-            document.getElementById("DELEGATIONS").innerHTML = "El Cuerpo de Prensa es una comisión de cobertura especializada y estrategica para la difusión de información y contenido, que tiene como finalidad comunicar lo acontecido durante el flujo del debate y el desarrollo de las hojas de ruta y los acuerdos propuestos. Las Delegaciones representarán a un medio internacional en el ámbito, de acuerdo con un perfil, postura e ideología establecidas, el cual les será asignado. A su vez, tendrán la oportunidad de intervenir en la discusión y búsqueda de información, a través de espacios de diálogo y redacción, conforme a los tópicos a abordar en el Comité asignado.";
+            document.getElementById("A").innerText = committee["TOPICS"]["CASO"];
+        }
+
+        var chair_div = document.getElementById("CHAIR")
+        chair_div.innerHTML = ""
+        for(const titulo in committee["CHAIR"]){
+            console.log(titulo)
+            var element = document.createElement("li")
+
+            var img = document.createElement("img")
+            var name = document.createElement("h3")
+            var position = document.createElement("h4")
+
+            img.src = "./chair/"+ titulo +".jpg"
+            img.alt = titulo
+            img.id = titulo
+            img.classList.add("chair")
+
+            name.innerHTML = committee["CHAIR"][titulo];
+            name.classList.add("committee")
+            name.classList.add("subtitle")
+
+            position.innerHTML = titulos[titulo]
+            position.classList.add("committee")
+            position.classList.add("subsubtitle")
+
+            element.appendChild(img)
+            element.appendChild(name)
+            element.appendChild(position)
+
+            chair_div.appendChild(element)
+
+            if(Object.keys(committee["CHAIR"]).length > 3) chair_div.classList.add("plural")
         }
 
         
@@ -64,10 +87,8 @@ function load_committee(code, year) {
     })
     .then(response => {
         console.log(response)
-
         
         document.getElementsByClassName("primary")[0].style.backgroundColor = 'rgb(' + response[year]["background_one"][0] + ',' + response[year]["background_one"][1] + ',' + response[year]["background_one"][2] + ')';
-        
 
         var divs = document.getElementsByClassName("secondary");
         for(var i = 0; i < divs.length; i++){
