@@ -10,7 +10,6 @@ function addElement (year) {
 
         for(var i = 0; i < committees.length - committees.length%2; i++){
 
-            // Single committee
             var middleDiv = document.createElement("li");
 
             var img = document.createElement("img");
@@ -57,7 +56,7 @@ function addElement (year) {
     .then(response => {
         console.log(response)
         
-        document.getElementById("committees").style.backgroundColor = 'rgb(' + response[year]["background_one"][0] + ',' + response[year]["background_one"][1] + ',' + response[year]["background_one"][2] + ')';
+        document.getElementById("committees_pannel").style.backgroundColor = 'rgb(' + response[year]["background_one"][0] + ',' + response[year]["background_one"][1] + ',' + response[year]["background_one"][2] + ')';
         
         document.getElementById('title').style.color = 'rgb(' + response[year]["main_title"][0] + ',' + response[year]["main_title"][1] + ',' + response[year]["main_title"][2] + ')';
         document.getElementById('subtitle').style.color = 'rgb(' + response[year]["subtitles"][0] + ',' + response[year]["subtitles"][1] + ',' + response[year]["subtitles"][2] + ')';

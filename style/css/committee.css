@@ -78,7 +78,6 @@ ul.chair {
     list-style-type: none;
     columns: 3;
     width: 80%;
-    /* height: 20em; */
   }
 
 ul.chair.plural {

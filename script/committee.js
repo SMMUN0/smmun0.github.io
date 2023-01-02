@@ -57,28 +57,28 @@ const committee_names = {
 const section_titles = {
     "information_title":
     {
-        "en":"Información",
-        "es":"Information"
+        "es":"Información",
+        "en":"Information"
     },
     "topics_title":
     {
-        "en":"Tópicos",
-        "es":"Topics"
+        "es":"Tópicos",
+        "en":"Topics"
     },
     "delegations_title":
     {
-        "en":"Delegaciones",
-        "es":"Delegations"
+        "es":"Delegaciones",
+        "en":"Delegations"
     },
     "chair_title":
     {
-        "en":"Mesa",
-        "es":"Chair"
+        "es":"Mesa",
+        "en":"Chair"
     },
     "manual_title":
     {
-        "en":"Manual",
-        "es":"Manual"
+        "es":"Manual",
+        "en":"Manual"
     }
 }
 
@@ -102,6 +102,7 @@ function load_committee(code, year) {
         // Set page language
         for(const title in section_titles){
             document.getElementById(title).innerText = section_titles[title][committee["LAN"]]
+            console.log(committee["LAN"])
         }
 
         console.log(committee["NAME"]);
@@ -123,6 +124,7 @@ function load_committee(code, year) {
             document.getElementById("B").innerText = "B: " + committee["TOPICS"]["B"];
         }else{
             if("A" in committee["TOPICS"]){
+                document.getElementById("topics_title").innerText = section_titles["topics_title"][committee["LAN"]].substring(0, section_titles["topics_title"][committee["LAN"]].length-1)
                 document.getElementById("A").innerText = committee["TOPICS"]["A"];
             }else{
                 document.getElementById("topics_title").innerText = "Caso"
@@ -162,38 +164,40 @@ function load_committee(code, year) {
 
             if(Object.keys(committee["CHAIR"]).length != 3) chair_div.classList.add("plural")
         }
-
+        return
     })
+    .then( _ => {
 
-    fetch("../../year_configurations.json")
-    .then(response => {
-        return response.json();
-    })
-    .then(response => {
-        console.log(response)
-        
-        document.getElementsByClassName("primary")[0].style.backgroundColor = 'rgb(' + response[year]["background_one"][0] + ',' + response[year]["background_one"][1] + ',' + response[year]["background_one"][2] + ')';
+        fetch("../../year_configurations.json")
+        .then(response => {
+            return response.json();
+        })
+        .then(response => {
+            console.log(response)
+            
+            document.getElementsByClassName("primary")[0].style.backgroundColor = 'rgb(' + response[year]["background_one"][0] + ',' + response[year]["background_one"][1] + ',' + response[year]["background_one"][2] + ')';
 
-        var divs = document.getElementsByClassName("secondary");
-        for(var i = 0; i < divs.length; i++){
-            divs[i].style.backgroundColor = 'rgb(' + response[year]["background_two"][0] + ',' + response[year]["background_two"][1] + ',' + response[year]["background_two"][2] + ')';
-        }
+            var divs = document.getElementsByClassName("secondary");
+            for(var i = 0; i < divs.length; i++){
+                divs[i].style.backgroundColor = 'rgb(' + response[year]["background_two"][0] + ',' + response[year]["background_two"][1] + ',' + response[year]["background_two"][2] + ')';
+            }
 
-        var divs = document.getElementsByClassName("title");
-        for(var i = 0; i < divs.length; i++){
-            divs[i].style.color = 'rgb(' + response[year]["main_title"][0] + ',' + response[year]["main_title"][1] + ',' + response[year]["main_title"][2] + ')';
-        }
+            var divs = document.getElementsByClassName("title");
+            for(var i = 0; i < divs.length; i++){
+                divs[i].style.color = 'rgb(' + response[year]["main_title"][0] + ',' + response[year]["main_title"][1] + ',' + response[year]["main_title"][2] + ')';
+            }
 
-        var divs = document.getElementsByClassName("subtitle");
-        for(var i = 0; i < divs.length; i++){
-            divs[i].style.color = 'rgb(' + response[year]["subtitles"][0] + ',' + response[year]["subtitles"][1] + ',' + response[year]["subtitles"][2] + ')';
-        }
+            var divs = document.getElementsByClassName("subtitle");
+            for(var i = 0; i < divs.length; i++){
+                divs[i].style.color = 'rgb(' + response[year]["subtitles"][0] + ',' + response[year]["subtitles"][1] + ',' + response[year]["subtitles"][2] + ')';
+            }
 
-        var divs = document.getElementsByClassName("subsubtitle");
-        for(var i = 0; i < divs.length; i++){
-            divs[i].style.color = 'rgb(' + response[year]["subsubtitles"][0] + ',' + response[year]["subsubtitles"][1] + ',' + response[year]["subsubtitles"][2] + ')';
-        }
-        
+            var divs = document.getElementsByClassName("subsubtitle");
+            for(var i = 0; i < divs.length; i++){
+                divs[i].style.color = 'rgb(' + response[year]["subsubtitles"][0] + ',' + response[year]["subsubtitles"][1] + ',' + response[year]["subsubtitles"][2] + ')';
+            }
+            
+        })
     })
 
 }

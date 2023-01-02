@@ -3,23 +3,32 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <title>Comités</title>
+        <title>Documentación</title>
         <link rel="shortcut icon" href="./style/img/logos/logoSMMUN.png">
-        <link rel="stylesheet" href="./style/css/committees.css">
     </head>
-    <body onload="addElement(2023), load('committees')">
+    <body onload="load('documentation'), load_documents()">
         <div id="navBar"></div>
-        <!-- Committees Links -->
-        <div id="committees_pannel" style="padding-bottom: 150px;">
-            <h1 style="text-align:center; padding-top: 80px;" id="title">Comités</h1>
-            <h2 id="subtitle"></h2>
-            <!-- Listed even amount of committees -->
-            <center>
-                <ul id="committeesList" class="committee"></ul>
-            </center>
-            <!-- Listed last committee in case of overflow -->
-            <center id="overflow" class="committee"></center>
-        </div>
+
+        <br><br>
+        <style>
+            #documents{
+                list-style-type: none;
+                columns: 3;
+            }
+            a {
+                white-space:nowrap;
+                overflow:hidden;
+            }
+            li {
+                white-space:nowrap;
+                overflow:hidden;
+            }
+        </style>
+        <h1 style="text-align:center; padding-bottom: 40px;">Documentación </h1>
+        
+        <ul id="documents"></ul>
+
+
         <div id="footer"></div>
     </body>
     <!-- Default required scripts -->
@@ -29,5 +38,5 @@
     <!-- Custom scripts -->
     <!-- Navigation Bar and Footercode -->
     <script src="./script/navbar.js"></script>
-    <script src="./script/committees.js"></script>
+    <script src="./script/documentation.js"></script>
 </html>
