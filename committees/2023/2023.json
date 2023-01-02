@@ -1,0 +1,503 @@
+[
+    {
+        "CODE": "ACNUDH",
+        "LAN": "es",
+        "MODALITY": "P",
+        "INFO": "Este comité representa el compromiso del mundo para la promoción y protección del conjunto total de derechos humanos y libertades establecidos en la Declaración Universal de Derechos Humanos. Dicho comité se esfuerza por ofrecer el mejor asesoramiento experto y apoyo a los diversos mecanismos de supervisión de derechos humanos en el sistema de las Naciones Unidas. ACNUDH tiene la facultad de prevenir los abusos, la desigualdad y la discriminación, proteger a las personas más vulnerables y denunciar a los perpetradores.",
+        "TOPICS": {
+            "A": "Medidas para garantizar los derechos y la reinserción social de las personas privadas de libertad",
+            "B": "Estrategias para promover la inclusión laboral de las personas con discapacidad"
+        },
+        "DELEGATIONS": [
+            "Estado Plurinacional de Bolivia",
+            "República de Argentina",
+            "República Federativa de Brasil",
+            "República Chile",
+            "Estados Unidos Mexicanos",
+            "Estados Unidos de América",
+            "República del Ecuador",
+            "República del Paraguay ",
+            "República de Perú",
+            "República Oriental del Uruguay",
+            "Reino de España",
+            "Reino de Suecia",
+            "Reino Unido de Gran Bretaña e Irlanda del Norte",
+            "República de Irlanda ",
+            "República de Lituania",
+            "República de Polonia ",
+            "República Federal de Alemania ",
+            "República Francesa",
+            "República Italiana",
+            "República Islámica de Afganistán",
+            "République de Burkina Faso",
+            "República de Camerún",
+            "Reino de Marruecos",
+            "República Gabonesa",
+            "República de Malawi",
+            "República de Togo",
+            "Repubulika y'u Rwanda (República de Ruanda)",
+            "Federación de Rusia ",
+            "Estado de Japón",
+            "Republica de Tailandia",
+            "Nueva Zelanda ",
+            "República de Turquía"
+        ],
+        "CHAIR": {
+            "PRES": "Andrea Acosta",
+            "MOD": "Alejandra Moguel",
+            "OFI": "Judith García"
+        }
+    },
+    {
+        "CODE": "CEDAW",
+        "LAN": "en",
+        "MODALITY": "V",
+        "INFO": "CEDAW is an international treaty adopted in 1979 by the United Nations General Assembly. Described as an international bill of rights for women, it was instituted on 3 September 1981 and has been ratified by 189 states.  The committee is allowed to hold as many meetings as are required to perform their duties effectively, with the states party to the CEDAW and the Secretary-General of the United Nations authorizing the number of regular sessions held.",
+        "TOPICS": {
+            "A": "Influence of surrogacy legislation on the exploitation of women in Greece"
+        },
+        "DELEGATIONS": [
+            "CEDAW is composed of Experts and Countries",
+            "",
+            "Available countries ",
+            "",
+            "Greece ",
+            "Argentina",
+            "Peru",
+            "Canada ",
+            "Iceland",
+            "Ukraine ",
+            "India ",
+            "Kazakhstan",
+            "South Africa",
+            "Ethiopia ",
+            "New Zealand",
+            "",
+            "Available experts",
+            "",
+            "Hiroko Akizuki: Japan",
+            "Tamader Al-Rammah: Saudi Arabia ",
+            "Nicole Ameline: France",
+            "Marion Bethel: Bahamas ",
+            "Leticia Chalal: Algeria ",
+            "Corinne Dettmeijer-Vermeulen: Netherlands",
+            "Naéla Gabr: Egypt ",
+            "Hilary Gbedemah: Ghana ",
+            "Dalia Leinarte: Lithuania ",
+            "Rosario G. Manalo: Philippines ",
+            "Lia Nadaria: Georgia ",
+            "Bandana Rana: Nepal ",
+            "Rhoda Reddock: Trinidad and Tobago ",
+            "Natasha Stott Despoja: Australia ",
+            "Genoveva Tisheva: Bulgaria ",
+            "Franceline Toe Bouda: Burkina Faso",
+            "Jie Xia: China",
+            "Nahla Haidar: Lebanon"
+        ],
+        "CHAIR": {
+            "PRES": "Lirio Araiza",
+            "MOD": "Sofía Quiñoes",
+            "OFI": "Valentina Moreno"
+        }
+    },
+    {
+        "CODE": "CPI",
+        "LAN": "es",
+        "MODALITY": "P",
+        "INFO": "Nos encontramos en el territorio de Sokiúm donde se han cometido delitos que van desde homicidios, desaparición forzada, crímenes de genocidio y lesa humanidad. El gobernante, Felipe Ratzú Tahín Hiö se ha visto involucrado por sus posibles nexos con el crimen organizado y el grupo terorrista 'LUDAYARK'. Lasa Munáas, un grupo étnico de Sokiúm han sido las más afectadas debido a que les han violentado sus derechos humanos más importantes. El 26 de Marzo deciden manifestarse pacíficamente en contra del Estado, misma que se salió de control cuando el grupo LUDAYARK y grupos militares empezaron a disparar bengalas. Esta fue la señal para francotiradores comenzaran a abrir fuego sobre las personas reunidas, estudiantes, madres, hijas, trabajadoras, maestras y toda la población civil en general. Después de ellos, Tahín Hiö ordena el inicio del Esta de excepción.",
+        "TOPICS": {
+            "CASO": "La Corte Penal Internacionl vs Felipe Ratzú Tahín Hiö"
+        },
+        "DELEGATIONS": [
+            "El comité se dividirá en dos grupos.",
+            "De nueve integrantes que representaran a:",
+            "",
+            "Defensa de la persona imputada",
+            "Fiscalía de la Corte Penal Internacional "
+        ],
+        "CHAIR": {
+            "MPA": "Fernanda Ronzón",
+            "MSA": "Regina Solchaga",
+            "MPRESA": "Tanya Aké",
+            "SA": "Heber Canul"
+        }
+    },
+    {
+        "CODE": "ECOSOC",
+        "LAN": "es",
+        "MODALITY": "P",
+        "INFO": "El Consejo Económico y Social de las Naciones Unidas (ECOSOC) es aquel órgano que coordina las labores relativas al aspecto económico y social de la Organización de las Naciones Unidas (ONU) y de las instituciones y organismos que se especializan en esas materias.",
+        "TOPICS": {
+            "A": "Implementación de estrategias sociales y económicas para reducir la brecha salarial de género",
+            "B": "Acciones para asegurar, garantizar y conservar un trabajo digno e inclusivo en las juventudes"
+        },
+        "DELEGATIONS": [
+            "República Argentina",
+            "República federativa del Brasil",
+            "República de Chile",
+            "República de Cuba",
+            "Estados Unidos Mexicanos",
+            "República Árabe de Egipto",
+            "República Democrática Federal de Etiopía",
+            "República Islámica de Pakistán",
+            "República Federal de Nigeria",
+            "República del Senegal",
+            "República Federal de Alemania",
+            "Reino de Bélgica",
+            "Reino de España",
+            "República Francesa",
+            "República Italiana",
+            "República Popular China",
+            "República de Filipinas",
+            "República de la India",
+            "República de Indonesia",
+            "Estado del Japón",
+            "Mancomunidad de Australia",
+            "Canadá",
+            "República de Finlandia",
+            "Estados Unidos de América",
+            "Confederación Suiza"
+        ],
+        "CHAIR": {
+            "PRES": "Galilea Silva",
+            "MOD": "Jessica Tejero",
+            "OFI": "Valeria Frías"
+        }
+    },
+    {
+        "CODE": "FCS",
+        "LAN": "es",
+        "MODALITY": "V",
+        "INFO": "Año 2060. El mundo se encuentra bajo la presión de un conflicto inminente; la situación de las naciones del mundo jamás había llegado tan lejos... La comunidad internacional se ha involucrado en una serie de acontecimientos que les han acorralado a un punto extremo y desesperado; Estados Unidos ha caído y Rusia ha perdido a su líder principal, Vladimir Putin. Las potencias se están revelando, una crisis energética ha iniciado, ocasionando el fin de la hegemonía occidental generando cambios en las relaciones centro-periferia donde Asia Pacífico ha tomado el control geopolítico que desencadena una lucha de poder oblihando a las Delegaciones a optar por un inevitable e imponente Nuevo Orden Mundial.",
+        "TOPICS": {
+            "A": "2060: Colapso de Occidente a la luz del surgimiento de un nuevo orden mundial"
+        },
+        "DELEGATIONS": [
+            "Australia",
+            "Japón",
+            "Corea del Sur",
+            "Turquía",
+            "India",
+            "California (Estados del Pacífico Americano)",
+            "China",
+            "Rusia",
+            "Brasil",
+            "Vietnam",
+            "Argelia",
+            "Emiratos Árabes Unidos",
+            "Singapur",
+            "Panam?",
+            "Sudáfrica",
+            "Francia",
+            "Inglaterra",
+            "Irán",
+            "Arabia Saudita",
+            "Italia",
+            "México.",
+            "Corea del Norte",
+            "Filipinas.",
+            "Noruega"
+        ],
+        "CHAIR": {
+            "PRES": "Fernanda Calandrino",
+            "MOD": "Ricardo Dzib",
+            "OFI": "Alejandro Mendoza"
+        }
+    },
+    {
+        "CODE": "FPAN",
+        "LAN": "es",
+        "MODALITY": "P",
+        "INFO": "Cada año desde 2015, las naciones se juntan en Nueva York para evaluar los esfuerzos hacia la consecución de la Agenda 2030 para el Desarrollo Sostenible y los ODS. ONU DAES les ha estado brindando su apoyo en esta tarea crucial no solo liderando los preparativos y organizando el Foro Político de Alto Nivel anual de la ONU sobre Desarrollo Sostenible, sino también explorando de manera continuada maneras innovadoras de mejorar la reunión y su utilidad para los países.",
+        "TOPICS": {
+            "A": "Acciones ante la crisis climática como causante del desplazamiento forzado"
+        },
+        "DELEGATIONS": [
+            "República Popular de Bangladesh",
+            "República de la India",
+            "República Islámica de Pakistán",
+            "República Socialista de Vietnam",
+            "Estado del Japón",
+            "República de Filipinas",
+            "República Democrática Federal de Etiopía",
+            "República Federal de Somalia",
+            "Reino de Marruecos",
+            "República de Chad",
+            "República de Madagascar",
+            "República de Senegal",
+            "República Federal de Nigeria",
+            "República de Gambia",
+            "República Bolivariana de Venezuela",
+            "República de Honduras",
+            "Estados Unidos Mexicanos",
+            "República de Guatemala",
+            "República de Colombia",
+            "Canadá",
+            "República de Turquía",
+            "República Helénica",
+            "Países Bajos",
+            "República Federal de Alemania",
+            "República Francesa"
+        ],
+        "CHAIR": {
+            "PRES": "Valentina Martínez",
+            "MOD": "Camila Escalante",
+            "OFI": "Alejandro Canché"
+        }
+    },
+    {
+        "CODE": "INTERPOL",
+        "LAN": "es",
+        "MODALITY": "V",
+        "INFO": "La Organización Internacional de Policía Criminal (INTERPOL) o Policía Internacional es la mayor organización de policía internacional , con sede central en Lyon, ciudad ubicada en la región francesa de Ródano-Alpes, conformada por 195 países miembros. Ofrece apoyo a la investigación en materia forense, analítica o de ayuda para localizar a fugitivos en todo el mundo.",
+        "TOPICS": {
+            "A": "Actuación y cooperación internacioal para sancionar el ciberhacking a través de las notificaciones azules",
+            "B": "Medidas para disminuir y erradicar la brutalidad de las fuerzas armadas hacia grupos en situación de vulnerabilidad"
+        },
+        "DELEGATIONS": [
+            "República de Angola",
+            "República de Guinea",
+            "República de Kenya",
+            "Reino de Marruecos",
+            "República Federal de Nigeria",
+            "República de Sudáfrica",
+            "República Tunecina",
+            "República Argentina",
+            "República Federativa de Brasil",
+            "Canadá ",
+            "República de Colombia",
+            "Estados Unidos de América",
+            "Estados Unidos Mexicanos",
+            "República Popular China",
+            "Emiratos Árabes Unidos",
+            "República de Filipinas",
+            "República de Indonesia",
+            "Estado del Japón",
+            "República de Singapur",
+            "República Federal de Alemania",
+            "Reino de España",
+            "República francesa",
+            "República Italiana",
+            "Reino Unido de Gran Bretaña e Irlanda del Norte",
+            "Federación de Rusia",
+            "Ucrania"
+        ],
+        "CHAIR": {
+            "PRES": "Dalia Estrada",
+            "MOD": "Diana Santana",
+            "OFI": "Wendolyne"
+        }
+    },
+    {
+        "CODE": "ONUM",
+        "LAN": "es",
+        "MODALITY": "P",
+        "INFO": "La Entidad de la ONU para la Igualdad de Género y el Empoderamiento de la Mujer, también conocida como ONU Mujeres, es una organismo de la Organización de las Naciones Unidas destinada a fomentar el empoderamiento de la mujer y la igualdad de género. ",
+        "TOPICS": {
+            "A": "Promoción de espacios laborales seguros y empoderamiento económico de las mujeres",
+            "B": "Acceso digno a una educación sexual integral y eliminación de la violencia obstétrica"
+        },
+        "DELEGATIONS": [
+            "Estados Unidos Mexicanos",
+            "Estados Unidos de América",
+            "Estado de Japón",
+            "República de Corea",
+            "República Federal de Alemania",
+            "Reino de España",
+            "República Argentina",
+            "República de Colombia",
+            "Federación de Rusia",
+            "Mancomunidad de Australia",
+            "Reino Unido de Gran Bretaña e Irlanda del Norte",
+            "República de Chile",
+            "República Francesa",
+            "República Islámica de Afganistán",
+            "Confederación de Suiza",
+            "Reino de Marruecos",
+            "República Islámica de Irán",
+            "Federación de Malasia",
+            "Reino de Noruega",
+            "Canadá",
+            "República de la India",
+            "República de Islandia",
+            "Reino de los Países Bajo",
+            "República Oriental del Uruguay",
+            "República de Nicaragua",
+            "República Federativa de Brasil",
+            "República de Bulgaria",
+            "Estado Libre Asociado de Puerto Rico",
+            "República de Guatemala",
+            "República Bolivariana de Venezuela"
+        ],
+        "CHAIR": {
+            "PRES": "Kelly Puc",
+            "MOD": "Alma Presuel",
+            "OFI": "Ana Ávila"
+        }
+    },
+    {
+        "CODE": "SOCHUM",
+        "LAN": "es",
+        "MODALITY": "P",
+        "INFO": "La Tercera Asamblea está facultada para hacer recomendaciones a los Estados sobre cuestiones internacionales de su competencia, como lo son el Iniciar estudios y formular recomendaciones para promover la cooperación política internacional, el desarrollo y la codificación del derecho internacional, el disfrute de los derechos humanos, las libertades fundamentales y la colaboración internacional en las esferas, social, humanitaria y cultural.",
+        "TOPICS": {
+            "A": "Acciones para erradicar el estigma y segregación hacia la comunidad neurodivergente mediante la cooperación internacinoal",
+            "B": "Mecanismos para la abolición de la violencia y discriminación en contra de la comunidad sexo genérica rumbo a la salvaguarda de sus derechos humanos"
+        },
+        "DELEGATIONS": [
+            "Reino de Suecia",
+            "Reino de Noruega",
+            "Finlandia",
+            "Irlanda (Eire)",
+            "Reino de Dinamarca",
+            "República de Bielorrusia",
+            "República de Polonia",
+            "República Federal de Alemania",
+            "República de Austria",
+            "Reino Unido de Gran Bretaña e Irlanda del Norte",
+            "Rumania",
+            "República Francesa",
+            "República Italiana",
+            "Reino de España",
+            "República Portuguesa.",
+            "República Helénica (Grecia)",
+            "República de Turquía",
+            "República Federativa del Brasil",
+            "Estado Plurinacional de Bolivia",
+            "República del Paraguay",
+            "República Argentina",
+            "República de Chile",
+            "Canadá",
+            "Estados Unidos de América.",
+            "Mancomunidad de Australia",
+            "Federación de Malasia",
+            "Japón",
+            "República Popular China",
+            "Federación de Rusia",
+            "República de la India"
+        ],
+        "CHAIR": {
+            "PRES": "Faina Couoh",
+            "MOD": "Diego Grajeda",
+            "OFI": "Camila Chi"
+        }
+    },
+    {
+        "CODE": "UNICEF",
+        "LAN": "es",
+        "MODALITY": "P",
+        "INFO": "info_mesa",
+        "TOPICS": {
+            "A": "Medidas óptimas para el cuidado de la salud mental en las infancias y adolescencias",
+            "B": "Estrategias para erradicar el matrimonio infantil a nivel mundial"
+        },
+        "DELEGATIONS": [
+            "República Federal de Alemania",
+            "Principado de Andorra",
+            "Mancomunidad de Australia",
+            "Canadá",
+            "República de Chile",
+            "República Popular de China",
+            "República de Costa Rica",
+            "Estados Unidos de América",
+            "Reino de España",
+            "República Democrática Federal de Etiopía",
+            "República Francesa",
+            "República de la India",
+            "República de Indonesia",
+            "República Italiana",
+            "República de Kenia ",
+            "República de Líbano",
+            "Estados Unidos Mexicanos",
+            "República de Mozambique ",
+            "Reino de Noruega",
+            "Reino de Suecia",
+            "Reino Unido de Gran Bretaña e Irlanda del Norte",
+            "República de Corea",
+            "Federación de Rusia",
+            "República de Turquía",
+            "República de Zimbabwe"
+        ],
+        "CHAIR": {
+            "PRES": "Cristian Soberanis",
+            "MOD": "Alejandra Correa",
+            "OFI": "Ana Sofía Pasos"
+        }
+    },
+    {
+        "CODE": "UNSC",
+        "LAN": "en",
+        "MODALITY": "P",
+        "INFO": "The United Nations Security Council (UNSC) holds international peace and security at its core, focusing on its restoration, preservation, as well as the prevention of its disturbance through the discussion of related topics.",
+        "TOPICS": {
+            "A": "Eliminating all forms of abuse perpetrated by UN peacekeeping forces",
+            "B": "Blood diamonds as a barrier to international peace and security"
+        },
+        "DELEGATIONS": [
+            "French Republic",
+            "People's Republic of China",
+            "Russian Federation",
+            "United Kingdom of Great Britain and Northern Ireland",
+            "United States of America",
+            "Republic of Albania",
+            "Federative Republic of Brazil",
+            "Republic of Ecuador",
+            "Republic of Malta",
+            "Gabonese Republic",
+            "Republic of Ghana",
+            "State of Japan",
+            "Republic of Mozambique",
+            "United Arab Emirates",
+            "Swiss Confederation",
+            "Republic of Liberia",
+            "Democratic Republic of Congo"
+        ],
+        "CHAIR": {
+            "PRES": "Carlos García",
+            "MOD": "Andrea Arreola",
+            "OFI": "Carlos Sevilla"
+        }
+    },
+    {
+        "CODE": "WHO",
+        "LAN": "en",
+        "MODALITY": "V",
+        "INFO": "The WHO is a specialized agency of the United Nations responsible for international public health. The WHO Constitution states its main objective as 'the attainment by all peoples of the highest possible level of health'. Its mandate seeks and includes: working worldwide to promote health, keeping the world safe, and serve the vulnerable. It advocates that a billion more people should have: universal health care coverage, engagement with the monitoring of public health risks, coordinating responses to health emergencies, and promoting health and well-being.",
+        "TOPICS": {
+            "A": "Tackling physical and psychological healthcare access barriers for transgender people",
+            "B": "Tackling structural racism and ethnicity-based discrimination in healthcare"
+        },
+        "DELEGATIONS": [
+            "United Kingdom of Great Britain and Northern Ireland.",
+            "United Mexican States",
+            "Russian Federation",
+            "Federative Republic of Brazil",
+            "Kingdom of Thailand",
+            "Kingdom of Spain",
+            "United States of America",
+            "Argentine Republic",
+            "Dominion of Canada",
+            "Republic of Croatia",
+            "United Arab Emirates",
+            "Slovak Republic",
+            "Republic of Latvia",
+            "Republic of Panama",
+            "Republic of Singapore",
+            "Solomon Islands",
+            "Hellenic Republic of Greece",
+            "French Republic",
+            "Republic of Finland",
+            "Kingdom of Sweden",
+            "Kingdom of Denmark",
+            "Republic of Malta",
+            "Federal Republic of Germany",
+            "Commonwealth of Australia",
+            "Italian Republic"
+        ],
+        "CHAIR": {
+            "PRES": "Violeta Aurora",
+            "MOD": "Camila Melendez",
+            "OFI": "Andrea Parissi"
+        }
+    }
+]

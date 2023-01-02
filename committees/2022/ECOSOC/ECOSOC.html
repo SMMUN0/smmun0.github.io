@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <title>Comité</title>
+      <link rel="shortcut icon" href="../../../style/img/logos/logoSMMUN.png">
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../../../style/css/style.css">
+      <link rel="stylesheet" href="../../../style/css/committee.css">
+   </head>
+<body onload="load_committee('ECOSOC',2022), load('contact', true)">
+      <!-- Nav Bar -->
+      <div id="navBar"></div>
+      <div style="height: auto;" class="primary">
+        <div class="secondary">
+          <center><img id="IMAGE" class="committee"></center>
+         <center>
+            <h1 id="NAME"class="committee title"></h1>
+         </center>
+         <br><br>
+        </div>
+         
+         <br><br>
+         <center>
+            <h2 class="committee subtitle" id="information_title"></h2>
+         </center>
+         <br>
+         <center>
+            <h3 class="committee subsubtitle" id="LAN/MODALITY"></h3>
+         </center>
+         <br>
+         <center>
+            <p id="INFO"class="committee subsubtitle"></p>
+         </center>
+         <br><br>
+         <center>
+            <h2 class="committee subtitle" id="topics_title"></h2>
+         </center>
+         <br>
+         <center>
+            <p id="A"class="committee subsubtitle"></p>
+         </center>
+         <center>
+            <p id="B"class="committee subsubtitle"></p>
+         </center>
+         <br><br>
+         <center>
+            <h2 class="committee subtitle" id="delegations_title"></h2>
+         </center>
+         <br>
+         <center>
+            <ul id="DELEGATIONS" class="committee"></ul>
+         </center>
+         <br>
+         <br>
+         <br>
+         <center>
+          <div class="secondary">
+            <br><br>
+            <center>
+              <h2 class="committee title" id="chair_title"></h2>
+           </center>
+           <br><br>
+            <ul id="CHAIR" class="committee chair">
+               
+           </ul>
+           <br><br>
+           </div>
+            
+         </center>
+         <br><br>
+         <center>
+            <h2 class="committee subtitle" id="manual_title"></h2>
+         </center>
+         <br><br>
+        <center><a href="" target="_blank" id="pdf">Descarga aquí</a></center>
+         <center><iframe src="" id="PDF" frameborder="0" width="40%" height="600px"></iframe></center>
+
+      </div>
+      <div id="footer"></div>
+   </body>
+   <!-- Default required scripts -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <!-- Custom scripts -->
+   <!-- Navigation Bar and Footercode -->
+   <script src="../../../script/navbar.js"></script>
+   <!-- Load Committee content -->
+   <script src="../../../script/committee.js"></script>
+</html>

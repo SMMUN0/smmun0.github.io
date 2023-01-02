@@ -1,152 +1,108 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Contacto</title>
+        <link rel="shortcut icon" href="./style/img/logos/logoSMMUN.png">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body onload="load('contact'), load_contacts()">
+        <div id="navBar"></div>
+        <div style="width:60%; margin: auto;">
+            <br>
+            <h1 style="text-align: center;">Contacto</h1>
+            <hr>
+            <!-- Begin Mailchimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+                #mc_embed_signup {
+                    background: #fff;
+                    clear: left;
+                    font: 14px Helvetica, Arial, sans-serif;
+                    width: 600px;
+                }
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>Contacto</title>
-  <link rel="shortcut icon" href="./style/img/logos/logoSMMUN.png">
-  <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-
-	<!-- Nav Bar -->
-  <nav class="navbar navbar-expand navbar-light bg-light">
-    <a class="navbar-brand" href="./index.html">
-			<img src="./style/img/logos/logoSMMUN.png" width="80" height="auto"
-				class="d-inline-block align-top" alt="SMMUN">
-		</a>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="./index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./about.html">¿Quiénes somos?</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./register.html">Inscripciones</a>
-        </li>
-        <a class="nav-link" href="./committees.html">Comités</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Contacto</a>
-      </ul>
-    </div>
-  </nav>
-
-  <div style="width:60%; margin: auto;">
-    <br>
-    <h1 style="text-align: center;">Contacto</h1>
-<hr>
-
-
-    <!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup" style="margin: auto;">
-    <form action="https://smmun.us13.list-manage.com/subscribe/post?u=32218f0e2dfbd3c60b5bb656d&amp;id=179ce20d58&amp;f_id=006aa9e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-        <h2>Subscribete</h2>
-        <div class="indicates-required"><span class="asterisk">*</span> requeridos</div>
-<div class="mc-field-group">
-	<label for="mce-FNAME">Nombre </label>
-	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-	<span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
-</div>
-<div class="mc-field-group">
-	<label for="mce-LNAME">Apellido </label>
-	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-	<span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
-</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Correo  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
-	<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
-</div>
-	<div id="mce-responses" class="clear foot">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_32218f0e2dfbd3c60b5bb656d_179ce20d58" tabindex="-1" value=""></div>
-        <div class="optionalParent">
-            <div class="clear foot">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                
+            </style>
+            <div id="mc_embed_signup" style="margin: auto;">
+                <form action="https://smmun.us13.list-manage.com/subscribe/post?u=32218f0e2dfbd3c60b5bb656d&amp;id=179ce20d58&amp;f_id=006aa9e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <h2>Subscribete</h2>
+                        <div class="indicates-required">
+                            <span class="asterisk">*</span> requeridos
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-FNAME">Nombre </label>
+                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                            <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-LNAME">Apellido </label>
+                            <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                            <span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">Correo <span class="asterisk">*</span>
+                            </label>
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                            <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                        </div>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_32218f0e2dfbd3c60b5bb656d_179ce20d58" tabindex="-1" value="">
+                        </div>
+                        <div class="optionalParent">
+                            <div class="clear foot">
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+            <script type='text/javascript'>
+                (function($) {
+                    window.fnames = new Array();
+                    window.ftypes = new Array();
+                    fnames[0] = 'EMAIL';
+                    ftypes[0] = 'email';
+                    fnames[1] = 'FNAME';
+                    ftypes[1] = 'text';
+                    fnames[2] = 'LNAME';
+                    ftypes[2] = 'text';
+                    fnames[3] = 'ADDRESS';
+                    ftypes[3] = 'address';
+                    fnames[4] = 'PHONE';
+                    ftypes[4] = 'phone';
+                    fnames[5] = 'BIRTHDAY';
+                    ftypes[5] = 'birthday';
+                }(jQuery));
+                var $mcj = jQuery.noConflict(true);
+            </script>
+            <!--End mc_embed_signup-->
+            <hr>
+            <div style="margin: auto; width: 60%; padding-bottom: 60px;">
+                <h1 style="text-align:center; padding-top: 60px; padding-bottom: 40px;">E-mail <img src="/style/img/email.png" alt="email" style="height: 35px; padding-bottom: 8px; display: inline;">
+                </h1>
+                <ul style="list-style-type: none; display: block; margin: auto; width: 40%; min-width: 400px;" id="contact_info"></ul>
             </div>
         </div>
-    </div>
-</form>
-</div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup-->
-
-<hr>
-  </div>
-
-  <div style="margin: auto; width: 60%; padding-bottom: 60px;">
-    <h1 style="text-align:center; padding-top: 60px; padding-bottom: 40px;">E-mail <img src="/style/img/email.png" alt="email" style="height: 35px; padding-bottom: 8px; display: inline;"> </h1>
-   <ul style="list-style-type: none; display: block; margin: auto; width: 40%; min-width: 400px;">
-     <li><strong>Secretaría General</strong> <br> <a style="color: black;" href="mailto: secretariageneral.smmun@gmail.com">secretariageneral.smmun@gmail.com</a></li>
-     <br>
-     <li><strong>Secretaría Académica</strong> <br> <a style="color: black;" href="mailto: secretariacademica.smmun@gmail.com">secretariacademica.smmun@gmail.com</a></li>
-     <br>
-     <li><strong>Secretaría de Vinculación Internacional</strong> <br> <a style="color: black;" href="mailto: secretariadevinculacion.smmun@gmail.com">secretariadevinculacion.smmun@gmail.com</a></li>
-     <br>
-     <li><strong>Secretaría de Vinculación Prepas</strong> <br> <a style="color: black;" href="mailto: secretariadevinculacion.smmun@gmail.com">secretariavinculacionprep.smmun@gmail.com</a></li>
-     <br>
-     <li><strong>Secretaría de Vinculación Universitaria</strong> <br> <a style="color: black;" href="mailto: secretariadevinculacion.smmun@gmail.com">secretariavinculacionuni.smmun@gmail.com</a></li>
-     <br>
-     <li><strong>Secretaría de Logística</strong> <br> <a style="color: black;" href="mailto: secretariadelogistica.smmun@gmail.com">secretariadelogistica.smmun@gmail.com</a></li>
-     <br>
-     <li><strong>Secretaría de Equipo de Trabajo</strong> <br> <a style="color: black;" href="mailto: secretariadefinanzas.smmun@gmail.com">secretariaequipodetrabajo.smmun@gmail.com</a></li>
-     <br>
-     <li><strong>Secretaría de Difusión</strong> <br> <a style="color: black;" href="mailto: secretariadedifusion.smmun@gmail.com">secretariadedifusion.smmun@gmail.com</a></li>
-     <br>
-     <li><strong>Secretaría de Finanzas</strong> <br> <a style="color: black;" href="mailto: secretariadefinanzas.smmun@gmail.com">secretariadefinanzas.smmun@gmail.com</a></li>
-     <br>
-     <li><strong>Secretaría de Protocolo</strong> <br> <a style="color: black;" href="mailto: secretariadefinanzas.smmun@gmail.com">secretariadeprotocolo.smmun@gmail.com</a></li>
-     <br>
-     <li><strong>Secretaría de Eventos Especiales</strong> <br> <a style="color: black;" href="mailto: secretariadefinanzas.smmun@gmail.com">secretariaeventos.smmun@gmail.com</a></li>
-     <br>
-     <li><strong>Secretaría de Diseño</strong> <br> <a style="color: black;" href="mailto: secretariadefinanzas.smmun@gmail.com">secretariadediseno.smmun@gmail.com</a></li>
-     <br>
-     <li><strong>Secretaría de Tecnologías</strong> <br> <a style="color: black;" href="mailto: secretariadefinanzas.smmun@gmail.com">secretariadetecnologias.smmun@gmail.com</a></li>
-     <br>
-   </ul>
-  </div>
-
-
-
-
-
-  <footer class="bg-light text-center text-lg-start">
-    <!-- Copyright -->
-    <div class="text-center p-3 bg-light">
-      ® 2022
-      <a class="text-dark" href="./index.html">SMMUN</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-
-</body>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+        <div id="footer"></div>
+    </body>
+    <!-- Default required scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Custom scripts -->
+    <!-- Navigation Bar and Footercode -->
+    <script src="./script/navbar.js"></script>
+    <!-- Contact infomation -->
+    <script src="./script/contact.js"></script>
 </html>
