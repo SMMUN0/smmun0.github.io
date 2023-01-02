@@ -70,6 +70,15 @@ function setUpImage() {
         }
     });
 
-    
+}
 
+function setUpSecretariat(year, num){
+    var list = document.getElementById('secretariat');
+
+    for(var index = 1; index <= num; index++){
+        list.innerHTML += 
+        `<li> 
+            <img src="./secretariats/` + year.toString()+ `/` + index.toString() + `.jpg" alt="` + index.toString() +`">
+        </li>`
+    }
 }
