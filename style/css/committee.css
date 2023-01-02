@@ -90,3 +90,7 @@ ul.chair.plural {
   iframe{
       margin-bottom: 100px;
   }
+
+  p#INFO{
+    text-align: justify;
+  }

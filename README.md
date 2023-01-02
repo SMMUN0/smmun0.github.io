@@ -88,5 +88,3 @@ Este código se encarga de generar el código default de cada comité. Lo comit�
 # TODO
 
 - Documentation page
-- Add subscription to email in footer
-- Fix Footer and NavBar linking problem

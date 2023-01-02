@@ -3,12 +3,46 @@
         "CODE": "ACNUDH",
         "LAN": "es",
         "MODALITY": "P",
-        "INFO": "info_mesa",
+        "INFO": "Este comité representa el compromiso del mundo para la promoción y protección del conjunto total de derechos humanos y libertades establecidos en la Declaración Universal de Derechos Humanos. Dicho comité se esfuerza por ofrecer el mejor asesoramiento experto y apoyo a los diversos mecanismos de supervisión de derechos humanos en el sistema de las Naciones Unidas. ACNUDH tiene la facultad de prevenir los abusos, la desigualdad y la discriminación, proteger a las personas más vulnerables y denunciar a los perpetradores.",
         "TOPICS": {
-            "A": "topico_a",
-            "B": "topico_c"
+            "A": "Medidas para garantizar los derechos y la reinserción social de las personas privadas de libertad",
+            "B": "Estrategias para promover la inclusión laboral de las personas con discapacidad"
         },
-        "DELEGATIONS": [],
+        "DELEGATIONS": [
+            "Estado Plurinacional de Bolivia",
+            "República de Argentina",
+            "República Chile",
+            "Estados Unidos Mexicanos",
+            "Estaods Unidos de América",
+            "República del Ecuador",
+            "República del Ecuador",
+            "República del Paraguay",
+            "República de Perú",
+            "República Oriental del Uruguay",
+            "Reino de España",
+            "Reino de Suecia",
+            "Reino Unido de Gran Bretaña e Irlanda del Norte",
+            "República de Irlanda",
+            "República de Lituania",
+            "República de Polonia",
+            "República Federal de Alemania",
+            "República Francesa",
+            "República Italiana",
+            "República Islámica de Afganistán",
+            "Republique de Burkina Faso",
+            "República de Camerún",
+            "Reino de Marruecos",
+            "República Gabonesa",
+            "República de Malawi",
+            "República de Togo",
+            "República de Ruanda",
+            "Federación de Rusia",
+            "Estado de Japón",
+            "República de Tailandia",
+            "Nueva Zelanda",
+            "República de Turquía"
+
+        ],
         "CHAIR": {
             "PRES": "Andrea Acosta",
             "MOD": "Alejandra Moguel",
@@ -19,12 +53,43 @@
         "CODE": "CEDAW",
         "LAN": "en",
         "MODALITY": "V",
-        "INFO": "info_mesa",
+        "INFO": "CEDAW is an international treaty adopted in 1979 by the United Nations General Assembly. Described as an international bill of rights for women, it was instituted on 3 September 1981 and has been ratified by 189 states.  The committee is allowed to hold as many meetings as are required to perform their duties effectively, with the states party to the CEDAW and the Secretary-General of the United Nations authorizing the number of regular sessions held.",
         "TOPICS": {
-            "A": "topico_a",
-            "B": "topico_c"
+            "A": "Influence of surrogacy legislation on the exploitation of women in Greece"
         },
-        "DELEGATIONS": [],
+        "DELEGATIONS": [
+            "CEDAW is composed of Experts and Countries",
+            "Greece",
+            "Argentina",
+            "Peru",
+            "Canada",
+            "Iceland",
+            "Ukraine",
+            "India",
+            "Kazakhstan",
+            "South Africa",
+            "Ethiopia",
+            "New Zealand",
+            "Hiroko Akizuki: Japan",
+            "Tamader Al-Rammah: Saudi Arabia",
+            "Nicole Ameline: France" ,
+            "Marion Bethel: Bahamas",
+            "Leticia Bonifaz Alfonzo: Mexico",
+            "Louiza Chalal: Algeria",
+            "Corinne Dettmeijer-Vermeulen: Netherlands",
+            "Naéla Gabr: Egypt",
+            "Hilary Gbedemah: Ghana",
+            "Daila Leinarte: Lithuania",
+            "Rosario G. Manalo: Philippines",
+            "Lia Nadaria: Georgia",
+            "Bandana Rana: Nepal",
+            "Rhoda Reddock: Trinidad and Tobago",
+            "Natasha Stott Despoja: Australia",
+            "Genoveva Tisheva: Bulgaria",
+            "Franceline Teo Bouda: Burkina Faso",
+            "Jie Xia: China",
+            "Nahla Haidar: Lebanon"
+        ],
         "CHAIR": {
             "PRES": "Lirio Araiza",
             "MOD": "Sofía Quiñoes",
@@ -35,12 +100,16 @@
         "CODE": "CPI",
         "LAN": "es",
         "MODALITY": "P",
-        "INFO": "info_mesa",
+        "INFO": "Nos encontramos en el territorio de Sokiúm donde se han cometido delitos que van desde homicidios, desaparición forzada, crímenes de genocidio y lesa humanidad. El gobernante, Felipe Ratzú Tahín Hiö se ha visto involucrado por sus posibles nexos con el crimen organizado y el grupo terorrista 'LUDAYARK'. Lasa Munáas, un grupo étnico de Sokiúm han sido las más afectadas debido a que les han violentado sus derechos humanos más importantes. El 26 de Marzo deciden manifestarse pacíficamente en contra del Estado, misma que se salió de control cuando el grupo LUDAYARK y grupos militares empezaron a disparar bengalas. Esta fue la señal para francotiradores comenzaran a abrir fuego sobre las personas reunidas, estudiantes, madres, hijas, trabajadoras, maestras y toda la población civil en general. Después de ellos, Tahín Hiö ordena el inicio del Esta de excepción.",
         "TOPICS": {
-            "A": "topico_a",
-            "B": "topico_c"
+            "CASO": "La Corte Penal Internacionl vs Felipe Ratzú Tahín Hiö"
         },
-        "DELEGATIONS": [],
+        "DELEGATIONS": [
+            "El comite se divirá en 2 grupos de 9 integrantes que representarán a",
+            "",
+            "A - Defensa de la persona imputada",
+            "B - Fiscalía de la Corte Penal Internacional"
+        ],
         "CHAIR": {
             "MPA": "Fernanda Ronzón",
             "MSA": "Regina Solchaga",
@@ -51,11 +120,11 @@
     {
         "CODE": "ECOSOC",
         "LAN": "es",
-        "MODALITY": "PV",
-        "INFO": "info_mesa",
+        "MODALITY": "P",
+        "INFO": "El Consejo Económico y Social de las Naciones Unidas (ECOSOC) es aquel órgano que coordina las labores relativas al aspecto económico y social de la Organización de las Naciones Unidas (ONU) y de las instituciones y organismos que se especializan en esas materias.",
         "TOPICS": {
-            "A": "topico_a",
-            "B": "topico_c"
+            "A": "Implementación de estrategias sociales y económicas para reducir la brecha salarial de género",
+            "B": "Acciones para asegurar, garantizar y conservar un trabajo digno e inclusivo en las juventudes"
         },
         "DELEGATIONS": [],
         "CHAIR": {
@@ -68,10 +137,9 @@
         "CODE": "FCS",
         "LAN": "es",
         "MODALITY": "V",
-        "INFO": "info_mesa",
+        "INFO": "Año 2060. El mundo se encuentra bajo la presión de un conflicto inminente; la situación de las naciones del mundo jamás había llegado tan lejos... La comunidad internacional se ha involucrado en una serie de acontecimientos que les han acorralado a un punto extremo y desesperado; Estados Unidos ha caído y Rusia ha perdido a su líder principal, Vladimir Putin. Las potencias se están revelando, una crisis energética ha iniciado, ocasionando el fin de la hegemonía occidental generando cambios en las relaciones centro-periferia donde Asia Pacífico ha tomado el control geopolítico que desencadena una lucha de poder oblihando a las Delegaciones a optar por un inevitable e imponente Nuevo Orden Mundial.",
         "TOPICS": {
-            "A": "topico_a",
-            "B": "topico_c"
+            "A": "2060: Colapso de Occidente a la luz del surgimiento de un nuevo orden mundial"
         },
         "DELEGATIONS": [],
         "CHAIR": {
@@ -84,10 +152,9 @@
         "CODE": "FPAN",
         "LAN": "es",
         "MODALITY": "P",
-        "INFO": "info_mesa",
+        "INFO": "Cada año desde 2015, las naciones se juntan en Nueva York para evaluar los esfuerzos hacia la consecución de la Agenda 2030 para el Desarrollo Sostenible y los ODS. ONU DAES les ha estado brindando su apoyo en esta tarea crucial no solo liderando los preparativos y organizando el Foro Político de Alto Nivel anual de la ONU sobre Desarrollo Sostenible, sino también explorando de manera continuada maneras innovadoras de mejorar la reunión y su utilidad para los países.",
         "TOPICS": {
-            "A": "topico_a",
-            "B": "topico_c"
+            "A": "Acciones ante la crisis climática como causante del desplazamiento forzado"
         },
         "DELEGATIONS": [],
         "CHAIR": {
@@ -100,10 +167,10 @@
         "CODE": "INTERPOL",
         "LAN": "es",
         "MODALITY": "V",
-        "INFO": "info_mesa",
+        "INFO": "La Organización Internacional de Policía Criminal (INTERPOL) o Policía Internacional es la mayor organización de policía internacional , con sede central en Lyon, ciudad ubicada en la región francesa de Ródano-Alpes, conformada por 195 países miembros. Ofrece apoyo a la investigación en materia forense, analítica o de ayuda para localizar a fugitivos en todo el mundo.",
         "TOPICS": {
-            "A": "topico_a",
-            "B": "topico_c"
+            "A": "Actuación y cooperación internacioal para sancionar el ciberhacking a través de las notificaciones azules",
+            "B": "Medidas para disminuir y erradicar la brutalidad de las fuerzas armadas hacia grupos en situación de vulnerabilidad"
         },
         "DELEGATIONS": [],
         "CHAIR": {
@@ -114,13 +181,12 @@
     },
     {
         "CODE": "ONUM",
-        "NAME": "ONU Mujeres",
         "LAN": "es",
         "MODALITY": "P",
-        "INFO": "info_mesa",
+        "INFO": "La Entidad de la ONU para la Igualdad de Género y el Empoderamiento de la Mujer, también conocida como ONU Mujeres, es una organismo de la Organización de las Naciones Unidas destinada a fomentar el empoderamiento de la mujer y la igualdad de género. ",
         "TOPICS": {
-            "A": "topico_a",
-            "B": "topico_c"
+            "A": "Promoción de espacios laborales seguros y empoderamiento económico de las mujeres",
+            "B": "Acceso digno a una educación sexual integral y eliminación de la violencia obstétrica"
         },
         "DELEGATIONS": [],
         "CHAIR": {
@@ -132,16 +198,17 @@
     {
         "CODE": "SOCHUM",
         "LAN": "es",
-        "MODALITY": "PV",
-        "INFO": "info_mesa",
+        "MODALITY": "P",
+        "INFO": "La Tercera Asamblea está facultada para hacer recomendaciones a los Estados sobre cuestiones internacionales de su competencia, como lo son el Iniciar estudios y formular recomendaciones para promover la cooperación política internacional, el desarrollo y la codificación del derecho internacional, el disfrute de los derechos humanos, las libertades fundamentales y la colaboración internacional en las esferas, social, humanitaria y cultural.",
         "TOPICS": {
-            "A": "topico_a",
-            "B": "topico_c"
+            "A": "Acciones para erradicar el estigma y segregación hacia la comunidad neurodivergente mediante la cooperación internacinoal",
+            "B": "Mecanismos para la abolición de la violencia y discriminación en contra de la comunidad sexo genérica rumbo a la salvaguarda de sus derechos humanos"
         },
         "DELEGATIONS": [],
         "CHAIR": {
             "PRES": "Faina Couoh",
-            "MOD": "Diego Grajeda"
+            "MOD": "Diego Grajeda",
+            "OFI": "Camila Chi"
         }
     },
     {
@@ -150,12 +217,12 @@
         "MODALITY": "P",
         "INFO": "info_mesa",
         "TOPICS": {
-            "A": "topico_a",
-            "B": "topico_c"
+            "A": "Medidas óptimas para el cuidado de la salud mental en las infancias y adolescencias",
+            "B": "Estrategias para erradicar el matrimonio infantil a nivel mundial"
         },
         "DELEGATIONS": [],
         "CHAIR": {
-            "PRES": "nombre_presidencia",
+            "PRES": "Cristian Soberanis",
             "MOD": "Alejandra Correa",
             "OFI": "Ana Sofía Pasos"
         }
@@ -164,10 +231,10 @@
         "CODE": "UNSC",
         "LAN": "en",
         "MODALITY": "P",
-        "INFO": "info_mesa",
+        "INFO": "The United Nations Security Council (UNSC) holds international peace and security at its core, focusing on its restoration, preservation, as well as the prevention of its disturbance through the discussion of related topics.",
         "TOPICS": {
-            "A": "topico_a",
-            "B": "topico_c"
+            "A": "Eliminating all forms of abuse perpetrated by UN peacekeeping forces",
+            "B": "Blood diamonds as a barrier to international peace and security"
         },
         "DELEGATIONS": [],
         "CHAIR": {
@@ -180,16 +247,16 @@
         "CODE": "WHO",
         "LAN": "en",
         "MODALITY": "V",
-        "INFO": "info_mesa",
+        "INFO": "The WHO is a specialized agency of the United Nations responsible for international public health. The WHO Constitution states its main objective as 'the attainment by all peoples of the highest possible level of health'. Its mandate seeks and includes: working worldwide to promote health, keeping the world safe, and serve the vulnerable. It advocates that a billion more people should have: universal health care coverage, engagement with the monitoring of public health risks, coordinating responses to health emergencies, and promoting health and well-being.",
         "TOPICS": {
-            "A": "topico_a",
-            "B": "topico_c"
+            "A": "Tackling physical and psychological healthcare access barriers for transgender people",
+            "B": "Tackling structural racism and ethnicity-based discrimination in healthcare"
         },
         "DELEGATIONS": [],
         "CHAIR": {
             "PRES": "Violeta Aurora",
             "MOD": "Camila Melendez",
-            "OFI": "nombre_oficialia"
+            "OFI": "Andrea Parissi"
         }
     }
 ]

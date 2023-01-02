@@ -11,7 +11,7 @@
     "2023":
     {
         "slogan":"For Diversity",
-        "main_title":[115, 122, 240],
+        "main_title":[255, 255, 255],
         "subtitles":[255, 255, 255],
         "subsubtitles":[255, 255, 255],
         "background_one":[205, 121, 209],

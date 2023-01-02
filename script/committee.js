@@ -23,9 +23,9 @@ const modalities =
 {
     'en':
     {
-        "PV":"On-site/Virtual",
-        "P":"On-site",
-        "V":"Virtual",
+        "PV":"On'site/Virtual",
+        "P":"In person",
+        "V":"Online",
     },
     'es':
     {
@@ -122,7 +122,13 @@ function load_committee(code, year) {
             document.getElementById("A").innerText = "A: " + committee["TOPICS"]["A"];
             document.getElementById("B").innerText = "B: " + committee["TOPICS"]["B"];
         }else{
-            document.getElementById("A").innerText = committee["TOPICS"]["CASO"];
+            if("A" in committee["TOPICS"]){
+                document.getElementById("A").innerText = committee["TOPICS"]["A"];
+            }else{
+                document.getElementById("topics_title").innerText = "Caso"
+                document.getElementById("A").innerText = committee["TOPICS"]["CASO"];
+            }
+            
         }
 
         var chair_div = document.getElementById("CHAIR")
@@ -154,7 +160,7 @@ function load_committee(code, year) {
 
             chair_div.appendChild(element)
 
-            if(Object.keys(committee["CHAIR"]).length > 3) chair_div.classList.add("plural")
+            if(Object.keys(committee["CHAIR"]).length != 3) chair_div.classList.add("plural")
         }
 
     })
