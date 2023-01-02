@@ -35,8 +35,56 @@ const modalities =
     }
 }
 
+const committee_names = {
+    "ACNUDH":"Alto Comisionado de las Naciones Unidas para los Derechos Humanos",
+    "UNSC":"United Nations Security Council",
+    "UNW":"United Nations Women",
+    "ONUM":"ONU Mujeres",
+    "UNESCO":"Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura",
+    "ECOSOC":"Consejo Económico y Social",
+    "SOCHUM":"Tercera Comisión de la Asamblea General",
+    "UNFPA":"Fondo de Población de las Naciones Unidas",
+    "CPI":"Corte Penal Internacional",
+    "Prensa":"Comité de Prensa",
+    "CEDAW":"Convention on the Elimination of All Forms of Discrimination Against Women",
+    "FCS":"Futuro Consejo de Seguridad",
+    "FPAN":"Foro Político de Alto Nivel Sobre el Desarrollo Sostenible",
+    "INTERPOL":"Organización Internacional de Policía Criminal",
+    "UNICEF":"Fondo de las Naciones Unidas para la Infancia",
+    "WHO":"World Health Organization"
+}
+
+const section_titles = {
+    "information_title":
+    {
+        "en":"Información",
+        "es":"Information"
+    },
+    "topics_title":
+    {
+        "en":"Tópicos",
+        "es":"Topics"
+    },
+    "delegations_title":
+    {
+        "en":"Delegaciones",
+        "es":"Delegations"
+    },
+    "chair_title":
+    {
+        "en":"Mesa",
+        "es":"Chair"
+    },
+    "manual_title":
+    {
+        "en":"Manual",
+        "es":"Manual"
+    }
+}
+
 function load_committee(code, year) {
-    console.log(year)
+
+    
     document.title = code;
     fetch("../../../committees/" + year + "/" + year +".json")
     .then(response => {
@@ -50,9 +98,15 @@ function load_committee(code, year) {
         }
     })
     .then(committee => {
+
+        // Set page language
+        for(const title in section_titles){
+            document.getElementById(title).innerText = section_titles[title][committee["LAN"]]
+        }
+
         console.log(committee["NAME"]);
         document.getElementById("IMAGE").src = "../../../style/img/committees/" + committee["CODE"] + ".png";
-        document.getElementById("NAME").innerText = committee["NAME"];
+        document.getElementById("NAME").innerText = committee_names[committee["CODE"]];
         document.getElementById("LAN/MODALITY").innerText = languages[committee["LAN"]] + " - " + modalities[committee["LAN"]][committee["MODALITY"]]
         document.getElementById("INFO").innerText = committee["INFO"];
         document.getElementById("pdf").href = code+".pdf";
@@ -103,9 +157,6 @@ function load_committee(code, year) {
             if(Object.keys(committee["CHAIR"]).length > 3) chair_div.classList.add("plural")
         }
 
-        
-
-        
     })
 
     fetch("../../year_configurations.json")

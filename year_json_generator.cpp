@@ -47,8 +47,8 @@ int main(int argc, char *argv[]){
         for(auto committee_name: committee_names){
             json_committees_file <<  '\t' << '{' << std::endl;
             json_committees_file <<  "\t\t" << "\"CODE\":\"" + committee_name + "\"," << std::endl;
-            json_committees_file <<  "\t\t" << "\"NAME\":\"nombre_mesa\"," << std::endl;
             json_committees_file <<  "\t\t" << "\"LAN\":\"idioma_mesa\"," << std::endl;
+            json_committees_file <<  "\t\t" << "\"MODALITY\":\"modalidad_mesa\"," << std::endl;
             json_committees_file <<  "\t\t" << "\"INFO\":\"info_mesa\"," << std::endl;
             json_committees_file <<  "\t\t" << "\"TOPICS\":" << std::endl;
             json_committees_file <<  "\t\t" << '{' << std::endl;

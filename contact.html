@@ -8,7 +8,7 @@
         <!-- Add icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body onload="load('contact')">
+    <body onload="load('contact'), load_contacts()">
         <div id="navBar"></div>
         <div style="width:60%; margin: auto;">
             <br>
@@ -47,85 +47,7 @@
         <div style="margin: auto; width: 60%; padding-bottom: 60px;">
             <h1 style="text-align:center; padding-top: 60px; padding-bottom: 40px;">E-mail <img src="/style/img/email.png" alt="email" style="height: 35px; padding-bottom: 8px; display: inline;">
             </h1>
-            <ul style="list-style-type: none; display: block; margin: auto; width: 40%; min-width: 400px;">
-                <li>
-                    <strong>Secretaría General</strong>
-                    <br>
-                    <a style="color: black;" href="mailto: secretariageneral.smmun@gmail.com">secretariageneral.smmun@gmail.com</a>
-                </li>
-                <br>
-                <li>
-                    <strong>Secretaría Académica</strong>
-                    <br>
-                    <a style="color: black;" href="mailto: secretariacademica.smmun@gmail.com">secretariacademica.smmun@gmail.com</a>
-                </li>
-                <br>
-                <li>
-                    <strong>Secretaría de Vinculación Internacional</strong>
-                    <br>
-                    <a style="color: black;" href="mailto: secretariadevinculacion.smmun@gmail.com">secretariadevinculacion.smmun@gmail.com</a>
-                </li>
-                <br>
-                <li>
-                    <strong>Secretaría de Vinculación Prepas</strong>
-                    <br>
-                    <a style="color: black;" href="mailto: secretariadevinculacion.smmun@gmail.com">secretariavinculacionprep.smmun@gmail.com</a>
-                </li>
-                <br>
-                <li>
-                    <strong>Secretaría de Vinculación Universitaria</strong>
-                    <br>
-                    <a style="color: black;" href="mailto: secretariadevinculacion.smmun@gmail.com">secretariavinculacionuni.smmun@gmail.com</a>
-                </li>
-                <br>
-                <li>
-                    <strong>Secretaría de Logística</strong>
-                    <br>
-                    <a style="color: black;" href="mailto: secretariadelogistica.smmun@gmail.com">secretariadelogistica.smmun@gmail.com</a>
-                </li>
-                <br>
-                <li>
-                    <strong>Secretaría de Equipo de Trabajo</strong>
-                    <br>
-                    <a style="color: black;" href="mailto: secretariadefinanzas.smmun@gmail.com">secretariaequipodetrabajo.smmun@gmail.com</a>
-                </li>
-                <br>
-                <li>
-                    <strong>Secretaría de Difusión</strong>
-                    <br>
-                    <a style="color: black;" href="mailto: secretariadedifusion.smmun@gmail.com">secretariadedifusion.smmun@gmail.com</a>
-                </li>
-                <br>
-                <li>
-                    <strong>Secretaría de Finanzas</strong>
-                    <br>
-                    <a style="color: black;" href="mailto: secretariadefinanzas.smmun@gmail.com">secretariadefinanzas.smmun@gmail.com</a>
-                </li>
-                <br>
-                <li>
-                    <strong>Secretaría de Protocolo</strong>
-                    <br>
-                    <a style="color: black;" href="mailto: secretariadefinanzas.smmun@gmail.com">secretariadeprotocolo.smmun@gmail.com</a>
-                </li>
-                <br>
-                <li>
-                    <strong>Secretaría de Eventos Especiales</strong>
-                    <br>
-                    <a style="color: black;" href="mailto: secretariadefinanzas.smmun@gmail.com">secretariaeventos.smmun@gmail.com</a>
-                </li>
-                <br>
-                <li>
-                    <strong>Secretaría de Diseño</strong>
-                    <br>
-                    <a style="color: black;" href="mailto: secretariadefinanzas.smmun@gmail.com">secretariadediseno.smmun@gmail.com</a>
-                </li>
-                <br>
-                <li>
-                    <strong>Secretaría de Tecnologías</strong>
-                    <br>
-                    <a style="color: black;" href="mailto: secretariadefinanzas.smmun@gmail.com">secretariadetecnologias.smmun@gmail.com</a>
-                </li>
-                <br>
+            <ul style="list-style-type: none; display: block; margin: auto; width: 40%; min-width: 400px;" id="contact_info">
             </ul>
         </div>
         <div id="footer"></div>
@@ -137,4 +59,6 @@
     <!-- Custom scripts -->
     <!-- Navigation Bar and Footercode -->
     <script src="./script/navbar.js"></script>
+    <!-- Contact infomation -->
+    <script src="./script/contact.js"></script>
 </html>

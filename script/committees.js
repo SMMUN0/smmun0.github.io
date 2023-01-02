@@ -48,9 +48,6 @@ function addElement (year) {
             overflow.appendChild(link);
             overflow.appendChild(header);
         }
-        
-
-
     })
 
     fetch("./committees/year_configurations.json")

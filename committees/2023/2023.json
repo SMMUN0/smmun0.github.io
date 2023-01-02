@@ -1,230 +1,195 @@
 [
-	{
-		"CODE":"ACNUDH",
-		"NAME":"nombre_mesa",
-		"LAN":"es",
-		"MODALITY":"P",
-		"INFO":"info_mesa",
-		"TOPICS":
-		{
-			"A":"topico_a",
-			"B":"topico_c"
-		},
-		"DELEGATIONS":[],
-		"CHAIR":
-		{
-			"PRES":"Andrea Acosta",
-			"MOD":"Alejandra Moguel",
-			"OFI":"Judith García"
-		}
-	},
-	{
-		"CODE":"CEDAW",
-		"NAME":"nombre_mesa",
-		"LAN":"es",
-		"MODALITY":"P",
-		"INFO":"info_mesa",
-		"TOPICS":
-		{
-			"A":"topico_a",
-			"B":"topico_c"
-		},
-		"DELEGATIONS":[],
-		"CHAIR":
-		{
-			"PRES":"Lirio Araiza",
-			"MOD":"Sofía Quiñoes",
-			"OFI":"Valentina Moreno"
-		}
-	},
-	{
-		"CODE":"CPI",
-		"NAME":"nombre_mesa",
-		"LAN":"es",
-		"MODALITY":"P",
-		"INFO":"info_mesa",
-		"TOPICS":
-		{
-			"A":"topico_a",
-			"B":"topico_c"
-		},
-		"DELEGATIONS":[],
-		"CHAIR":
-		{
-			"MPA":"Fernanda Ronzón",
-			"MSA":"Regina Solchaga",
-			"MPRESA":"Tanya Aké",
-			"SA":"Heber Canul"
-		}
-	},
-	{
-		"CODE":"ECOSOC",
-		"NAME":"nombre_mesa",
-		"LAN":"es",
-		"MODALITY":"P",
-		"INFO":"info_mesa",
-		"TOPICS":
-		{
-			"A":"topico_a",
-			"B":"topico_c"
-		},
-		"DELEGATIONS":[],
-		"CHAIR":
-		{
-			"PRES":"Galilea Silva",
-			"MOD":"Jessica Tejero",
-			"OFI":"Valeria Frías"
-		}
-	},
-	{
-		"CODE":"FCS",
-		"NAME":"nombre_mesa",
-		"LAN":"es",
-		"MODALITY":"P",
-		"INFO":"info_mesa",
-		"TOPICS":
-		{
-			"A":"topico_a",
-			"B":"topico_c"
-		},
-		"DELEGATIONS":[],
-		"CHAIR":
-		{
-			"PRES":"Fernanda Calandrino",
-			"MOD":"Ricardo Dzib",
-			"OFI":"Alejandro Mendoza"
-		}
-	},
-	{
-		"CODE":"FPAN",
-		"NAME":"nombre_mesa",
-		"LAN":"es",
-		"MODALITY":"P",
-		"INFO":"info_mesa",
-		"TOPICS":
-		{
-			"A":"topico_a",
-			"B":"topico_c"
-		},
-		"DELEGATIONS":[],
-		"CHAIR":
-		{
-			"PRES":"Valentina Martínez",
-			"MOD":"Camila Escalante",
-			"OFI":"Alejandro Canché"
-		}
-	},
-	{
-		"CODE":"INTERPOL",
-		"NAME":"nombre_mesa",
-		"LAN":"es",
-		"MODALITY":"P",
-		"INFO":"info_mesa",
-		"TOPICS":
-		{
-			"A":"topico_a",
-			"B":"topico_c"
-		},
-		"DELEGATIONS":[],
-		"CHAIR":
-		{
-			"PRES":"Dalia Estrada",
-			"MOD":"Diana Santana",
-			"OFI":"Wendolyne"
-		}
-	},
-	{
-		"CODE":"UNW",
-		"NAME":"nombre_mesa",
-		"LAN":"es",
-		"MODALITY":"P",
-		"INFO":"info_mesa",
-		"TOPICS":
-		{
-			"A":"topico_a",
-			"B":"topico_c"
-		},
-		"DELEGATIONS":[],
-		"CHAIR":
-		{
-			"PRES":"Kelly Puc",
-			"MOD":"Alma Presuel",
-			"OFI":"Ana Ávila"
-		}
-	},
-	{
-		"CODE":"SOCHUM",
-		"NAME":"nombre_mesa",
-		"LAN":"es",
-		"MODALITY":"P",
-		"INFO":"info_mesa",
-		"TOPICS":
-		{
-			"A":"topico_a",
-			"B":"topico_c"
-		},
-		"DELEGATIONS":[],
-		"CHAIR":
-		{
-			"PRES":"Faina Couoh",
-			"MOD":"Diego Grajeda"
-		}
-	},
-	{
-		"CODE":"UNICEF",
-		"NAME":"nombre_mesa",
-		"LAN":"es",
-		"MODALITY":"P",
-		"INFO":"info_mesa",
-		"TOPICS":
-		{
-			"A":"topico_a",
-			"B":"topico_c"
-		},
-		"DELEGATIONS":[],
-		"CHAIR":
-		{
-			"PRES":"nombre_presidencia",
-			"MOD":"Alejandra Correa",
-			"OFI":"Ana Sofía Pasos"
-		}
-	},
-	{
-		"CODE":"UNSC",
-		"NAME":"nombre_mesa",
-		"LAN":"es",
-		"MODALITY":"P",
-		"INFO":"info_mesa",
-		"TOPICS":
-		{
-			"A":"topico_a",
-			"B":"topico_c"
-		},
-		"DELEGATIONS":[],
-		"CHAIR":
-		{
-			"PRES":"Carlos García",
-			"MOD":"Andrea Arreola",
-			"OFI":"Carlos Sevilla"
-		}
-	},
-	{
-		"CODE":"WHO",
-		"NAME":"nombre_mesa",
-		"LAN":"es",
-		"MODALITY":"P",
-		"INFO":"info_mesa",
-		"TOPICS":
-		{
-			"A":"topico_a",
-			"B":"topico_c"
-		},
-		"DELEGATIONS":[],
-		"CHAIR":
-		{
-			"PRES":"Violeta Aurora",
-			"MOD":"Camila Melendez",
-			"OFI":"nombre_oficialia"
-		}
-	}
+    {
+        "CODE": "ACNUDH",
+        "LAN": "es",
+        "MODALITY": "P",
+        "INFO": "info_mesa",
+        "TOPICS": {
+            "A": "topico_a",
+            "B": "topico_c"
+        },
+        "DELEGATIONS": [],
+        "CHAIR": {
+            "PRES": "Andrea Acosta",
+            "MOD": "Alejandra Moguel",
+            "OFI": "Judith García"
+        }
+    },
+    {
+        "CODE": "CEDAW",
+        "LAN": "en",
+        "MODALITY": "V",
+        "INFO": "info_mesa",
+        "TOPICS": {
+            "A": "topico_a",
+            "B": "topico_c"
+        },
+        "DELEGATIONS": [],
+        "CHAIR": {
+            "PRES": "Lirio Araiza",
+            "MOD": "Sofía Quiñoes",
+            "OFI": "Valentina Moreno"
+        }
+    },
+    {
+        "CODE": "CPI",
+        "LAN": "es",
+        "MODALITY": "P",
+        "INFO": "info_mesa",
+        "TOPICS": {
+            "A": "topico_a",
+            "B": "topico_c"
+        },
+        "DELEGATIONS": [],
+        "CHAIR": {
+            "MPA": "Fernanda Ronzón",
+            "MSA": "Regina Solchaga",
+            "MPRESA": "Tanya Aké",
+            "SA": "Heber Canul"
+        }
+    },
+    {
+        "CODE": "ECOSOC",
+        "LAN": "es",
+        "MODALITY": "PV",
+        "INFO": "info_mesa",
+        "TOPICS": {
+            "A": "topico_a",
+            "B": "topico_c"
+        },
+        "DELEGATIONS": [],
+        "CHAIR": {
+            "PRES": "Galilea Silva",
+            "MOD": "Jessica Tejero",
+            "OFI": "Valeria Frías"
+        }
+    },
+    {
+        "CODE": "FCS",
+        "LAN": "es",
+        "MODALITY": "V",
+        "INFO": "info_mesa",
+        "TOPICS": {
+            "A": "topico_a",
+            "B": "topico_c"
+        },
+        "DELEGATIONS": [],
+        "CHAIR": {
+            "PRES": "Fernanda Calandrino",
+            "MOD": "Ricardo Dzib",
+            "OFI": "Alejandro Mendoza"
+        }
+    },
+    {
+        "CODE": "FPAN",
+        "LAN": "es",
+        "MODALITY": "P",
+        "INFO": "info_mesa",
+        "TOPICS": {
+            "A": "topico_a",
+            "B": "topico_c"
+        },
+        "DELEGATIONS": [],
+        "CHAIR": {
+            "PRES": "Valentina Martínez",
+            "MOD": "Camila Escalante",
+            "OFI": "Alejandro Canché"
+        }
+    },
+    {
+        "CODE": "INTERPOL",
+        "LAN": "es",
+        "MODALITY": "V",
+        "INFO": "info_mesa",
+        "TOPICS": {
+            "A": "topico_a",
+            "B": "topico_c"
+        },
+        "DELEGATIONS": [],
+        "CHAIR": {
+            "PRES": "Dalia Estrada",
+            "MOD": "Diana Santana",
+            "OFI": "Wendolyne"
+        }
+    },
+    {
+        "CODE": "ONUM",
+        "NAME": "ONU Mujeres",
+        "LAN": "es",
+        "MODALITY": "P",
+        "INFO": "info_mesa",
+        "TOPICS": {
+            "A": "topico_a",
+            "B": "topico_c"
+        },
+        "DELEGATIONS": [],
+        "CHAIR": {
+            "PRES": "Kelly Puc",
+            "MOD": "Alma Presuel",
+            "OFI": "Ana Ávila"
+        }
+    },
+    {
+        "CODE": "SOCHUM",
+        "LAN": "es",
+        "MODALITY": "PV",
+        "INFO": "info_mesa",
+        "TOPICS": {
+            "A": "topico_a",
+            "B": "topico_c"
+        },
+        "DELEGATIONS": [],
+        "CHAIR": {
+            "PRES": "Faina Couoh",
+            "MOD": "Diego Grajeda"
+        }
+    },
+    {
+        "CODE": "UNICEF",
+        "LAN": "es",
+        "MODALITY": "P",
+        "INFO": "info_mesa",
+        "TOPICS": {
+            "A": "topico_a",
+            "B": "topico_c"
+        },
+        "DELEGATIONS": [],
+        "CHAIR": {
+            "PRES": "nombre_presidencia",
+            "MOD": "Alejandra Correa",
+            "OFI": "Ana Sofía Pasos"
+        }
+    },
+    {
+        "CODE": "UNSC",
+        "LAN": "en",
+        "MODALITY": "P",
+        "INFO": "info_mesa",
+        "TOPICS": {
+            "A": "topico_a",
+            "B": "topico_c"
+        },
+        "DELEGATIONS": [],
+        "CHAIR": {
+            "PRES": "Carlos García",
+            "MOD": "Andrea Arreola",
+            "OFI": "Carlos Sevilla"
+        }
+    },
+    {
+        "CODE": "WHO",
+        "LAN": "en",
+        "MODALITY": "V",
+        "INFO": "info_mesa",
+        "TOPICS": {
+            "A": "topico_a",
+            "B": "topico_c"
+        },
+        "DELEGATIONS": [],
+        "CHAIR": {
+            "PRES": "Violeta Aurora",
+            "MOD": "Camila Melendez",
+            "OFI": "nombre_oficialia"
+        }
+    }
 ]

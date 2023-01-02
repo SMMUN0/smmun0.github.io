@@ -88,13 +88,5 @@ Este código se encarga de generar el código default de cada comité. Lo comit�
 # TODO
 
 - Documentation page
-- Add known code names to `.json` generator
-- Add style.css to template for nav bar style
-- Known Country code names, add feature to `year_json_generator.cpp`
-- Fix Committes main page
-- Add new committee logos
-- Committees.html version compatability
-- Ddd CPI special case
-- Ddd class name to list item in delegations sections
-- Add subscription to footer
-- Ddd contact emails with code
+- Add subscription to email in footer
+- Fix Footer and NavBar linking problem
