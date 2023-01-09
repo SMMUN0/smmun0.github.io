@@ -21,9 +21,8 @@
             <br>
             <hr>
             <h4>Haz click a la encuesta que quieras abrir</h4>
-            <h2><label class="clickable" href="" id="es" onclick="addLink(`https://forms.gle/QEnC9XKhcvip24AA6`)">Español</label> | <label class="clickable" href="" id="en" onclick="addLink(`https://forms.gle/VwrANf9PshPncV5n9`)">English</label> | <label class="clickable" href="" id="faculty" onclick="addLink(`https://forms.gle/513S2Ji8Me7VGqb58`)">Faculty</label></h2>
+            <h2><label class="clickable" href="" id="es" onclick="addLink(`https://forms.gle/QEnC9XKhcvip24AA6`, 'es')">Español</label> | <label class="clickable" href="" id="en" onclick="addLink(`https://forms.gle/VwrANf9PshPncV5n9`, 'en')">English</label> | <label class="clickable" href="" id="faculty" onclick="addLink(`https://forms.gle/513S2Ji8Me7VGqb58`,'es')">Faculty</label></h2>
         </div>
-            
             <br>
             <br>
             <div>
@@ -31,7 +30,7 @@
             </div>
             <center>
                 <div id="convocatoria">
-                    <h3><a href="" id="new" target="_blank"></a></h3>
+                    <h3><a href="" id="new" target="_blank"></a> <span id="sep"></span> <a href="" id="info" target="_blank"></a></h3>
                     <iframe src="" width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0" id="forms">Cargando…</iframe>
                 </div>
             </center>
@@ -47,10 +46,20 @@
     <!-- Navigation Bar and Footercode -->
     <script src="./script/navbar.js"></script>
     <script>
-        function addLink(link){
+        function addLink(link, lang){
             document.getElementById("forms").src = link;
-            document.getElementById("new").innerText = "Abrir en otra pestaña"
+            if( lang == 'es'){
+                document.getElementById("new").innerText = "Abrir en otra pestaña"
+                document.getElementById("info").innerText = "Mas información"
+                document.getElementById("info").href = "./documentation/Convocatoria SMMUN 2023 (Español).pdf"
+            }
+            else{
+                document.getElementById("new").innerText = "Open in new window"
+                document.getElementById("info").innerText = "More information"
+                document.getElementById("info").href = "./documentation/Registration SMMUN 2023 (English).pdf"
+            }
             document.getElementById("new").href = link
+            document.getElementById("sep").innerText = " | "
         }
     </script>
     <style>
