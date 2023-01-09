@@ -14,37 +14,26 @@
 		; padding-top: 100px;">
             <h1 style="text-align:center; padding-bottom: 40px;">Inscripciones <img src="./style/img/clipboard.png" alt="clipboard" style="height: 60px; display: inline;">
             </h1>
-            <h1 style="text-align:center; padding-bottom: 40px; padding-top: 40px ;background-color: whitesmoke;">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWTPXjYT7NQLOIx841wsxCGvHbtGjJcf_xhTLkSfKm1UIViQ/viewform">Forms Convocatoria de mesas SMMUN 2023: For Diversity</a>
+            <div style="text-align:center; padding-bottom: 40px; padding-top: 40px ;background-color: rgba(255, 255, 255, 0.4);">
+            <h1 >
+                Registro de Delegaciones SMMUN 2023: For Diversity
             </h1>
+            <br>
+            <hr>
+            <h4>Haz click a la encueta que quieras abrir</h4>
+            <h2><label class="clickable" href="" id="es" onclick="addLink(`https://forms.gle/QEnC9XKhcvip24AA6`)">Español</label> | <label class="clickable" href="" id="en" onclick="addLink(`https://forms.gle/VwrANf9PshPncV5n9`)">English</label> | <label class="clickable" href="" id="faculty" onclick="addLink(`https://forms.gle/513S2Ji8Me7VGqb58`)">Faculty</label></h2>
+        </div>
+            
             <br>
             <br>
             <div>
                 <center>
             </div>
             <center>
-                <ul style="list-style-type: none; columns: 2; width: 80%; padding: auto; padding-bottom: 100px;">
-                    <center>
-                        <li>
-                            <img style="width: 80%;" src="./documentation/convocatoria1.jpg" alt="">
-                        </li>
-                    </center>
-                    <center>
-                        <li>
-                            <img style="width: 80%;" src="./documentation/convocatoria2.jpg" alt="">
-                        </li>
-                    </center>
-                    <center>
-                        <li>
-                            <img style="width: 80%;" src="./documentation/convocatoria3.jpg" alt="">
-                        </li>
-                    </center>
-                    <center>
-                        <li>
-                            <img style="width: 80%;" src="./documentation/convocatoria4.jpg" alt="">
-                        </li>
-                    </center>
-                </ul>
+                <div id="convocatoria">
+                    <h3><a href="" id="new" target="_blank"></a></h3>
+                    <iframe src="" width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0" id="forms">Cargando…</iframe>
+                </div>
             </center>
             </center>
         </div>
@@ -57,4 +46,16 @@
     <!-- Custom scripts -->
     <!-- Navigation Bar and Footercode -->
     <script src="./script/navbar.js"></script>
+    <script>
+        function addLink(link){
+            document.getElementById("forms").src = link;
+            document.getElementById("new").innerText = "Abrir en otra pestaña"
+            document.getElementById("new").href = link
+        }
+    </script>
+    <style>
+        .clickable:hover{
+            color: purple;
+        }
+    </style>
 </html>
