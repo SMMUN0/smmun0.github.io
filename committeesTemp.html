@@ -5,11 +5,22 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>Comités</title>
         <link rel="shortcut icon" href="./style/img/logos/logoSMMUN.png">
+        <link rel="stylesheet" href="./style/css/committees.css">
     </head>
-    <body onload="load('committees')">
+    <body onload="addElement(2023), load('committees')">
         <div id="navBar"></div>
-        <div style="background-color: rgb(108, 175, 217); width: 100%;">
-            <h1 style="text-align: center; padding-top: 200px; padding-bottom: 200px ;">¡Próximamente!</h1>
+        <!-- Committees Links -->
+        <!-- Remove Gradient Coloring -->
+        <div id="committees_pannel" style="padding-bottom: 150px; background: rgb(231,113,153);
+        background: linear-gradient(90deg, rgba(231,113,153,0.5) 0%, rgba(233,136,248,0.5) 33%, rgba(195,134,248,0.5) 66%, rgba(115,122,243,0.5) 100%);padding-top: 10px;">
+            <h1 style="text-align:center; padding-top: 80px;" id="title">Comités</h1>
+            <h2 id="subtitle"></h2>
+            <!-- Listed even amount of committees -->
+            <center>
+                <ul id="committeesList" class="committee"></ul>
+            </center>
+            <!-- Listed last committee in case of overflow -->
+            <center id="overflow" class="committee"></center>
         </div>
         <div id="footer"></div>
     </body>

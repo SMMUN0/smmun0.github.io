@@ -16,5 +16,14 @@
         "subsubtitles":[255, 255, 255],
         "background_one":[205, 121, 209],
         "background_two":[231,113,153]
+    },
+    "2024":
+    {
+        "slogan":"For Equality",
+        "main_title":[255, 255, 255],
+        "subtitles":[255, 255, 255],
+        "subsubtitles":[255, 255, 255],
+        "background_one":[244,166,190],
+        "background_two":[100,204,200]
     }
 }
