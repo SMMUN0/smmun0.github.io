@@ -1,0 +1,498 @@
+[
+	{
+		"CODE":"HRC",
+		"LAN":"en",
+		"MODALITY":"P",
+		"INFO":"The Human Rights Council continues work with the promotion and protection of all human rights, civil, political, economic, social and cultural rights.",
+		"TOPICS":
+		{
+			"A":"The violation of human rights throughout peacekeeping operations.",
+			"B":"Discrimination based on race, gender, or sexual orientation during the hiredment of staff."
+		},
+		"DELEGATIONS":[
+			"United States of America",
+			"Russian Federation",
+			"People's Republic of China",
+			"United Kingdom of Great Britain and Northern Ireland ",
+			"French Republic",
+			"Republic of Haiti",
+			"Central African Republic",
+			"Democratic Republic of the Congo",
+			"Republic of South Sudan",
+			"Republic of South Africa",
+			"Republic of India",
+			"Kingdom of Saudi Arabia",
+			"Kingdom of Spain",
+			"Kingdom of Norway",
+			"United Mexican States",
+			"Kingdom of Sweden",
+			"Canada",
+			"Republic of Turkey",
+			"Republic of Colombia",
+			"Kingdom of Denmark",
+			"Cuba",
+			"United Republic of Tanzania",
+			"Federal Republic of Germany",
+			"Japan"
+		],
+		"CHAIR":
+		{
+			"PRES":"Paris Alondra Pérez Molina",
+			"MOD":"Ana Sofía Pasos Rodríguez",
+			"OFI":"Mariana Gabriela Herrera Villajuana"
+		}
+	},
+	{
+		"CODE":"UNCCPCJ",
+		"LAN":"en",
+		"MODALITY":"P",
+		"INFO":"The Commission on Crime Prevention and Criminal Justice their main focus work on strategies of effective prevention, also collaborate with various partners.",
+		"TOPICS":
+		{
+			"A":"Measures against illegal wildlife trafficking",
+			"B":"Measures to prevent and deal with illegal organ trade"
+		},
+		"DELEGATIONS":[
+			"The Republic of India",
+			"The Republic of Guatemala",
+			"Islamic Republic of Iran",
+			"The Arab Republic of Egypt",
+			"United Mexican States",
+			"United States of America",
+			"United Kingdom of Great Britain and Northern Ireland",
+			"The people's republic of China",
+			"Federal Republic of Germany",
+			"French Republic",
+			"The republic of Colombia",
+			"The republic of El Salvador",
+			"Federal Republic of Nigeria",
+			"The russian federation",
+			"Socialist republic of Vietnam",
+			"The republic of Yemen",
+			"Argentine Republic",
+			"The Commonwealth of Australia",
+			"State of Japan",
+			"Dominion of Canada",
+			"Republic of Madagascar",
+			"Federative Republic of Brazil",
+			"Republic of Zimbabwe",
+			"Bolivarian Republic of Venezuela",
+			"Republic of India",
+			"Islamic Republic of Pakistan",
+			"Ukraine",
+			"The Republic of Korea",
+			"Republic of Ecuador"
+		],
+		"CHAIR":
+		{
+			"PRES":"Marlene Santos Matamoros",
+			"MOD":"Aarón Humberto Aguayo De Coss",
+			"OFI":"Gabriel Enrique Martínez Bote"
+		}
+	},
+	{
+		"CODE":"ONUM",
+		"LAN":"es",
+		"MODALITY":"P",
+		"INFO":"La Entidad de las Naciones Unidas para la Igualdad de Género y el Empoderamiento de las Mujeres promueve la igualdad de género y el empoderamiento de las mujeres. ",
+		"TOPICS":
+		{
+			"A":"Mecanismos para combatir la vulnerabilidad de género hacia niñas, adolescentes y mujeres como de detonante de la trata de personas.",
+			"B":"Estrategias para erradicar el matrimonio forzado a causa del dote matrimonial en las niñas, adolescentes y mujeres."
+		},
+		"DELEGATIONS":[
+			"República Federativa de Brasi",
+			"Estados Unidos Mexicano",
+			"Estados Unidos de América",
+			"República de Colombia",
+			"Reino Unido de Gran Bretaña e Irlanda del Norte",
+			"República Popular China",
+			"Federación de Rusia",
+			"Reino de Marruecos",
+			"República de la India",
+			"República Islámica de Pakistán",
+			"República Dominicana",
+			"Estado de Japón",
+			"República de Chile",
+			"República del Ecuador",
+			"República de Argentina",
+			"República de Nicaragua",
+			"República Islámica de Afganistán",
+			"República Guatemala",
+			"República Islámica de Irán",
+			"República Bolivariana de Venezuela",
+			"República Federal Democrática de Nepal",
+			"Ucrania",
+			"República Popular de Bangladesh",
+			"Estado Plurinacional de Bolivia",
+			"República Federal de Nigeria",
+			"Estado Libre Asociado de Puerto Rico",
+			"República Oriental del Uruguay",
+			"Federación de Malasia",
+			"República de El Salvador",
+			"República de Irak",
+			"República de Corea",
+			"Reino de Noruega",
+			"Reino de España",
+			"Mancomunidad de Australia",
+			"Canadá",
+			"República Francesa",
+			"Reino de Nueva Zelanda",
+			"República de Cuba",
+			"Confederación de Suiza",
+			"República Federal de Alemania"
+		],
+		"CHAIR":
+		{
+			"PRES":"Flori Alejandra Noh Pech",
+			"MOD":"Valeria Janeida Loera Gebhardt",
+			"OFI":"Angélica Maribel Ku Noh"
+		}
+	},
+	{
+		"CODE":"CSNU",
+		"LAN":"es",
+		"MODALITY":"P",
+		"INFO":"El Consejo de Seguridad de las Naciones Unidas es el encargado del mantenimiento de la paz y la seguridad internacional, el fortalecimiento de las cooperaciones entre las naciones.",
+		"TOPICS":
+		{
+			"A":"El cibercrimen como amenaza potencial a la seguridad internacional y la soberanía de las naciones.",
+			"B":"Fortalecimiento de la democracia en África ante la crisis política: retos y oportunidades tras el cambio de conceptos coloniales."
+		},
+		"DELEGATIONS":[
+			"República Popular China",
+			"República Francesa",
+			"Federación de Rusia",
+			"Reino Unido de Gran Bretaña e Irlanda del Norte",
+			"Estados Unidos de América",
+			"República del Níger",
+			"República Argelina Democrática y Popular",
+			"República de Mali",
+			"Republica de Guinea",
+			"República Federal de Nigeria",
+			"República de Mozambique",
+			"República de Burkina Faso",
+			"República de Corea",
+			"Emiratos Árabes Unidos",
+			"República Islámica de Irán",
+			"República de la India",
+			"Reino de Tailandia",
+			"República Socialista de Vietnam",
+			"República Eslovaca",
+			"República de Turquía",
+			"Ucrania",
+			"República de Bielorrusia",
+			"Estados Unidos Mexicanos",
+			"República del Ecuador",
+			"República Federativa del Brasil",
+			"República Dominicana",
+			"República Argentina",
+			"Confederación Suiza",
+			"Reino de Noruega",
+			"Republica de Finlandia"
+		],
+		"CHAIR":
+		{
+			"PRES":"Ricardo Alberto Dzib Argaez",
+			"MOD":"Alexis Antonio García Cruz",
+			"OFI":"Bruno Ancona Sala"
+		}
+	},
+	{
+		"CODE":"UNICEF",
+		"LAN":"es",
+		"MODALITY":"P",
+		"INFO":"El Fondo de las Naciones Unidas para la Infancia se enfoca en promover los derechos y el bienestar de todas las infancias y adolescencias en el mundo.",
+		"TOPICS":
+		{
+			"A":"Medidas para la protección de las infancias y adolescencias ante el abuso y la explotación sexual.",
+			"B":"Mecanismos para combatir la lucha contra el hambre y la desnutrición infantil."
+		},
+		"DELEGATIONS":[
+			"República de Cuba",
+			"Estados Unidos Mexicanos ",
+			"República de Colombia ",
+			"República del Perú ",
+			"República Federativa del Brasil ",
+			"República de Chile ",
+			"República de Guatemala ",
+			"República Bolivariana de Venezuela",
+			"República de Costa Rica",
+			"República de Honduras",
+			"República de Dinamarca ",
+			"República de Finlandia ",
+			"Estados Unidos de América",
+			"Mancomunidad de Australia ",
+			"Canadá ",
+			"Reino de España",
+			"Reino Unido de Gran Bretaña e Irlanda del Norte",
+			"República Federal de Alemania ",
+			"Países Bajos",
+			"República Checa",
+			"República de Armenia",
+			"Reino de Noruega",
+			"Ucrania",
+			"República de Polonia ",
+			"República de Eslovenia",
+			"República Popular de Bangladesh",
+			"República de Indonesia",
+			"Japón",
+			"República popular de China",
+			"República de Corea",
+			"República de la India ",
+			"Reino de Tailandia ",
+			"República de Filipinas",
+			"República de Sudáfrica",
+			"República del Yemen ",
+			"República Federal de Nigeria",
+			"República de Kenia",
+			"República de Mozambique ",
+			"Marruecos ",
+			"República del Senegal "
+		],
+		"CHAIR":
+		{
+			"PRES":"Leidy Estefania Valdez Cervera",
+			"MOD":"Francis Marina Canto Veliz",
+			"OFI":"Jahaziel Duarte Valdivia"
+		}
+	},
+	{
+		"CODE":"CPI",
+		"LAN":"es",
+		"MODALITY":"P",
+		"INFO":"La Corte Penal Internacional es el primer tribunal penal internacional permanente, basado en un tratado, establecido para ayudar a poner fin a la impunidad de las personas autoras de los crímenes más graves de trascendencia para la comunidad internacional.",
+		"TOPICS":
+		{
+			"CASO": "El caso de Bermude Lenac en la República de Marloshi."
+		},
+        "DELEGATIONS": [
+            "El comité se dividirá en dos grupos.",
+            "De nueve integrantes que representaran a:",
+            "",
+            "Defensa de la persona imputada",
+            "Fiscalía de la Corte Penal Internacional "
+        ],
+        "CHAIR": {
+            "MP": "Mariana Castilla Erosa",
+            "MS": "Karol Valeria Ibarra Polanco",
+            "MPRES": "Yoshimar Sebastián Cruz Novelo",
+            "SA": "Adriana Acevedo Alcocer"
+        }
+	},
+	{
+		"CODE":"UNESCO",
+		"LAN":"es",
+		"MODALITY":"P",
+		"INFO":"La Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura se encarga de establecer la paz mediante la cooperación internacional en materia de educación, ciencia y cultura.",
+		"TOPICS":
+		{
+			"A":"Estrategias para garantizar la atención de las necesidades educativas específicas en la neurodivergencia.",
+			"B":"Medidas para garantizar la educación inclusiva a través del uso de las tecnologías digitales."
+		},
+		"DELEGATIONS":[
+			"Reino de Dinamarca",
+			"República de Finlandia",
+			"República Francesa",
+			"República Federal de Alemania",
+			"Reino de los Países bajos",
+			"Reino de Noruega",
+			"Gran Ducado de Luxemburgo",
+			"República Italiana",
+			"Reino de Suecia",
+			"Reino de España",
+			"Reino Unido de Gran Bretaña e Irlanda del Norte",
+			"República Portuguesa",
+			"Estados Unidos Mexicanos",
+			"Canadá",
+			"Estados Unidos de América",
+			"República de Costa Rica",
+			"República Oriental del Uruguay",
+			"República de Cuba",
+			"República de Chile",
+			"República Federativa de Brasil",
+			"República de Colombia",
+			"República del Perú",
+			"República Bolivariana de Venezuela",
+			"República Argentina",
+			"República de Guatemala",
+			"Federación de Rusia",
+			"República Popular de China",
+			"Japón",
+			"República de Corea",
+			"República de la India",
+			"Federación de Emiratos Árabes Unidos",
+			"República de Turquía",
+			"República de Singapur",
+			"Reino de Marruecos",
+			"República Argelina Democrática y Popular",
+			"República Árabe de Egipto",
+			"República Federal de Nigeria",
+			"República de Sudáfrica",
+			"Mancomunidad de Australia",
+			"Reino de Nueva Zelanda"
+		],
+		"CHAIR":
+		{
+			"PRES":"Roberto Pérez Molina",
+			"MOD":"María Ximena Maldonado Cano",
+			"OFI":"Jocelyn Dionne Ávila Medina"
+		}
+	},
+	{
+		"CODE":"ECOSOC",
+		"LAN":"es",
+		"MODALITY":"P",
+		"INFO":"El Consejo Económico y Social de las Naciones Unidas promueve la cooperación internacional en cuestiones de índole económica, social y cultural. ",
+		"TOPICS":
+		{
+			"A":"Estrategias a favor del respeto de los derechos laborales, enfatizando en el sector no remunerado y no regulado.",
+			"B":"Medidas para mitigar el impacto del nivel socioeconómico en el acceso a la industria de la salud."
+		},
+		"DELEGATIONS":[
+			"Belice",
+			"Canadá",
+			"Estados Unidos de América",
+			"Estados Unidos Mexicanos",
+			"Estado de Israel",
+			"Estado de Japón",
+			"Federación de Rusia",
+			"República popular de China",
+			"República de Corea",
+			"República de Indonesia",
+			"República de Turquía",
+			"Reino de Bélgica",
+			"Reino Unido de Gran Bretaña e Irlanda del Norte",
+			"República de Austria",
+			"República de Finlandia",
+			"Comunidad de Australia",
+			"República federal de Alemania",
+			"República de Serbia",
+			"Reino de Noruega",
+			"Confederación Suiza",
+			"República Francesa",
+			"República Bolivariana de Venezuela",
+			"República de Argentina",
+			"República de Chile",
+			"República de Colombia",
+			"República Federativa de Brasil",
+			"República de Guatemala",
+			"República Dominicana",
+			"República del Ecuador",
+			"República de Cuba",
+			"Estado de Libia",
+			"Reino Lesotho",
+			"República de Ghana",
+			"República Democrática Federal de Etiopía",
+			"República Árabe de Egipto"
+		],
+		"CHAIR":
+		{
+			"PRES":"Nataly Mishel Martínez Cauich",
+			"MOD":"Heber Joaquín Canul Ek",
+			"OFI":"Valentina Beatriz Pat Pavón"
+		}
+	},
+	{
+		"CODE":"FIFA",
+		"LAN":"es",
+		"MODALITY":"P",
+		"INFO":"La Federación Internacional de Fútbol Asociación tiene como vocación regir y modernizar el fútbol para que sea global, accesible e inclusivo en todos los aspectos. ",
+		"TOPICS":
+		{
+			"A":"Estrategias para garantizar la igualdad de género y la reducción de todas las formas de discriminación y racismo hacia las atletas en el fútbol."
+		},
+		"DELEGATIONS":[
+			"Emirato Islámico de Afganistán",
+			"República Federal de Alemania",
+			"Arabia Saudita",
+			"República de Argentina",
+			"Comunidad de Australia",
+			"Reino de Bélgica",
+			"República Federativa de Brasil",
+			"Canadá",
+			"República de Croacia",
+			"República de Cuba",
+			"Estados Unidos de América",
+			"Emiratos Árabes Unidos",
+			"Reino de España",
+			"República Francesa",
+			"República de la India",
+			"Reino Unido de Gran Bretaña e Irlanda del Norte",
+			"República de Irak",
+			"Estado de Israel",
+			"República Italiana",
+			"Jamaica",
+			"Estados Unidos Mexicanos",
+			"Marruecos",
+			"República Federal de Nigeria",
+			"Reino de Noruega",
+			"República Portuguesa",
+			"Estado de Qatar",
+			"Federación de Rusia",
+			"República de Senegal",
+			"República de Sudáfrica",
+			"Reino de Suecia"
+		],
+		"CHAIR":
+		{
+			"PRES":"Tanya Alejandra Aké Gutiérrez",
+			"MOD":"Cristian José Soberanis Chi",
+			"OFI":"Juan Manuel Bojorquez Corrales"
+		}
+	},
+	{
+		"CODE":"UNEA",
+		"LAN":"es",
+		"MODALITY":"P",
+		"INFO":"La Asamblea de las Naciones Unidas para el Medio Ambiente es un foro y órgano de toma de decisiones, donde destacan los problemas ambientales más apremiantes y en crear la arquitectura para la gobernanza ambiental futura.",
+		"TOPICS":
+		{
+			"A":"Acciones ante la Triple Emergencia Planetaria sobre el Medio Ambiente para la Agenda 2030.",
+			"B":"Del calentamiento a la ebullición global: acciones para un futuro sostenible."
+		},
+		"DELEGATIONS":[
+			"Reino de Marruecos",
+			"República Árabe de Egipto",
+			"República Federal de Nigeria",
+			"República de Rwanda",
+			"República Unida de Tanzania",
+			"República Argentina",
+			"Estado Plurinacional de Bolivia ",
+			"República Federativa de Brasil ",
+			"República de Chile",
+			"República de Colombia",
+			"República del Ecuador",
+			"República de El Salvador",
+			"República de Guatemala",
+			"República del Paraguay",
+			"República del Perú",
+			"República Bolivariana de Venezuela",
+			"Reino de España",
+			"Reino de los Países Bajos",
+			"Reino de Noruega",
+			"Reino de Suecia",
+			"República Federal de Alemania",
+			"República Francesa",
+			"Nueva Zelanda",
+			"Canadá",
+			"Estados Unidos Mexicanos",
+			"Estados Unidos de América",
+			"Estado de Japón",
+			"Federación de Rusia",
+			"República Popular de China",
+			"República de Singapur",
+			"Reino de Tailandia",
+			"República Socialista de Vietnam",
+			"República Libanesa",
+			"República de la India",
+			"República de Filipinas"
+		],
+		"CHAIR":
+		{
+			"PRES":"Natalia Atenea Luna Sánchez",
+			"MOD":"Maria Jimena Diego Azcorra",
+			"OFI":"Miguel Ángel Fonseca Martín"
+		}
+	}
+]

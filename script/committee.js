@@ -1,16 +1,23 @@
-const titulos = 
+const position_es = 
 {
     "PRES":"Presidencia",
     "MOD":"Moderación",
-    "OFI":"Oficialía",
+    "OFI":"Oficialía de Conferencias",
     "EJ":"Edición de Jefe",
     "DR":"Dirección de Redacción",
     "CC1":"Coordinación de Contenido",
     "CC2":"Coordinación de Contenido",
-    "MPA":"Magistrada Primera",
-    "MSA":"Magistrada Segunda",
+    "MP":"Magistrado Primero",
+    "MS":"Magistrado Segundo",
     "SA":"Secretaría de Audiencia",
-    "MPRESA":"Magistrada Presidenta"
+    "MPRES":"Magistrado Presidente"
+}
+
+const position_en = 
+{
+    "PRES":"Presidency",
+    "MOD":"Moderation",
+    "OFI":"Conference Officer"
 }
 
 const languages = 
@@ -51,7 +58,12 @@ const committee_names = {
     "FPAN":"Foro Político de Alto Nivel Sobre el Desarrollo Sostenible",
     "INTERPOL":"Organización Internacional de Policía Criminal",
     "UNICEF":"Fondo de las Naciones Unidas para la Infancia",
-    "WHO":"World Health Organization"
+    "WHO":"World Health Organization",
+    "HRC":"Human Rights Council",
+    "UNCCPCJ":"United Nations Commission on Crime Prevention and Criminal Justice",
+    "CSNU": "Consejo de Seguridad de las Naciones Unidas",
+    "FIFA": "Federación Internacional de Fútbol Asociado",
+    "UNEA": "Asamblea de las Naciones Unidas para el Medio Ambiente",
 }
 
 const section_titles = {
@@ -152,7 +164,8 @@ function load_committee(code, year) {
             name.classList.add("committee")
             name.classList.add("subtitle")
 
-            position.innerHTML = titulos[titulo]
+            if(committee["LAN"] == "es") position.innerHTML = position_es[titulo]
+            else position.innerHTML = position_en[titulo]
             position.classList.add("committee")
             position.classList.add("subsubtitle")
 

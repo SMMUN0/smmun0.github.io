@@ -1,5 +1,6 @@
 img.committee{
-    height: 20em;
+    max-height: 20em;
+    max-width: 35%;
     display: block;
     margin: auto;
     padding-top: 4em;
