@@ -52,14 +52,14 @@ Puedes encontrar el código template de cada comité en [Aquí](./committees/tem
 
 ```json
 {
-    "CODE":"codigo_mesa_1",
-    "NAME":"nombre_mesa",
-    "LAN":"idioma_mesa",
+    "CODE":"codigo_mesa",
+    "LAN":"idioma_mesa", // en / es
     "INFO":"info_mesa",
     "TOPICS":
     {
         "A":"topico_a",
-        "B":"topico_c"
+        "B":"topico_b"
+        // "CASO":"caso (CPI)"
     },
     "DELEGATIONS":
     [
@@ -72,6 +72,7 @@ Puedes encontrar el código template de cada comité en [Aquí](./committees/tem
         "PRES":"nombre_presidencia",
         "MOD":"nombre_moderacion",
         "OFI":"nombre_oficialia"
+        // ver otros codigo en script/committee.js
     }
 }
 ```
@@ -88,3 +89,6 @@ Este código se encarga de generar el código default de cada comité. Lo comit�
 # TODO
 
 - Documentation page
+- make year_json_generator python code
+- Sponsor page
+- Add URI fragments to About page
