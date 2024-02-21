@@ -53,3 +53,7 @@ ul#secreatariat{
   width: 60%;
   min-width: 800px;
 }
+
+ul li img {
+  width: 100%;
+}

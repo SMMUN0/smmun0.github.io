@@ -43,54 +43,6 @@
 		}
 	},
 	{
-		"CODE":"UNCCPCJ",
-		"LAN":"en",
-		"MODALITY":"P",
-		"INFO":"The Commission on Crime Prevention and Criminal Justice their main focus work on strategies of effective prevention, also collaborate with various partners.",
-		"TOPICS":
-		{
-			"A":"Measures against illegal wildlife trafficking",
-			"B":"Measures to prevent and deal with illegal organ trade"
-		},
-		"DELEGATIONS":[
-			"The Republic of India",
-			"The Republic of Guatemala",
-			"Islamic Republic of Iran",
-			"The Arab Republic of Egypt",
-			"United Mexican States",
-			"United States of America",
-			"United Kingdom of Great Britain and Northern Ireland",
-			"The people's republic of China",
-			"Federal Republic of Germany",
-			"French Republic",
-			"The republic of Colombia",
-			"The republic of El Salvador",
-			"Federal Republic of Nigeria",
-			"The russian federation",
-			"Socialist republic of Vietnam",
-			"The republic of Yemen",
-			"Argentine Republic",
-			"The Commonwealth of Australia",
-			"State of Japan",
-			"Dominion of Canada",
-			"Republic of Madagascar",
-			"Federative Republic of Brazil",
-			"Republic of Zimbabwe",
-			"Bolivarian Republic of Venezuela",
-			"Republic of India",
-			"Islamic Republic of Pakistan",
-			"Ukraine",
-			"The Republic of Korea",
-			"Republic of Ecuador"
-		],
-		"CHAIR":
-		{
-			"PRES":"Marlene Santos Matamoros",
-			"MOD":"Aarón Humberto Aguayo De Coss",
-			"OFI":"Gabriel Enrique Martínez Bote"
-		}
-	},
-	{
 		"CODE":"ONUM",
 		"LAN":"es",
 		"MODALITY":"P",
