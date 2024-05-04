@@ -2,6 +2,7 @@
 const nav = document.getElementById("navbar") as HTMLElement;
 const navMobile = document.getElementById("navbar-mobile") as HTMLElement;
 const navLogo = document.getElementById("navbar-logo") as HTMLElement;
+const navLogoMobile = document.getElementById("navbar-logo-mobile") as HTMLElement;
 const header = document.getElementById("greeting") as HTMLElement;
 const navHeight = nav.getBoundingClientRect().height;
 
@@ -11,14 +12,20 @@ function updateNavColor(entries: IntersectionObserverEntry[]) {
     if (!entry.isIntersecting) {
         nav.classList.add("nav-colored");
         navMobile.classList.add("nav-colored");
+
         navLogo.style.display = "inherit";
+        navLogoMobile.style.opacity = "1";
+
         nav.classList.remove("nav-transparent");
         navMobile.classList.remove("nav-transparent");
     }
     else {
         nav.classList.add("nav-transparent");
         navMobile.classList.add("nav-transparent");
+
         navLogo.style.display = "none";
+        navLogoMobile.style.opacity = "0";
+
         nav.classList.remove("nav-colored");
         navMobile.classList.remove("nav-colored");
     }
