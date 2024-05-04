@@ -1,9 +1,7 @@
 #greeting {
     height: 70%;
     width: 100%;
-    background-image: url("../assets/greeting_background.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url("../assets/greeting_background.png") no-repeat center;
     background-size: cover;
     position: relative;
     display: flex;

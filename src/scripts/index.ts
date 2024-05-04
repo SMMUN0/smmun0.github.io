@@ -85,3 +85,31 @@ const legadoTypingAnim = new Promise((resolve, reject) => {
 legadoTypingAnim.then(() =>
     setTimeout(() => typingAnim(document.getElementById("modelo-de-naciones-unidas")!, "Modelo de Naciones Unidas del Sureste Mexicano"), 100)
 );
+
+// Animate background image switch
+var bgImageArray = ["greeting_background.png", "greeting_background.png", "greeting_background.png"],
+base = "assets/",
+secs = 8;
+bgImageArray.forEach(function(img){
+    new Image().src = base + img;
+});
+
+function backgroundSequence() {
+	window.clearTimeout(undefined);
+	var k = 0;
+
+	for (var i = 0; i < bgImageArray.length; i++) {
+		setTimeout(() => {
+			header.style.background = "url(" + base + bgImageArray[k] + ") no-repeat center";
+			header.style.backgroundSize ="cover";
+		    if ((k + 1) === bgImageArray.length) {
+                setTimeout(() => backgroundSequence(), (secs * 1000));
+            }
+            else {
+                k++;
+            }
+		}, (secs * 1000) * i);
+	}
+}
+
+backgroundSequence();
