@@ -1,0 +1,15 @@
+{
+  "name": "smmun0.github.io",
+  "version": "1.0.0",
+  "description": "Webpage for the South Mexican Model United Nations (SMMUN)",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "cpy './src/**/*' '!src/**/*.ts' './dist/'"
+  },
+  "author": "",
+  "devDependencies": {
+    "cpy-cli": "^5.0.0",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Glacial Indifference Bold";
+    src: url("../fonts/GlacialIndifference-Bold.otf");
+}
+
+@font-face {
+    font-family: "The Seasons Bold";
+    src: url("../fonts/The\ Seasons\ Bold.ttf");
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(12px, 2vw, 24px);
+}
+
+body {
+    background-image: url("../assets/bg.png");
+    background-repeat: repeat;
+    background-size: cover; 
+}
+
+#greeting {
+    height: 70%;
+    width: 100%;
+    background-image: url("../assets/greeting_background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+#greeting div {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1vmax 1.5vmax;
+    width: 100%;
+}
+
+#smmun-dorado {
+    align-self: center;
+}
+
+#smmun-dorado img {
+    height: 30vh;
+}
+
+#greeting div div {
+    align-self: flex-start;
+    color: white;
+}
+
+#legado-de-lideres {
+    font-family: "The Seasons Bold";
+    font-size: 3rem;
+}
+
+#modelo-de-naciones-unidas {
+    font-family: "Glacial Indifference Bold";
+    font-size: 2rem;
+}
+
+/*#overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: repeat;
+    background-image: url("");
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}*/
