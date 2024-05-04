@@ -1,0 +1,43 @@
+#greeting {
+    height: 70%;
+    width: 100%;
+    background-image: url("../assets/greeting_background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+#greeting-sub {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1vmax 0;
+    width: 100%;
+}
+
+#smmun-dorado {
+    align-self: center;
+}
+
+#smmun-dorado img {
+    height: 30vh;
+}
+
+#greeting-sub div {
+    align-self: flex-start;
+    color: #fffdfd;
+    padding: 1vh 3vw;
+    user-select: none;
+}
+
+#legado-de-lideres {
+    font-family: "The Seasons Bold";
+    font-size: 3rem;
+}
+
+#modelo-de-naciones-unidas {
+    font-family: "Glacial Indifference Bold";
+    font-size: 2rem;
+}
