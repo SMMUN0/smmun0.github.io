@@ -87,7 +87,7 @@ legadoTypingAnim.then(() =>
 );
 
 // Animate background image switch
-var bgImageArray = ["greeting_background.png", "greeting_background.png", "greeting_background.png"],
+var bgImageArray = ["greeting_background.png", "slide2.png", "slide3.png"],
 base = "assets/",
 secs = 8;
 bgImageArray.forEach(function(img){
