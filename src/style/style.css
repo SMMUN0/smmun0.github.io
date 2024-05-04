@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Glacial Indifference Bold";
-    src: url("../fonts/GlacialIndifference-Bold.otf");
+    src: url("../fonts/GlacialIndifference-Bold.ttf");
 }
 
 @font-face {
@@ -22,6 +22,39 @@ body {
     background-size: cover; 
 }
 
+nav {
+    position: fixed;
+    top: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+nav button {
+    cursor: pointer;
+    background-color: #8b59d6;
+    border-color: transparent;
+    border-radius: 24px;
+    font-family: "Glacial Indifference Bold";
+    font-size: 1rem;
+    color: #fffdfd;
+    /*padding: 2vh 2vw 2vh 2vw;*/
+    width: 13vw;
+    height: 8vh;
+    margin: 0 1vw;
+}
+
+.inactive button{
+    opacity: 0.63;
+}
+
+nav button:hover {
+    opacity: 0.8;
+}
+
 #greeting {
     height: 70%;
     width: 100%;
@@ -33,11 +66,11 @@ body {
     display: flex;
 }
 
-#greeting div {
+#greeting-sub {
     align-self: flex-end;
     display: flex;
     flex-direction: column;
-    padding: 0 0 1vmax 1.5vmax;
+    padding: 0 0 1vmax 0;
     width: 100%;
 }
 
@@ -49,9 +82,10 @@ body {
     height: 30vh;
 }
 
-#greeting div div {
+#greeting-sub div {
     align-self: flex-start;
-    color: white;
+    color: #fffdfd;
+    padding: 1vh 3vw;
 }
 
 #legado-de-lideres {
@@ -63,15 +97,3 @@ body {
     font-family: "Glacial Indifference Bold";
     font-size: 2rem;
 }
-
-/*#overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-repeat: repeat;
-    background-image: url("");
-    mix-blend-mode: multiply;
-    pointer-events: none;
-}*/
