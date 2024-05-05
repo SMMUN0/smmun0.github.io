@@ -1,7 +1,9 @@
 #greeting {
     height: 70%;
     width: 100%;
-    background-image: url("../assets/greeting_background.png") no-repeat center;
+    background-image: url("../assets/greeting_background.png");
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     position: relative;
     display: flex;
@@ -38,4 +40,28 @@
 #modelo-de-naciones-unidas {
     font-family: "Glacial Indifference Bold";
     font-size: 2rem;
+}
+
+#modelo-de-sonadores {
+    background-color: #95b897;
+    margin: 4vh 0;
+    padding: 3vh 0 2vh 0;
+    font-size: 1.5rem;
+    color: #fffdfd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sonadores-1 {
+    font-family: "The Seasons Regular";
+}
+
+#sonadores-2-regular {
+    font-family: "Glacial Indifference Regular";
+}
+
+#sonadores-2-italic {
+    font-family: "Glacial Indifference Italic";
 }
