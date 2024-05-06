@@ -160,14 +160,16 @@ section {
 
 #info-prox {
     margin-top: 5vh;
+    padding: 0 2vw;
     font-family: "The Seasons Bold";
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #042654;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    text-align: center;
 }
 
 #info-prox-1 {
