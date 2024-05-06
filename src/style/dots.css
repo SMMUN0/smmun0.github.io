@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 820px) {
     #dot-progress {
         position: fixed;
         top: 56%;
@@ -19,7 +19,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
     #dot-progress {
         display: none;
     }
