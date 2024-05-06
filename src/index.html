@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SMMUN</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/dots.css">
+    <link rel="stylesheet" href="style/index.css">
     <link rel="preload" as="image" href="assets/greeting_background.webp" imagesizes="100vw">
     <link rel="preload" as="image" href="assets/smmun_dorado.webp" imagesizes="30vh">
     <link rel="preload" as="image" href="assets/smmun_morado.webp" imagesizes="1.5rem">
@@ -71,6 +72,14 @@
             </div>
         </nav>
     </header>
+    <!-- Dot page progress indicator -->
+    <div id="dot-progress">
+        <span class="dot" style="opacity: 50%;"></span>
+        <span class="dot" style="opacity: 50%;"></span>
+        <span class="dot" style="opacity: 50%;"></span>
+        <span class="dot" style="opacity: 50%;"></span>
+        <span class="dot" style="opacity: 50%;"></span>
+    </div>
     <!-- Home section -->
     <section id="home">
         <!-- SMMUN edition name and background -->
@@ -147,7 +156,9 @@
             &copy; 2024 SMMUN
         </footer>
     </section>
+    <!-- Scripts -->
     <script src="scripts/navbar.js"></script>
+    <script src="scripts/dots.js"></script>
     <script src="scripts/index.js"></script>
 </body>
 </html>
