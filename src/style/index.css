@@ -1,5 +1,18 @@
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#home {
+    background-image: url("../assets/bg.png");
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100%;
+}
+
 #greeting {
-    height: 70%;
+    height: 72%;
     width: 100%;
     background-image: url("../assets/greeting_background.png");
     background-repeat: no-repeat;
@@ -29,7 +42,6 @@
     align-self: flex-start;
     color: #fffdfd;
     padding: 1vh 3vw;
-    user-select: none;
 }
 
 #legado-de-lideres {
@@ -44,8 +56,8 @@
 
 #modelo-de-sonadores {
     background-color: #95b897;
-    margin: 4vh 0;
-    padding: 3vh 0 2vh 0;
+    margin: 2vh 0 0 0;
+    padding: 3.5vh 0 2.5vh 0;
     font-size: 1.5rem;
     color: #fffdfd;
     display: flex;
@@ -64,4 +76,120 @@
 
 #sonadores-2-italic {
     font-family: "Glacial Indifference Italic";
+}
+
+#sm-marquee {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.sm-marquee-wrapper {
+    display: flex;
+    align-items: center;
+    animation: scroll 30s linear infinite;
+    white-space: nowrap;
+    font-family: "The Seasons Bold";
+    font-size: 1rem;
+    color: #8b59d6;
+}
+
+.sm-marquee-wrapper p {
+    white-space: nowrap;
+}
+
+.sm-marquee-wrapper img {
+    height: 1.5rem;
+    padding: 0 1rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#social-media {
+    background-image: url("../assets/blue_bg.png");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+    #social-media {
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #social-media {
+        height: 88vh;
+    }
+}
+
+#insta-feed {
+    background-color: #053a80;
+    padding: 2vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#insta-feed div {
+    width: 70vw;
+}
+
+@media screen and (min-width: 600px) {
+    #insta-feed div {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #insta-feed div {
+        width: 90vw;
+    }
+}
+
+#info-prox {
+    margin-top: 5vh;
+    font-family: "The Seasons Bold";
+    font-size: 1.2rem;
+    color: #042654;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#info-prox-1 {
+    margin-bottom: 5vh;
+}
+
+#info-prox-2 {
+    margin-bottom: 10vh;
+}
+
+#info-prox-3 a {
+    color: #8b59d6;
+}
+
+#info-prox-3 a:visited {
+    color: #8b59d6;
+}
+
+footer {
+    font-family: "Glacial Indifference Bold";
+    font-size: 0.6rem;
+    color: #042654;
+    text-align: center;
+    padding: 2vh 0;
 }
