@@ -26,6 +26,12 @@
     <link rel="preload" href="/assets/fonts/GlacialIndifference-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="/assets/fonts/The Seasons Bold.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="/assets/fonts/The Seasons Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+    <!-- Instagram feed script -->
+    {% if page.fileSlug == "" %}
+        <!-- <script type="module" src="https://w.behold.so/widget.js"></script> -->
+    {% endif %}
+
 </head>
 <body>
     {% include "navbar.njk" %}
