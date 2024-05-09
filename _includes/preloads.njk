@@ -1,0 +1,15 @@
+<!-- Preload images -->
+{% if page.fileSlug == "" %}
+    <link rel="preload" as="image" href="assets/greeting_background.webp" imagesizes="100vw">
+    <link rel="preload" as="image" href="assets/smmun_dorado.webp" imagesizes="30vh">
+    <link rel="preload" as="image" href="assets/smmun_morado.webp" imagesizes="1.5rem">
+{% else %}
+    <link rel="preload" as="image" href="/assets/img/smmun_deg.webp" imagesizes="30vh">
+{% endif %}
+
+<!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/GlacialIndifference-Bold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/assets/fonts/GlacialIndifference-Italic.otf" as="font" type="font/otf" crossorigin>
+<link rel="preload" href="/assets/fonts/GlacialIndifference-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/assets/fonts/The Seasons Bold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/assets/fonts/The Seasons Regular.ttf" as="font" type="font/ttf" crossorigin>
