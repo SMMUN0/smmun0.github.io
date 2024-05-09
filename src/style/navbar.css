@@ -6,40 +6,15 @@ nav {
     flex-direction: row;
     align-items: center;
     z-index: 1;
-}
-
-.navbar-logo {
-    z-index: 2;
-}
-
-.nav-colored {
     background-color: white;
-    /*background-image: url("../assets/blue_bg.webp");*/
+    background-image: url("../assets/bg.webp");
     background-repeat: repeat;
     background-size: cover;
     transition: background-color 200ms linear;
 }
 
-nav button {
-    cursor: pointer;
-    background-color: #8b59d6;
-    border-color: transparent;
-    border-radius: 24px;
-    font-family: "Glacial Indifference Bold";
-    font-size: 1rem;
-    color: #fffdfd;
-    min-width: 13vw;
-    min-height: 8vh;
-    width: fit-content;
-    height: fit-content;
-}
-
-.inactive button{
-    opacity: 0.63;
-}
-
-nav button:hover {
-    opacity: 0.8;
+.navbar-logo {
+    z-index: 2;
 }
 
 @media screen and (min-width: 820px) {
@@ -49,7 +24,7 @@ nav button:hover {
 
     nav {
         justify-content: space-evenly;
-        padding: 5vh 0;
+        padding: 2vh 0;
     }
 
     .navbar-logo {
@@ -58,10 +33,6 @@ nav button:hover {
 
     .navbar-logo img {
         height: 9vh;
-    }
-
-    .nav-colored {
-        padding: 2vh 0;
     }
 
     nav button {

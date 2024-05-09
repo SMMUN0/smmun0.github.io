@@ -2,6 +2,7 @@
 const nav = document.getElementById("navbar") as HTMLElement;
 const navMobile = document.getElementById("navbar-mobile") as HTMLElement;
 const navLogo = document.getElementsByClassName("navbar-logo")[0] as HTMLElement;
+const navLogoMobile = document.getElementsByClassName("navbar-logo")[1] as HTMLElement;
 const header = document.getElementById("greeting") as HTMLElement;
 const navHeight = nav.getBoundingClientRect().height;
 
@@ -9,11 +10,8 @@ function updateNavColor(entries: IntersectionObserverEntry[]) {
     const [entry] = entries;
 
     if (!entry.isIntersecting) {
-        nav.classList.add("nav-colored");
-        navMobile.classList.add("nav-colored");
-
         navLogo.style.display = "inherit";
-        navLogo.style.opacity = "1";
+        navLogoMobile.style.display = "inherit";
 
         nav.classList.remove("nav-transparent");
         navMobile.classList.remove("nav-transparent");
@@ -23,10 +21,7 @@ function updateNavColor(entries: IntersectionObserverEntry[]) {
         navMobile.classList.add("nav-transparent");
 
         navLogo.style.display = "none";
-        navLogo.style.opacity = "0";
-
-        nav.classList.remove("nav-colored");
-        navMobile.classList.remove("nav-colored");
+        navLogoMobile.style.display = "none";
     }
 }
 
