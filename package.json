@@ -4,12 +4,13 @@
   "description": "Webpage for the South Mexican Model United Nations (SMMUN)",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "postbuild": "cpy './src/**/*' '!src/**/*.ts' './dist/'"
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "watch": "npx @11ty/eleventy --watch"
   },
+  "keywords": [],
   "author": "",
   "devDependencies": {
-    "cpy-cli": "^5.0.0",
-    "typescript": "^5.4.5"
+    "@11ty/eleventy": "^2.0.1"
   }
 }

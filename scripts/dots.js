@@ -19,7 +19,7 @@ if (height > window.innerHeight) {
             const distance = (1 - Math.abs(0.25 * i - scrollPercentage));
 
             // Set dot opacity with min 0.5
-            (dots[i] as HTMLElement).style.opacity = Math.max(distance, 0.5).toString();
+            dots[i].style.opacity = Math.max(distance, 0.5).toString();
         }
     }
 
@@ -29,5 +29,5 @@ if (height > window.innerHeight) {
 }
 else {
     // Do not display dots
-    (document.getElementById("dot-progress") as HTMLElement).style.display = "none";
+    document.getElementById("dot-progress").style.display = "none";
 }

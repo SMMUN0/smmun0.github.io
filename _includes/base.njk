@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/navbar.css">
+    <link rel="stylesheet" href="/style/dots.css">
+    <link rel="stylesheet" href="/style/{{ page.fileSlug or "index" }}.css">
+
+    <!-- Preload front images -->
+    {% if page.fileSlug == "" %}
+        <link rel="preload" as="image" href="assets/greeting_background.webp" imagesizes="100vw">
+        <link rel="preload" as="image" href="assets/smmun_dorado.webp" imagesizes="30vh">
+        <link rel="preload" as="image" href="assets/smmun_morado.webp" imagesizes="1.5rem">
+    {% else %}
+        <link rel="preload" as="image" href="/assets/img/smmun_deg.webp" imagesizes="30vh">
+    {% endif %}
+
+    <!-- Preload fonts -->
+    <link rel="preload" href="/assets/fonts/GlacialIndifference-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/assets/fonts/GlacialIndifference-Italic.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="/assets/fonts/GlacialIndifference-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/assets/fonts/The Seasons Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/assets/fonts/The Seasons Regular.ttf" as="font" type="font/ttf" crossorigin>
+</head>
+<body>
+    {% include "navbar.njk" %}
+
+    {% include "dots.njk" %}
+
+    {{ content | safe }}
+
+    {% if not not_include_footer %}
+        {% include "footer.njk" %}
+    {% endif %}
+
+    <!-- Scripts -->
+    <script src="/scripts/navbar.js"></script>
+    <script src="/scripts/dots.js"></script>
+    <script src="/scripts/{{ page.fileSlug or "index" }}.js"></script>
+</body>
+</html>

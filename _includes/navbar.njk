@@ -1,0 +1,65 @@
+<!-- Navbars -->
+<header>
+    <!-- Desktop navbar -->
+    <nav id="navbar">
+        <a class="navbar-logo" href="/">
+            <picture>
+                {% if page.fileSlug == "" %}
+                    <img src="/assets/img/smmun_dorado.webp" alt="">
+                {% else %}
+                    <img src="/assets/img/smmun_deg.webp" alt="">
+                {% endif %}
+            </picture>
+        </a>
+        <a href="/" id="index-button" class="inactive">
+            <button>Inicio</button>
+        </a>
+        <a href="/info" id="info-button" class="inactive">
+            <button>¿Quiénes somos?</button>
+        </a>
+        <a href="/alianzas" id="alianzas-button" class="inactive">
+            <button>Alianzas</button>
+        </a>
+        <a href="/registro" id="registro-button" class="inactive">
+            <button>Registro</button>
+        </a>
+        <a href="/recursos" id="recursos-button" class="inactive">
+            <button>Recursos</button>
+        </a>
+    </nav>
+    <!-- Mobile / small screen navbar -->
+    <nav id="navbar-mobile">
+        <a href="/">
+            <picture class="navbar-logo">
+                <!-- Load gold icon for index, deg for others -->
+                {% if page.fileSlug == "" %}
+                    <img src="/assets/img/smmun_dorado.webp" alt="">
+                {% else %}
+                    <img src="/assets/img/smmun_deg.webp" alt="">
+                {% endif %}
+            </picture>
+        </a>
+        <ul id="nav-menu">
+            <li class="nav-item">
+                <a href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="/info">¿Quiénes somos?</a>
+            </li>
+            <li class="nav-item">
+                <a href="/alianzas">Alianzas</a>
+            </li>
+            <li class="nav-item">
+                <a href="/registro">Registro</a>
+            </li>
+            <li class="nav-item">
+                <a href="/recursos">Recursos</a>
+            </li>
+        </ul>
+        <div id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>

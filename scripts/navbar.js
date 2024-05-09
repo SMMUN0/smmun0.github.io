@@ -1,6 +1,6 @@
 // Hamburger menu for mobile and small screens
-const hamburger = document.getElementById("hamburger") as HTMLElement;
-const navMenu = document.getElementById("nav-menu") as HTMLElement;
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
 
 hamburger.addEventListener("click", mobileMenu);

@@ -1,12 +1,12 @@
 // Update navbar after scrolling
-const nav = document.getElementById("navbar") as HTMLElement;
-const navMobile = document.getElementById("navbar-mobile") as HTMLElement;
-const navLogo = document.getElementsByClassName("navbar-logo")[0] as HTMLElement;
-const navLogoMobile = document.getElementsByClassName("navbar-logo")[1] as HTMLElement;
-const header = document.getElementById("greeting") as HTMLElement;
+const nav = document.getElementById("navbar");
+const navMobile = document.getElementById("navbar-mobile");
+const navLogo = document.getElementsByClassName("navbar-logo")[0];
+const navLogoMobile = document.getElementsByClassName("navbar-logo")[1];
+const header = document.getElementById("greeting");
 const navHeight = nav.getBoundingClientRect().height;
 
-function updateNavColor(entries: IntersectionObserverEntry[]) {
+function updateNavColor(entries) {
     const [entry] = entries;
 
     if (!entry.isIntersecting) {
@@ -34,10 +34,10 @@ const headerObserver = new IntersectionObserver(updateNavColor, {
 headerObserver.observe(header);
 
 // Set navbar button as active
-(document.getElementById("index-button") as HTMLElement).classList.remove("inactive");
+document.getElementById("index-button").classList.remove("inactive");
 
 // Simulates a typewriter effect for text
-function typingAnim(element: HTMLElement, text: string, resolve = (value: unknown) => {return}, i = 0)
+function typingAnim(element, text, resolve = (value) => {return}, i = 0)
 {
     if (i === 0) {
         element.textContent = "";
@@ -57,10 +57,10 @@ function typingAnim(element: HTMLElement, text: string, resolve = (value: unknow
 
 // Animate "Legado de Líderes"
 const legadoTypingAnim = new Promise((resolve, reject) => {
-    typingAnim(document.getElementById("legado-de-lideres")!, "| Legado de Líderes", resolve);
+    typingAnim(document.getElementById("legado-de-lideres"), "| Legado de Líderes", resolve);
 });
 
 // When "Legado de Líderes" is done, animate SMMUN text
 legadoTypingAnim.then(() =>
-    setTimeout(() => typingAnim(document.getElementById("modelo-de-naciones-unidas")!, "Modelo de Naciones Unidas del Sureste Mexicano"), 100)
+    setTimeout(() => typingAnim(document.getElementById("modelo-de-naciones-unidas"), "Modelo de Naciones Unidas del Sureste Mexicano"), 100)
 );
