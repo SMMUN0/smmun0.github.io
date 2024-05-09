@@ -33,6 +33,9 @@ const headerObserver = new IntersectionObserver(updateNavColor, {
 
 headerObserver.observe(header);
 
+// Set navbar button as active
+(document.getElementById("index-button") as HTMLElement).classList.remove("inactive");
+
 // Simulates a typewriter effect for text
 function typingAnim(element: HTMLElement, text: string, resolve = (value: unknown) => {return}, i = 0)
 {
