@@ -33,6 +33,9 @@
     <!-- Scripts -->
     <script src="/scripts/navbar.js"></script>
     <script src="/scripts/dots.js"></script>
-    <script src="/scripts/{{ page.fileSlug or "index" }}.js"></script>
+
+    {% if uses_js %}
+        <script src="/scripts/{{ page.fileSlug or "index" }}.js"></script>
+    {% endif %}
 </body>
 </html>

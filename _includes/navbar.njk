@@ -11,19 +11,19 @@
                 {% endif %}
             </picture>
         </a>
-        <a href="/" id="index-button" class="inactive">
+        <a href="/" id="index-button" class="{{"inactive-button" if page.fileSlug != "" else "" }}">
             <button>Inicio</button>
         </a>
-        <a href="/info" id="info-button" class="inactive">
+        <a href="/info" id="info-button" class="{{"inactive-button" if page.fileSlug != "info" else "" }}">
             <button>¿Quiénes somos?</button>
         </a>
-        <a href="/alianzas" id="alianzas-button" class="inactive">
+        <a href="/alianzas" id="alianzas-button" class="{{"inactive-button" if page.fileSlug != "alianzas" else "" }}">
             <button>Alianzas</button>
         </a>
-        <a href="/registro" id="registro-button" class="inactive">
+        <a href="/registro" id="registro-button" class="{{"inactive-button" if page.fileSlug != "registro" else "" }}">
             <button>Registro</button>
         </a>
-        <a href="/recursos" id="recursos-button" class="inactive">
+        <a href="/recursos" id="recursos-button" class="{{"inactive-button" if page.fileSlug != "recursos" else "" }}">
             <button>Recursos</button>
         </a>
     </nav>

@@ -49,7 +49,7 @@ nav {
         height: fit-content;
     }
 
-    .inactive button{
+    .inactive-button {
         opacity: 0.63;
     }
 

@@ -3,6 +3,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget("./style/");
     eleventyConfig.addPassthroughCopy("./assets/");
     eleventyConfig.addPassthroughCopy("./scripts/");
+    eleventyConfig.addWatchTarget("./scripts/");
 
     return {
 		dir: {
