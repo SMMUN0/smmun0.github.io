@@ -6,11 +6,11 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget("./scripts/");
 
     return {
-		dir: {
-			input: "content",
-			includes: "../_includes",
-			data: "../_data",
+        dir: {
+            input: "content",
+            includes: "../_includes",
+            data: "../_data",
             output: "_site"
-		},
-	}
+        }
+    };
 };
