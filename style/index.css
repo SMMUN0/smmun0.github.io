@@ -158,12 +158,6 @@ section {
     }
 }
 
-@media screen and (max-width: 820px) {
-    #social-media {
-        height: 90vh;
-    }
-}
-
 #insta-feed {
     background-color: #053a80;
     padding: 2vh 0;
