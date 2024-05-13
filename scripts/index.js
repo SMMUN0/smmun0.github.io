@@ -1,3 +1,10 @@
+// Remove text for writing animation
+const legadoText = document.getElementById("legado-de-lideres");
+const modeloText = document.getElementById("modelo-de-naciones-unidas");
+
+legadoText.innerText = "\xa0";
+modeloText.innerText = "\xa0";
+
 // Update navbar after scrolling
 const nav = document.getElementById("navbar");
 const navMobile = document.getElementById("navbar-mobile");
@@ -33,16 +40,9 @@ const headerObserver = new IntersectionObserver(updateNavColor, {
 
 headerObserver.observe(header);
 
-// Set navbar button as active
-document.getElementById("index-button").classList.remove("inactive");
-
 // Simulates a typewriter effect for text
 function typingAnim(element, text, resolve = (value) => {return}, i = 0)
 {
-    if (i === 0) {
-        element.textContent = "";
-    }
-
     // Add next letter
     element.textContent += text[i];
 
@@ -57,10 +57,10 @@ function typingAnim(element, text, resolve = (value) => {return}, i = 0)
 
 // Animate "Legado de Líderes"
 const legadoTypingAnim = new Promise((resolve, reject) => {
-    typingAnim(document.getElementById("legado-de-lideres"), "| Legado de Líderes", resolve);
+    typingAnim(legadoText, "| Legado de Líderes", resolve);
 });
 
 // When "Legado de Líderes" is done, animate SMMUN text
 legadoTypingAnim.then(() =>
-    setTimeout(() => typingAnim(document.getElementById("modelo-de-naciones-unidas"), "Modelo de Naciones Unidas del Sureste Mexicano"), 100)
+    setTimeout(() => typingAnim(modeloText, "Modelo de Naciones Unidas del Sureste Mexicano"), 100)
 );

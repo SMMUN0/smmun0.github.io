@@ -1,0 +1,74 @@
+#model-edition {
+    background-image: url("../assets/img/blue_bg_dark.webp");
+    background-repeat: repeat;
+    background-size: cover;
+    margin: 2vh 0 0 0;
+    padding: 3.5vh 0 2vmax 0;
+    color: #fffdfd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "The Seasons Regular";
+}
+
+#model-edition span {
+    padding: 0.5vh 3vw;
+}
+
+#model-year {
+    font-size: 2.8rem;
+}
+
+#model-name {
+    font-size: 1.9rem;
+}
+
+#quienes-somos {
+    font-family: "Glacial Indifference Bold";
+    font-size: 1.5rem;
+    margin: 3vh 0 3vh 5vw;
+}
+
+.fotos-2024 img {
+    width: 100%;
+}
+
+#info-modelo {
+    background-color: #95b897;
+    margin: 2vh 0 0 0;
+    padding: 3.5vh 0 2.5vh 0;
+    color: #576b58;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#que-es-smmun {
+    font-family: "Glacial Indifference Bold";
+    font-size: 1.5rem;
+    margin-bottom: 2vh;
+}
+
+#descripcion-smmun {
+    font-family: "Glacial Indifference Regular";
+    font-size: 1rem;
+    padding: 0 5vw;
+}
+
+
+/*
+
+<div id="info-modelo">
+    <div id="que-es-smmun">
+        ¿Qué es el Modelo de Naciones Unidas del Sureste Mexicano?
+    </div>
+    <div id="descripcion-smmun">
+        El Modelo de las Naciones Unidas del Sureste Mexicano (o SMMUN por sus siglas en inglés) es un modelo de naciones hecho por y para jóvenes estudiantes con intereses en temas de derecho internacional, relaciones internacionales, derechos humanos y todo lo relacionado a la ONU. Tiene el propósito de otorgarle a las personas participantes una oportunidad para experimentar las sesiones de trabajo llevadas a cabo en las Naciones Unidas en la vida real, tratando temas de suma relevancia internacional, a la par que le permite a los participantes desarrollar habilidades de liderazgo, negociación, diplomacia, trabajo en equipo, investigación, entre otros.
+
+        Tras el éxito de su primer año en 2016, se llevan a cabo las ediciones anuales del Modelo de Naciones Unidas del Sureste de México en Mérida, Yucatán. Todo estudiante de preparatoria o universidad entre los 15 y 25 años está invitado a participar en el evento que será el máximo representante del sentimiento juvenil de la Organización de las Naciones Unidas en el sureste de México.
+    </div>
+</div>
+
+*/
