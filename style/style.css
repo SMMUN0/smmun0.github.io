@@ -37,6 +37,7 @@ html, body {
 
 body {
     background-image: url("../assets/img/bg.webp");
+    margin-top: 13.5vh;
 }
 
 footer {
