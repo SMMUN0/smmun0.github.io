@@ -38,6 +38,7 @@ section {
     background-size: cover;
     position: relative;
     display: flex;
+    user-select: none;
 }
 
 @media screen and (min-width: 820px) {
