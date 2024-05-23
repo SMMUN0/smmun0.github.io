@@ -4,7 +4,7 @@ body {
 }
 
 nav {
-    background-image: url("../assets/img/blue_bg.webp") !important;
+    background-image: url("/assets/img/backgrounds/blue_bg.webp") !important;
 }
 
 .nav-transparent {
@@ -32,7 +32,7 @@ section {
 
 #greeting {
     width: 100%;
-    background-image: url("../assets/img/greeting_background.webp");
+    background-image: url("/assets/img/images/greeting.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -147,7 +147,7 @@ section {
 }
 
 #social-media {
-    background-image: url("../assets/img/blue_bg.webp");
+    background-image: url("/assets/img/backgrounds/blue_bg.webp");
     background-repeat: repeat;
     background-size: cover;
 }
