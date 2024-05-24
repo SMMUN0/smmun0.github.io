@@ -1,4 +1,4 @@
-body {
+body, main {
     height: 100%;
     margin-top: 0 !important;
 }
@@ -69,10 +69,12 @@ section {
     height: 30vh;
 }
 
-#greeting-sub div {
+#greeting-sub h1 {
     align-self: flex-start;
     color: #fffdfd;
     padding: 1vh 3vw;
+    margin: 0;
+    font-weight: normal;
 }
 
 #legado-de-lideres {
@@ -89,12 +91,18 @@ section {
     background-color: #95b897;
     margin: 2vh 0 0 0;
     padding: 3.5vh 0 2.5vh 0;
-    font-size: 1.5rem;
     color: #fffdfd;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#modelo-de-sonadores h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: normal;
 }
 
 #sonadores-1 {
@@ -198,17 +206,21 @@ section {
 }
 
 #info-prox-1 {
+    margin-top: 0;
     margin-bottom: 5vh;
 }
 
 #info-prox-2 {
+    margin-top: 0;
     margin-bottom: 7.5vh;
 }
 
 #info-prox-3 a {
+    margin: 0;
     color: #8b59d6;
 }
 
 #info-prox-3 a:visited {
+    margin: 0;
     color: #8b59d6;
 }

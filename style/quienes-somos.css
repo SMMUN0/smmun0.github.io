@@ -11,7 +11,9 @@
     font-family: "The Seasons Regular";
 }
 
-#model-edition span {
+#model-edition h1 {
+    margin: 0;
+    font-weight: normal;
     padding: 0.5vh 3vw;
 }
 
@@ -27,9 +29,14 @@
     font-family: "Glacial Indifference Bold";
     font-size: 1.5rem;
     margin: 2.5vh 0 2.5vh 5vw;
+    font-weight: normal;
 }
 
-.fotos-2024 img {
+#fotos-2024 {
+    margin: 0;
+}
+
+#fotos-2024 img {
     width: 100%;
 }
 
@@ -50,12 +57,15 @@
     font-family: "Glacial Indifference Bold";
     font-size: 1.5rem;
     margin-bottom: 2vh;
+    margin-top: 0;
+    font-weight: normal;
 }
 
 .info-text {
     font-family: "Glacial Indifference Regular";
     font-size: 1rem;
     padding: 0 5vw;
+    margin: 0;
 }
 
 #smmun-info {
@@ -86,8 +96,9 @@
     justify-content: space-around;
 }
 
-.info-images picture {
+.info-images figure {
     width: 100%;
+    margin: 0;
 }
 
 .info-images img {

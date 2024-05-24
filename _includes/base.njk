@@ -24,7 +24,9 @@
 
     {% include "dots.njk" %}
 
-    {{ content | safe }}
+    <main>
+        {{ content | safe }}
+    </main>
 
     {% if not not_include_footer %}
         {% include "footer.njk" %}

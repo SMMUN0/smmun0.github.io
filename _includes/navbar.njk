@@ -3,13 +3,13 @@
     <!-- Desktop navbar -->
     <nav id="navbar">
         <a class="navbar-logo" href="/">
-            <picture>
+            <figure>
                 {% if page.fileSlug == "" %}
                     <img src="/assets/img/logos/smmun_dorado.webp" alt="">
                 {% else %}
                     <img src="/assets/img/logos/smmun_deg.webp" alt="">
                 {% endif %}
-            </picture>
+            </figure>
         </a>
         <a href="/" id="index-button" class="{{"inactive-button" if page.fileSlug != "" else "" }}">
             <button>Inicio</button>

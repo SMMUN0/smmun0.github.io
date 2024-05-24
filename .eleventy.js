@@ -6,25 +6,25 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget("./scripts/");
 
     eleventyConfig.addShortcode("smmun_edition", function(year, edition, text) {
-        return `<div class="info-div" style="background-image: url('/assets/img/editions/${year}/bg.webp'); color: #fffdfd;">
-            <div class="info-title">
+        return `<article class="info-div" style="background-image: url('/assets/img/editions/${year}/bg.webp'); color: #fffdfd;">
+            <h3 class="info-title">
                 SMMUN ${year}; ${edition}
-            </div>
-            <div class="info-text">
+            </h3>
+            <p class="info-text">
                 ${text}
-            </div>
+            </p>
             <div class="info-images">
-                <picture>
+                <figure>
                     <img src="/assets/img/editions/${year}/img1.webp" alt="">
-                </picture>
-                <picture>
+                </figure>
+                <figure>
                     <img src="/assets/img/editions/${year}/img2.webp" alt="">
-                </picture>
-                <picture>
+                </figure>
+                <figure>
                     <img src="/assets/img/editions/${year}/img3.webp" alt="">
-                </picture>
+                </figure>
             </div>
-        </div>`;
+        </article>`;
     });
 
     return {
