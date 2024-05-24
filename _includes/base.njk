@@ -28,9 +28,7 @@
         {{ content | safe }}
     </main>
 
-    {% if not not_include_footer %}
-        {% include "footer.njk" %}
-    {% endif %}
+    {% include "footer.njk" %}
 
     <!-- Scripts -->
     <script src="/scripts/navbar.js"></script>
