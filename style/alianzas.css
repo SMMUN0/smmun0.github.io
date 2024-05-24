@@ -1,0 +1,45 @@
+#alianzas-info {
+    background-color: #6f75d5;
+    padding: 1vh 0 1vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+}
+
+#alianzas-info h1 {
+    margin: 1vh 0 1vh 0;
+    font-weight: normal;
+    padding: 0.5vh 3vw;
+    font-family: "Glacial Indifference Bold";
+    font-size: 1.5rem;
+    color: #3e4176;
+}
+
+#alianzas-info p {
+    margin: 0 0 3vh 0;
+    padding: 0.5vh 3vw;
+    font-family: "Glacial Indifference Regular";
+    font-size: 1rem;
+    color: #fffdfd;
+}
+
+#alianzas-logos {
+    margin: 0 8vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#alianzas-logos figure {
+    margin: 0;
+}
+
+#alianzas-logos img {
+    height: 28vh;
+    margin-top: 1vh;
+}

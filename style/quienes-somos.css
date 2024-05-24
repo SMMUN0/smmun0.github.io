@@ -5,9 +5,6 @@
     margin: 2vh 0 0 0;
     padding: 3.5vh 0 2vh 0;
     color: #fffdfd;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     font-family: "The Seasons Regular";
 }
 
