@@ -1,0 +1,88 @@
+#convocatorias-title {
+    background-color: #6f75d5cf;
+    margin: 2vh 0 0 0;
+    padding: 2vh 0 2vh 0;
+    color: #fffdfd;
+    font-family: "Glacial Indifference Regular";
+}
+
+#convocatorias-title h1 {
+    margin: 0;
+    font-weight: normal;
+    padding: 0.5vh 3vw;
+    font-size: 2.3rem;
+}
+
+#oval {
+    max-width: fit-content;
+    border: solid #fffdfd;
+    border-radius: 120px / 70px;
+    text-align: center;
+    margin: auto;
+}
+
+#convocatorias {
+    display: flex;
+    margin-top: 5vh;
+}
+
+.convocatoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    text-align: center;
+}
+
+@media screen and (min-width: 820px) {
+    #convocatorias {
+        flex-direction: row;
+        align-items: top;
+        justify-content: space-around;
+    }
+
+    .convocatoria {
+        width: 23vw;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    #convocatorias {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .convocatoria {
+        width: 80vw;
+        margin-bottom: 2vh;
+    }
+}
+
+.convocatoria figure {
+    margin: 0;
+}
+
+.convocatoria img {
+    width: 100%;
+}
+
+.convocatoria h2 {
+    margin: 0;
+    font-family: "Glacial Indifference Bold";
+    font-size: 1.75rem;
+    font-weight: normal;
+}
+
+.convocatoria p {
+    margin: 0;
+    font-family: "Glacial Indifference Bold";
+    font-size: 1rem;
+    font-weight: normal;
+    color: #95b897;
+}
+
+.convocatoria a {
+    text-decoration: none;
+    color: #8b59d6;
+}

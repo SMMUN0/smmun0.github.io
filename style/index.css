@@ -8,6 +8,10 @@ nav {
     background-image: url("/assets/img/backgrounds/blue_bg.webp") !important;
 }
 
+#nav-menu {
+    background-image: url("/assets/img/backgrounds/blue_bg.webp") !important;
+}
+
 .nav-transparent {
     background-color: transparent !important;
     background-image: none !important;
