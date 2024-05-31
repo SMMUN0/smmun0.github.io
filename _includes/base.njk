@@ -12,12 +12,6 @@
     <link rel="stylesheet" href="/style/{{ page.fileSlug or "index" }}.css">
 
     {% include "preloads.njk" %}
-
-    <!-- Instagram feed script -->
-    {% if page.fileSlug == "" %}
-        <!-- <script type="module" src="https://w.behold.so/widget.js"></script> -->
-    {% endif %}
-
 </head>
 <body>
     {% include "navbar.njk" %}
