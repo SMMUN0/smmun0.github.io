@@ -15,13 +15,13 @@ module.exports = function (eleventyConfig) {
             </p>
             <div class="info-images">
                 <figure>
-                    <img src="/assets/img/editions/${year}/img1.webp" alt="">
+                    <img src="/assets/img/editions/${year}/img1.webp" alt="Foto  de la edición ${year} del SMMUN.">
                 </figure>
                 <figure>
-                    <img src="/assets/img/editions/${year}/img2.webp" alt="">
+                    <img src="/assets/img/editions/${year}/img2.webp" alt="Foto  de la edición ${year} del SMMUN.">
                 </figure>
                 <figure>
-                    <img src="/assets/img/editions/${year}/img3.webp" alt="">
+                    <img src="/assets/img/editions/${year}/img3.webp" alt="Foto  de la edición ${year} del SMMUN.">
                 </figure>
             </div>
         </article>`;
