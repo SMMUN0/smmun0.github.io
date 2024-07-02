@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget("./scripts/");
 
     eleventyConfig.addShortcode("smmun_edition", function(year, edition, text) {
-        return `<article class="info-div" style="background-image: url('/assets/img/editions/${year}/bg.webp'); color: #fffdfd;">
+        return `<article class="info-div" style="background-image: url('/assets/img/ediciones/${year}/bg.webp'); color: #fffdfd;">
             <h3 class="info-title">
                 SMMUN ${year}; ${edition}
             </h3>
@@ -15,13 +15,13 @@ module.exports = function (eleventyConfig) {
             </p>
             <div class="info-images">
                 <figure>
-                    <img src="/assets/img/editions/${year}/img1.webp" alt="Foto  de la edición ${year} del SMMUN.">
+                    <img src="/assets/img/ediciones/${year}/img1.webp" alt="Foto  de la edición ${year} del SMMUN.">
                 </figure>
                 <figure>
-                    <img src="/assets/img/editions/${year}/img2.webp" alt="Foto  de la edición ${year} del SMMUN.">
+                    <img src="/assets/img/ediciones/${year}/img2.webp" alt="Foto  de la edición ${year} del SMMUN.">
                 </figure>
                 <figure>
-                    <img src="/assets/img/editions/${year}/img3.webp" alt="Foto  de la edición ${year} del SMMUN.">
+                    <img src="/assets/img/ediciones/${year}/img3.webp" alt="Foto  de la edición ${year} del SMMUN.">
                 </figure>
             </div>
         </article>`;

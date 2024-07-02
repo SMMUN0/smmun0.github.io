@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="/style/navbar.css">
     <link rel="stylesheet" href="/style/dots.css">
     <link rel="stylesheet" href="/style/{{ page.fileSlug or "index" }}.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <script src="https://kit.fontawesome.com/9cfc87b7f3.js" crossorigin="anonymous"></script>
 
     {% include "preloads.njk" %}
 </head>
@@ -22,7 +24,14 @@
         {{ content | safe }}
     </main>
 
-    {% include "footer.njk" %}
+    {% if page.fileSlug == "" %}
+        {% include "footer.njk" %}
+    {% else %}
+        <!-- Copyright footer -->
+        <footer id="normal-footer">
+            &copy; 2024 SMMUN
+        </footer>
+    {% endif %}
 
     <!-- Scripts -->
     <script src="/scripts/navbar.js"></script>
