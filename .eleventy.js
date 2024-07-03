@@ -6,7 +6,12 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget("./scripts/");
 
     eleventyConfig.addShortcode("smmun_edition", function(year, edition, text) {
-        return `<article class="info-div" style="background-image: url('/assets/img/ediciones/${year}/bg.webp'); color: #fffdfd;">
+        let color = "#fffdfd";
+        if (year == 2016) {
+            color = "#042654";
+        }
+
+        return `<article class="info-div" style="background-image: url('/assets/img/ediciones/${year}/bg.webp'); color:${color};">
             <h3 class="info-title">
                 SMMUN ${year}; ${edition}
             </h3>
