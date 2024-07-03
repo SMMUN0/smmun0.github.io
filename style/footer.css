@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: row;
     align-content: center;
-    margin: 2vh 0 3vh 3vw;
+    margin: 2vh 3vw 3vh 3vw;
     margin-bottom: 2vh;
 }
 
@@ -56,12 +56,12 @@
     #contact-info {
         flex-direction: column;
         align-items: self-start;
-        margin-left: 3vw;
         text-align: left;
     }
 }
 
 #contact-email {
+    margin: 0 3vw;
     text-align: left;
     flex-grow: 1;
     color: #fffdfd;
@@ -69,7 +69,6 @@
 
 @media screen and (min-width: 820px) {
     #contact-email {
-        margin-left: 3vw;
         align-self: center;
     }
 }
@@ -100,7 +99,7 @@
 }
 
 #social-media {
-    margin-right: 3vw;
+    margin: 0 3vw;
     color: #fffdfd;
     font-size: 1rem;
 }
