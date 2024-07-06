@@ -1,0 +1,36 @@
+#titulo-carta {
+    background-color: #042654;
+    /*margin: 2vh 0 0 0;*/
+    padding: 3.5vh 0 2vh 0;
+    color: #fffdfd;
+    font-family: "The Seasons Regular";
+    font-size: 2.5rem;
+}
+
+#titulo-carta h1 {
+    margin: 0;
+    font-weight: normal;
+    padding: 0.5vh 5vw;
+}
+
+#texto-carta {
+    font-family: "Glacial Indifference Regular";
+    font-size: 1.5rem;
+    color: #042654;
+    padding: 0 5vw;
+}
+
+#despedida-carta {
+    font-family: "Glacial Indifference Bold";
+    padding: 0 5vw;
+}
+
+#sinceramente {
+    color: #8b59d6;
+    font-size: 1.5rem;
+}
+
+#comite-organizador {
+    color: #95b897;
+    font-size: 1.2rem;
+}
