@@ -10,27 +10,43 @@
 #titulo-carta h1 {
     margin: 0;
     font-weight: normal;
-    padding: 0.5vh 5vw;
+    padding: 0.5vh 9vw;
 }
 
 #texto-carta {
     font-family: "Glacial Indifference Regular";
-    font-size: 1.5rem;
-    color: #042654;
-    padding: 0 5vw;
+    font-size: 1rem;
+    color: #000000;
+    padding: 0 20vw 0 9vw;
+    text-align: justify;
 }
 
-#despedida-carta {
+#texto-carta strong {
+    font-weight: normal;
     font-family: "Glacial Indifference Bold";
-    padding: 0 5vw;
 }
 
-#sinceramente {
+#texto-carta .center {
+    display: block;
+    text-align: center;
+}
+
+#texto-carta .blue {
+    color: #042654;
+}
+
+#texto-carta .green {
+    color: #95b897;
+}
+
+#texto-carta .purple {
     color: #8b59d6;
-    font-size: 1.5rem;
+}
+
+#bienvenidas {
+    font-size: 1.2rem;
 }
 
 #comite-organizador {
-    color: #95b897;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
