@@ -1,5 +1,6 @@
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./CNAME");
+    eleventyConfig.addPassthroughCopy("./robots.txt");
     eleventyConfig.addPassthroughCopy("./style/");
     eleventyConfig.addWatchTarget("./style/");
     eleventyConfig.addPassthroughCopy("./assets/");
