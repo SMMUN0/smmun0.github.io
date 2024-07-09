@@ -1,9 +1,37 @@
-// Remove text for writing animation
-const legadoText = document.getElementById("legado-de-lideres");
-const modeloText = document.getElementById("modelo-de-naciones-unidas");
+// Simulates a typewriter effect for text
+function typingAnim(element, text, resolve = (value) => {return}, i = 0)
+{
+    // Add next letter
+    element.textContent += text[i];
 
-legadoText.innerText = "\xa0";
-modeloText.innerText = "\xa0";
+    if (i === text.length - 1) {
+        // Resolve the Future
+        return resolve("");
+    }
+
+    // Run recursively after a 50ms timeout
+    setTimeout(() => typingAnim(element, text, resolve, i + 1), 50);
+}
+
+// Do not animate if the user does not want animations or is a bot
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && !/bot|googlebot|crawler|spider|robot|crawling|powermapper|sortsite/i.test(navigator.userAgent)) {
+    // Remove text for writing animation
+    const legadoText = document.getElementById("legado-de-lideres");
+    const modeloText = document.getElementById("modelo-de-naciones-unidas");
+
+    legadoText.innerText = "\xa0";
+    modeloText.innerText = "\xa0";
+
+    // Animate "Legado de Líderes"
+    const legadoTypingAnim = new Promise((resolve, reject) => {
+        typingAnim(legadoText, "| Legado de Líderes", resolve);
+    });
+
+    // When "Legado de Líderes" is done, animate SMMUN text
+    legadoTypingAnim.then(() =>
+        setTimeout(() => typingAnim(modeloText, "Modelo de Naciones Unidas del Sureste Mexicano"), 100)
+    );
+}
 
 // Update navbar after scrolling
 const nav = document.getElementById("navbar");
@@ -39,28 +67,3 @@ const headerObserver = new IntersectionObserver(updateNavColor, {
 });
 
 headerObserver.observe(header);
-
-// Simulates a typewriter effect for text
-function typingAnim(element, text, resolve = (value) => {return}, i = 0)
-{
-    // Add next letter
-    element.textContent += text[i];
-
-    if (i === text.length - 1) {
-        // Resolve the Future
-        return resolve("");
-    }
-
-    // Run recursively after a 50ms timeout
-    setTimeout(() => typingAnim(element, text, resolve, i + 1), 50);
-}
-
-// Animate "Legado de Líderes"
-const legadoTypingAnim = new Promise((resolve, reject) => {
-    typingAnim(legadoText, "| Legado de Líderes", resolve);
-});
-
-// When "Legado de Líderes" is done, animate SMMUN text
-legadoTypingAnim.then(() =>
-    setTimeout(() => typingAnim(modeloText, "Modelo de Naciones Unidas del Sureste Mexicano"), 100)
-);

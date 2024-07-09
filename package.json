@@ -11,6 +11,7 @@
   "keywords": [],
   "author": "Bruno Ancona <brunoanconasala@gmail.com>",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "image-size": "^1.1.1"
   }
 }

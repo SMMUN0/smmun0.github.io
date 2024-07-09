@@ -1,6 +1,5 @@
 #convocatorias-title {
     background-color: #6f75d5cf;
-    /*margin: 2vh 0 0 0;*/
     padding: 2vh 0 2vh 0;
     color: #fffdfd;
     font-family: "Glacial Indifference Regular";
@@ -65,6 +64,7 @@
 
 .convocatoria img {
     width: 100%;
+    height: auto;
 }
 
 .convocatoria h2 {

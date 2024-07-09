@@ -1,8 +1,8 @@
 #model-edition {
-    background-image: url("/assets/img/backgrounds/blue_bg_dark.webp");
+    background-color: #7872a1;
+    background-image: url("/assets/img/backgrounds/blue_bg_darker.webp");
     background-repeat: repeat;
     background-size: cover;
-    /*margin: 2vh 0 0 0;*/
     padding: 3.5vh 0 2vh 0;
     color: #fffdfd;
     font-family: "The Seasons Regular";
@@ -35,6 +35,7 @@
 
 #fotos-2024 img {
     width: 100%;
+    height: auto;
 }
 
 .info-div {
@@ -71,16 +72,19 @@
 }
 
 #mun-info {
+    background-color: #898fec;
     background-image: url("/assets/img/images/un_flag.webp");
     color: #3e4176;
 }
 
 #un-info {
+    background-color: #898fec;
     background-image: url("/assets/img/images/un_building.webp");
     color: #3e4176;
 }
 
 #sm-2025-info {
+    background-color: #7061b3;
     background-image: url("/assets/img/ediciones/2025/bg.webp");
     color: #fffdfd;
 }
@@ -100,4 +104,5 @@
 
 .info-images img {
     width: 90%;
+    height: auto;
 }

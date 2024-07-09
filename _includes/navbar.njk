@@ -5,39 +5,39 @@
         <a class="navbar-logo" href="/">
             <figure>
                 {% if page.fileSlug == "" %}
-                    <img src="/assets/img/logos/smmun_dorado.webp" alt="Logo del SMMUN.">
+                    <img src="/assets/img/logos/smmun_dorado.webp" width="2000" height="1787" alt="Logo del SMMUN.">
                 {% else %}
-                    <img src="/assets/img/logos/smmun_deg.webp" alt="Logo del SMMUN.">
+                    <img src="/assets/img/logos/smmun_deg.webp" width="1000" height="894" alt="Logo del SMMUN.">
                 {% endif %}
             </figure>
         </a>
-        <a href="/" id="index-button" class="{{"inactive-button" if page.fileSlug != "" else "" }}">
-            <button>Inicio</button>
+        <a href="/" id="index-button" class="button {{"inactive-button" if page.fileSlug != "" else "" }}">
+            Inicio
         </a>
-        <a href="/quienes-somos" class="{{"inactive-button" if page.fileSlug != "quienes-somos" else "" }}">
-            <button>¿Quiénes somos?</button>
+        <a href="/quienes-somos" class="button {{"inactive-button" if page.fileSlug != "quienes-somos" else "" }}">
+            ¿Quiénes somos?
         </a>
-        <!-- <a href="/alianzas" class="{{"inactive-button" if page.fileSlug != "alianzas" else "" }}">
-            <button>Alianzas</button>
+        <!-- <a href="/alianzas" class="button {{"inactive-button" if page.fileSlug != "alianzas" else "" }}">
+            Alianzas
         </a> -->
-        <a href="/registro" class="{{"inactive-button" if page.fileSlug != "registro" else "" }}">
-            <button>Registro</button>
+        <a href="/registro" class="button {{"inactive-button" if page.fileSlug != "registro" else "" }}">
+            Registro
         </a>
-        <a href="/recursos" class="{{"inactive-button" if page.fileSlug != "recursos" else "" }}">
-            <button>Recursos</button>
+        <a href="/recursos" class="button {{"inactive-button" if page.fileSlug != "recursos" else "" }}">
+            Recursos
         </a>
     </nav>
     <!-- Mobile / small screen navbar -->
     <nav id="navbar-mobile">
         <a href="/">
-            <picture class="navbar-logo">
+            <figure class="navbar-logo">
                 <!-- Load gold icon for index, deg for others -->
                 {% if page.fileSlug == "" %}
-                    <img src="/assets/img/logos/smmun_dorado.webp" alt="Logo del SMMUN.">
+                    <img src="/assets/img/logos/smmun_dorado.webp" width="2000" height="1787" alt="Logo del SMMUN.">
                 {% else %}
-                    <img src="/assets/img/logos/smmun_deg.webp" alt="Logo del SMMUN.">
+                    <img src="/assets/img/logos/smmun_deg.webp" width="1000" height="894" alt="Logo del SMMUN.">
                 {% endif %}
-            </picture>
+            </figure>
         </a>
         <ul id="nav-menu">
             <li class="nav-item">

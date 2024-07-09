@@ -40,6 +40,7 @@
 }
 
 #alianzas-logos img {
+    width: auto;
     height: 26vh;
     margin-top: 2vh;
 }

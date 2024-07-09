@@ -7,7 +7,7 @@ nav {
     align-items: center;
     z-index: 1;
     background-color: #fffdfd;
-    background-image: url("/assets/img/backgrounds/bg.webp");
+    background-image: url("/assets/img/backgrounds/white_bg.webp");
     background-repeat: repeat;
     background-size: cover;
     transition: background-color 200ms linear;
@@ -36,10 +36,11 @@ nav {
     }
 
     .navbar-logo img {
+        width: auto;
         height: 9vh;
     }
 
-    nav button {
+    nav .button {
         cursor: pointer;
         background-color: #8b59d6;
         border-color: transparent;
@@ -48,16 +49,17 @@ nav {
         font-size: 1rem;
         color: #fffdfd;
         min-width: 13vw;
-        min-height: 8vh;
-        width: fit-content;
-        height: fit-content;
+        height: 8vh;
+        text-align: center;
+        line-height: 8vh;
+        text-decoration: none;
     }
 
     .inactive-button {
         opacity: 0.63;
     }
 
-    nav button:hover {
+    nav .button:hover {
         opacity: 0.8;
     }
 }
@@ -77,6 +79,7 @@ nav {
     }
 
     .navbar-logo img {
+        width: auto;
         height: 6vh;
     }
 
@@ -108,7 +111,7 @@ nav {
         text-align: center;
         transition: 0.3s;
         background-color: #fffdfd;
-        background-image: url("/assets/img/backgrounds/bg.webp");
+        background-image: url("/assets/img/backgrounds/white_bg.webp");
         background-repeat: repeat;
         background-size: cover;
     }

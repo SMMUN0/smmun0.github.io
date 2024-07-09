@@ -1,3 +1,5 @@
+const sizeOf = require("image-size");
+
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./CNAME");
     eleventyConfig.addPassthroughCopy("./robots.txt");
@@ -13,13 +15,21 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.ignores.add("./content/alianzas.njk");
 
-    eleventyConfig.addShortcode("smmun_edition", function(year, edition, text) {
+    eleventyConfig.addShortcode("smmun_edition", function(year, edition, bgColor, text) {
         let color = "#fffdfd";
         if (year == 2016) {
             color = "#042654";
         }
 
-        return `<article class="info-div" style="background-image: url('/assets/img/ediciones/${year}/bg.webp'); color:${color};">
+        let img1 = `assets/img/ediciones/${year}/img1.webp`;
+        let img2 = `assets/img/ediciones/${year}/img2.webp`;
+        let img3 = `assets/img/ediciones/${year}/img3.webp`;
+
+        let img1Dimensions = sizeOf(img1);
+        let img2Dimensions = sizeOf(img2);
+        let img3Dimensions = sizeOf(img3);
+
+        return `<article class="info-div" style="background-color: ${bgColor}; background-image: url('/assets/img/ediciones/${year}/bg.webp'); color:${color};">
             <h3 class="info-title">
                 SMMUN ${year}; ${edition}
             </h3>
@@ -28,13 +38,13 @@ module.exports = function (eleventyConfig) {
             </p>
             <div class="info-images">
                 <figure>
-                    <img src="/assets/img/ediciones/${year}/img1.webp" alt="Foto  de la edición ${year} del SMMUN.">
+                    <img src="/${img1}" width="${img1Dimensions.width}" height="${img1Dimensions.height}" alt="Foto  de la edición ${year} del SMMUN.">
                 </figure>
                 <figure>
-                    <img src="/assets/img/ediciones/${year}/img2.webp" alt="Foto  de la edición ${year} del SMMUN.">
+                    <img src="/${img2}" width="${img2Dimensions.width}" height="${img2Dimensions.height}" alt="Foto  de la edición ${year} del SMMUN.">
                 </figure>
                 <figure>
-                    <img src="/assets/img/ediciones/${year}/img3.webp" alt="Foto  de la edición ${year} del SMMUN.">
+                    <img src="/${img3}" width="${img3Dimensions.width}" height="${img3Dimensions.height}" alt="Foto  de la edición ${year} del SMMUN.">
                 </figure>
             </div>
         </article>`;

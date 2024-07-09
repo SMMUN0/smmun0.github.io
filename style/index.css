@@ -1,14 +1,17 @@
 body {
     margin-top: 0 !important;
+    background-color: #8e98ac;
     background-image: url("/assets/img/backgrounds/blue_bg.webp") !important;
     height: auto;
 }
 
 nav {
+    background-color: #8e98ac;
     background-image: url("/assets/img/backgrounds/blue_bg.webp") !important;
 }
 
 #nav-menu {
+    background-color: #8e98ac;
     background-image: url("/assets/img/backgrounds/blue_bg.webp") !important;
 }
 
@@ -34,13 +37,14 @@ section {
     background-size: cover;
     height: 100vh;
     background-color: #fffdfd;
-    background-image: url("/assets/img/backgrounds/bg.webp");
+    background-image: url("/assets/img/backgrounds/white_bg.webp");
     background-repeat: repeat;
     background-size: cover;
 }
 
 #greeting {
     width: 100%;
+    background-color: #544c76;
     background-image: url("/assets/img/images/greeting.webp");
     background-repeat: no-repeat;
     background-position: center;
@@ -75,10 +79,11 @@ section {
 }
 
 #smmun-dorado img {
+    width: auto;
     height: 30vh;
 }
 
-#greeting-sub h1 {
+#legado-de-lideres, #modelo-de-naciones-unidas {
     align-self: flex-start;
     color: #fffdfd;
     padding: 1vh 3vw;
@@ -143,11 +148,18 @@ section {
     color: #8b59d6;
 }
 
+@media (prefers-reduced-motion) {
+    .sm-marquee-wrapper {
+        animation: none;
+    }
+}
+
 .sm-marquee-wrapper p {
     white-space: nowrap;
 }
 
 .sm-marquee-wrapper img {
+    width: auto;
     height: 1.5rem;
     padding: 0 1rem;
     vertical-align: middle;

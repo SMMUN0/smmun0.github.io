@@ -8,7 +8,8 @@
 
 #extended-footer {
     width: 100%;
-    background-image: url("/assets/img/backgrounds/opaque_blue_bg.webp");
+    background-color: #6d659a;
+    background-image: url("/assets/img/backgrounds/blue_bg_darkest.webp");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -28,6 +29,7 @@
 }
 
 #logo-name img {
+    width: auto;
     height: 4rem;
     position: relative;
     top: 50%;
