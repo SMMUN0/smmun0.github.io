@@ -17,7 +17,7 @@ nav {
     z-index: 2;
 }
 
-.navbar-logo figure {
+nav figure {
     margin: 0;
 }
 
@@ -75,7 +75,7 @@ nav {
     }
 
     .navbar-logo {
-        padding: 1vh 0 1vh 5vw;
+        padding-left: 5vw;
     }
 
     .navbar-logo img {
