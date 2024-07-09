@@ -3,7 +3,6 @@ const sizeOf = require("image-size");
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./CNAME");
     eleventyConfig.addPassthroughCopy("./robots.txt");
-    eleventyConfig.addPassthroughCopy("./google7c5809e8f262e76b.html");
 
     eleventyConfig.addPassthroughCopy("./style/", {filter: path => (path.endsWith('alianzas.css') == false)});
     eleventyConfig.addWatchTarget("./style/");
