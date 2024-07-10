@@ -1,18 +1,22 @@
 body {
     margin-top: 0 !important;
-    background-color: #8e98ac;
+    background-color: #8e98ac !important;
     background-image: url("/assets/img/backgrounds/blue_bg.webp") !important;
     height: auto;
 }
 
 nav {
-    background-color: #8e98ac;
+    background-color: #8e98ac !important;
     background-image: url("/assets/img/backgrounds/blue_bg.webp") !important;
 }
 
 #nav-menu {
-    background-color: #8e98ac;
+    background-color: #8e98ac !important;
     background-image: url("/assets/img/backgrounds/blue_bg.webp") !important;
+}
+
+.nav-item a {
+    color: #fffdfd !important;
 }
 
 .nav-transparent {
