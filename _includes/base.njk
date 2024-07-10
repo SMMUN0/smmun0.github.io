@@ -24,6 +24,21 @@
     <link rel="stylesheet" href="/style/footer.css">
     <script src="https://kit.fontawesome.com/9cfc87b7f3.js" crossorigin="anonymous"></script>
 
+    {% if page.fileSlug == "" %}    
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "NGO",
+                "image": "https://smmun.com/assets/img/images/greeting.webp",
+                "url": "https://smmun.com",
+                "logo": "https://smmun.com/assets/img/logos/smmun_deg.webp",
+                "name": "SMMUN",
+                "description": "El Modelo de Naciones Unidas de soñadores, estrellas y líderes.",
+                "email": "secretariageneral@smmun.com"
+            }      
+        </script>
+    {% endif %}
+
     {% include "preloads.njk" %}
 </head>
 <body>
