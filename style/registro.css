@@ -79,12 +79,12 @@
     font-family: "Glacial Indifference Bold";
     font-size: 1rem;
     font-weight: normal;
-    color: #95b897;
+    color: #809f81;
 }
 
 .convocatoria a {
     text-decoration: none;
-    color: #8b59d6;
+    color: #8d7abb;
 }
 
 .convocatoria a:hover {
@@ -93,5 +93,5 @@
 
 .convocatoria a:visited {
     margin: 0;
-    color: #8b59d6;
+    color: #8d7abb;
 }

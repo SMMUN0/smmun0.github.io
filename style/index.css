@@ -10,9 +10,14 @@ nav {
     background-image: url("/assets/img/backgrounds/blue_bg.webp") !important;
 }
 
+.bar {
+    background-color: #fffdfd !important;
+}
+
 #nav-menu {
     background-color: #8e98ac !important;
     background-image: url("/assets/img/backgrounds/blue_bg.webp") !important;
+    box-shadow: 0px 0px 5px 1px #fffdfd !important;
 }
 
 .nav-item a {
@@ -23,7 +28,12 @@ nav {
     background-color: transparent !important;
     background-image: none !important;
     transition: background-color 200ms linear;
-    padding: 5vh 0;
+}
+
+@media screen and (min-width: 820px) {
+    .nav-transparent {
+        padding: 5vh 0;
+    }
 }
 
 .navbar-logo {
@@ -149,7 +159,7 @@ section {
     white-space: nowrap;
     font-family: "The Seasons Bold";
     font-size: 1rem;
-    color: #8b59d6;
+    color: #8d7abb;
 }
 
 @media (prefers-reduced-motion) {
@@ -209,6 +219,6 @@ section {
     padding: 0 2vw;
     font-family: "The Seasons Bold";
     font-size: 2rem;
-    color: #042654;
+    color: #063372;
     text-align: center;
 }
