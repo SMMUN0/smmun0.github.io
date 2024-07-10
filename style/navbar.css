@@ -95,7 +95,6 @@ nav figure {
         margin: 5px auto;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
-        background-color: #8d7abb;
     }
 
     #nav-menu {
@@ -126,7 +125,6 @@ nav figure {
     .nav-item a {
         font-family: "Glacial Indifference Bold";
         font-size: 1.6rem;
-        color: #8d7abb;
         text-decoration: none;
         display: block;
     }
