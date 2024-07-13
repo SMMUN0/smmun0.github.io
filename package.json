@@ -12,6 +12,9 @@
   "author": "Bruno Ancona <brunoanconasala@gmail.com>",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "image-size": "^1.1.1"
+    "clean-css": "^5.3.3",
+    "html-minifier-terser": "^7.2.0",
+    "image-size": "^1.1.1",
+    "terser": "^5.31.2"
   }
 }
