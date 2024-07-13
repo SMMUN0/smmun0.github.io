@@ -4,26 +4,26 @@
     <nav id="navbar">
         <a class="navbar-logo" href="/">
             <figure>
-                {% if page.fileSlug == "" %}
+                {% if page.fileSlug | fixFileSlug == "index" %}
                     <img src="/assets/img/logos/smmun_dorado.webp" width="2000" height="1787" alt="Logo del SMMUN.">
                 {% else %}
                     <img src="/assets/img/logos/smmun_deg.webp" width="1000" height="894" alt="Logo del SMMUN.">
                 {% endif %}
             </figure>
         </a>
-        <a href="/" id="index-button" class="button {{"inactive-button" if page.fileSlug != "" else "" }}">
+        <a href="/" id="index-button" class="button {{"inactive-button" if page.fileSlug | fixFileSlug != "index" else "" }}">
             Inicio
         </a>
-        <a href="/quienes-somos" class="button {{"inactive-button" if page.fileSlug != "quienes-somos" else "" }}">
+        <a href="/quienes-somos" class="button {{"inactive-button" if page.fileSlug | fixFileSlug != "quienes-somos" else "" }}">
             ¿Quiénes somos?
         </a>
-        <!-- <a href="/alianzas" class="button {{"inactive-button" if page.fileSlug != "alianzas" else "" }}">
+        <!-- <a href="/alianzas" class="button {{"inactive-button" if page.fileSlug | fixFileSlug != "alianzas" else "" }}">
             Alianzas
         </a> -->
-        <a href="/registro" class="button {{"inactive-button" if page.fileSlug != "registro" else "" }}">
+        <a href="/registro" class="button {{"inactive-button" if page.fileSlug | fixFileSlug != "registro" else "" }}">
             Registro
         </a>
-        <a href="/recursos" class="button {{"inactive-button" if page.fileSlug != "recursos" else "" }}">
+        <a href="/recursos" class="button {{"inactive-button" if page.fileSlug | fixFileSlug != "recursos" else "" }}">
             Recursos
         </a>
     </nav>
@@ -32,7 +32,7 @@
         <a href="/">
             <figure class="navbar-logo">
                 <!-- Load gold icon for index, deg for others -->
-                {% if page.fileSlug == "" %}
+                {% if page.fileSlug | fixFileSlug == "index" %}
                     <img src="/assets/img/logos/smmun_dorado.webp" width="2000" height="1787" alt="Logo del SMMUN.">
                 {% else %}
                     <img src="/assets/img/logos/smmun_deg.webp" width="1000" height="894" alt="Logo del SMMUN.">

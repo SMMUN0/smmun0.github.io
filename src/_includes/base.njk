@@ -20,11 +20,11 @@
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/navbar.css">
     <link rel="stylesheet" href="/style/dots.css">
-    <link rel="stylesheet" href="/style/{{ page.fileSlug or "index" }}.css">
+    <link rel="stylesheet" href="/style/{{ page.fileSlug | fixFileSlug }}.css">
     <link rel="stylesheet" href="/style/footer.css">
     <script src="https://kit.fontawesome.com/9cfc87b7f3.js" crossorigin="anonymous"></script>
 
-    {% if page.fileSlug == "" %}    
+    {% if page.fileSlug | fixFileSlug == "index" %}    
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -50,7 +50,7 @@
         {{ content | safe }}
     </main>
 
-    {% if page.fileSlug == "" %}
+    {% if page.fileSlug | fixFileSlug == "index" %}
         {% include "footer.njk" %}
     {% else %}
         <!-- Copyright footer -->
@@ -64,7 +64,7 @@
     <script src="/scripts/dots.js"></script>
 
     {% if uses_js %}
-        <script src="/scripts/{{ page.fileSlug or "index" }}.js"></script>
+        <script src="/scripts/{{ page.fileSlug | fixFileSlug }}.js"></script>
     {% endif %}
 </body>
 </html>

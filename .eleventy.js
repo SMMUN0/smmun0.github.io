@@ -27,6 +27,15 @@ module.exports = function (eleventyConfig) {
         return path.slice(pathToDrop.length);
     });
 
+    // Change fileSlug value on index files
+    eleventyConfig.addFilter("fixFileSlug", function(slug) {
+        if (slug == "content") {
+            return "index";
+        }
+
+        return slug;
+    });
+
     // Process CSS files
     eleventyConfig.addTemplateFormats("css");
     eleventyConfig.addExtension("css", {

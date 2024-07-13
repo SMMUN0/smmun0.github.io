@@ -1,5 +1,5 @@
 <!-- Preload images -->
-{% if page.fileSlug == "" %}
+{% if page.fileSlug | fixFileSlug == "index" %}
     <link rel="preload" as="image" href="/assets/img/images/greeting.webp">
     <link rel="preload" as="image" href="/assets/img/logos/smmun_dorado.webp">
     <link rel="preload" as="image" href="/assets/img/logos/smmun_morado.webp">
