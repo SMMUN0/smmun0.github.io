@@ -10,8 +10,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({"src/_assets": "/assets"}, {filter: path => (path.indexOf('/partners') == -1)});
 
     // Ignore files corresponding to unpublished "alianzas"
-    eleventyConfig.ignores.add("content/alianzas.njk");
-    eleventyConfig.ignores.add("content/style/alianzas.css");
+    eleventyConfig.ignores.add("src/content/alianzas.njk");
+    eleventyConfig.ignores.add("src/content/style/alianzas.css");
 
     // Move files in 'src/content' to root of site
     eleventyConfig.addFilter("dropContentFolder", function (path) {
