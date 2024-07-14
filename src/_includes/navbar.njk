@@ -11,19 +11,19 @@
                 {% endif %}
             </figure>
         </a>
-        <a href="/" id="index-button" class="button {{"inactive-button" if page.fileSlug | fixFileSlug != "index" else "" }}">
+        <a href="/" id="index-button" class="button {{ "inactive-button" if page.fileSlug | fixFileSlug != "index" else "" }}">
             Inicio
         </a>
-        <a href="/quienes-somos" class="button {{"inactive-button" if page.fileSlug | fixFileSlug != "quienes-somos" else "" }}">
+        <a href="/quienes-somos" class="button {{ "inactive-button" if page.fileSlug | fixFileSlug != "quienes-somos" else "" }}">
             ¿Quiénes somos?
         </a>
-        <!-- <a href="/alianzas" class="button {{"inactive-button" if page.fileSlug | fixFileSlug != "alianzas" else "" }}">
+        <!-- <a href="/alianzas" class="button { {"inactive-button" if page.fileSlug | fixFileSlug != "alianzas" else "" }}">
             Alianzas
         </a> -->
-        <a href="/registro" class="button {{"inactive-button" if page.fileSlug | fixFileSlug != "registro" else "" }}">
+        <a href="/registro" class="button {{ "inactive-button" if page.fileSlug | fixFileSlug != "registro" else "" }}">
             Registro
         </a>
-        <a href="/recursos" class="button {{"inactive-button" if page.fileSlug | fixFileSlug != "recursos" else "" }}">
+        <a href="/recursos" class="button {{ "inactive-button" if page.fileSlug | fixFileSlug != "recursos" else "" }}">
             Recursos
         </a>
     </nav>
