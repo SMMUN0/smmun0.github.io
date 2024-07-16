@@ -35,14 +35,53 @@
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
-                "@type": "NGO",
+                "@type": "EducationalOrganization",
                 "image": "https://smmun.com/assets/img/images/greeting.webp",
                 "url": "https://smmun.com",
                 "logo": "https://smmun.com/assets/img/logos/smmun_deg.webp",
                 "name": "SMMUN",
                 "description": "El Modelo de Naciones Unidas de soñadores, estrellas y líderes.",
                 "email": "secretariageneral@smmun.com"
-            }      
+            }
+        </script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Event",
+                "name": "Modelo de Naciones Unidas del Sureste Mexicano",
+                "startDate": "2025-04-01",
+                "endDate": "2025-04-05",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "eventStatus": "https://schema.org/EventScheduled",
+                "location": {
+                    "@type": "Place",
+                    "name": "Campus De Ciencias Sociales, Económicas-Administrativas y Humanidades UADY",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Km. 1 Carretera Mérida-Tizimín",
+                        "addressLocality": "Mérida",
+                        "postalCode": "97305",
+                        "addressRegion": "Yucatán",
+                        "addressCountry": "México"
+                    }
+                },
+                "image": [
+                    "https://smmun.com/assets/img/ediciones/2024/img3.webp",
+                    "https://smmun.com/assets/img/ediciones/2023/img3.webp",
+                    "https://smmun.com/assets/img/ediciones/2023/img2.webp"
+                ],
+                "description": "La Décima Edición del Modelo de Naciones Unidas de soñadores, estrellas y líderes.",
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://smmun.com/registro/"
+                },
+                "organizer": {
+                    "@type": "EducationalOrganization",
+                    "name": "SMMUN",
+                    "url": "https://smmun.com"
+                }
+            }
         </script>
     {% endif %}
 
