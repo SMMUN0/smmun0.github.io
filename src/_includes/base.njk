@@ -34,10 +34,19 @@
     {% if page.fileSlug | fixFileSlug == "index" %}    
         <script type="application/ld+json">
             {
+                "@context" : "https://schema.org",
+                "@type" : "WebSite",
+                "name" : "SMMUN",
+                "url" : "https://smmun.com/"
+            }
+        </script>
+
+        <script type="application/ld+json">
+            {
                 "@context": "https://schema.org",
                 "@type": "EducationalOrganization",
                 "image": "https://smmun.com/assets/img/images/greeting.webp",
-                "url": "https://smmun.com",
+                "url": "https://smmun.com/",
                 "logo": "https://smmun.com/assets/img/logos/smmun_deg.webp",
                 "name": "SMMUN",
                 "description": "El Modelo de Naciones Unidas de soñadores, estrellas y líderes.",
@@ -79,7 +88,7 @@
                 "organizer": {
                     "@type": "EducationalOrganization",
                     "name": "SMMUN",
-                    "url": "https://smmun.com"
+                    "url": "https://smmun.com/"
                 }
             }
         </script>
