@@ -1,0 +1,90 @@
+#titulo-registro {
+    background-color: #7872a1;
+    background-image: url("/assets/img/backgrounds/blue_bg_darker.webp");
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 3.5vh 0 2vh 0;
+    margin-bottom: 5vh;
+    color: #fffdfd;
+    font-family: "The Seasons Bold";
+}
+
+#titulo-registro h1 {
+    margin: 0;
+    font-weight: normal;
+    padding: 0.5vh 7vw;
+    font-size: 2.8rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: "Glacial Indifference Regular";
+    margin: 0 7vw;
+}
+
+form h2 {
+    font-family: "The Seasons Bold";
+    margin: 0 0 2vh 0;
+}
+
+form h3 {
+    font-size: 1rem;
+}
+
+form > div {
+    margin-bottom: 3vh;
+}
+
+form div:has(+ select) {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin-bottom: 1.5vh;
+}
+
+.bs-searchbox {
+    padding: 1vh 1vw;
+}
+
+.bs-searchbox input {
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+.bootstrap-select button {
+    font-family: "Twemoji Country Flags", "Glacial Indifference Regular";
+    margin-bottom: 1.5vh;
+}
+
+.bootstrap-select .dropdown-menu li a span {
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+#input-nombre-delegacion-oficial {
+    display: none;
+}
+
+#datos_personales_1 {
+    display: none;
+}
+
+#input_escolaridad_otra_0, #input_escolaridad_otra_1 {
+    display: none;
+}
+
+.comite-topico {
+    margin: 2vh 2vw;
+}
+
+.comite-topico-div {
+    border: solid #7872a1;
+    border-width: thin;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    margin-bottom: 1.5vh;
+}

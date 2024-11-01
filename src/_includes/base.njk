@@ -10,12 +10,12 @@
     <title>{{ title }}</title>
     <link rel="canonical" href="{{ site.url }}{{ page.url | url }}">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
-    <link rel="manifest" href="/site.webmanifest?v=2">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=2" color="#5bbad5">
-    <link rel="shortcut icon" href="/favicon.ico?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon.ico">
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
 
@@ -24,12 +24,17 @@
     <meta property="og:description" content="{{ description }}">
     <meta property="og:site_name" content="SMMUN">
 
+    {% if uses_bootstrap %}
+        <link rel="stylesheet" href="/style/bootstrap.min.css">
+        <link rel="stylesheet" href="/style/bootstrap-select.min.css">
+    {% endif %}
+
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/navbar.css">
     <link rel="stylesheet" href="/style/dots.css">
     <link rel="stylesheet" href="/style/{{ page.fileSlug | fixFileSlug }}.css">
     <link rel="stylesheet" href="/style/footer.css">
-    <script src="https://kit.fontawesome.com/9cfc87b7f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/fontawesome.min.css">
 
     {% if page.fileSlug | fixFileSlug == "index" %}    
         <script type="application/ld+json">
@@ -83,7 +88,7 @@
                 "description": "La Décima Edición del Modelo de Naciones Unidas de soñadores, estrellas y líderes.",
                 "offers": {
                     "@type": "Offer",
-                    "url": "https://smmun.com/registro/"
+                    "url": "https://smmun.com/registro-delegaciones/"
                 },
                 "organizer": {
                     "@type": "EducationalOrganization",
@@ -95,6 +100,11 @@
     {% endif %}
 
     {% include "preloads.njk" %}
+
+    <script>
+        // Fixes Firefox FOUC - see https://stackoverflow.com/questions/21147149/flash-of-unstyled-content-fouc-in-firefox-only-is-ff-slow-renderer
+        let FF_FOUC_FIX;
+    </script>
 </head>
 <body>
     {% include "navbar.njk" %}
@@ -117,6 +127,13 @@
     <!-- Scripts -->
     <script src="/scripts/navbar.js"></script>
     <script src="/scripts/dots.js"></script>
+
+    {% if uses_bootstrap %}
+        <script src="/scripts/popper.min.js"></script>
+        <script src="/scripts/bootstrap.min.js"></script>
+        <script src="/scripts/jquery.min.js"></script>
+        <script src="/scripts/bootstrap-select.js"></script>
+    {% endif %}
 
     {% if uses_js %}
         <script src="/scripts/{{ page.fileSlug | fixFileSlug }}.js"></script>

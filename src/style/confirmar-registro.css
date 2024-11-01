@@ -1,0 +1,49 @@
+#section-muchas-gracias {
+    height: 87vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#muchas-gracias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 4vw;
+}
+
+#checkmark {
+    margin-bottom: 5vh;
+    font-size: 18rem;
+    color: #198754;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#muchas-gracias h1 {
+    font-family: "The Seasons Bold";
+    font-size: 2.5rem;
+    color: #8d7abb;
+    margin: 0;
+}
+
+#muchas-gracias p {
+    font-family: "Glacial Indifference Regular";
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#muchas-gracias span {
+    margin: 1vh 0;
+}
+
+#muchas-gracias a {
+    color: #063372;
+}
+
+#contacto {
+    color: #809f81;
+}

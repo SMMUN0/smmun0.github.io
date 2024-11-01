@@ -65,6 +65,7 @@
 .convocatoria img {
     width: 100%;
     height: auto;
+    border-radius: 12px;
 }
 
 .convocatoria h2 {
@@ -94,4 +95,8 @@
 .convocatoria a:visited {
     margin: 0;
     color: #8d7abb;
+}
+
+#imagen-staff {
+    opacity: 50%;
 }
