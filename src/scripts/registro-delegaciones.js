@@ -623,6 +623,11 @@ for (let i = 0; i < 3; i++) {
         // Refrescar los selects
         paisSelects.selectpicker("refresh");
     });
+
+    paisSelects[2].addEventListener("change", function() {
+        // Refrescar los selects
+        paisSelects.selectpicker("refresh");
+    })
 }
 
 // Limitar tamaño de archivos
