@@ -1,6 +1,6 @@
 ---
 title: "Registro Delegaciones - SMMUN"
-description: "¡Inscríbete como delegación al SMMUN y lidera el debate sobre los problemas que enfrenta nuestro mundo!"
+description: "¡Te estamos buscando! No dudes el ser parte de una experiencia extraordinaria, regístrate en el SMMUN 2025 ✨"
 layout: "base.njk"
 uses_js: true
 uses_bootstrap: true
@@ -98,7 +98,7 @@ nav_color_mobile: "#6f75d5cf"
             <label for="pais_{{ i }}" class="form-label">País, estado y ciudad de residencia <span style="color: red;">*</span></label>
             <div class="row g-3">
                 <div class="col">
-                    <select data-width="100%" class="selectpicker" required name="pais_{{ i }}">
+                    <select data-width="100%" class="selectpicker select-pais" required name="pais_{{ i }}">
                         <option selected disabled value="">Selecciona una opción</option>
                         <option value="Afganistán">Afganistán</option>
                         <option value="Islas Åland">Islas Åland</option>
@@ -493,7 +493,7 @@ nav_color_mobile: "#6f75d5cf"
                         <option data-tokens="zara ratou" class="CRC" value="CRC:Zara Ratou (Chad)">👶&emsp;Zara Ratou (Chad)</option>
 
                         <!-- OIT -->
-                        <optgroup label="Sindicatos">
+                        <optgroup label="Sindicatos" class="OIT">
                             <option data-tokens="amwu" class="OIT" value="OIT:Sindicato de Trabajadores Manufactureros de Australia - AMWU (Australia)">🛠️&emsp;Sindicato de Trabajadores Manufactureros de Australia - AMWU (Australia)</option>
                             <option data-tokens="cgt" class="OIT" value="OIT:Confederación General del Trabajo - CGT (Francia)">🛠️&emsp;Confederación General del Trabajo - CGT (Francia)</option>
                             <option data-tokens="community" class="OIT" value="OIT:Community Trade Union – Community (Reino Unido)">🛠️&emsp;Community Trade Union – Community (Reino Unido)</option>
@@ -509,7 +509,7 @@ nav_color_mobile: "#6f75d5cf"
                             <option data-tokens="unifor" class="OIT" value="OIT:UNIFOR (Canadá)">🛠️&emsp;UNIFOR (Canadá)</option>
                         </optgroup>
 
-                        <optgroup label="Empresas">
+                        <optgroup label="Empresas" class="OIT">
                             <option data-tokens="apple" class="OIT" value="OIT:Apple Computer, Inc.">🏬&emsp;Apple Computer, Inc.</option>
                             <option data-tokens="bmw" class="OIT" value="OIT:BMW Group">🏬&emsp;BMW Group</option>
                             <option data-tokens="coca cola" class="OIT" value="OIT:The Coca-Cola Company">🏬&emsp;The Coca-Cola Company</option>
@@ -525,7 +525,7 @@ nav_color_mobile: "#6f75d5cf"
                             <option data-tokens="toyota" class="OIT" value="OIT:Toyota Motor Corporation">🏬&emsp;Toyota Motor Corporation</option>
                         </optgroup>
 
-                        <optgroup label="Países">
+                        <optgroup label="Países" class="OIT">
                             <option data-tokens="alemania" class="OIT" value="OIT:República Federal de Alemania">🇩🇪&emsp;República Federal de Alemania</option>
                             <option data-tokens="brasil" class="OIT" value="OIT:República Federativa de Brasil">🇧🇷&emsp;República Federativa de Brasil</option>
                             <option data-tokens="canada" class="OIT" value="OIT:Canadá">🇨🇦&emsp;Canadá</option>

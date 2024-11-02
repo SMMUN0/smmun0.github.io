@@ -1,3 +1,21 @@
+let mobile = isMobile();
+
+// Esconder opciones de select
+function hideOption(option, hide) {
+    option.hidden = hide;
+    option.disabled = hide;
+
+    // Workaround para iOS - https://stackoverflow.com/questions/36066953/css-hide-options-from-select-menu-on-iphone-safari
+    if (hide) {
+        if (!$(option).parent().is("span")) {
+            $(option).wrap("span");
+        }
+    }
+    else if ($(option).parent().is("span")) {
+        $(option).unwrap();
+    }
+}
+
 // Mostrar input de delegación oficial
 let delegacionOficialInput = document.getElementById("input-nombre-delegacion-oficial");
 let delegacionOficialSelect = document.getElementById("select-delegacion-oficial");
@@ -10,6 +28,11 @@ delegacionOficialSelect.addEventListener("change", function() {
         delegacionOficialInput.style.display = "none";
         delegacionOficialInput.required = false;
         delegacionOficialInput.value = "";
+    }
+
+    // Actualizar select cuando se usa menú nativo
+    if (mobile) {
+        $(this).selectpicker("refresh");
     }
 });
 
@@ -85,7 +108,14 @@ modalidadSelect.addEventListener("change", function() {
         $("select.select-comite option[value='CRC']").attr("disabled", true);
         $("select.select-comite option[value='NOBEL']").attr("disabled", true);
         $("select.select-comite option[value='CIJ']").attr("disabled", true);
-        $(this).selectedIndex = 0;
+
+        // Deseleccionar comité si está entre los deshabilitados
+        $("select.select-comite").each(function() {
+            if (["CRC", "NOBEL", "CIJ"].includes($(this).find(":selected").val())) {
+                this.selectedIndex = 0;
+                this.dispatchEvent(new Event("change", { bubbles: true }));
+            }
+        });
 
         // Poner el costo de inscripción para codelegación
         document.getElementById("costo-inscripcion").innerHTML = "$ COSTO CODELEGACIÓN";
@@ -114,6 +144,11 @@ modalidadSelect.addEventListener("change", function() {
 
     // Refrescar los pickers
     comiteSelects.selectpicker("refresh");
+
+    // Actualizar select cuando se usa menú nativo
+    if (mobile) {
+        $(this).selectpicker("refresh");
+    }
 });
 
 // Mostrar opcion de otra escolaridad (delegación)
@@ -128,6 +163,11 @@ escolaridadSelect0.addEventListener("change", function() {
         otraEscolaridadInput0.style.display = "none";
         otraEscolaridadInput0.required = false;
         otraEscolaridadInput0.value = "";
+    }
+
+    // Actualizar select cuando se usa menú nativo
+    if (mobile) {
+        $(this).selectpicker("refresh");
     }
 });
 
@@ -144,6 +184,21 @@ escolaridadSelect1.addEventListener("change", function() {
         otraEscolaridadInput1.required = false;
         otraEscolaridadInput1.value = "";
     }
+
+    // Actualizar select cuando se usa menú nativo
+    if (mobile) {
+        $(this).selectpicker("refresh");
+    }
+});
+
+// Manejar cambios de país de residencia
+$("select.select-pais").each(function() {
+    this.addEventListener("change", function() {
+        // Actualizar select cuando se usa menú nativo
+        if (mobile) {
+            $(this).selectpicker("refresh");
+        }
+    });
 });
 
 let previousComite0 = 0;
@@ -258,14 +313,16 @@ comiteSelects[0].addEventListener("change", function() {
     // Mostrar solo las opciones de delegación del comité seleccionado
     let thisValue = this.value;
 
-    $("select.select-comite-0-pais option").each(function() {
+    $("optgroup, option", "select.select-comite-0-pais").each(function() {
         if ($(this).attr("class") == thisValue) {
-            this.hidden = false;
-            this.disabled = false;
+            hideOption(this, false);
+            //this.hidden = false;
+            //this.disabled = false;
         }
-        else if (this.value) {
-            this.hidden = true;
-            this.disabled = true;
+        else if (this.value || $(this).is("optgroup")) {
+            hideOption(this, true);
+            //this.hidden = true;
+            //this.disabled = true;
         }
     });
 
@@ -274,6 +331,7 @@ comiteSelects[0].addEventListener("change", function() {
 
     // Refrescar los selects
     comiteSelects.selectpicker("refresh");
+    $("select.select-comite-0-pais").selectpicker("refresh");
 });
 
 let previousComite1 = 0;
@@ -381,14 +439,16 @@ comiteSelects[1].addEventListener("change", function() {
     // Mostrar solo las opciones de delegación del comité seleccionado
     let thisValue = this.value;
 
-    $("select.select-comite-1-pais option").each(function() {
+    $("optgroup, option", "select.select-comite-1-pais").each(function() {
         if ($(this).attr("class") == thisValue) {
-            this.hidden = false;
-            this.disabled = false;
+            hideOption(this, false);
+            //this.hidden = false;
+            //this.disabled = false;
         }
-        else if (this.value) {
-            this.hidden = true;
-            this.disabled = true;
+        else if (this.value || $(this).is("optgroup")) {
+            hideOption(this, true);
+            //this.hidden = true;
+            //this.disabled = true;
         }
     });
 
@@ -397,6 +457,8 @@ comiteSelects[1].addEventListener("change", function() {
 
     // Refrescar los selects
     comiteSelects.selectpicker("refresh");
+    $("select.select-comite-1-pais").selectpicker("refresh");
+
 });
 
 let comite2Topico0 = document.getElementById("comite-2-topico-0");
@@ -488,14 +550,16 @@ comiteSelects[2].addEventListener("change", function() {
     // Mostrar solo las opciones de delegación del comité seleccionado
     let thisValue = this.value;
 
-    $("select.select-comite-2-pais option").each(function() {
+    $("optgroup, option", "select.select-comite-2-pais").each(function() {
         if ($(this).attr("class") == thisValue) {
-            this.hidden = false;
-            this.disabled = false;
+            hideOption(this, false);
+            //this.hidden = false;
+            //this.disabled = false;
         }
-        else if (this.value) {
-            this.hidden = true;
-            this.disabled = true;
+        else if (this.value || $(this).is("optgroup")) {
+            hideOption(this, true);
+            //this.hidden = true;
+            //this.disabled = true;
         }
     });
 
@@ -504,6 +568,7 @@ comiteSelects[2].addEventListener("change", function() {
 
     // Refrescar los selects
     comiteSelects.selectpicker("refresh");
+    $("select.select-comite-2-pais").selectpicker("refresh");
 });
 
 // Evitar doble selección en opciones de país
@@ -656,7 +721,7 @@ for (let i = 0; i < registroSelects.length; i++) {
 // Refrescar los selects
 $(registroSelects).selectpicker("refresh");
 
-// Usar menú nativo en plataformas móbiles
-if (isMobile()) {
+// Usar menú nativo en plataformas móviles
+if (mobile) {
     $('.selectpicker').selectpicker("mobile");
 }
