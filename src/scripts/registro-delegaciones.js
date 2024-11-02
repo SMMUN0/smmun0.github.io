@@ -152,10 +152,10 @@ modalidadSelect.addEventListener("change", function() {
 });
 
 // Mostrar opcion de otra escolaridad (delegación)
-let otraEscolaridadInput0 = document.getElementById("input_escolaridad_otra_0");
-let escolaridadSelect0 = document.getElementById("select_escolaridad_0");
+let otraEscolaridadInput0 = document.getElementById("input-escolaridad-otra-0");
+let escolaridadSelect0 = document.getElementById("select-escolaridad-0");
 escolaridadSelect0.addEventListener("change", function() {
-    if (this.value == "otra") {
+    if (this.value == "Otra") {
         otraEscolaridadInput0.required = true;
         otraEscolaridadInput0.style.display = "initial";
     }
@@ -172,10 +172,10 @@ escolaridadSelect0.addEventListener("change", function() {
 });
 
 // Mostrar opcion de otra escolaridad (codelegación)
-let otraEscolaridadInput1 = document.getElementById("input_escolaridad_otra_1");
-let escolaridadSelect1 = document.getElementById("select_escolaridad_1");
+let otraEscolaridadInput1 = document.getElementById("input-escolaridad-otra-1");
+let escolaridadSelect1 = document.getElementById("select-escolaridad-1");
 escolaridadSelect1.addEventListener("change", function() {
-    if (this.value == "otra") {
+    if (this.value == "Otra") {
         otraEscolaridadInput1.required = true;
         otraEscolaridadInput1.style.display = "initial";
     }

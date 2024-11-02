@@ -998,7 +998,7 @@
     multipleSeparator: ', ',
     styleBase: 'btn',
     style: classNames.BUTTONCLASS,
-    size: 6,
+    size: 8,
     title: null,
     placeholder: null,
     titleTip: null,

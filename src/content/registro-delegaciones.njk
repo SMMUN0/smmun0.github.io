@@ -353,19 +353,19 @@ nav_color_mobile: "#6f75d5cf"
 
             <div>
                 <label for="escolaridad_{{ i }}" class="form-label">Escolaridad <span style="color: red;">*</span></label>
-                <select data-width="86vw" class="selectpicker" required name="escolaridad_{{ i }}" id="select_escolaridad_{{ i }}">
+                <select data-width="86vw" class="selectpicker" required name="escolaridad_{{ i }}" id="select-escolaridad-{{ i }}">
                     <option selected disabled value="">Selecciona una opción</option>
-                    <option value="secundaria">Secundaria</option>
-                    <option value="preparatoria">Preparatoria</option>
-                    <option value="universidad">Universidad</option>
-                    <option value="egresado">Egresado</option>
-                    <option value="otra">Otra...</option>
+                    <option value="Secundaria">Secundaria</option>
+                    <option value="Preparatoria">Preparatoria</option>
+                    <option value="Universidad">Universidad</option>
+                    <option value="Egresado">Egresado</option>
+                    <option value="Otra">Otra...</option>
                 </select>
                 <div class="invalid-feedback">Debes seleccionar una opción.</div>
             </div>
 
             <div>
-                <input class="form-control" required autocomplete="off" name="escolaridad_otra_{{ i }}" placeholder="Otra" type="text" id="input_escolaridad_otra_{{ i }}" maxlength="20">
+                <input class="form-control" required autocomplete="off" name="escolaridad_otra_{{ i }}" placeholder="Otra" type="text" id="input-escolaridad-otra-{{ i }}" maxlength="20">
                 <div class="invalid-feedback">Debes llenar este campo.</div>
             </div>
 
