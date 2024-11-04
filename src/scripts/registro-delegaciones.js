@@ -273,7 +273,7 @@ comiteSelects[0].addEventListener("change", function() {
 
         let carouselElement = document.getElementById(`carousel-comite-0-${this.value}`);
         carouselElement.style.display = "initial";
-        bootstrap.Carousel.getInstance(carouselElement).to(0);
+        bootstrap.Carousel.getOrCreateInstance(carouselElement).to(0);
 
     }
     else {
@@ -416,7 +416,7 @@ comiteSelects[1].addEventListener("change", function() {
 
         let carouselElement = document.getElementById(`carousel-comite-1-${this.value}`);
         carouselElement.style.display = "initial";
-        bootstrap.Carousel.getInstance(carouselElement).to(0);
+        bootstrap.Carousel.getOrCreateInstance(carouselElement).to(0);
     }
     else {
         comite1Topicos.style.display = "none";
@@ -547,7 +547,7 @@ comiteSelects[2].addEventListener("change", function() {
 
         let carouselElement = document.getElementById(`carousel-comite-2-${this.value}`);
         carouselElement.style.display = "initial";
-        bootstrap.Carousel.getInstance(carouselElement).to(0);
+        bootstrap.Carousel.getOrCreateInstance(carouselElement).to(0);
     }
     else {
         comite2Topicos.style.display = "none";
@@ -665,7 +665,7 @@ $(".carousel").each(function() {
 
     $(this).find("img").each(function() {
         this.addEventListener("click", function() {
-            let carousel = bootstrap.Carousel.getInstance(carouselElement);
+            let carousel = bootstrap.Carousel.getOrCreateInstance(carouselElement);
 
             if (paused) {
                 carousel.cycle();
@@ -827,7 +827,7 @@ for (let i = 0; i < registroSelects.length; i++) {
             select.selectedIndex = 0;
         }
     }
-    
+
     select.dispatchEvent(new Event("change", { bubbles: true }));
 }
 

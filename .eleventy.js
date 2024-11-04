@@ -72,7 +72,7 @@ module.exports = function (eleventyConfig) {
             case ".css":
                 return new CleanCSS({level: 2}).minify(content).styles;
             case ".js":
-                return /*minify_sync(*/content/*).code*/;
+                return minify_sync(content).code;
             default:
                 return content;
         }
