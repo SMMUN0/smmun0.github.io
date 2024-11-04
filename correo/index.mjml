@@ -12,6 +12,8 @@
                 font-family="Glacial Indifference, Helvetica, Arial"
                 font-size="14px"
             />
+
+            <mj-column padding="0 14px" />
         </mj-attributes>
     </mj-head>
 
@@ -36,13 +38,32 @@
         </mj-section>
 
         <mj-section background-color="#fff" padding="0 25px">
-            <mj-column
-                border-bottom="1px dashed lightgrey"
-                border-top="1px dashed lightgrey"
-            >
+            <mj-column>
+                <mj-divider
+                    border-width="1px"
+                    border-style="dashed"
+                    border-color="lightgrey"
+                    padding="0"
+                />
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
+            <mj-column>
                 <mj-text font-weight="bold" padding="15px 0">
                     Modalidad
                 </mj-text>
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
+            <mj-column>
+                <mj-divider
+                    border-width="1px"
+                    border-style="dashed"
+                    border-color="lightgrey"
+                    padding="0"
+                />
             </mj-column>
         </mj-section>
 
@@ -60,7 +81,8 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.codelegacion}
+                        ¿¿"Codelegación" if inscripcion.codelegacion else
+                        "Delegación individual"??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -78,10 +100,21 @@
         </mj-section>
 
         <mj-section background-color="#fff" padding="0 25px">
-            <mj-column border-bottom="1px dashed lightgrey">
+            <mj-column>
                 <mj-text font-weight="bold" padding="15px 0">
                     Delegación oficial
                 </mj-text>
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
+            <mj-column>
+                <mj-divider
+                    border-width="1px"
+                    border-style="dashed"
+                    border-color="lightgrey"
+                    padding="0"
+                />
             </mj-column>
         </mj-section>
 
@@ -99,7 +132,8 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.delegacion_oficial}
+                        ¿¿inscripcion.delegacion_oficial if
+                        inscripcion.delegacion_oficial else "No"??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -117,7 +151,7 @@
         </mj-section>
 
         <mj-section background-color="#fff" padding="0 25px">
-            <mj-column border-bottom="1px dashed lightgrey">
+            <mj-column>
                 <mj-text font-weight="bold" padding="15px 0">
                     Datos personales
                 </mj-text>
@@ -125,6 +159,17 @@
         </mj-section>
 
         <mj-section background-color="#fff" padding="0 25px">
+            <mj-column>
+                <mj-divider
+                    border-width="1px"
+                    border-style="dashed"
+                    border-color="lightgrey"
+                    padding="0"
+                />
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
             <mj-group>
                 <mj-column
                     border-right="1px dashed lightgrey"
@@ -138,7 +183,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.nombre} {inscripcion.apellido}
+                        ¿¿inscripcion.nombre?? ¿¿inscripcion.apellido??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -168,7 +213,7 @@
                 </mj-column>
 
                 <mj-column width="60%" vertical-align="middle">
-                    <mj-text padding="15px 0"> {inscripcion.edad} </mj-text>
+                    <mj-text padding="15px 0"> ¿¿inscripcion.edad?? </mj-text>
                 </mj-column>
             </mj-group>
         </mj-section>
@@ -197,7 +242,9 @@
                 </mj-column>
 
                 <mj-column width="60%" vertical-align="middle">
-                    <mj-text padding="15px 0"> {inscripcion.celular} </mj-text>
+                    <mj-text padding="15px 0">
+                        ¿¿inscripcion.celular??
+                    </mj-text>
                 </mj-column>
             </mj-group>
         </mj-section>
@@ -226,7 +273,7 @@
                 </mj-column>
 
                 <mj-column width="60%" vertical-align="middle">
-                    <mj-text padding="15px 0"> {inscripcion.correo} </mj-text>
+                    <mj-text padding="15px 0"> ¿¿inscripcion.correo?? </mj-text>
                 </mj-column>
             </mj-group>
         </mj-section>
@@ -256,7 +303,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.ciudad_estado}, {inscripcion.pais}
+                        ¿¿inscripcion.ciudad_estado??, ¿¿inscripcion.pais??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -287,7 +334,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.escolaridad}
+                        ¿¿inscripcion.escolaridad??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -317,7 +364,9 @@
                 </mj-column>
 
                 <mj-column width="60%" vertical-align="middle">
-                    <mj-text padding="15px 0"> {inscripcion.escuela} </mj-text>
+                    <mj-text padding="15px 0">
+                        ¿¿inscripcion.escuela??
+                    </mj-text>
                 </mj-column>
             </mj-group>
         </mj-section>
@@ -334,7 +383,7 @@
         </mj-section>
 
         <mj-section background-color="#fff" padding="0 25px">
-            <mj-column border-bottom="1px dashed lightgrey">
+            <mj-column>
                 <mj-text font-weight="bold" padding="15px 0">
                     Datos personales de la codelegación
                 </mj-text>
@@ -342,6 +391,17 @@
         </mj-section>
 
         <mj-section background-color="#fff" padding="0 25px">
+            <mj-column>
+                <mj-divider
+                    border-width="1px"
+                    border-style="dashed"
+                    border-color="lightgrey"
+                    padding="0"
+                />
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
             <mj-group>
                 <mj-column
                     border-right="1px dashed lightgrey"
@@ -355,7 +415,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.nombre_co} {inscripcion.apellido_co}
+                        ¿¿inscripcion.nombre_co?? ¿¿inscripcion.apellido_co??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -385,7 +445,9 @@
                 </mj-column>
 
                 <mj-column width="60%" vertical-align="middle">
-                    <mj-text padding="15px 0"> {inscripcion.edad_co} </mj-text>
+                    <mj-text padding="15px 0">
+                        ¿¿inscripcion.edad_co??
+                    </mj-text>
                 </mj-column>
             </mj-group>
         </mj-section>
@@ -415,7 +477,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.celular_co}
+                        ¿¿inscripcion.celular_co??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -446,7 +508,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.correo_co}
+                        ¿¿inscripcion.correo_co??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -477,7 +539,8 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.ciudad_estado_co}, {inscripcion.pais_co}
+                        ¿¿inscripcion.ciudad_estado_co??,
+                        ¿¿inscripcion.pais_co??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -508,7 +571,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.escolaridad_co}
+                        ¿¿inscripcion.escolaridad_co??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -539,7 +602,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.escuela_co}
+                        ¿¿inscripcion.escuela_co??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -557,7 +620,7 @@
         </mj-section>
 
         <mj-section background-color="#fff" padding="0 25px">
-            <mj-column border-bottom="1px dashed lightgrey">
+            <mj-column>
                 <mj-text font-weight="bold" padding="15px 0">
                     Primera opción de comité
                 </mj-text>
@@ -565,6 +628,17 @@
         </mj-section>
 
         <mj-section background-color="#fff" padding="0 25px">
+            <mj-column>
+                <mj-divider
+                    border-width="1px"
+                    border-style="dashed"
+                    border-color="lightgrey"
+                    padding="0"
+                />
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
             <mj-group>
                 <mj-column
                     border-right="1px dashed lightgrey"
@@ -577,7 +651,9 @@
                 </mj-column>
 
                 <mj-column width="60%" vertical-align="middle">
-                    <mj-text padding="15px 0"> {inscripcion.comite_1} </mj-text>
+                    <mj-text padding="15px 0">
+                        ¿¿comite_corto_a_largo(inscripcion.comite_1)??
+                    </mj-text>
                 </mj-column>
             </mj-group>
         </mj-section>
@@ -607,7 +683,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.comite_1_opcion_1}
+                        ¿¿inscripcion.comite_1_opcion_1??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -638,7 +714,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.comite_1_opcion_2}
+                        ¿¿inscripcion.comite_1_opcion_2??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -669,7 +745,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.comite_1_opcion_3}
+                        ¿¿inscripcion.comite_1_opcion_3??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -687,7 +763,7 @@
         </mj-section>
 
         <mj-section background-color="#fff" padding="0 25px">
-            <mj-column border-bottom="1px dashed lightgrey">
+            <mj-column>
                 <mj-text font-weight="bold" padding="15px 0">
                     Segunda opción de comité
                 </mj-text>
@@ -695,6 +771,17 @@
         </mj-section>
 
         <mj-section background-color="#fff" padding="0 25px">
+            <mj-column>
+                <mj-divider
+                    border-width="1px"
+                    border-style="dashed"
+                    border-color="lightgrey"
+                    padding="0"
+                />
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
             <mj-group>
                 <mj-column
                     border-right="1px dashed lightgrey"
@@ -707,7 +794,9 @@
                 </mj-column>
 
                 <mj-column width="60%" vertical-align="middle">
-                    <mj-text padding="15px 0"> {inscripcion.comite_2} </mj-text>
+                    <mj-text padding="15px 0">
+                        ¿¿comite_corto_a_largo(inscripcion.comite_2)??
+                    </mj-text>
                 </mj-column>
             </mj-group>
         </mj-section>
@@ -737,7 +826,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.comite_2_opcion_1}
+                        ¿¿inscripcion.comite_2_opcion_1??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -768,7 +857,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.comite_2_opcion_2}
+                        ¿¿inscripcion.comite_2_opcion_2??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -799,7 +888,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.comite_2_opcion_3}
+                        ¿¿inscripcion.comite_2_opcion_3??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -817,7 +906,7 @@
         </mj-section>
 
         <mj-section background-color="#fff" padding="0 25px">
-            <mj-column border-bottom="1px dashed lightgrey">
+            <mj-column>
                 <mj-text font-weight="bold" padding="15px 0">
                     Tercera opción de comité
                 </mj-text>
@@ -825,6 +914,17 @@
         </mj-section>
 
         <mj-section background-color="#fff" padding="0 25px">
+            <mj-column>
+                <mj-divider
+                    border-width="1px"
+                    border-style="dashed"
+                    border-color="lightgrey"
+                    padding="0"
+                />
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
             <mj-group>
                 <mj-column
                     border-right="1px dashed lightgrey"
@@ -837,7 +937,9 @@
                 </mj-column>
 
                 <mj-column width="60%" vertical-align="middle">
-                    <mj-text padding="15px 0"> {inscripcion.comite_3} </mj-text>
+                    <mj-text padding="15px 0">
+                        ¿¿comite_corto_a_largo(inscripcion.comite_3)??
+                    </mj-text>
                 </mj-column>
             </mj-group>
         </mj-section>
@@ -867,7 +969,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.comite_3_opcion_1}
+                        ¿¿inscripcion.comite_3_opcion_1??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -898,7 +1000,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.comite_3_opcion_2}
+                        ¿¿inscripcion.comite_3_opcion_2??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -929,44 +1031,7 @@
 
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
-                        {inscripcion.comite_3_opcion_3}
-                    </mj-text>
-                </mj-column>
-            </mj-group>
-        </mj-section>
-
-        <mj-section background-color="#fff" padding="0 25px">
-            <mj-column>
-                <mj-divider
-                    border-width="1px"
-                    border-style="dashed"
-                    border-color="lightgrey"
-                    padding="0"
-                />
-            </mj-column>
-        </mj-section>
-
-        <mj-section background-color="#fff" padding="0 25px">
-            <mj-column border-bottom="1px dashed lightgrey">
-                <mj-text font-weight="bold" padding="15px 0"> Pago </mj-text>
-            </mj-column>
-        </mj-section>
-
-        <mj-section background-color="#fff" padding="0 25px">
-            <mj-group>
-                <mj-column
-                    border-right="1px dashed lightgrey"
-                    width="40%"
-                    vertical-align="middle"
-                >
-                    <mj-text font-weight="bold" padding="15px 0">
-                        Comprobante de pago
-                    </mj-text>
-                </mj-column>
-
-                <mj-column width="60%" vertical-align="middle">
-                    <mj-text padding="15px 0">
-                        {inscripcion.comprobante}
+                        ¿¿inscripcion.comite_3_opcion_3??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -998,7 +1063,7 @@
         <mj-section>
             <mj-column>
                 <mj-text line-height="16px">
-                    Modelo de Naciones Unidas del Sureste Mexicano (SMMUN ®)
+                    Modelo de Naciones Unidas del Sureste Mexicano (SMMUN®)
                     2025
                     <br />
                     Instagram:

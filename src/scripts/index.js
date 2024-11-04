@@ -34,8 +34,8 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && !/bot|goog
 }
 
 // Update navbar after scrolling
-const nav = document.getElementById("navbar");
-const navMobile = document.getElementById("navbar-mobile");
+const nav = document.getElementsByClassName("nav-normal")[0];
+const navMobile = document.getElementsByClassName("nav-normal")[1];
 const navLogo = document.getElementsByClassName("navbar-logo")[0];
 const navLogoMobile = document.getElementsByClassName("navbar-logo")[1];
 const header = document.getElementById("greeting");
@@ -45,8 +45,8 @@ function updateNavColor(entries) {
     const [entry] = entries;
 
     if (!entry.isIntersecting) {
-        navLogo.style.display = "inherit";
-        navLogoMobile.style.display = "inherit";
+        navLogo.style.display = "initial";
+        navLogoMobile.style.display = "initial";
 
         nav.classList.remove("nav-transparent");
         navMobile.classList.remove("nav-transparent");

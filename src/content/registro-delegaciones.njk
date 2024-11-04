@@ -9,38 +9,87 @@ nav_color_mobile: "#6f75d5cf"
 
 <!-- Título -->
 <article id="titulo-registro">
+    <div class="navbar-logo logo-registro" style="z-index: 0;">
+        <figure>
+            <img src="/assets/img/logos/smmun_dorado.webp" width="2000" height="1787" alt="Logo del SMMUN.">
+        </figure>
+    </div>
+
     <h1>
-        <span>Registro de delegaciones<br></span>
+        <span>Registro de delegaciones</span>
     </h1>
+</article>
+
+<!-- Marquee with name and logo -->
+<article id="sm-marquee" aria-hidden="true">
+    <div class="sm-marquee-wrapper">
+        <p>SMMUN 2025; De soñadores en acción, para líderes con pasión</p>
+        <img src="/assets/img/logos/smmun_morado.webp" width="882" height="756" alt="Logo del SMMUN.">
+    </div>
+
+    <div class="sm-marquee-wrapper">
+        <p>SMMUN 2025; De soñadores en acción, para líderes con pasión</p>
+        <img src="/assets/img/logos/smmun_morado.webp" width="882" height="756" alt="Logo del SMMUN.">
+    </div>
+
+    <div class="sm-marquee-wrapper">
+        <p>SMMUN 2025; De soñadores en acción, para líderes con pasión</p>
+        <img src="/assets/img/logos/smmun_morado.webp" width="882" height="756" alt="Logo del SMMUN.">
+    </div>
+
+    <div class="sm-marquee-wrapper">
+        <p>SMMUN 2025; De soñadores en acción, para líderes con pasión</p>
+        <img src="/assets/img/logos/smmun_morado.webp" width="882" height="756" alt="Logo del SMMUN.">
+    </div>
+
+    <div class="sm-marquee-wrapper">
+        <p>SMMUN 2025; De soñadores en acción, para líderes con pasión</p>
+        <img src="/assets/img/logos/smmun_morado.webp" width="882" height="756" alt="Logo del SMMUN.">
+    </div>
 </article>
 
 <!-- Forms -->
 <form method="POST" action="http://localhost:8000/registro-delegaciones" name="registro-delegaciones" id="registro-delegaciones" enctype="multipart/form-data" class="col g-3" novalidate>
     <!-- Selección de modalidad -->
-    <div class="mb-3">
-        <h2>Modalidad</h2>
+    <article class="titulo">
+        <div class="oval">
+            <h2>
+                Modalidad
+            </h2>
+        </div>
+    </article>
 
+    <div class="mb-3">
         <div>
             <label for="modalidad" class="form-label">Selecciona tu modalidad de participación <span style="color: red;">*</span></label>
-            <select data-width="86vw" class="selectpicker" required name="modalidad" id="select-modalidad">
+            <select autocomplete="off" data-width="86vw" class="selectpicker" required name="modalidad" id="select-modalidad">
                 <option selected disabled value="">Selecciona una opción</option>
                 <option value="individual">Delegación (individual)</option>
-                <option value="pareja" id="select-modalidad-pareja">Codelegación (pareja)</option>
+                <option value="pareja" id="select-modalidad-pareja">Codelegación (bina)</option>
             </select>
             <div class="invalid-feedback">Debes seleccionar una opción.</div>
         </div>
+
+        <p id="codelegacion-nota" style="display: none;">
+            <strong>Nota:</strong> El registro de una codelegación solo deberá llenarse una vez con la información de las participantes.
+        </p>
     </div>
 
-    <hr>
-
     <!-- Selección de delegación oficial -->
+    <article class="titulo">
+        <div class="oval">
+            <h2>
+                Delegación oficial
+            </h2>
+        </div>
+    </article>
+
     <div class="mb-3">
-        <h2>Delegación oficial</h2>
-        <p>Una delegación oficial es un grupo que representa a una institución y tiene a una persona que lo asesora.</p>
+        <p>Una delegación oficial es un grupo que representa a una agrupación y tiene a una persona que lo asesora.</p>
 
         <div>
             <label for="delegacion_oficial" class="form-label">¿Perteneces a una delegación oficial? <span style="color: red;">*</span></label>
-            <select data-width="86vw" class="selectpicker" required name="delegacion_oficial" id="select-delegacion-oficial">
+            <select autocomplete="off" data-width="86vw" class="selectpicker" required name="delegacion_oficial" id="select-delegacion-oficial">
                 <option selected disabled value="">Selecciona una opción</option>
                 <option value="si">Sí</option>
                 <option value="no">No</option>
@@ -49,30 +98,39 @@ nav_color_mobile: "#6f75d5cf"
         </div>
 
         <div>
-            <input class="form-control" required autocomplete="off" name="nombre_delegacion_oficial" placeholder="Nombre de la institución" type="text" id="input-nombre-delegacion-oficial" maxlength="100">
+            <input class="form-control" required autocomplete="off" name="nombre_delegacion_oficial" placeholder="Nombre de la agrupación" type="text" id="input-nombre-delegacion-oficial" maxlength="150">
+            <div class="invalid-feedback">Debes llenar este campo.</div>
+        </div>
+
+        <div>
+            <input class="form-control" required autocomplete="off" name="responsable_delegacion_oficial" placeholder="Responsable de la delegación oficial" type="text" id="input-responsable-delegacion-oficial" maxlength="150">
             <div class="invalid-feedback">Debes llenar este campo.</div>
         </div>
     </div>
 
-    <hr>
-
     <!-- Sección de datos personales de la delegación y codelegación -->
     {% for i in range(2) %}
-        <div id="datos_personales_{{ i }}" class="mb-3">
-            {% if i == 0 %}
-                <h2>Datos personales</h2>
-            {% else %}
-                <h2>Datos personales de la codelegación</h2>
-            {% endif %}
+        <article class="titulo" id="titulo-datos-{{ i }}">
+            <div class="oval">
+                <h2>
+                    {% if i == 0 %}
+                        Datos personales
+                    {% else %}
+                        Datos personales de la codelegación
+                    {% endif %}
+                </h2>
+            </div>
+        </article>
 
+        <div id="datos_personales_{{ i }}" class="mb-3">
             <label for="nombre_{{ i }}" class="form-label">Nombre completo <span style="color: red;">*</span></label>
             <div class="row g-3">
                 <div class="col">
-                    <input class="form-control" required autocomplete="off" name="nombre_{{ i }}" placeholder="Nombre(s)" type="text" maxlength="100">
+                    <input class="form-control" required autocomplete="off" name="nombre_{{ i }}" placeholder="Nombre(s)" type="text" maxlength="150">
                     <div class="invalid-feedback">Debes llenar este campo.</div>
                 </div>
                 <div class="col">
-                    <input class="form-control" required autocomplete="off" name="apellido_{{ i }}" placeholder="Apellidos" type="text" maxlength="100">
+                    <input class="form-control" required autocomplete="off" name="apellido_{{ i }}" placeholder="Apellidos" type="text" maxlength="150">
                     <div class="invalid-feedback">Debes llenar este campo.</div>
                 </div>
             </div>
@@ -91,14 +149,14 @@ nav_color_mobile: "#6f75d5cf"
 
             <div>
                 <label for="correo_{{ i }}" class="form-label">Correo electrónico <span style="color: red;">*</span></label>
-                <input class="form-control input-correo" required autocomplete="off" name="correo_{{ i }}" placeholder="ejemplo@dominio.com" type="email" maxlength="100">
+                <input class="form-control input-correo" required autocomplete="off" name="correo_{{ i }}" placeholder="ejemplo@dominio.com" type="email" maxlength="150">
                 <div class="invalid-feedback">El correo no es válido.</div>
             </div>
 
             <label for="pais_{{ i }}" class="form-label">País, estado y ciudad de residencia <span style="color: red;">*</span></label>
             <div class="row g-3">
                 <div class="col">
-                    <select data-width="100%" class="selectpicker select-pais" required name="pais_{{ i }}">
+                    <select autocomplete="off" data-width="100%" class="selectpicker select-pais" required name="pais_{{ i }}">
                         <option selected disabled value="">Selecciona una opción</option>
                         <option value="Afganistán">Afganistán</option>
                         <option value="Islas Åland">Islas Åland</option>
@@ -346,50 +404,70 @@ nav_color_mobile: "#6f75d5cf"
                     <div class="invalid-feedback">Debes seleccionar una opción.</div>
                 </div>
                 <div class="col">
-                    <input class="form-control" required autocomplete="off" name="ciudad_estado_{{ i }}" placeholder="Ciudad y estado" type="text" maxlength="100">
+                    <input class="form-control" required autocomplete="off" name="ciudad_estado_{{ i }}" placeholder="Ciudad y estado" type="text" maxlength="150">
                     <div class="invalid-feedback">Debes llenar este campo.</div>
                 </div>
             </div>
 
             <div>
                 <label for="escolaridad_{{ i }}" class="form-label">Escolaridad <span style="color: red;">*</span></label>
-                <select data-width="86vw" class="selectpicker" required name="escolaridad_{{ i }}" id="select-escolaridad-{{ i }}">
+                <select autocomplete="off" data-width="86vw" class="selectpicker" required name="escolaridad_{{ i }}" id="select-escolaridad-{{ i }}">
                     <option selected disabled value="">Selecciona una opción</option>
                     <option value="Secundaria">Secundaria</option>
                     <option value="Preparatoria">Preparatoria</option>
                     <option value="Universidad">Universidad</option>
                     <option value="Egresado">Egresado</option>
-                    <option value="Otra">Otra...</option>
                 </select>
                 <div class="invalid-feedback">Debes seleccionar una opción.</div>
             </div>
 
             <div>
-                <input class="form-control" required autocomplete="off" name="escolaridad_otra_{{ i }}" placeholder="Otra" type="text" id="input-escolaridad-otra-{{ i }}" maxlength="20">
+                <label for="escuela_{{ i }}" class="form-label">Escuela de procedencia (en caso de ser egresado, de donde te graduaste) <span style="color: red;">*</span></label>
+                <input class="form-control" required autocomplete="off" name="escuela_{{ i }}" placeholder="Ejemplo: Facultad de Derecho UADY" type="text" maxlength="150">
                 <div class="invalid-feedback">Debes llenar este campo.</div>
             </div>
 
+            <label for="nombre_contacto_{{ i }}" class="form-label">En caso de emergencia, ¿a quién podemos contactar? <span style="color: red;">*</span></label>
+            <div class="row g-3">
+                <div class="col">
+                    <input class="form-control" required autocomplete="off" name="nombre_contacto_{{ i }}" placeholder="Nombre completo" type="text" maxlength="150">
+                    <div class="invalid-feedback">Debes llenar este campo.</div>
+                </div>
+                <div class="col">
+                    <input class="form-control input-celular" required autocomplete="off" name="celular_contacto_{{ i }}" placeholder="Celular" type="tel" maxlength="30">
+                    <div class="invalid-feedback">Debes llenar este campo.</div>
+                </div>
+                <div class="col">
+                    <input class="form-control" required autocomplete="off" name="relacion_contacto_{{ i }}" placeholder="Relación" type="text" maxlength="150">
+                    <div class="invalid-feedback">Debes llenar este campo.</div>
+                </div>
+            </div>
+
             <div>
-                <label for="escuela_{{ i }}" class="form-label">Escuela de procedencia (en caso de ser egresado, de donde te graduaste) <span style="color: red;">*</span></label>
-                <input class="form-control" required autocomplete="off" name="escuela_{{ i }}" placeholder="Ejemplo: Facultad de Derecho UADY" type="text" maxlength="100">
+                <label for="info_extra_{{ i }}" class="form-label">¿Tienes alguna necesidad específica que debamos conocer?</label>
+                <input class="form-control" autocomplete="off" name="info_extra_{{ i }}" placeholder="Ejemplo: padecimientos, alergias, tratamientos en curso u otros" type="text" maxlength="150">
                 <div class="invalid-feedback">Debes llenar este campo.</div>
             </div>
         </div>
     {% endfor %}
 
-    <hr>
-
     <!-- Selección de comités y países -->
     {% for i in range(3) %}
-        <div class="mb-3">
-            {% if i == 0 %}
-                <h2>Primera opción de comité</h2>
-            {% elif i == 1 %}
-                <h2>Segunda opción de comité</h2>
-            {% else %}
-                <h2>Tercera opción de comité</h2>
-            {% endif %}
+        <article class="titulo">
+            <div class="oval">
+                <h2>
+                    {% if i == 0 %}
+                        Primera opción de comité
+                    {% elif i == 1 %}
+                        Segunda opción de comité
+                    {% else %}
+                        Tercera opción de comité
+                    {% endif %}
+                </h2>
+            </div>
+        </article>
 
+        <div class="mb-3">
             <div>
                 {% if i == 0 %}
                     <label for="comite_{{ i }}" class="form-label">Selecciona tu primera opción de comité <span style="color: red;">*</span></label>
@@ -399,7 +477,7 @@ nav_color_mobile: "#6f75d5cf"
                     <label for="comite_{{ i }}" class="form-label">Selecciona tu tercera opción de comité <span style="color: red;">*</span></label>
                 {% endif %}
 
-                <select data-width="86vw" class="selectpicker select-comite" required name="comite_{{ i }}">
+                <select autocomplete="off" data-width="86vw" class="selectpicker select-comite" required name="comite_{{ i }}">
                     <option selected disabled value="">Selecciona una opción</option>
                     <option value="CSTD">Comisión de Ciencia y Tecnología para el Desarrollo (CSTD)</option>
                     <option value="CRC">United Nations Committee on the Rights of the Child (CRC) [inglés] [solo delegación individual]</option>
@@ -415,8 +493,9 @@ nav_color_mobile: "#6f75d5cf"
                 <div class="invalid-feedback">Debes seleccionar una opción.</div>
 
                 <div id="comite-{{ i }}-topicos" class="comite-topico-div">
-                    <h3 id="comite-{{ i }}-topico-0" class="comite-topico"></h3>
-                    <h3 id="comite-{{ i }}-topico-1" class="comite-topico"></h3>
+                    {% for comite in ["CSTD", "CRC", "OIT", "NOBEL", "CRM", "UNFPA", "OSGEY", "CIDH", "CIJ", "COI"] %}
+                        {% comite_carousel comite, i %}
+                    {% endfor %}
                 </div>
             </div>
 
@@ -430,7 +509,7 @@ nav_color_mobile: "#6f75d5cf"
                         <label for="comite_{{ i }}_pais_{{ j }}" class="form-label" id="label-comite-{{ i }}-pais-{{ j }}">Tercera opción de delegación <span style="color: red;">*</span></label>
                     {% endif %}
 
-                    <select data-width="86vw" class="selectpicker select-comite-{{ i }}-pais" required name="comite_{{ i }}_pais_{{ j }}" id="select-comite-{{ i }}-pais-{{ j }}" data-live-search="true">
+                    <select autocomplete="off" data-width="86vw" class="selectpicker select-comite-{{ i }}-pais" required name="comite_{{ i }}_pais_{{ j }}" id="select-comite-{{ i }}-pais-{{ j }}" data-live-search="true">
                         <option selected disabled value="">Selecciona una opción</option>
                         <!-- CSTD -->
                         <option data-tokens="arabia saudita" class="CSTD" value="CSTD:Reino de Arabia Saudita">🇸🇦&emsp;Reino de Arabia Saudita</option>
@@ -792,20 +871,22 @@ nav_color_mobile: "#6f75d5cf"
                 </div>
             {% endfor %}
         </div>
-
-        <hr>
     {% endfor %}
 
     <!-- Subir pago -->
-    <div class="mb-3">
-        <h2>Pago</h2>
+    <article class="titulo">
+        <div class="oval">
+            <h2>
+                Pago
+            </h2>
+        </div>
+    </article>
 
-        <p>
-            <strong>Tarjeta:</strong> XXXX XXXX XXXX XXXX
-            <br>
-            <strong>Banco:</strong> XXXXXXXXXX
-            <br>
-            <strong>Costo de inscripción:</strong> <span id="costo-inscripcion"></span>
+    <div class="mb-3">
+        <img id="img-pago" src="/assets/img/images/mercadopago.webp" alt="Datos bancarios. CLABE: 6460 1020 6386 6808 42; Banco: STP" width="1748" height="1240">
+
+        <p id="costo-inscripcion">
+            <strong>Costo de inscripción:</strong> $300 MXN
         </p>
 
         <div>
@@ -815,8 +896,26 @@ nav_color_mobile: "#6f75d5cf"
         </div>
     </div>
 
-    <!-- Enviar -->
-    <input class="form-control" type="submit" value="Enviar">
+    <article class="titulo">
+        <div class="oval">
+            <h2>
+                Reglamento
+            </h2>
+        </div>
+    </article>
+
+    <div class="mb-3">
+        <div class="form-check">
+            <input required class="form-check-input" autocomplete="off" name="aceptar-reglamento" type="checkbox">
+            <label for="aceptar-reglamento" class="form-check-label">Al dar click en la casilla, se comparte el compromiso por respeto y mostrar conformidad con el <a href="">reglamento</a> y <a href="">protocolo</a> del SMMUN 2025: Legado de Líderes.</label>
+            <div class="invalid-feedback">Debes aceptar el reglamento.</div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <!-- Enviar -->
+        <input class="form-control" type="submit" value="Enviar">
+    </div>
 </form>
 
 <!-- Toasts para errores y contacto -->

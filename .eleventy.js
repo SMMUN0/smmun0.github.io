@@ -3,6 +3,7 @@ const htmlmin = require("html-minifier-terser");
 const { minify_sync } = require("terser");
 const path = require("path");
 const sizeOf = require("image-size");
+const fs = require("fs")
 
 module.exports = function (eleventyConfig) {
     // Copy files into the output directory
@@ -71,7 +72,7 @@ module.exports = function (eleventyConfig) {
             case ".css":
                 return new CleanCSS({level: 2}).minify(content).styles;
             case ".js":
-                return minify_sync(content).code;
+                return /*minify_sync(*/content/*).code*/;
             default:
                 return content;
         }
@@ -111,6 +112,42 @@ module.exports = function (eleventyConfig) {
                 </figure>
             </div>
         </article>`;
+    });
+
+    // Committee carousel shortcode
+    eleventyConfig.addShortcode("comite_carousel", function(name, index) {
+        const length = fs.readdirSync(`src/_assets/img/comites/${name.toLowerCase()}`).length;
+        let carouselInner = "";
+
+        for (let i = 1; i <= length; i++) {
+            let imgPath = `assets/img/comites/${name.toLowerCase()}/${i}.webp`;
+            let imgDimensions = sizeOf(`src/_${imgPath}`);
+            let active = "";
+
+            if (i == 1) {
+                active = " active"
+            }
+
+            carouselInner += `<div class="carousel-item${active}" data-bs-interval="8000">
+                <div class="d-flex justify-content-center">
+                    <img src="/${imgPath}" class="d-block" width="${imgDimensions.width}" height="${imgDimensions.height}" alt="Foto del comité ${name} del SMMUN.">
+                </div>
+            </div>`;
+        }
+
+        return `<div id="carousel-comite-${index}-${name}" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-touch="true">
+            <div class="carousel-inner">
+                ${carouselInner}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-comite-${index}-${name}" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-comite-${index}-${name}" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>`;
     });
 
     return {

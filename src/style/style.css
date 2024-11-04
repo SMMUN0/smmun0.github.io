@@ -35,3 +35,7 @@ body {
 main {
     flex: 1;
 }
+
+i {
+    text-rendering: optimizeLegibility;
+}

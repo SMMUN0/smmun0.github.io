@@ -5,7 +5,7 @@ body {
     height: auto;
 }
 
-nav {
+.nav-normal {
     background-color: #8e98ac !important;
     background-image: url("/assets/img/backgrounds/blue_bg.webp") !important;
 }
