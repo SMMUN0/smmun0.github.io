@@ -1,22 +1,5 @@
 "use strict";
 
-let mobile = isMobile();
-
-// Esconder opciones de select
-function hideOption(option, hide) {
-    option.hidden = hide;
-    option.disabled = hide;
-
-    // Workaround para iOS - https://stackoverflow.com/questions/36066953/css-hide-options-from-select-menu-on-iphone-safari
-    let parentIsSpan = $(option).parent().is("span");
-    if (hide && !parentIsSpan) {
-        $(option).wrap("span");
-    }
-    else if (parentIsSpan) {
-        $(option).unwrap();
-    }
-}
-
 // Mostrar input de delegación oficial
 let delegacionOficialInput = document.getElementById("input-nombre-delegacion-oficial");
 let responsableDelegacionOficialInput = document.getElementById("input-responsable-delegacion-oficial");
@@ -56,11 +39,6 @@ delegacionOficialSelect.addEventListener("change", function() {
         else {
             costoInscripcion.innerHTML = "<strong>Costo de inscripción:</strong> $300 MXN";
         }
-    }
-
-    // Actualizar select cuando se usa menú nativo
-    if (mobile) {
-        $(this).selectpicker("refresh");
     }
 });
 
@@ -183,28 +161,6 @@ modalidadSelect.addEventListener("change", function() {
 
     // Refrescar los pickers
     comiteSelects.selectpicker("refresh");
-
-    // Actualizar select cuando se usa menú nativo
-    if (mobile) {
-        $(this).selectpicker("refresh");
-    }
-});
-
-// Manejar cambios de escolaridad
-let escolaridadSelect0 = document.getElementById("select-escolaridad-0");
-escolaridadSelect0.addEventListener("change", function() {
-    // Actualizar select cuando se usa menú nativo
-    if (mobile) {
-        $(this).selectpicker("refresh");
-    }
-});
-
-let escolaridadSelect1 = document.getElementById("select-escolaridad-1");
-escolaridadSelect1.addEventListener("change", function() {
-    // Actualizar select cuando se usa menú nativo
-    if (mobile) {
-        $(this).selectpicker("refresh");
-    }
 });
 
 // Manejar cambios de país de residencia
@@ -227,11 +183,6 @@ paisResidenciaSelects.each(function() {
         else {
             imgPago.src = "/assets/img/images/mercadopago.webp";
             imgPago.alt = "Datos bancarios. CLABE: 6460 1020 6386 6808 42; Banco: STP";
-        }
-
-        // Actualizar select cuando se usa menú nativo
-        if (mobile) {
-            $(this).selectpicker("refresh");
         }
     });
 });
@@ -302,10 +253,12 @@ comiteSelects[0].addEventListener("change", function() {
 
     comite0PaisSelects.find("optgroup, option").each(function() {
         if ($(this).attr("class") == thisValue) {
-            hideOption(this, false);
+            this.hidden = false;
+            this.disabled = false;
         }
         else if (this.value || $(this).is("optgroup")) {
-            hideOption(this, true);
+            this.hidden = true;
+            this.disabled = true;
         }
 
         // Resetear la selección
@@ -377,10 +330,12 @@ comiteSelects[1].addEventListener("change", function() {
 
     comite1PaisSelects.find("optgroup, option").each(function() {
         if ($(this).attr("class") == thisValue) {
-            hideOption(this, false);
+            this.hidden = false;
+            this.disabled = false;
         }
         else if (this.value || $(this).is("optgroup")) {
-            hideOption(this, true);
+            this.hidden = true;
+            this.disabled = true;
         }
 
         // Resetear la selección
@@ -441,10 +396,12 @@ comiteSelects[2].addEventListener("change", function() {
 
     comite2PaisSelects.find("optgroup, option").each(function() {
         if ($(this).attr("class") == thisValue) {
-            hideOption(this, false);
+            this.hidden = false;
+            this.disabled = false;
         }
         else if (this.value || $(this).is("optgroup")) {
-            hideOption(this, true);
+            this.hidden = true;
+            this.disabled = true;
         }
 
         // Resetear la selección
@@ -633,11 +590,6 @@ for (let i = 0; i < registroSelects.length; i++) {
 
 // Refrescar los selects
 $(registroSelects).selectpicker("refresh");
-
-// Usar menú nativo en plataformas móviles
-if (mobile) {
-    $(registroSelects).selectpicker("mobile");
-}
 
 // Cambiar navbar por el titulo
 let nav = document.getElementById("navbar");
