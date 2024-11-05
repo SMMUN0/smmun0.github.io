@@ -151,6 +151,38 @@
         </mj-section>
 
         <mj-section background-color="#fff" padding="0 25px">
+            <mj-group>
+                <mj-column
+                    border-right="1px dashed lightgrey"
+                    width="40%"
+                    vertical-align="middle"
+                >
+                    <mj-text font-weight="bold" padding="15px 0">
+                        Responsable
+                    </mj-text>
+                </mj-column>
+
+                <mj-column width="60%" vertical-align="middle">
+                    <mj-text padding="15px 0">
+                        ¿¿inscripcion.responsable_delegacion_oficial if
+                        inscripcion.delegacion_oficial else "No aplica"??
+                    </mj-text>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
+            <mj-column>
+                <mj-divider
+                    border-width="1px"
+                    border-style="dashed"
+                    border-color="lightgrey"
+                    padding="0"
+                />
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
             <mj-column>
                 <mj-text font-weight="bold" padding="15px 0">
                     Datos personales
@@ -366,6 +398,68 @@
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
                         ¿¿inscripcion.escuela??
+                    </mj-text>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
+            <mj-column>
+                <mj-divider
+                    border-width="1px"
+                    border-style="dashed"
+                    border-color="lightgrey"
+                    padding="0"
+                />
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
+            <mj-group>
+                <mj-column
+                    border-right="1px dashed lightgrey"
+                    width="40%"
+                    vertical-align="middle"
+                >
+                    <mj-text font-weight="bold" padding="15px 0">
+                        Contacto de emergencia
+                    </mj-text>
+                </mj-column>
+
+                <mj-column width="60%" vertical-align="middle">
+                    <mj-text padding="15px 0">
+                        ¿¿inscripcion.contacto_emergencia??
+                    </mj-text>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
+            <mj-column>
+                <mj-divider
+                    border-width="1px"
+                    border-style="dashed"
+                    border-color="lightgrey"
+                    padding="0"
+                />
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
+            <mj-group>
+                <mj-column
+                    border-right="1px dashed lightgrey"
+                    width="40%"
+                    vertical-align="middle"
+                >
+                    <mj-text font-weight="bold" padding="15px 0">
+                        Información extra
+                    </mj-text>
+                </mj-column>
+
+                <mj-column width="60%" vertical-align="middle">
+                    <mj-text padding="15px 0">
+                        ¿¿inscripcion.info_extra??
                     </mj-text>
                 </mj-column>
             </mj-group>
@@ -603,6 +697,68 @@
                 <mj-column width="60%" vertical-align="middle">
                     <mj-text padding="15px 0">
                         ¿¿inscripcion.escuela_co??
+                    </mj-text>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
+            <mj-column>
+                <mj-divider
+                    border-width="1px"
+                    border-style="dashed"
+                    border-color="lightgrey"
+                    padding="0"
+                />
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
+            <mj-group>
+                <mj-column
+                    border-right="1px dashed lightgrey"
+                    width="40%"
+                    vertical-align="middle"
+                >
+                    <mj-text font-weight="bold" padding="15px 0">
+                        Contacto de emergencia
+                    </mj-text>
+                </mj-column>
+
+                <mj-column width="60%" vertical-align="middle">
+                    <mj-text padding="15px 0">
+                        ¿¿inscripcion.contacto_emergencia_co??
+                    </mj-text>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
+            <mj-column>
+                <mj-divider
+                    border-width="1px"
+                    border-style="dashed"
+                    border-color="lightgrey"
+                    padding="0"
+                />
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#fff" padding="0 25px">
+            <mj-group>
+                <mj-column
+                    border-right="1px dashed lightgrey"
+                    width="40%"
+                    vertical-align="middle"
+                >
+                    <mj-text font-weight="bold" padding="15px 0">
+                        Información extra
+                    </mj-text>
+                </mj-column>
+
+                <mj-column width="60%" vertical-align="middle">
+                    <mj-text padding="15px 0">
+                        ¿¿inscripcion.info_extra_co??
                     </mj-text>
                 </mj-column>
             </mj-group>
