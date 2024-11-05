@@ -284,73 +284,6 @@ comiteSelects[0].addEventListener("change", function() {
         comite0Topicos.style.display = "none";
     }
 
-    // Poner los tópicos dependiendo del comité
-    if (this.selectedIndex != 0) {
-
-
-        switch (this.value) {
-            case "CSTD":
-                //comite0Topico0.innerHTML = "<strong>Tópico A:</strong> Estrategias para promover la educación hídrica como eje transversal en la gestión de infraestructuras hídricas inteligentes";
-
-                //comite0Topico1.innerHTML = "<strong>Tópico B:</strong> Mecanismos a implementar en el uso de tecnologías emergentes en los sistemas educativos para impulsar la construcción de ciudades inteligentes";
-                //comite0Topico1.style.display = "initial";
-                break;
-            case "CRC":
-                //comite0Topico0.innerHTML = "<strong>Topic:</strong> Strategies for preventing and responding to deprivation of liberty, torture and violation of sexual integrity against children";
-
-                //comite0Topico1.style.display = "none";
-                break;
-            case "OIT":
-                //comite0Topico0.innerHTML = "<strong>Tópico:</strong> Medidas para mitigar el desempleo y la falta de oportunidades laborales en la industria manufacturera como resultado de la alfabetización digital e implementación de la Inteligencia Artificial";
-
-                //comite0Topico1.style.display = "none";
-                break;
-            case "NOBEL":
-                //comite0Topico0.innerHTML = "<strong>Tópico:</strong> Elección del Premio Nobel de la Paz 2025";
-
-                //comite0Topico1.style.display = "none";
-                break;
-            case "CRM":
-                //comite0Topico0.innerHTML = "<strong>Tópico A:</strong> Políticas para garantizar la justicia transicional como herramienta de reparación desde la perspectiva de género en las mujeres de América Latina y el Caribe";
-
-                //comite0Topico1.innerHTML = "<strong>Tópico B:</strong> Medidas para combatir la demanda de contenido sexual en medios digitales con fines lucrativos en América Latina y el Caribe";
-                //comite0Topico1.style.display = "initial";
-                break;
-            case "UNFPA":
-                //comite0Topico0.innerHTML = "<strong>Tópico A:</strong> Medidas para proteger la salud de las personas trabajadoras sexuales frente a las infecciones de transmisión sexual, superando la discriminación y los prejuicios sociales";
-
-                //comite0Topico1.innerHTML = "<strong>Tópico B:</strong> Mecanismos para prevenir el embarazo adolescente a causa de la violencia cultural y desinformación en la salud sexual y reproductiva";
-                //comite0Topico1.style.display = "initial";
-                break;
-            case "OSGEY":
-                //comite0Topico0.innerHTML = "<strong>Topic A:</strong> Strategies to Protect Young People’s Wellbeing from Burnout Syndrome";
-
-                //comite0Topico1.innerHTML = "<strong>Topic B:</strong> Strategies to empower youth from vulnerable communities and prevent their engagement in crime";
-                //comite0Topico1.style.display = "initial";
-                break;
-            case "CIDH":
-                //comite0Topico0.innerHTML = "<strong>Tópico A:</strong> Acciones para combatir abusos y negligencia a personas en tratamiento dentro de hospitales psiquiátricos para garantizar el cumplimiento de sus derechos humanos";
-
-                //comite0Topico1.innerHTML = "<strong>Tópico B:</strong> Medidas para proteger a personas en situación de movilidad ante violaciones de derechos humanos en el Tapón de Darién";
-                //comite0Topico1.style.display = "initial";
-                break;
-            case "CIJ":
-                //comite0Topico0.innerHTML = "<strong>Caso:</strong> Sudáfrica contra Israel: justicia por el genocidio en el conflicto armado en la Franja de Gaza y Cisjordania";
-
-                //comite0Topico1.style.display = "none";
-                break;
-            case "COI":
-                //comite0Topico0.innerHTML = "<strong>Tópico A:</strong> Medidas para garantizar espacios seguros dentro de los Juegos Olímpicos para las personas atletas de la diversidad sexogenérica";
-
-                //comite0Topico1.innerHTML = "<strong>Tópico B:</strong> Políticas para reducir el impacto económico y ambiental de los Juegos Olímpicos en Los Ángeles 2028";
-                //comite0Topico1.style.display = "initial";
-                break;                
-        }
-    }
-    else {
-
-    }
-
     // Para CIJ, deshabilitar y esconder el tercer select
     if (this.value == "CIJ") {
         comite0Pais2Select.required = false;
@@ -426,72 +359,6 @@ comiteSelects[1].addEventListener("change", function() {
         comite1Topicos.style.display = "none";
     }
 
-    if (this.selectedIndex != 0) {
-
-        switch (this.value) {
-            case "CSTD":
-                //document.getElementById("carousel-comite-1-CSTD").style.display = "initial";
-                //comite1Topico0.innerHTML = "<strong>Tópico A:</strong> Estrategias para promover la educación hídrica como eje transversal en la gestión de infraestructuras hídricas inteligentes";
-                
-                //comite1Topico1.innerHTML = "<strong>Tópico B:</strong> Mecanismos a implementar en el uso de tecnologías emergentes en los sistemas educativos para impulsar la construcción de ciudades inteligentes";
-                //comite1Topico1.style.display = "initial";
-                break;
-            case "CRC":
-                //comite1Topico0.innerHTML = "<strong>Topic:</strong> Strategies for preventing and responding to deprivation of liberty, torture and violation of sexual integrity against children";
-                
-                //comite1Topico1.style.display = "none";
-                break;
-            case "OIT":
-                //comite1Topico0.innerHTML = "<strong>Tópico:</strong> Medidas para mitigar el desempleo y la falta de oportunidades laborales en la industria manufacturera como resultado de la alfabetización digital e implementación de la Inteligencia Artificial";
-                
-                //comite1Topico1.style.display = "none";
-                break;
-            case "NOBEL":
-                //comite1Topico0.innerHTML = "<strong>Tópico:</strong> Elección del Premio Nobel de la Paz 2025";
-                
-                //comite1Topico1.style.display = "none";
-                break;
-            case "CRM":
-                //comite1Topico0.innerHTML = "<strong>Tópico A:</strong> Políticas para garantizar la justicia transicional como herramienta de reparación desde la perspectiva de género en las mujeres de América Latina y el Caribe";
-                
-                //comite1Topico1.innerHTML = "<strong>Tópico B:</strong> Medidas para combatir la demanda de contenido sexual en medios digitales con fines lucrativos en América Latina y el Caribe";
-                //comite1Topico1.style.display = "initial";
-                break;
-            case "UNFPA":
-                //comite1Topico0.innerHTML = "<strong>Tópico A:</strong> Medidas para proteger la salud de las personas trabajadoras sexuales frente a las infecciones de transmisión sexual, superando la discriminación y los prejuicios sociales";
-                
-                //comite1Topico1.innerHTML = "<strong>Tópico B:</strong> Mecanismos para prevenir el embarazo adolescente a causa de la violencia cultural y desinformación en la salud sexual y reproductiva";
-                //comite1Topico1.style.display = "initial";
-                break;
-            case "OSGEY":
-                //comite1Topico0.innerHTML = "<strong>Topic A:</strong> Strategies to Protect Young People’s Wellbeing from Burnout Syndrome";
-                
-                //comite1Topico1.innerHTML = "<strong>Topic B:</strong> Strategies to empower youth from vulnerable communities and prevent their engagement in crime";
-                //comite1Topico1.style.display = "initial";
-                break;
-            case "CIDH":
-                //comite1Topico0.innerHTML = "<strong>Tópico A:</strong> Acciones para combatir abusos y negligencia a personas en tratamiento dentro de hospitales psiquiátricos para garantizar el cumplimiento de sus derechos humanos";
-                
-                //comite1Topico1.innerHTML = "<strong>Tópico B:</strong> Medidas para proteger a personas en situación de movilidad ante violaciones de derechos humanos en el Tapón de Darién";
-                //comite1Topico1.style.display = "initial";
-                break;
-            case "CIJ":
-                //comite1Topico0.innerHTML = "<strong>Caso:</strong> Sudáfrica contra Israel: justicia por el genocidio en el conflicto armado en la Franja de Gaza y Cisjordania";
-                
-                //comite1Topico1.style.display = "none";
-                break;
-            case "COI":
-                //comite1Topico0.innerHTML = "<strong>Tópico A:</strong> Medidas para garantizar espacios seguros dentro de los Juegos Olímpicos para las personas atletas de la diversidad sexogenérica";
-                
-                //comite1Topico1.innerHTML = "<strong>Tópico B:</strong> Políticas para reducir el impacto económico y ambiental de los Juegos Olímpicos en Los Ángeles 2028";
-                //comite1Topico1.style.display = "initial";
-                break;                
-        }
-    }
-    else {
-
-    }
-
     // Para CIJ, deshabilitar y esconder el tercer select
     if (this.value == "CIJ") {
         comite1Pais2Select.required = false;
@@ -557,72 +424,6 @@ comiteSelects[2].addEventListener("change", function() {
         comite2Topicos.style.display = "none";
     }
 
-    // Poner los tópicos dependiendo del comité
-    if (this.selectedIndex != 0) {
-
-        switch (this.value) {
-            case "CSTD":
-                //comite2Topico0.innerHTML = "<strong>Tópico A:</strong> Estrategias para promover la educación hídrica como eje transversal en la gestión de infraestructuras hídricas inteligentes";
-                
-                //comite2Topico1.innerHTML = "<strong>Tópico B:</strong> Mecanismos a implementar en el uso de tecnologías emergentes en los sistemas educativos para impulsar la construcción de ciudades inteligentes";
-                //comite2Topico1.style.display = "initial";
-                break;
-            case "CRC":
-                //comite2Topico0.innerHTML = "<strong>Topic:</strong> Strategies for preventing and responding to deprivation of liberty, torture and violation of sexual integrity against children";
-                
-                //comite2Topico1.style.display = "none";
-                break;
-            case "OIT":
-                //comite2Topico0.innerHTML = "<strong>Tópico:</strong> Medidas para mitigar el desempleo y la falta de oportunidades laborales en la industria manufacturera como resultado de la alfabetización digital e implementación de la Inteligencia Artificial";
-                
-                //comite2Topico1.style.display = "none";
-                break;
-            case "NOBEL":
-                //comite2Topico0.innerHTML = "<strong>Tópico:</strong> Elección del Premio Nobel de la Paz 2025";
-                
-                //comite2Topico1.style.display = "none";
-                break;
-            case "CRM":
-                //comite2Topico0.innerHTML = "<strong>Tópico A:</strong> Políticas para garantizar la justicia transicional como herramienta de reparación desde la perspectiva de género en las mujeres de América Latina y el Caribe";
-                
-                //comite2Topico1.innerHTML = "<strong>Tópico B:</strong> Medidas para combatir la demanda de contenido sexual en medios digitales con fines lucrativos en América Latina y el Caribe";
-                //comite2Topico1.style.display = "initial";
-                break;
-            case "UNFPA":
-                //comite2Topico0.innerHTML = "<strong>Tópico A:</strong> Medidas para proteger la salud de las personas trabajadoras sexuales frente a las infecciones de transmisión sexual, superando la discriminación y los prejuicios sociales";
-                
-                //comite2Topico1.innerHTML = "<strong>Tópico B:</strong> Mecanismos para prevenir el embarazo adolescente a causa de la violencia cultural y desinformación en la salud sexual y reproductiva";
-                //comite2Topico1.style.display = "initial";
-                break;
-            case "OSGEY":
-                //comite2Topico0.innerHTML = "<strong>Topic A:</strong> Strategies to Protect Young People’s Wellbeing from Burnout Syndrome";
-                
-                //comite2Topico1.innerHTML = "<strong>Topic B:</strong> Strategies to empower youth from vulnerable communities and prevent their engagement in crime";
-                //comite2Topico1.style.display = "initial";
-                break;
-            case "CIDH":
-                //comite2Topico0.innerHTML = "<strong>Tópico A:</strong> Acciones para combatir abusos y negligencia a personas en tratamiento dentro de hospitales psiquiátricos para garantizar el cumplimiento de sus derechos humanos";
-                
-                //comite2Topico1.innerHTML = "<strong>Tópico B:</strong> Medidas para proteger a personas en situación de movilidad ante violaciones de derechos humanos en el Tapón de Darién";
-                //comite2Topico1.style.display = "initial";
-                break;
-            case "CIJ":
-                //comite2Topico0.innerHTML = "<strong>Caso:</strong> Sudáfrica contra Israel: justicia por el genocidio en el conflicto armado en la Franja de Gaza y Cisjordania";
-                
-                //comite2Topico1.style.display = "none";
-                break;
-            case "COI":
-                //comite2Topico0.innerHTML = "<strong>Tópico A:</strong> Medidas para garantizar espacios seguros dentro de los Juegos Olímpicos para las personas atletas de la diversidad sexogenérica";
-                
-                //comite2Topico1.innerHTML = "<strong>Tópico B:</strong> Políticas para reducir el impacto económico y ambiental de los Juegos Olímpicos en Los Ángeles 2028";
-                //comite2Topico1.style.display = "initial";
-                break;                
-        }
-    }
-    else {
-
-    }
-
     // Para CIJ, deshabilitar y esconder el tercer select
     if (this.value == "CIJ") {
         comite2Pais2Select.required = false;
@@ -659,11 +460,6 @@ comiteSelects[2].addEventListener("change", function() {
 
 // Inicializar carousels
 $(".carousel").each(function() {
-    /*let carousel = new bootstrap.Carousel(this, {
-        interval: 2000,
-        //ride: "carousel"
-    });*/
-
     let carouselElement = this;
     let paused = false;
 
