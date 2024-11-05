@@ -167,6 +167,11 @@ form input {
     font-family: "Twemoji Country Flags", "Glacial Indifference Regular";
     font-size: 0.8rem;
     line-height: 1rem;
+    text-wrap: wrap;
+}
+
+.bootstrap-select .dropdown-menu li a span hr {
+    margin-bottom: var(--bs-dropdown-item-padding-y);
 }
 
 #input-nombre-delegacion-oficial {

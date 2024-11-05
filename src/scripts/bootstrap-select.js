@@ -1030,7 +1030,7 @@
     windowPadding: 0,
     virtualScroll: 600,
     display: false,
-    sanitize: true,
+    sanitize: false,
     sanitizeFn: null,
     whiteList: DefaultWhitelist
   };
