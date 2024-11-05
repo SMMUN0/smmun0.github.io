@@ -29,6 +29,7 @@ delegacionOficialSelect.addEventListener("change", function() {
     if (this.value == "si") {
         delegacionOficialInput.required = true;
         delegacionOficialInput.style.display = "initial";
+        responsableDelegacionOficialInput.required = true;
         responsableDelegacionOficialInput.style.display = "initial";
 
         // Quitar imagen de pago
@@ -39,6 +40,7 @@ delegacionOficialSelect.addEventListener("change", function() {
     }
     else {
         responsableDelegacionOficialInput.style.display = "none";
+        responsableDelegacionOficialInput.required = false;
         responsableDelegacionOficialInput.value = "";
         delegacionOficialInput.style.display = "none";
         delegacionOficialInput.required = false;
@@ -71,7 +73,7 @@ for (let i = 0; i < edadInputs.length; i++) {
         if (this.value.length != 0) {
             try {
                 let num = parseInt(this.value);
-                if (num >= 12 && num <= 26) {
+                if (num >= 11 && num <= 26) {
                     this.setCustomValidity("");
                     this.classList.remove("is-invalid");
                 }
