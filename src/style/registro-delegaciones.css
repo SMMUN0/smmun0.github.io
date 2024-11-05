@@ -160,11 +160,11 @@ form input {
 }
 
 .bootstrap-select button {
-    font-family: "Twemoji Country Flags", "Glacial Indifference Regular";
     margin-bottom: 1.5vh;
 }
 
 .bootstrap-select .dropdown-menu li a span {
+    font-family: "Twemoji Country Flags", "Glacial Indifference Regular";
     font-size: 0.8rem;
     line-height: 1rem;
 }
