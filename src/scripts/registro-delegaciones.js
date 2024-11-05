@@ -130,7 +130,9 @@ modalidadSelect.addEventListener("change", function() {
 
         // Requerir todos los campos de codelegación
         for (let i = 0; i < datosPersonalesCodelegacionInputs.length; i++) {
-            datosPersonalesCodelegacionInputs.item(i).required = true;
+            if (datosPersonalesCodelegacionInputs.item(i).name != "info_extra_1") {
+                datosPersonalesCodelegacionInputs.item(i).required = true;
+            }
         }
 
         for (let i = 0; i < datosPersonalesCodelegacionSelects.length; i++) {
