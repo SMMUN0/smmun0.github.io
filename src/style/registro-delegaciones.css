@@ -150,8 +150,12 @@ form input {
     margin-bottom: 1.5vh;
 }
 
+.filter-option-inner-inner hr {
+    display: none;
+}
+
 .bs-searchbox {
-    padding: 1vh 1vw;
+    padding: 1vh 2vw;
 }
 
 .bs-searchbox input {
