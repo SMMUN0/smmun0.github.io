@@ -71,7 +71,7 @@ nav_color_mobile: "#6f75d5cf"
         </div>
 
         <p id="codelegacion-nota" style="display: none;">
-            <strong>Nota:</strong> El registro de una codelegación solo deberá llenarse una vez con la información de las participantes.
+            <strong>Nota:</strong> El registro de una codelegación solo deberá llenarse una vez con la información de las dos participantes.
         </p>
     </div>
 
@@ -103,7 +103,7 @@ nav_color_mobile: "#6f75d5cf"
         </div>
 
         <div>
-            <input class="form-control" required autocomplete="off" name="responsable_delegacion_oficial" placeholder="Responsable de la delegación oficial" type="text" id="input-responsable-delegacion-oficial" maxlength="150">
+            <input class="form-control" required autocomplete="off" name="responsable_delegacion_oficial" placeholder="Nombre completo de la persona responsable de la delegación oficial" type="text" id="input-responsable-delegacion-oficial" maxlength="150">
             <div class="invalid-feedback">Debes llenar este campo.</div>
         </div>
     </div>
@@ -112,11 +112,11 @@ nav_color_mobile: "#6f75d5cf"
     {% for i in range(2) %}
         <article class="titulo" id="titulo-datos-{{ i }}">
             <div class="oval">
-                <h2>
+                <h2 id="titulo-datos-inner-{{ i }}">
                     {% if i == 0 %}
                         Datos personales
                     {% else %}
-                        Datos personales de la codelegación
+                        Datos personales (codelegación #2)
                     {% endif %}
                 </h2>
             </div>
@@ -887,6 +887,12 @@ nav_color_mobile: "#6f75d5cf"
 
         <p id="costo-inscripcion">
             <strong>Costo de inscripción:</strong> $300 MXN
+        </p>
+
+        <p>
+            <i>
+                En caso de que exista algún error con el pago, nos pondremos en contacto contigo.
+            </i>
         </p>
 
         <div>

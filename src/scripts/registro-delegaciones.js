@@ -19,7 +19,7 @@ delegacionOficialSelect.addEventListener("change", function() {
         imgPago.style.display = "none";
 
         // Poner mensaje en vez de costo
-        costoInscripcion.innerHTML = `<strong>Delegación oficial:</strong> como comprobante de pago, solamente se aceptará la imagen que se compartió a su Faculty tras su inscripción. Si no la tiene aún, por favor <a href="https://wa.me/529991975309?text=Hola%20%F0%9F%98%81,%20mi%20*nombre*%20es:%0A%0A*Tengo%20dudas%20sobre:*%0A%5B%5D%20%F0%9F%92%BC%20Modalidad%20de%20participaci%C3%B3n%0A%5B%5D%20%F0%9F%A4%9D%20Delegaci%C3%B3n%20oficial%0A%5B%5D%20%F0%9F%91%A4%20Datos%20personales%0A%5B%5D%20%F0%9F%8C%8E%20Comit%C3%A9s%20y/o%20pa%C3%ADses%0A%5B%5D%20%F0%9F%92%B3%20Proceso%20de%20pago%0A" target="_blank" rel="noopener noreferrer">contáctanos</a>.`
+        costoInscripcion.innerHTML = `<strong>Delegación oficial:</strong> como comprobante de pago, solamente se aceptará la imagen que se compartió a su Faculty después de su inscripción. Si no la tiene aún, por favor <a href="https://wa.me/529991975309?text=Hola%20%F0%9F%98%81,%20mi%20*nombre*%20es:%0A%0A*Tengo%20dudas%20sobre:*%0A%5B%5D%20%F0%9F%92%BC%20Modalidad%20de%20participaci%C3%B3n%0A%5B%5D%20%F0%9F%A4%9D%20Delegaci%C3%B3n%20oficial%0A%5B%5D%20%F0%9F%91%A4%20Datos%20personales%0A%5B%5D%20%F0%9F%8C%8E%20Comit%C3%A9s%20y/o%20pa%C3%ADses%0A%5B%5D%20%F0%9F%92%B3%20Proceso%20de%20pago%0A" target="_blank" rel="noopener noreferrer">contáctanos</a>.`
     }
     else {
         responsableDelegacionOficialInput.style.display = "none";
@@ -90,7 +90,8 @@ for (let i = 0; i < celInputs.length; i++) {
 
 let comiteSelects = $("select.select-comite");
 let datosPersonalesCodelegacion = document.getElementById("datos_personales_1");
-let tituloCodelegacion = document.getElementById("titulo-datos-1");
+let tituloCodelegacion1 = document.getElementById("titulo-datos-1");
+let tituloCodelegacionInner0 = document.getElementById("titulo-datos-inner-0");
 let datosPersonalesCodelegacionInputs = datosPersonalesCodelegacion.getElementsByTagName("input");
 let datosPersonalesCodelegacionSelects = datosPersonalesCodelegacion.getElementsByTagName("select");
 let notaCodelegacion = document.getElementById("codelegacion-nota");
@@ -104,7 +105,10 @@ modalidadSelect.addEventListener("change", function() {
 
         // Mostrar campos para datos personales de codelegación
         datosPersonalesCodelegacion.style.display = "initial";
-        tituloCodelegacion.style.display = "initial";
+        tituloCodelegacion1.style.display = "initial";
+
+        // Cambiar título delegación 1
+        tituloCodelegacionInner0.innerHTML = "Datos personales (codelegación #1)";
 
         // Requerir todos los campos de codelegación
         for (let i = 0; i < datosPersonalesCodelegacionInputs.length; i++) {
@@ -139,7 +143,10 @@ modalidadSelect.addEventListener("change", function() {
 
         // Ocultar campos de datos personales de codelegación
         datosPersonalesCodelegacion.style.display = "none";
-        tituloCodelegacion.style.display = "none";
+        tituloCodelegacion1.style.display = "none";
+
+        // Cambiar título delegación 1
+        tituloCodelegacionInner0.innerHTML = "Datos personales";
 
         // Dejar de requerir campos de codelegación
         for (let i = 0; i < datosPersonalesCodelegacionInputs.length; i++) {
