@@ -1,3 +1,4 @@
+{
 // Mostrar input de delegación oficial
 let delegacionOficialInput = document.getElementById("input-nombre-delegacion-oficial") as HTMLInputElement;
 let responsableDelegacionOficialInput = document.getElementById("input-responsable-delegacion-oficial") as HTMLInputElement;
@@ -522,71 +523,13 @@ form.addEventListener("submit", function(e) {
 // Toast de contacto en WhatsApp
 bootstrap.Toast.getOrCreateInstance(document.getElementById("toast-whatsapp") as HTMLDivElement).show();
 
-// Funciones para manejar cookies
-let today = new Date();
-let expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000);
-
-function setCookie(name: string, value: string) {
-    document.cookie = name + "=" + encodeURIComponent(value) + "; SameSite=Strict; path=/; expires=" + expiry.toUTCString();
-}
-
-function getCookie(name: string) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) {
-        return decodeURIComponent(parts.pop()!.split(';').shift()!);
-    }
-}
-
-// Guardar los valores de los inputs en las cookies
+// Guardar y reestablecer los valores de los inputs en las cookies
 let registroInputs = form.getElementsByTagName("input");
-for (let i = 0; i < registroInputs.length; i++) {
-    let input = registroInputs.item(i)!;
-    if (input.type == "file" || input.type == "submit") {
-        continue;
-    }
-
-    input.addEventListener("input", function() {
-        setCookie(this.name, this.value);
-    });
-}
-
-// Guardar los valores de los selects en las cookies
 let registroSelects = form.getElementsByTagName("select");
-for (let i = 0; i < registroSelects.length; i++) {
-    let select = registroSelects.item(i)!;
-    select.addEventListener("change", function() {
-        setCookie(this.name, this.value);
-    });
-}
-
-// Reestablecer los valores de los inputs desde las cookies
-for (let i = 0; i < registroInputs.length; i++) {
-    let input = registroInputs.item(i)!;
-    if (input.type == "file" || input.type == "submit") {
-        continue;
-    }
-
-    let cookieValue = getCookie(input.name);
-    if (cookieValue) {
-        input.value = cookieValue;
-        input.dispatchEvent(new Event("input", { bubbles: true }));
-    }
-}
-
-// Reestablecer los valores de los selects desde las cookies
-for (let i = 0; i < registroSelects.length; i++) {
-    let select = registroSelects.item(i)!;
-    let cookieValue = getCookie(select.name);
-    if (cookieValue) {
-        select.value = cookieValue;
-        if (select.selectedIndex == -1 || select.options[select.selectedIndex].disabled) {
-            select.selectedIndex = 0;
-        }
-    }
-
-    select.dispatchEvent(new Event("change", { bubbles: true }));
-}
+guardarCookiesInputs(registroInputs);
+guardarCookiesSelects(registroSelects);
+reestablecerCookiesInputs(registroInputs);
+reestablecerCookiesSelects(registroSelects);
 
 // Refrescar los selects
 $(registroSelects).selectpicker("refresh");
@@ -624,3 +567,4 @@ let observador = new IntersectionObserver(function(entries: IntersectionObserver
 });
 
 observador.observe(document.getElementById("titulo-registro") as HTMLElement);
+}

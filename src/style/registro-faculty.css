@@ -1,0 +1,197 @@
+main {
+    overflow-x: hidden;
+}
+
+#titulo-registro {
+    background-color: #7872a1;
+    background-image: url("/assets/img/backgrounds/blue_bg_darker.webp");
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 2vh 0;
+    color: #fffdfd;
+    font-family: "The Seasons Bold";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#titulo-registro figure {
+    margin: 0;
+}
+
+#titulo-registro img {
+    margin-left: 3vw;
+}
+
+#titulo-registro h1 {
+    margin: 1vh 0 0 0;
+    font-weight: normal;
+    padding: 0.5vh 1vw;
+    font-size: 2.8rem;
+}
+
+#sm-marquee {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.sm-marquee-wrapper {
+    display: flex;
+    align-items: center;
+    animation: scroll 30s linear infinite;
+    white-space: nowrap;
+    font-family: "The Seasons Bold";
+    font-size: 1rem;
+    color: #8d7abb;
+}
+
+@media (prefers-reduced-motion) {
+    .sm-marquee-wrapper {
+        animation: none;
+    }
+}
+
+.sm-marquee-wrapper p {
+    white-space: nowrap;
+    margin-top: 1rem;
+}
+
+.sm-marquee-wrapper img {
+    width: auto;
+    height: 1.5rem;
+    padding: 0 1rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.titulo {
+    background-color: #6f75d5cf;
+    padding: 2vh 0 2vh 0;
+    color: #fffdfd;
+    font-family: "Glacial Indifference Regular";
+}
+
+.titulo h2 {
+    margin: 0;
+    font-weight: normal;
+    padding: 0.5vh 3vw;
+    font-size: 2.3rem;
+}
+
+.oval {
+    max-width: fit-content;
+    border: solid #fffdfd;
+    border-radius: 120px / 70px;
+    text-align: center;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: "Glacial Indifference Regular";
+}
+
+form a {
+    color: #063372;
+}
+
+div:has(#img-pago) {
+    display: flex;
+    flex-direction: column;
+}
+
+#img-pago {
+    width: 30rem;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    margin: 1vh 0;
+    border-radius: 12px;
+}
+
+.mb-3 {
+    margin: 0 7vw;
+}
+
+.dropdown-menu input {
+    margin: 0;
+}
+
+.titulo {
+    margin-bottom: 2vh;
+}
+
+form h3 {
+    font-size: 1rem;
+}
+
+form > div {
+    margin-bottom: 3vh;
+}
+
+form div:has(+ select) {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin-bottom: 1.5vh;
+}
+
+.filter-option-inner-inner hr {
+    display: none;
+}
+
+.bs-searchbox {
+    padding: 1vh 2vw;
+}
+
+.bs-searchbox input {
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+@media screen and (max-width: 820px) {
+    .bs-searchbox input {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}
+
+.bootstrap-select button {
+    margin-bottom: 1.5vh;
+}
+
+.bootstrap-select .dropdown-menu li a span {
+    font-family: "Glacial Indifference Regular";
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-wrap: wrap;
+}
+
+@media screen and (max-width: 820px) {
+    .bootstrap-select .dropdown-menu li a span {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}
+
+.bootstrap-select .dropdown-menu li a span hr {
+    margin-bottom: var(--bs-dropdown-item-padding-y);
+}
+
+#aceptar-reglamento {
+    margin-top: 1vh;
+}

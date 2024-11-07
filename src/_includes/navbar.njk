@@ -21,7 +21,7 @@
             <!-- <a href="/alianzas" class="button { {"inactive-button" if page.fileSlug | fixFileSlug != "alianzas" else "" }}">
                 Alianzas
             </a> -->
-            <a href="/registro" class="button {{ "inactive-button" if page.fileSlug | fixFileSlug != "registro" else "" }}">
+            <a href="/registro" class="button {{ "" if "registro" in page.fileSlug | fixFileSlug else "inactive-button" }}">
                 Registro
             </a>
             <a href="/recursos" class="button {{ "inactive-button" if page.fileSlug | fixFileSlug != "recursos" else "" }}">
@@ -30,7 +30,7 @@
         </article>
 
         {% if page.fileSlug | fixFileSlug  == "registro-delegaciones" %}
-            <!-- Título registro -->
+            <!-- Título registro delegaciones -->
             <article class="nav-registro" style="display: none;">
                 <a class="navbar-logo logo-registro" href="/">
                     <figure>
@@ -40,6 +40,21 @@
 
                 <h1>
                     <span>Registro de delegaciones</span>
+                </h1>
+            </article>
+        {% endif %}
+
+        {% if page.fileSlug | fixFileSlug  == "registro-faculty" %}
+            <!-- Título registro faculty -->
+            <article class="nav-registro" style="display: none;">
+                <a class="navbar-logo logo-registro" href="/">
+                    <figure>
+                        <img src="/assets/img/logos/smmun_dorado.webp" width="2000" height="1787" alt="Logo del SMMUN.">
+                    </figure>
+                </a>
+
+                <h1>
+                    <span>Registro de Faculty</span>
                 </h1>
             </article>
         {% endif %}
@@ -82,7 +97,7 @@
         </article>
 
         {% if page.fileSlug | fixFileSlug  == "registro-delegaciones" %}
-            <!-- Título registro -->
+            <!-- Título registro delegaciones -->
             <article class="nav-registro" style="display: none;">
                 <a class="navbar-logo logo-registro" href="/">
                     <figure>
@@ -92,6 +107,21 @@
 
                 <h1>
                     <span>Registro de delegaciones</span>
+                </h1>
+            </article>
+        {% endif %}
+
+        {% if page.fileSlug | fixFileSlug  == "registro-faculty" %}
+            <!-- Título registro faculty -->
+            <article class="nav-registro" style="display: none;">
+                <a class="navbar-logo logo-registro" href="/">
+                    <figure>
+                        <img src="/assets/img/logos/smmun_dorado.webp" width="2000" height="1787" alt="Logo del SMMUN.">
+                    </figure>
+                </a>
+
+                <h1>
+                    <span>Registro de Faculty</span>
                 </h1>
             </article>
         {% endif %}
