@@ -4,7 +4,7 @@
   "description": "Webpage for the South Mexican Model United Nations (SMMUN)",
   "main": "index.js",
   "scripts": {
-    "build": "tsc & npx @11ty/eleventy",
+    "build": "tsc && npx @11ty/eleventy",
     "start": "tsc --watch & npx @11ty/eleventy --serve",
     "watch": "tsc --watch & npx @11ty/eleventy --watch"
   },

@@ -6,6 +6,8 @@ const sizeOf = require("image-size");
 const fs = require("fs")
 
 module.exports = function (eleventyConfig) {
+    eleventyConfig.setUseGitIgnore(false);
+
     // Copy files into the output directory
     eleventyConfig.addPassthroughCopy({"src/_passthrough": "/"});
     eleventyConfig.addPassthroughCopy({"src/_assets": "/assets"}, {filter: path => (path.indexOf('/partners') == -1)});
