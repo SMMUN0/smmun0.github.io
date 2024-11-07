@@ -4,7 +4,7 @@ const html = document.documentElement;
 const height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
 
 // Get all dots
-const dots = document.getElementsByClassName("dot");
+const dots = document.getElementsByClassName("dot") as HTMLCollectionOf<HTMLSpanElement>;
 
 // Sets the dots alpha based on the page's scrolling position
 function setDotsAlpha() {
@@ -29,5 +29,5 @@ if (height > window.innerHeight) {
 }
 else {
     // Do not display dots
-    document.getElementById("dot-progress").style.display = "none";
+    document.getElementById("dot-progress")!.style.display = "none";
 }

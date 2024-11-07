@@ -1,12 +1,10 @@
-"use strict";
-
 // Mostrar input de delegación oficial
-let delegacionOficialInput = document.getElementById("input-nombre-delegacion-oficial");
-let responsableDelegacionOficialInput = document.getElementById("input-responsable-delegacion-oficial");
-let delegacionOficialSelect = document.getElementById("select-delegacion-oficial");
-let imgPago = document.getElementById("img-pago");
-let costoInscripcion = document.getElementById("costo-inscripcion");
-let modalidadSelect = document.getElementById("select-modalidad");
+let delegacionOficialInput = document.getElementById("input-nombre-delegacion-oficial") as HTMLInputElement;
+let responsableDelegacionOficialInput = document.getElementById("input-responsable-delegacion-oficial") as HTMLInputElement;
+let delegacionOficialSelect = document.getElementById("select-delegacion-oficial") as HTMLSelectElement;
+let imgPago = document.getElementById("img-pago") as HTMLImageElement;
+let costoInscripcion = document.getElementById("costo-inscripcion") as HTMLParagraphElement;
+let modalidadSelect = document.getElementById("select-modalidad") as HTMLSelectElement;
 
 delegacionOficialSelect.addEventListener("change", function() {
     if (this.value == "si") {
@@ -43,9 +41,9 @@ delegacionOficialSelect.addEventListener("change", function() {
 });
 
 // Validación de edad
-let edadInputs = document.getElementsByClassName("input-edad");
+let edadInputs = document.getElementsByClassName("input-edad") as HTMLCollectionOf<HTMLInputElement>;
 for (let i = 0; i < edadInputs.length; i++) {
-    edadInputs.item(i).addEventListener("input", function() {
+    edadInputs.item(i)!.addEventListener("input", function() {
         this.value = this.value.replace(/[^\d]/gi, "");
     
         if (this.value.length != 0) {
@@ -68,9 +66,9 @@ for (let i = 0; i < edadInputs.length; i++) {
 }
 
 // Validacion de correo
-let correoInputs = document.getElementsByClassName("input-correo");
+let correoInputs = document.getElementsByClassName("input-correo") as HTMLCollectionOf<HTMLInputElement>;
 for (let i = 0; i < correoInputs.length; i++) {
-    correoInputs.item(i).addEventListener("input", function() {
+    correoInputs.item(i)!.addEventListener("input", function() {
         if (!this.checkValidity()) {
             this.classList.add("is-invalid");
         }
@@ -81,20 +79,20 @@ for (let i = 0; i < correoInputs.length; i++) {
 }
 
 // Validación de celular
-let celInputs = document.getElementsByClassName("input-celular");
+let celInputs = document.getElementsByClassName("input-celular") as HTMLCollectionOf<HTMLInputElement>;
 for (let i = 0; i < celInputs.length; i++) {
-    celInputs.item(i).addEventListener("input", function() {
+    celInputs.item(i)!.addEventListener("input", function() {
         this.value = this.value.replace(/[^\d\(\)\s\+\-]/gi, "");
     });
 }
 
-let comiteSelects = $("select.select-comite");
-let datosPersonalesCodelegacion = document.getElementById("datos_personales_1");
-let tituloCodelegacion1 = document.getElementById("titulo-datos-1");
-let tituloCodelegacionInner0 = document.getElementById("titulo-datos-inner-0");
+let comiteSelects = $("select.select-comite") as JQuery<HTMLSelectElement>;
+let datosPersonalesCodelegacion = document.getElementById("datos-personales-1") as HTMLDivElement;
+let tituloCodelegacion1 = document.getElementById("titulo-datos-1") as HTMLElement;
+let tituloCodelegacionInner0 = document.getElementById("titulo-datos-inner-0") as HTMLHeadingElement;
 let datosPersonalesCodelegacionInputs = datosPersonalesCodelegacion.getElementsByTagName("input");
 let datosPersonalesCodelegacionSelects = datosPersonalesCodelegacion.getElementsByTagName("select");
-let notaCodelegacion = document.getElementById("codelegacion-nota");
+let notaCodelegacion = document.getElementById("codelegacion-nota") as HTMLParagraphElement;
 
 // Opciones por modalidad
 modalidadSelect.addEventListener("change", function() {
@@ -112,17 +110,17 @@ modalidadSelect.addEventListener("change", function() {
 
         // Requerir todos los campos de codelegación
         for (let i = 0; i < datosPersonalesCodelegacionInputs.length; i++) {
-            if (datosPersonalesCodelegacionInputs.item(i).name != "info_extra_1") {
-                datosPersonalesCodelegacionInputs.item(i).required = true;
+            if (datosPersonalesCodelegacionInputs.item(i)!.name != "info_extra_1") {
+                datosPersonalesCodelegacionInputs.item(i)!.required = true;
             }
         }
 
         for (let i = 0; i < datosPersonalesCodelegacionSelects.length; i++) {
-            datosPersonalesCodelegacionSelects.item(i).required = true;
+            datosPersonalesCodelegacionSelects.item(i)!.required = true;
         }
 
         // Deshabilitar CRC, NOBEL, CIJ (solo permiten delegación individual)
-        $(comiteSelects).find("option[value='CRC'], option[value='NOBEL'], option[value='CIJ']").attr("disabled", true);
+        $(comiteSelects).find("option[value='CRC'], option[value='NOBEL'], option[value='CIJ']").prop("disabled", true);
 
         // Deseleccionar comité si está entre los deshabilitados
         comiteSelects.each(function() {
@@ -158,7 +156,7 @@ modalidadSelect.addEventListener("change", function() {
         }
 
         // Re-habilitar CRC, NOBEL, CIJ
-        $(comiteSelects).find("option[value='CRC'], option[value='NOBEL'], option[value='CIJ']").attr("disabled", false);
+        $(comiteSelects).find("option[value='CRC'], option[value='NOBEL'], option[value='CIJ']").prop("disabled", false);
 
         // Poner el costo de inscripción para delegación
         if (delegacionOficialSelect.value != "si") {
@@ -171,7 +169,7 @@ modalidadSelect.addEventListener("change", function() {
 });
 
 // Manejar cambios de país de residencia
-let paisResidenciaSelects = $("select.select-pais");
+let paisResidenciaSelects = $("select.select-pais") as JQuery<HTMLSelectElement>;
 paisResidenciaSelects.each(function() {
     this.addEventListener("change", function() {
         // Cambiar cuenta de pago
@@ -195,12 +193,10 @@ paisResidenciaSelects.each(function() {
 });
 
 let previousComite0 = 0;
-let comite0Topico0 = document.getElementById("comite-0-topico-0");
-let comite0Topico1 = document.getElementById("comite-0-topico-1");
-let comite0Topicos = document.getElementById("comite-0-topicos");
-let comite0PaisSelects = $("select.select-comite-0-pais");
-let comite0Pais2Select = document.getElementById("select-comite-0-pais-2");
-let comite0Pais2Label = document.getElementById("label-comite-0-pais-2");
+let comite0Topicos = document.getElementById("comite-0-topicos") as HTMLDivElement;
+let comite0PaisSelects = $("select.select-comite-0-pais") as JQuery<HTMLSelectElement>;
+let comite0Pais2Select = document.getElementById("select-comite-0-pais-2") as HTMLSelectElement;
+let comite0Pais2Label = document.getElementById("label-comite-0-pais-2") as HTMLLabelElement;
 
 // Handler para cambios de selección del primer comité
 comiteSelects[0].addEventListener("change", function() {
@@ -210,7 +206,7 @@ comiteSelects[0].addEventListener("change", function() {
         comiteSelects[2].options[previousComite0].disabled = false;
 
         // Esconder el carousel anterior
-        document.getElementById(`carousel-comite-0-${this.options[previousComite0].value}`).style.display = "none";
+        (document.getElementById(`carousel-comite-0-${this.options[previousComite0].value}`) as HTMLDivElement).style.display = "none";
     }
 
     // Resetear la selección de los otros selects si es la que vamos a deshabilitar
@@ -233,7 +229,7 @@ comiteSelects[0].addEventListener("change", function() {
     if (this.selectedIndex != 0) {
         comite0Topicos.style.display = "flex";
 
-        let carouselElement = document.getElementById(`carousel-comite-0-${this.value}`);
+        let carouselElement = document.getElementById(`carousel-comite-0-${this.value}`) as HTMLDivElement;
         carouselElement.style.display = "initial";
         bootstrap.Carousel.getOrCreateInstance(carouselElement).to(0);
 
@@ -258,19 +254,19 @@ comiteSelects[0].addEventListener("change", function() {
     // Mostrar solo las opciones de delegación del comité seleccionado
     let thisValue = this.value;
 
-    comite0PaisSelects.find("optgroup, option").each(function() {
+    (comite0PaisSelects.find("optgroup, option") as JQuery<HTMLOptGroupElement | HTMLOptionElement>).each(function() {
         if ($(this).attr("class") == thisValue) {
             this.hidden = false;
             this.disabled = false;
         }
-        else if (this.value || $(this).is("optgroup")) {
+        else if ($(this).is("optgroup") || (this as HTMLOptionElement).value) {
             this.hidden = true;
             this.disabled = true;
         }
 
         // Resetear la selección
-        if ($(this).is("option") && this.value == "") {
-            this.selected = true;
+        if ($(this).is("option") && $(this).is("optgroup") || (this as HTMLOptionElement).value == "") {
+            (this as HTMLOptionElement).selected = true;
         }
     });
 
@@ -280,12 +276,10 @@ comiteSelects[0].addEventListener("change", function() {
 });
 
 let previousComite1 = 0;
-let comite1Topico0 = document.getElementById("comite-1-topico-0");
-let comite1Topico1 = document.getElementById("comite-1-topico-1");
-let comite1Topicos = document.getElementById("comite-1-topicos");
-let comite1PaisSelects = $("select.select-comite-1-pais");
-let comite1Pais2Select = document.getElementById("select-comite-1-pais-2");
-let comite1Pais2Label = document.getElementById("label-comite-1-pais-2");
+let comite1Topicos = document.getElementById("comite-1-topicos") as HTMLDivElement;
+let comite1PaisSelects = $("select.select-comite-1-pais") as JQuery<HTMLSelectElement>;
+let comite1Pais2Select = document.getElementById("select-comite-1-pais-2") as HTMLSelectElement;
+let comite1Pais2Label = document.getElementById("label-comite-1-pais-2") as HTMLLabelElement;
 
 // Handler para cambios de selección del segundo comité
 comiteSelects[1].addEventListener("change", function() {
@@ -294,7 +288,7 @@ comiteSelects[1].addEventListener("change", function() {
         comiteSelects[2].options[previousComite1].disabled = false;
 
         // Esconder el carousel anterior
-        document.getElementById(`carousel-comite-1-${this.options[previousComite1].value}`).style.display = "none";
+        (document.getElementById(`carousel-comite-1-${this.options[previousComite1].value}`) as HTMLDivElement).style.display = "none";
     }
 
     // Resetear la selección de los otros selects si es la que vamos a deshabilitar
@@ -311,7 +305,7 @@ comiteSelects[1].addEventListener("change", function() {
     if (this.selectedIndex != 0) {
         comite1Topicos.style.display = "flex";
 
-        let carouselElement = document.getElementById(`carousel-comite-1-${this.value}`);
+        let carouselElement = document.getElementById(`carousel-comite-1-${this.value}`) as HTMLDivElement;
         carouselElement.style.display = "initial";
         bootstrap.Carousel.getOrCreateInstance(carouselElement).to(0);
     }
@@ -335,19 +329,19 @@ comiteSelects[1].addEventListener("change", function() {
     // Mostrar solo las opciones de delegación del comité seleccionado
     let thisValue = this.value;
 
-    comite1PaisSelects.find("optgroup, option").each(function() {
+    (comite1PaisSelects.find("optgroup, option") as JQuery<HTMLOptGroupElement | HTMLOptionElement>).each(function() {
         if ($(this).attr("class") == thisValue) {
             this.hidden = false;
             this.disabled = false;
         }
-        else if (this.value || $(this).is("optgroup")) {
+        else if ($(this).is("optgroup") || (this as HTMLOptionElement).value) {
             this.hidden = true;
             this.disabled = true;
         }
 
         // Resetear la selección
-        if ($(this).is("option") && this.value == "") {
-            this.selected = true;
+        if ($(this).is("option") && $(this).is("optgroup") || (this as HTMLOptionElement).value == "") {
+            (this as HTMLOptionElement).selected = true;
         }
     });
 
@@ -358,18 +352,16 @@ comiteSelects[1].addEventListener("change", function() {
 });
 
 let previousComite2 = 0;
-let comite2Topico0 = document.getElementById("comite-2-topico-0");
-let comite2Topico1 = document.getElementById("comite-2-topico-1");
-let comite2Topicos = document.getElementById("comite-2-topicos");
-let comite2PaisSelects = $("select.select-comite-2-pais");
-let comite2Pais2Select = document.getElementById("select-comite-2-pais-2");
-let comite2Pais2Label = document.getElementById("label-comite-2-pais-2");
+let comite2Topicos = document.getElementById("comite-2-topicos") as HTMLDivElement;
+let comite2PaisSelects = $("select.select-comite-2-pais") as JQuery<HTMLSelectElement>;
+let comite2Pais2Select = document.getElementById("select-comite-2-pais-2") as HTMLSelectElement;
+let comite2Pais2Label = document.getElementById("label-comite-2-pais-2") as HTMLLabelElement;
 
 // Handler para cambios de selección del tercer comité
 comiteSelects[2].addEventListener("change", function() {
     if (previousComite2 != 0) {
         // Esconder el carousel anterior
-        document.getElementById(`carousel-comite-2-${this.options[previousComite2].value}`).style.display = "none";
+        (document.getElementById(`carousel-comite-2-${this.options[previousComite2].value}`) as HTMLDivElement).style.display = "none";
     }
 
     previousComite2 = this.selectedIndex;
@@ -378,7 +370,7 @@ comiteSelects[2].addEventListener("change", function() {
     if (this.selectedIndex != 0) {
         comite2Topicos.style.display = "flex";
 
-        let carouselElement = document.getElementById(`carousel-comite-2-${this.value}`);
+        let carouselElement = document.getElementById(`carousel-comite-2-${this.value}`) as HTMLDivElement;
         carouselElement.style.display = "initial";
         bootstrap.Carousel.getOrCreateInstance(carouselElement).to(0);
     }
@@ -401,19 +393,19 @@ comiteSelects[2].addEventListener("change", function() {
     // Mostrar solo las opciones de delegación del comité seleccionado
     let thisValue = this.value;
 
-    comite2PaisSelects.find("optgroup, option").each(function() {
+    (comite2PaisSelects.find("optgroup, option") as JQuery<HTMLOptGroupElement | HTMLOptionElement>).each(function() {
         if ($(this).attr("class") == thisValue) {
             this.hidden = false;
             this.disabled = false;
         }
-        else if (this.value || $(this).is("optgroup")) {
+        else if ($(this).is("optgroup") || (this as HTMLOptionElement).value) {
             this.hidden = true;
             this.disabled = true;
         }
 
         // Resetear la selección
-        if ($(this).is("option") && this.value == "") {
-            this.selected = true;
+        if ($(this).is("option") && $(this).is("optgroup") || (this as HTMLOptionElement).value == "") {
+            (this as HTMLOptionElement).selected = true;
         }
     });
 
@@ -423,7 +415,7 @@ comiteSelects[2].addEventListener("change", function() {
 });
 
 // Inicializar carousels
-$(".carousel").each(function() {
+($(".carousel")  as JQuery<HTMLDivElement>).each(function() {
     let carouselElement = this;
     let paused = false;
 
@@ -445,7 +437,7 @@ $(".carousel").each(function() {
 
 // Evitar doble selección en opciones de país
 for (let i = 0; i < 3; i++) {
-    let paisSelects = $(`select.select-comite-${i}-pais`);
+    let paisSelects = $(`select.select-comite-${i}-pais`) as JQuery<HTMLSelectElement>;
 
     let previousPais0 = 0;
 
@@ -503,52 +495,53 @@ for (let i = 0; i < 3; i++) {
 }
 
 // Limitar tamaño de archivos
-let comprobanteToast = bootstrap.Toast.getOrCreateInstance(document.getElementById("toast-comprobante"));
-document.getElementById("input-comprobante").addEventListener("change", function() {
+let comprobanteToast = bootstrap.Toast.getOrCreateInstance(document.getElementById("toast-comprobante") as HTMLDivElement);
+(document.getElementById("input-comprobante") as HTMLInputElement).addEventListener("change", function() {
     // Mostrar error si el archivo excede los 5 MB
-    if (this.files[0].size > 5242880) {
+    if (this.files![0].size > 5242880) {
         comprobanteToast.show();
         this.value = "";
     }
 });
 
 // Validar forms con boostrap
-let form = document.getElementById("registro-delegaciones");
+let form = document.forms[0] as HTMLFormElement;
+let enviarToast = document.getElementById("toast-enviar") as HTMLButtonElement;
 form.addEventListener("submit", function(e) {
     if (!this.checkValidity()) {
         e.preventDefault();
         e.stopPropagation();
 
         // Mostrar error
-        bootstrap.Toast.getOrCreateInstance(document.getElementById("toast-enviar")).show();
+        bootstrap.Toast.getOrCreateInstance(enviarToast).show();
     }
 
     this.classList.add("was-validated");
 });
 
 // Toast de contacto en WhatsApp
-bootstrap.Toast.getOrCreateInstance(document.getElementById("toast-whatsapp")).show();
+bootstrap.Toast.getOrCreateInstance(document.getElementById("toast-whatsapp") as HTMLDivElement).show();
 
+// Funciones para manejar cookies
 let today = new Date();
 let expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000);
 
-// Funciones para manejar cookies
-function setCookie(name, value) {
-    document.cookie = name + "=" + encodeURIComponent(value) + "; SameSite=Strict; path=/; expires=" + expiry.toGMTString();
+function setCookie(name: string, value: string) {
+    document.cookie = name + "=" + encodeURIComponent(value) + "; SameSite=Strict; path=/; expires=" + expiry.toUTCString();
 }
 
-function getCookie(name) {
+function getCookie(name: string) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) {
-        return decodeURIComponent(parts.pop().split(';').shift());
+        return decodeURIComponent(parts.pop()!.split(';').shift()!);
     }
 }
 
 // Guardar los valores de los inputs en las cookies
-let registroInputs = document.forms["registro-delegaciones"].getElementsByTagName("input");
+let registroInputs = form.getElementsByTagName("input");
 for (let i = 0; i < registroInputs.length; i++) {
-    let input = registroInputs.item(i);
+    let input = registroInputs.item(i)!;
     if (input.type == "file" || input.type == "submit") {
         continue;
     }
@@ -559,9 +552,9 @@ for (let i = 0; i < registroInputs.length; i++) {
 }
 
 // Guardar los valores de los selects en las cookies
-let registroSelects = document.forms["registro-delegaciones"].getElementsByTagName("select");
+let registroSelects = form.getElementsByTagName("select");
 for (let i = 0; i < registroSelects.length; i++) {
-    let select = registroSelects.item(i);
+    let select = registroSelects.item(i)!;
     select.addEventListener("change", function() {
         setCookie(this.name, this.value);
     });
@@ -569,7 +562,7 @@ for (let i = 0; i < registroSelects.length; i++) {
 
 // Reestablecer los valores de los inputs desde las cookies
 for (let i = 0; i < registroInputs.length; i++) {
-    let input = registroInputs.item(i);
+    let input = registroInputs.item(i)!;
     if (input.type == "file" || input.type == "submit") {
         continue;
     }
@@ -583,7 +576,7 @@ for (let i = 0; i < registroInputs.length; i++) {
 
 // Reestablecer los valores de los selects desde las cookies
 for (let i = 0; i < registroSelects.length; i++) {
-    let select = registroSelects.item(i);
+    let select = registroSelects.item(i)!;
     let cookieValue = getCookie(select.name);
     if (cookieValue) {
         select.value = cookieValue;
@@ -599,13 +592,11 @@ for (let i = 0; i < registroSelects.length; i++) {
 $(registroSelects).selectpicker("refresh");
 
 // Cambiar navbar por el titulo
-let nav = document.getElementById("navbar");
 let navNormal = $(".nav-normal");
 let navRegistro = $(".nav-registro");
-const header = document.getElementById("titulo-registro");
-const navHeight = nav.getBoundingClientRect().height;
+let navNormalHeight = (document.getElementById("navbar") as HTMLElement).getBoundingClientRect().height;
 
-function updateNavColor(entries) {
+let observador = new IntersectionObserver(function(entries: IntersectionObserverEntry[]) {
     const [entry] = entries;
 
     if (!entry.isIntersecting) {
@@ -626,12 +617,10 @@ function updateNavColor(entries) {
             this.style.display  = "none";
         });
     }
-}
-
-const headerObserver = new IntersectionObserver(updateNavColor, {
+}, {
     root: null,
     threshold: 0,
-    rootMargin: `-${navHeight}px`
+    rootMargin: `-${navNormalHeight}px`
 });
 
-headerObserver.observe(header);
+observador.observe(document.getElementById("titulo-registro") as HTMLElement);

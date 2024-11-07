@@ -1,4 +1,7 @@
 // Hamburger menu for mobile and small screens
+const hamburger = document.getElementById("hamburger") as HTMLDivElement;
+const navMenu = document.getElementById("nav-menu") as HTMLUListElement;
+
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
@@ -9,9 +12,4 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("nav-menu");
-const navLink = document.querySelectorAll(".nav-link");
-
 hamburger.addEventListener("click", mobileMenu);
-navLink.forEach(n => n.addEventListener("click", closeMenu));
