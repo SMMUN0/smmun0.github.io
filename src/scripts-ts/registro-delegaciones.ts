@@ -41,51 +41,10 @@ delegacionOficialSelect.addEventListener("change", function() {
     }
 });
 
-// Validación de edad
-let edadInputs = document.getElementsByClassName("input-edad") as HTMLCollectionOf<HTMLInputElement>;
-for (let i = 0; i < edadInputs.length; i++) {
-    edadInputs.item(i)!.addEventListener("input", function() {
-        this.value = this.value.replace(/[^\d]/gi, "");
-    
-        if (this.value.length != 0) {
-            try {
-                let num = parseInt(this.value);
-                if (num >= 11 && num <= 26) {
-                    this.setCustomValidity("");
-                    this.classList.remove("is-invalid");
-                }
-                else {
-                    throw new Error("");
-                }
-            }
-            catch {
-                this.setCustomValidity("Edad inválida.");
-                this.classList.add("is-invalid");
-            }
-        }
-    });
-}
-
-// Validacion de correo
-let correoInputs = document.getElementsByClassName("input-correo") as HTMLCollectionOf<HTMLInputElement>;
-for (let i = 0; i < correoInputs.length; i++) {
-    correoInputs.item(i)!.addEventListener("input", function() {
-        if (!this.checkValidity()) {
-            this.classList.add("is-invalid");
-        }
-        else {
-            this.classList.remove("is-invalid");
-        }
-    });
-}
-
-// Validación de celular
-let celInputs = document.getElementsByClassName("input-celular") as HTMLCollectionOf<HTMLInputElement>;
-for (let i = 0; i < celInputs.length; i++) {
-    celInputs.item(i)!.addEventListener("input", function() {
-        this.value = this.value.replace(/[^\d\(\)\s\+\-]/gi, "");
-    });
-}
+// Validacion de inputs
+validarCorreos(document.getElementsByClassName("input-correo") as HTMLCollectionOf<HTMLInputElement>);
+validarCelulares(document.getElementsByClassName("input-celular") as HTMLCollectionOf<HTMLInputElement>);
+validarEdades(document.getElementsByClassName("input-edad") as HTMLCollectionOf<HTMLInputElement>);
 
 let comiteSelects = $("select.select-comite") as JQuery<HTMLSelectElement>;
 let datosPersonalesCodelegacion = document.getElementById("datos-personales-1") as HTMLDivElement;
