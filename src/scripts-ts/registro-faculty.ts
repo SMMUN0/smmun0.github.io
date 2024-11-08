@@ -61,7 +61,6 @@ let costoInscripcion = document.getElementById("costo-inscripcion")!;
             }
         }
         catch(e) {
-            console.log(e);
             this.setCustomValidity("Número de delegaciones inválido.");
             this.classList.add("is-invalid");
         }
