@@ -24,7 +24,7 @@ let costoInscripcion = document.getElementById("costo-inscripcion")!;
             }
 
             // Actualizar costo total
-            costoInscripcion.innerHTML = `$${(250 * num).toLocaleString()} MXN ($250 MXN por ${num} personas)`;
+            costoInscripcion.innerHTML = `$${(260 * num).toLocaleString()} MXN ($260 MXN por ${num} personas)`;
 
             // Añadir o remover número de bloques de datos
             let delegacionesEnDom = bloqueDelegaciones.children.length;
