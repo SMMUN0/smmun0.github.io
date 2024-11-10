@@ -128,30 +128,6 @@ modalidadSelect.addEventListener("change", function() {
     comiteSelects.selectpicker("refresh");
 });
 
-// Manejar cambios de país de residencia
-let paisResidenciaSelects = $("select.select-pais") as JQuery<HTMLSelectElement>;
-paisResidenciaSelects.each(function() {
-    this.addEventListener("change", function() {
-        // Cambiar cuenta de pago
-        let internacional = false;
-
-        paisResidenciaSelects.each(function() {
-            if (this.required && this.value != "México") {
-                internacional = true;
-            }
-        });
-
-        if (internacional) {
-            imgPago.src = "/assets/img/images/bbva.webp";
-            imgPago.alt = "Datos bancarios. Tarjeta: 4152 3139 9013 9227; Banco: BBVA";
-        }
-        else {
-            imgPago.src = "/assets/img/images/mercadopago.webp";
-            imgPago.alt = "Datos bancarios. CLABE: 6460 1020 6386 6808 42; Banco: STP";
-        }
-    });
-});
-
 let previousComite0 = 0;
 let comite0Topicos = document.getElementById("comite-0-topicos") as HTMLDivElement;
 let comite0PaisSelects = $("select.select-comite-0-pais") as JQuery<HTMLSelectElement>;

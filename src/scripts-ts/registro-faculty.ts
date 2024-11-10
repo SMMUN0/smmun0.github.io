@@ -72,21 +72,6 @@ validarCorreos(document.getElementsByClassName("input-correo") as HTMLCollection
 validarCelulares(document.getElementsByClassName("input-celular") as HTMLCollectionOf<HTMLInputElement>);
 validarEdades(document.getElementsByClassName("input-edad") as HTMLCollectionOf<HTMLInputElement>);
 
-
-// Manejar cambios de país de residencia
-let imgPago = document.getElementById("img-pago") as HTMLImageElement;
-(document.getElementById("pais-faculty") as HTMLSelectElement).addEventListener("change", function() {
-    // Cambiar cuenta de pago
-    if (this.value == "México") {
-        imgPago.src = "/assets/img/images/mercadopago.webp";
-        imgPago.alt = "Datos bancarios. CLABE: 6460 1020 6386 6808 42; Banco: STP";
-    }
-    else {
-        imgPago.src = "/assets/img/images/bbva.webp";
-        imgPago.alt = "Datos bancarios. Tarjeta: 4152 3139 9013 9227; Banco: BBVA";
-    }
-});
-
 // Limitar tamaño de archivos
 let comprobanteToast = bootstrap.Toast.getOrCreateInstance(document.getElementById("toast-comprobante") as HTMLDivElement);
 (document.getElementById("input-comprobante") as HTMLInputElement).addEventListener("change", function() {
