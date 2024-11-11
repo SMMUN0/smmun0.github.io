@@ -990,7 +990,7 @@ nav_color_mobile: "#6f75d5cf"
                 this.setCustomValidity("");
                 this.classList.remove("is-invalid");
             }
-            else {
+            else if (this.value) {
                 this.setCustomValidity("El número de celular no es válido.");
                 this.classList.add("is-invalid");
             }
