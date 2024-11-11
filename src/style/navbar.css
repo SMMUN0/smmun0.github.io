@@ -2,10 +2,16 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-normal {
     display: flex;
     flex-direction: row;
     align-items: center;
-    z-index: 1;
     background-color: #fffdfd;
     background-image: url("/assets/img/backgrounds/white_bg.webp");
     background-repeat: repeat;
@@ -14,7 +20,7 @@ nav {
 }
 
 .navbar-logo {
-    z-index: 2;
+    z-index: 3;
 }
 
 nav figure {
@@ -26,7 +32,7 @@ nav figure {
         display: none;
     }
 
-    nav {
+    .nav-normal {
         justify-content: space-evenly;
         padding: 2vh 0;
     }
@@ -69,7 +75,7 @@ nav figure {
         display: none;
     }
 
-    nav {
+    .nav-normal {
         justify-content: space-between;
         padding: 1vh 0;
     }
@@ -84,7 +90,7 @@ nav figure {
     }
 
     nav ul {
-        z-index: 3;
+        z-index: 4;
         padding: 0;
     }
 
@@ -151,4 +157,35 @@ nav figure {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    .logo-registro img {
+        height: 8vh;
+        margin-left: 0.5vw;
+        margin-right: 4vw;
+    }
+}
+
+.nav-registro {
+    background-color: #7872a1;
+    background-image: url("/assets/img/backgrounds/blue_bg_darker.webp");
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 2vh 0;
+    color: #fffdfd;
+    font-family: "The Seasons Bold";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.nav-registro img {
+    margin-left: 3vw;
+}
+
+.nav-registro h1 {
+    margin: 1vh 0 0 0;
+    font-weight: normal;
+    padding: 0.5vh 1vw;
+    font-size: 2.8rem;
 }

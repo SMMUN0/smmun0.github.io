@@ -4,17 +4,22 @@
   "description": "Webpage for the South Mexican Model United Nations (SMMUN)",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve",
-    "watch": "npx @11ty/eleventy --watch"
+    "build": "tsc && npx @11ty/eleventy",
+    "start": "tsc --watch & npx @11ty/eleventy --serve",
+    "watch": "tsc --watch & npx @11ty/eleventy --watch"
   },
   "keywords": [],
   "author": "Bruno Ancona <brunoanconasala@gmail.com>",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
+    "@types/bootstrap": "^5.2.10",
+    "@types/bootstrap-select": "^1.13.7",
+    "@types/clean-css": "^4.2.11",
+    "@types/jquery": "^3.5.32",
     "clean-css": "^5.3.3",
     "html-minifier-terser": "^7.2.0",
     "image-size": "^1.1.1",
-    "terser": "^5.31.2"
+    "terser": "^5.31.2",
+    "typescript": "^5.6.3"
   }
 }

@@ -1,0 +1,1004 @@
+---
+title: "Registro Delegaciones - SMMUN"
+description: "¡Te estamos buscando! No dudes el ser parte de una experiencia extraordinaria, regístrate en el SMMUN 2025 ✨"
+layout: "base.njk"
+uses_js: true
+uses_bootstrap: true
+nav_color_mobile: "#6f75d5cf"
+---
+
+<!-- Título -->
+<article id="titulo-registro">
+    <div class="navbar-logo logo-registro" style="z-index: 0;">
+        <figure>
+            <img src="/assets/img/logos/smmun_dorado.webp" width="2000" height="1787" alt="Logo del SMMUN.">
+        </figure>
+    </div>
+
+    <h1>
+        <span>Registro de delegaciones</span>
+    </h1>
+</article>
+
+<!-- Marquee with name and logo -->
+<article id="sm-marquee" aria-hidden="true">
+    <div class="sm-marquee-wrapper">
+        <p>SMMUN 2025; De soñadores en acción, para líderes con pasión</p>
+        <img src="/assets/img/logos/smmun_morado.webp" width="882" height="756" alt="Logo del SMMUN.">
+    </div>
+
+    <div class="sm-marquee-wrapper">
+        <p>SMMUN 2025; De soñadores en acción, para líderes con pasión</p>
+        <img src="/assets/img/logos/smmun_morado.webp" width="882" height="756" alt="Logo del SMMUN.">
+    </div>
+
+    <div class="sm-marquee-wrapper">
+        <p>SMMUN 2025; De soñadores en acción, para líderes con pasión</p>
+        <img src="/assets/img/logos/smmun_morado.webp" width="882" height="756" alt="Logo del SMMUN.">
+    </div>
+
+    <div class="sm-marquee-wrapper">
+        <p>SMMUN 2025; De soñadores en acción, para líderes con pasión</p>
+        <img src="/assets/img/logos/smmun_morado.webp" width="882" height="756" alt="Logo del SMMUN.">
+    </div>
+
+    <div class="sm-marquee-wrapper">
+        <p>SMMUN 2025; De soñadores en acción, para líderes con pasión</p>
+        <img src="/assets/img/logos/smmun_morado.webp" width="882" height="756" alt="Logo del SMMUN.">
+    </div>
+</article>
+
+<!-- Forms -->
+<form method="POST" action="/api/registro-delegaciones" name="registro-delegaciones" id="registro-delegaciones" enctype="multipart/form-data" class="col g-3" novalidate>
+    <!-- Selección de modalidad -->
+    <article class="titulo">
+        <div class="oval">
+            <h2>
+                Modalidad
+            </h2>
+        </div>
+    </article>
+
+    <div class="mb-3">
+        <div>
+            <label for="modalidad" class="form-label">Selecciona tu modalidad de participación <span style="color: red;">*</span></label>
+            <select autocomplete="off" data-width="86vw" class="selectpicker" required name="modalidad" id="select-modalidad">
+                <option selected disabled value="">Selecciona una opción</option>
+                <option value="individual">Delegación (individual)</option>
+                <option value="pareja" id="select-modalidad-pareja">Codelegación (bina)</option>
+            </select>
+            <div class="invalid-feedback">Debes seleccionar una opción.</div>
+        </div>
+
+        <p id="codelegacion-nota" style="display: none;">
+            <strong>Nota:</strong> El registro de una codelegación solo deberá llenarse una vez con la información de las dos participantes.
+        </p>
+    </div>
+
+    <!-- Selección de delegación oficial -->
+    <article class="titulo">
+        <div class="oval">
+            <h2>
+                Delegación oficial
+            </h2>
+        </div>
+    </article>
+
+    <div class="mb-3">
+        <p>Una delegación oficial es un grupo que representa a una agrupación y tiene a una persona que lo asesora.</p>
+
+        <div>
+            <label for="delegacion_oficial" class="form-label">¿Perteneces a una delegación oficial? <span style="color: red;">*</span></label>
+            <select autocomplete="off" data-width="86vw" class="selectpicker" required name="delegacion_oficial" id="select-delegacion-oficial">
+                <option selected disabled value="">Selecciona una opción</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+            <div class="invalid-feedback">Debes seleccionar una opción.</div>
+        </div>
+
+        <div>
+            <input class="form-control" required autocomplete="off" name="nombre_delegacion_oficial" placeholder="Nombre completo de la agrupación (sin siglas o abreviaturas)" type="text" id="input-nombre-delegacion-oficial" maxlength="150">
+            <div class="invalid-feedback">Debes llenar este campo.</div>
+        </div>
+
+        <div>
+            <input class="form-control" required autocomplete="off" name="responsable_delegacion_oficial" placeholder="Nombre completo de la persona responsable de la delegación oficial" type="text" id="input-responsable-delegacion-oficial" maxlength="150">
+            <div class="invalid-feedback">Debes llenar este campo.</div>
+        </div>
+    </div>
+
+    <!-- Sección de datos personales de la delegación y codelegación -->
+    {% for i in range(2) %}
+        <article class="titulo" id="titulo-datos-{{ i }}">
+            <div class="oval">
+                <h2 id="titulo-datos-inner-{{ i }}">
+                    {% if i == 0 %}
+                        Datos personales
+                    {% else %}
+                        Datos personales (codelegación #2)
+                    {% endif %}
+                </h2>
+            </div>
+        </article>
+
+        <div id="datos-personales-{{ i }}" class="mb-3">
+            <label for="nombre_{{ i }}" class="form-label">Nombre completo <span style="color: red;">*</span></label>
+            <div class="row g-3">
+                <div class="col">
+                    <input class="form-control" required autocomplete="off" name="nombre_{{ i }}" placeholder="Nombre(s)" type="text" maxlength="150">
+                    <div class="invalid-feedback">Debes llenar este campo.</div>
+                </div>
+                <div class="col">
+                    <input class="form-control" required autocomplete="off" name="apellido_{{ i }}" placeholder="Apellidos" type="text" maxlength="150">
+                    <div class="invalid-feedback">Debes llenar este campo.</div>
+                </div>
+            </div>
+
+            <div>
+                <label for="edad_{{ i }}" class="form-label">Edad <span style="color: red;">*</span></label>
+                <input class="form-control input-edad" required autocomplete="off" name="edad_{{ i }}" placeholder="11-26 años" type="text" maxlength="2" inputmode="numeric">
+                <div class="invalid-feedback">La edad no es válida.</div>
+            </div>
+
+            <div>
+                <label for="celular_{{ i }}" class="form-label">Número de celular <span style="color: red;">*</span></label>
+                <input class="form-control input-celular" data-name="celular_{{ i }}" required autocomplete="off" placeholder="999 123 4567" type="tel" maxlength="30">
+                <div class="invalid-feedback">El número de celular no es válido.</div>
+            </div>
+
+            <div>
+                <label for="correo_{{ i }}" class="form-label">Correo electrónico <span style="color: red;">*</span></label>
+                <input class="form-control input-correo" required autocomplete="off" name="correo_{{ i }}" placeholder="ejemplo@dominio.com" type="email" maxlength="150">
+                <div class="invalid-feedback">El correo no es válido.</div>
+            </div>
+
+            <label for="pais_{{ i }}" class="form-label">País, estado y ciudad de residencia <span style="color: red;">*</span></label>
+            <div class="row g-3">
+                <div class="col">
+                    <select autocomplete="off" data-width="100%" class="selectpicker select-pais" required name="pais_{{ i }}">
+                        <option selected disabled value="">Selecciona una opción</option>
+                        <option value="Afganistán">Afganistán</option>
+                        <option value="Islas Åland">Islas Åland</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Argelia">Argelia</option>
+                        <option value="Samoa Americana">Samoa Americana</option>
+                        <option value="Andorra">Andorra</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Anguila">Anguila</option>
+                        <option value="Antártida">Antártida</option>
+                        <option value="Antigua y Barbuda">Antigua y Barbuda</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Armenia">Armenia</option>
+                        <option value="Aruba">Aruba</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Azerbaiyán">Azerbaiyán</option>
+                        <option value="Bahamas">Bahamas</option>
+                        <option value="Bahréin">Bahréin</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Barbados">Barbados</option>
+                        <option value="Bielorrusia">Bielorrusia</option>
+                        <option value="Bélgica">Bélgica</option>
+                        <option value="Belice">Belice</option>
+                        <option value="Benín">Benín</option>
+                        <option value="Bermudas">Bermudas</option>
+                        <option value="Bután">Bután</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Bosnia y Hercegovina">Bosnia y Hercegovina</option>
+                        <option value="Botsuana">Botsuana</option>
+                        <option value="Isla Bouvet">Isla Bouvet</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Islas Vírgenes Británicas">Islas Vírgenes Británicas</option>
+                        <option value="Brunei Darussalam">Brunei Darussalam</option>
+                        <option value="Bulgaria">Bulgaria</option>
+                        <option value="Burkina Faso">Burkina Faso</option>
+                        <option value="Burundi">Burundi</option>
+                        <option value="Camboya">Camboya</option>
+                        <option value="Camerún">Camerún</option>
+                        <option value="Yukón">Yukón</option>
+                        <option value="Cabo Verde">Cabo Verde</option>
+                        <option value="Caribe Países Bajos">Caribe Países Bajos</option>
+                        <option value="Islas Caimán">Islas Caimán</option>
+                        <option value="República Centroafricana">República Centroafricana</option>
+                        <option value="Chad">Chad</option>
+                        <option value="Archipiélago de Chagos">Archipiélago de Chagos</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Zhejiang">Zhejiang</option>
+                        <option value="Isla de Navidad">Isla de Navidad</option>
+                        <option value="Islas Cocos (Keeling)">Islas Cocos (Keeling)</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Comoras">Comoras</option>
+                        <option value="Islas Cook">Islas Cook</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Costa de Marfil">Costa de Marfil</option>
+                        <option value="Croacia">Croacia</option>
+                        <option value="Curaçao">Curaçao</option>
+                        <option value="Chipre">Chipre</option>
+                        <option value="Chequia">Chequia</option>
+                        <option value="República Democrática del Congo">República Democrática del Congo</option>
+                        <option value="Dinamarca">Dinamarca</option>
+                        <option value="Yibuti">Yibuti</option>
+                        <option value="Dominica">Dominica</option>
+                        <option value="República Dominicana">República Dominicana</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Egipto">Egipto</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Guinea Ecuatorial">Guinea Ecuatorial</option>
+                        <option value="Eritrea">Eritrea</option>
+                        <option value="Estonia">Estonia</option>
+                        <option value="Eswatini">Eswatini</option>
+                        <option value="Etiopía">Etiopía</option>
+                        <option value="Islas Malvinas">Islas Malvinas</option>
+                        <option value="Fiyi">Fiyi</option>
+                        <option value="Finlandia">Finlandia</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Guayana Francesa">Guayana Francesa</option>
+                        <option value="Polinesia Francesa">Polinesia Francesa</option>
+                        <option value="Territorios Australes Franceses">Territorios Australes Franceses</option>
+                        <option value="Gabón">Gabón</option>
+                        <option value="Gambia">Gambia</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Alemania">Alemania</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Gibraltar">Gibraltar</option>
+                        <option value="Grecia">Grecia</option>
+                        <option value="Groenlandia">Groenlandia</option>
+                        <option value="Granada">Granada</option>
+                        <option value="Guadalupe">Guadalupe</option>
+                        <option value="Guam">Guam</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Guernesey">Guernesey</option>
+                        <option value="Guinea">Guinea</option>
+                        <option value="Guinea-Bissau">Guinea-Bissau</option>
+                        <option value="Guyana">Guyana</option>
+                        <option value="Haití">Haití</option>
+                        <option value="Islas Heard y Mc Donald">Islas Heard y Mc Donald</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Hong Kong">Hong Kong</option>
+                        <option value="Hungría">Hungría</option>
+                        <option value="Islandia">Islandia</option>
+                        <option value="India">India</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Iraq">Iraq</option>
+                        <option value="Irlanda">Irlanda</option>
+                        <option value="Isla de Man">Isla de Man</option>
+                        <option value="Israel">Israel</option>
+                        <option value="Italia">Italia</option>
+                        <option value="Jamaica">Jamaica</option>
+                        <option value="Okinawa">Okinawa</option>
+                        <option value="Jersey">Jersey</option>
+                        <option value="Jordania">Jordania</option>
+                        <option value="Kazajstán">Kazajstán</option>
+                        <option value="Kenia">Kenia</option>
+                        <option value="Kiribati">Kiribati</option>
+                        <option value="Kosovo">Kosovo</option>
+                        <option value="Kuwait">Kuwait</option>
+                        <option value="Kirguistán">Kirguistán</option>
+                        <option value="Laos">Laos</option>
+                        <option value="Letonia">Letonia</option>
+                        <option value="Líbano">Líbano</option>
+                        <option value="Lesotho">Lesotho</option>
+                        <option value="Liberia">Liberia</option>
+                        <option value="Libia">Libia</option>
+                        <option value="Liechtenstein">Liechtenstein</option>
+                        <option value="Lituania">Lituania</option>
+                        <option value="Luxemburgo">Luxemburgo</option>
+                        <option value="Macao">Macao</option>
+                        <option value="Madagascar">Madagascar</option>
+                        <option value="Malaui">Malaui</option>
+                        <option value="Malasia">Malasia</option>
+                        <option value="Maldivas">Maldivas</option>
+                        <option value="Malí">Malí</option>
+                        <option value="Malta">Malta</option>
+                        <option value="Islas Marshall">Islas Marshall</option>
+                        <option value="Martinica">Martinica</option>
+                        <option value="Mauritania">Mauritania</option>
+                        <option value="Mauricio">Mauricio</option>
+                        <option value="Mayotte">Mayotte</option>
+                        <option selected value="México">México</option>
+                        <option value="Micronesia">Micronesia</option>
+                        <option value="Moldavia">Moldavia</option>
+                        <option value="Mónaco">Mónaco</option>
+                        <option value="Mongolia">Mongolia</option>
+                        <option value="Montenegro">Montenegro</option>
+                        <option value="Montserrat">Montserrat</option>
+                        <option value="Marruecos">Marruecos</option>
+                        <option value="Mozambique">Mozambique</option>
+                        <option value="Myanmar">Myanmar</option>
+                        <option value="Namibia">Namibia</option>
+                        <option value="Nauru">Nauru</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Países Bajos">Países Bajos</option>
+                        <option value="Nueva Caledonia">Nueva Caledonia</option>
+                        <option value="Nueva Caledonia">Nueva Caledonia</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Níger">Níger</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Niue">Niue</option>
+                        <option value="Islas Marianas del Norte">Islas Marianas del Norte</option>
+                        <option value="Macedonia del Norte">Macedonia del Norte</option>
+                        <option value="Noruega">Noruega</option>
+                        <option value="Omán">Omán</option>
+                        <option value="Pakistán">Pakistán</option>
+                        <option value="Palau">Palau</option>
+                        <option value="Palestina">Palestina</option>
+                        <option value="Panamá">Panamá</option>
+                        <option value="Papúa Nueva Guinea">Papúa Nueva Guinea</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Filipinas">Filipinas</option>
+                        <option value="Pitcairn">Pitcairn</option>
+                        <option value="Polonia">Polonia</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Puerto Rico">Puerto Rico</option>
+                        <option value="Qatar">Qatar</option>
+                        <option value="República del Congo">República del Congo</option>
+                        <option value="Reunión">Reunión</option>
+                        <option value="Rumanía">Rumanía</option>
+                        <option value="Rusia">Rusia</option>
+                        <option value="Ruanda">Ruanda</option>
+                        <option value="San Bartolomé">San Bartolomé</option>
+                        <option value="Santa Helena">Santa Helena</option>
+                        <option value="San Cristóbal y Nieves">San Cristóbal y Nieves</option>
+                        <option value="Santa Lucía">Santa Lucía</option>
+                        <option value="San Martín">San Martín</option>
+                        <option value="San Vicente y las Granadinas">San Vicente y las Granadinas</option>
+                        <option value="Samoa">Samoa</option>
+                        <option value="San Marino">San Marino</option>
+                        <option value="Santo Tomé y Príncipe">Santo Tomé y Príncipe</option>
+                        <option value="Santo Tomé y Príncipe">Santo Tomé y Príncipe</option>
+                        <option value="Senegal">Senegal</option>
+                        <option value="Serbia">Serbia</option>
+                        <option value="Seychelles">Seychelles</option>
+                        <option value="Sierra Leona">Sierra Leona</option>
+                        <option value="Singapur">Singapur</option>
+                        <option value="San Martín">San Martín</option>
+                        <option value="Eslovaquia">Eslovaquia</option>
+                        <option value="Eslovenia">Eslovenia</option>
+                        <option value="Islas Salomón">Islas Salomón</option>
+                        <option value="Somalia">Somalia</option>
+                        <option value="Suráfrica">Suráfrica</option>
+                        <option value="Sudán del Sur">Sudán del Sur</option>
+                        <option value="Sudán del Sur">Sudán del Sur</option>
+                        <option value="España">España</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="San Pedro y Miquelón">San Pedro y Miquelón</option>
+                        <option value="Sudán">Sudán</option>
+                        <option value="Surinam">Surinam</option>
+                        <option value="Svalbard y Jan Mayen">Svalbard y Jan Mayen</option>
+                        <option value="Suecia">Suecia</option>
+                        <option value="Suiza">Suiza</option>
+                        <option value="Taiwán">Taiwán</option>
+                        <option value="Tayikistán">Tayikistán</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Tailandia">Tailandia</option>
+                        <option value="Timor Oriental">Timor Oriental</option>
+                        <option value="Togo">Togo</option>
+                        <option value="Tokelau">Tokelau</option>
+                        <option value="Tonga">Tonga</option>
+                        <option value="Trinidad y Tobago">Trinidad y Tobago</option>
+                        <option value="Túnez">Túnez</option>
+                        <option value="Türkiye/Europa">Türkiye/Europa</option>
+                        <option value="Turkmenistán">Turkmenistán</option>
+                        <option value="Islas Turcas y Caicos">Islas Turcas y Caicos</option>
+                        <option value="Tuvalu">Tuvalu</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Ucrania">Ucrania</option>
+                        <option value="Emiratos Árabes Unidos">Emiratos Árabes Unidos</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Wyoming">Wyoming</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Uzbekistán">Uzbekistán</option>
+                        <option value="Vanuatu">Vanuatu</option>
+                        <option value="Vaticano">Vaticano</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Vietnam">Vietnam</option>
+                        <option value="Islas Vírgenes (EE.UU.)">Islas Vírgenes (EE.UU.)</option>
+                        <option value="Islas Wallis y Futuna">Islas Wallis y Futuna</option>
+                        <option value="Sáhara Occidental">Sáhara Occidental</option>
+                        <option value="Yemen">Yemen</option>
+                        <option value="Zambia">Zambia</option>
+                        <option value="Zimbabue">Zimbabue</option>
+                    </select>
+                    <div class="invalid-feedback">Debes seleccionar una opción.</div>
+                </div>
+                <div class="col">
+                    <input class="form-control" required autocomplete="off" name="ciudad_estado_{{ i }}" placeholder="Ciudad y estado" type="text" maxlength="150">
+                    <div class="invalid-feedback">Debes llenar este campo.</div>
+                </div>
+            </div>
+
+            <div>
+                <label for="escolaridad_{{ i }}" class="form-label">Escolaridad <span style="color: red;">*</span></label>
+                <select autocomplete="off" data-width="86vw" class="selectpicker" required name="escolaridad_{{ i }}" id="select-escolaridad-{{ i }}">
+                    <option selected disabled value="">Selecciona una opción</option>
+                    <option value="Secundaria">Secundaria</option>
+                    <option value="Preparatoria">Preparatoria</option>
+                    <option value="Universidad">Universidad</option>
+                    <option value="Egresado">Egresado</option>
+                </select>
+                <div class="invalid-feedback">Debes seleccionar una opción.</div>
+            </div>
+
+            <div>
+                <label for="escuela_{{ i }}" class="form-label">Nombre completo de tu escuela de procedencia (en caso de ser egresado, de donde te graduaste) <span style="color: red;">*</span></label>
+                <input class="form-control" required autocomplete="off" name="escuela_{{ i }}" placeholder="Ejemplo: Facultad de Derecho UADY" type="text" maxlength="150">
+                <div class="invalid-feedback">Debes llenar este campo.</div>
+            </div>
+
+            <label for="nombre_contacto_{{ i }}" class="form-label">En caso de emergencia, ¿a quién podemos contactar? <span style="color: red;">*</span></label>
+            <div class="row g-3">
+                <div class="col">
+                    <input class="form-control" required autocomplete="off" name="nombre_contacto_{{ i }}" placeholder="Nombre completo" type="text" maxlength="150">
+                    <div class="invalid-feedback">Debes llenar este campo.</div>
+                </div>
+                <div class="col">
+                    <input class="form-control input-celular" required autocomplete="off" data-name="celular_contacto_{{ i }}" placeholder="Celular" type="tel" maxlength="30">
+                    <div class="invalid-feedback">El número de celular no es válido.</div>
+                </div>
+                <div class="col">
+                    <input class="form-control" required autocomplete="off" name="relacion_contacto_{{ i }}" placeholder="Parentesco" type="text" maxlength="150">
+                    <div class="invalid-feedback">Debes llenar este campo.</div>
+                </div>
+            </div>
+
+            <div>
+                <label for="info_extra_{{ i }}" class="form-label">¿Tienes alguna necesidad específica que debamos conocer?</label>
+                <input class="form-control" autocomplete="off" name="info_extra_{{ i }}" placeholder="Ejemplo: padecimientos, alergias, tratamientos en curso u otros" type="text" maxlength="150">
+                <div class="invalid-feedback">Debes llenar este campo.</div>
+            </div>
+        </div>
+    {% endfor %}
+
+    <!-- Selección de comités y países -->
+    {% for i in range(3) %}
+        <article class="titulo">
+            <div class="oval">
+                <h2>
+                    {% if i == 0 %}
+                        Primera opción de comité
+                    {% elif i == 1 %}
+                        Segunda opción de comité
+                    {% else %}
+                        Tercera opción de comité
+                    {% endif %}
+                </h2>
+            </div>
+        </article>
+
+        <div class="mb-3">
+            <div>
+                {% if i == 0 %}
+                    <label for="comite_{{ i }}" class="form-label">Selecciona tu primera opción de comité <span style="color: red;">*</span></label>
+                {% elif i == 1 %}
+                    <label for="comite_{{ i }}" class="form-label">Selecciona tu segunda opción de comité <span style="color: red;">*</span></label>
+                {% else %}
+                    <label for="comite_{{ i }}" class="form-label">Selecciona tu tercera opción de comité <span style="color: red;">*</span></label>
+                {% endif %}
+
+                <select autocomplete="off" data-width="86vw" class="selectpicker select-comite" required name="comite_{{ i }}">
+                    <option selected disabled value="">Selecciona una opción</option>
+                    <option value="CSTD">Comisión de Ciencia y Tecnología para el Desarrollo (CSTD)</option>
+                    <option value="CRC">United Nations Committee on the Rights of the Child (CRC) [inglés] [solo delegación individual]</option>
+                    <option value="OIT">Organización Internacional del Trabajo (OIT)</option>
+                    <option value="NOBEL">Comité Noruego del Nobel [solo delegación individual]</option>
+                    <option value="CRM">Conferencia Regional sobre la Mujer de América Latina y el Caribe de las Naciones Unidas (CRM)</option>
+                    <option value="UNFPA">Fondo de Población de las Naciones Unidas (UNFPA)</option>
+                    <option value="OSGEY">United Nations Office of the Secretary-General's Envoy on Youth (OSGEY) [inglés]</option>
+                    <option value="CIDH">Comisión Interamericana de Derechos Humanos (CIDH)</option>
+                    <option value="CIJ">Corte Internacional de Justicia (CIJ) [solo delegación individual]</option>
+                    <option value="COI">Comité Olímpico Internacional (COI)</option>
+                </select>
+                <div class="invalid-feedback">Debes seleccionar una opción.</div>
+
+                <div id="comite-{{ i }}-topicos" class="comite-topico-div">
+                    {% for comite in ["CSTD", "CRC", "OIT", "NOBEL", "CRM", "UNFPA", "OSGEY", "CIDH", "CIJ", "COI"] %}
+                        {% comite_carousel comite, i %}
+                    {% endfor %}
+                </div>
+            </div>
+
+            {% for j in range(3) %}
+                <div>
+                    {% if j == 0 %}
+                        <label for="comite_{{ i }}_pais_{{ j }}" class="form-label">Primera opción de delegación <span style="color: red;">*</span></label>
+                    {% elif j == 1 %}
+                        <label for="comite_{{ i }}_pais_{{ j }}" class="form-label">Segunda opción de delegación <span style="color: red;">*</span></label>
+                    {% else %}
+                        <label for="comite_{{ i }}_pais_{{ j }}" class="form-label" id="label-comite-{{ i }}-pais-{{ j }}">Tercera opción de delegación <span style="color: red;">*</span></label>
+                    {% endif %}
+
+                    <select autocomplete="off" data-width="86vw" class="selectpicker select-comite-{{ i }}-pais" required name="comite_{{ i }}_pais_{{ j }}" id="select-comite-{{ i }}-pais-{{ j }}" data-live-search="true">
+                        <option selected disabled value="">Selecciona una opción</option>
+                        <!-- CSTD -->
+                        <option disabled hidden data-tokens="arabia saudita" class="CSTD" value="CSTD:Reino de Arabia Saudita">🇸🇦&emsp;Reino de Arabia Saudita</option>
+                        <option disabled hidden data-tokens="argelia" class="CSTD" value="CSTD:República Argelina Democrática y Popular">🇩🇿&emsp;República Argelina Democrática y Popular</option>
+                        <option disabled hidden data-tokens="austria" class="CSTD" value="CSTD:República de Austria">🇦🇹&emsp;República de Austria</option>
+                        <option disabled hidden data-tokens="bielorrusia" class="CSTD" value="CSTD:República de Belarús">🇧🇾&emsp;República de Belarús</option>
+                        <option disabled hidden data-tokens="botsuana" class="CSTD" value="CSTD:República de Botsuana">🇧🇼&emsp;República de Botsuana</option>
+                        <option disabled hidden data-tokens="brasil" class="CSTD" value="CSTD:República Federativa del Brasil">🇧🇷&emsp;República Federativa del Brasil</option>
+                        <option disabled hidden data-tokens="camerun" class="CSTD" value="CSTD:República de Camerún">🇨🇲&emsp;República de Camerún</option>
+                        <option disabled hidden data-tokens="canada" class="CSTD" value="CSTD:Canadá">🇨🇦&emsp;Canadá</option>
+                        <option disabled hidden data-tokens="china" class="CSTD" value="CSTD:República Popular China">🇨🇳&emsp;República Popular China</option>
+                        <option disabled hidden data-tokens="colombia" class="CSTD" value="CSTD:República de Colombia">🇨🇴&emsp;República de Colombia</option>
+                        <option disabled hidden data-tokens="cuba" class="CSTD" value="CSTD:República de Cuba">🇨🇺&emsp;República de Cuba</option>
+                        <option disabled hidden data-tokens="ecuador" class="CSTD" value="CSTD:República del Ecuador">🇪🇨&emsp;República del Ecuador</option>
+                        <option disabled hidden data-tokens="egipto" class="CSTD" value="CSTD:República Árabe de Egipto">🇪🇬&emsp;República Árabe de Egipto</option>
+                        <option disabled hidden data-tokens="estados unidos" class="CSTD" value="CSTD:Estados Unidos de América">🇺🇸&emsp;Estados Unidos de América</option>
+                        <option disabled hidden data-tokens="filipinas" class="CSTD" value="CSTD:República de Filipinas">🇵🇭&emsp;República de Filipinas</option>
+                        <option disabled hidden data-tokens="finlandia" class="CSTD" value="CSTD:República de Finlandia">🇫🇮&emsp;República de Finlandia</option>
+                        <option disabled hidden data-tokens="francia" class="CSTD" value="CSTD:República Francesa">🇫🇷&emsp;República Francesa</option>
+                        <option disabled hidden data-tokens="gambia" class="CSTD" value="CSTD:República de Gambia">🇬🇲&emsp;República de Gambia</option>
+                        <option disabled hidden data-tokens="guatemala" class="CSTD" value="CSTD:República de Guatemala">🇬🇹&emsp;República de Guatemala</option>
+                        <option disabled hidden data-tokens="guinea" class="CSTD" value="CSTD:República de Guinea">🇬🇳&emsp;República de Guinea</option>
+                        <option disabled hidden data-tokens="hungria" class="CSTD" value="CSTD:Hungría">🇭🇺&emsp;Hungría</option>
+                        <option disabled hidden data-tokens="india" class="CSTD" value="CSTD:República de la India">🇮🇳&emsp;República de la India</option>
+                        <option disabled hidden data-tokens="israel" class="CSTD" value="CSTD:Estado de Israel">🇮🇱&emsp;Estado de Israel</option>
+                        <option disabled hidden data-tokens="japon" class="CSTD" value="CSTD:Japón">🇯🇵&emsp;Japón</option>
+                        <option disabled hidden data-tokens="letonia" class="CSTD" value="CSTD:República de Letonia">🇱🇻&emsp;República de Letonia</option>
+                        <option disabled hidden data-tokens="oman" class="CSTD" value="CSTD:Sultanato de Omán">🇴🇲&emsp;Sultanato de Omán</option>
+                        <option disabled hidden data-tokens="paraguay" class="CSTD" value="CSTD:República del Paraguay">🇵🇾&emsp;República del Paraguay</option>
+                        <option disabled hidden data-tokens="peru" class="CSTD" value="CSTD:República del Perú">🇵🇪&emsp;República del Perú</option>
+                        <option disabled hidden data-tokens="portugal" class="CSTD" value="CSTD:República Portuguesa">🇵🇹&emsp;República Portuguesa</option>
+                        <option disabled hidden data-tokens="reino unido" class="CSTD" value="CSTD:Reino Unido de Gran Bretaña e Irlanda del Norte">🇬🇧&emsp;Reino Unido de Gran Bretaña e Irlanda del Norte</option>
+                        <option disabled hidden data-tokens="ruanda" class="CSTD" value="CSTD:República de Ruanda">🇷🇼&emsp;República de Ruanda</option>
+                        <option disabled hidden data-tokens="rumania" class="CSTD" value="CSTD:Rumania">🇷🇴&emsp;Rumania</option>
+                        <option disabled hidden data-tokens="rusia" class="CSTD" value="CSTD:Federación de Rusia">🇷🇺&emsp;Federación de Rusia</option>
+                        <option disabled hidden data-tokens="sudafrica" class="CSTD" value="CSTD:República de Sudáfrica">🇿🇦&emsp;República de Sudáfrica</option>
+                        <option disabled hidden data-tokens="suiza" class="CSTD" value="CSTD:Confederación Suiza">🇨🇭&emsp;Confederación Suiza</option>
+                        <option disabled hidden data-tokens="tayikistan" class="CSTD" value="CSTD:República de Tayikistán">🇹🇯&emsp;República de Tayikistán</option>
+                        <option disabled hidden data-tokens="turquia" class="CSTD" value="CSTD:República de Turquía">🇹🇷&emsp;República de Turquía</option>
+                        <option disabled hidden data-tokens="uzbekistan" class="CSTD" value="CSTD:República de Uzbekistán">🇺🇿&emsp;República de Uzbekistán</option>
+
+                        <!-- CRC -->
+                        <option disabled hidden data-tokens="aissatou alassane sidikou" class="CRC" value="CRC:Aissatou Alassane Sidikou (Niger)" data-content="<strong>✊&emsp;Aissatou Alassane Sidikou</strong>, expert in children's rights and human rights (Niger)">✊&emsp;Aissatou Alassane Sidikou, expert in children's rights and human rights (Niger)</option>
+                        <option disabled hidden data-tokens="ann skelton" class="CRC" value="CRC:Ann Skelton (South Africa)" data-content="<strong>🎓&emsp;Ann Skelton</strong>, expert in child law, children's rights and education law (South Africa)">🎓&emsp;Ann Skelton, expert in child law, children's rights and education law (South Africa)</option>
+                        <option disabled hidden data-tokens="benoit van keirsbilck" class="CRC" value="CRC:Benoit Van Keirsbilck (Belgium)" data-content="<strong>🛡️&emsp;Benoit Van Keirsbilck</strong>, expert in children's rights, juvenile justice and socio-legal defense of children (Belgium)">🛡️&emsp;Benoit Van Keirsbilck, expert in children's rights, juvenile justice and socio-legal defense of children (Belgium)</option>
+                        <option disabled hidden data-tokens="benyam dawit mezmur" class="CRC" value="CRC:Benyam Dawit Mezmur (Ethiopia)" data-content="<strong>🗺️&emsp;Benyam Dawit Mezmur</strong>, expert in children's rights, human rights and intercountry adoption (Ethiopia)">🗺️&emsp;Benyam Dawit Mezmur, expert in children's rights, human rights and intercountry adoption (Ethiopia)</option>
+                        <option disabled hidden data-tokens="bragi gudbrandsson" class="CRC" value="CRC:Bragi Gudbrandsson (Iceland)" data-content="<strong>🤲&emsp;Bragi Gudbrandsson</strong>, expert in child protection and children's rights (Iceland)">🤲&emsp;Bragi Gudbrandsson, expert in child protection and children's rights (Iceland)</option>
+                        <option disabled hidden data-tokens="faith marshall harris" class="CRC" value="CRC:Faith Marshall-Harris (Barbados)" data-content="<strong>🏢&emsp;Faith Marshall-Harris</strong>, expert in family law, corporate law and children's rights (Barbados)">🏢&emsp;Faith Marshall-Harris, expert in family law, corporate law and children's rights (Barbados)</option>
+                        <option disabled hidden data-tokens="hynd ayoubi idrissi" class="CRC" value="CRC:Hynd Ayoubi Idrissi (Morocco)" data-content="<strong>👪&emsp;Hynd Ayoubi Idrissi</strong>, expert in human rights, children's rights and family law (Morocco)">👪&emsp;Hynd Ayoubi Idrissi, expert in human rights, children's rights and family law (Morocco)</option>
+                        <option disabled hidden data-tokens="luis pedernera" class="CRC" value="CRC:Luis Pedernera (Uruguay)" data-content="<strong>🤝&emsp;Luis Pedernera</strong>, expert in children 's rights and human rights (Uruguay)">🤝&emsp;Luis Pedernera, expert in children 's rights and human rights (Uruguay)</option>
+                        <option disabled hidden data-tokens="mary beloff" class="CRC" value="CRC:Mary Beloff (Argentina)" data-content="<strong>⛓️&emsp;Mary Beloff</strong>, expert in juvenile justice and children's rights (Argentina)">⛓️&emsp;Mary Beloff, expert in juvenile justice and children's rights (Argentina)</option>
+                        <option disabled hidden data-tokens="mikiko otani" class="CRC" value="CRC:Mikiko Otani (Japan)" data-content="<strong>🕊️&emsp;Mikiko Otani</strong>, expert in family law and international human rights law with a focus on women's and children's rights (Japan)">🕊️&emsp;Mikiko Otani, expert in family law and international human rights law with a focus on women's and children's rights (Japan)</option>
+                        <option disabled hidden data-tokens="philip jaffe" class="CRC" value="CRC:Philip Jaffé (Switzerland)" data-content="<strong>🧠&emsp;Philip Jaffé</strong>, expert in clinical psychology and children's rights (Switzerland)">🧠&emsp;Philip Jaffé, expert in clinical psychology and children's rights (Switzerland)</option>
+                        <option disabled hidden data-tokens="rinchen chophel" class="CRC" value="CRC:Rinchen Chophel (Bhutan)" data-content="<strong>⚕️&emsp;Rinchen Chophel</strong>, expert in human rights, public health and children's rights (Bhutan)">⚕️&emsp;Rinchen Chophel, expert in human rights, public health and children's rights (Bhutan)</option>
+                        <option disabled hidden data-tokens="rosaria isabel correa pulice" class="CRC" value="CRC:Rosaria Isabel Correa Pulice (Panama)" data-content="<strong>⚖️&emsp;Rosaria Isabel Correa Pulice</strong>, expert in procedural law and children's rights (Panama)">⚖️&emsp;Rosaria Isabel Correa Pulice, expert in procedural law and children's rights (Panama)</option>
+                        <option disabled hidden data-tokens="sopio kiladze" class="CRC" value="CRC:Sopio Kiladze (Georgia)" data-content="<strong>🌍&emsp;Sopio Kiladze</strong>, expert in human rights, children's rights and public international law (Georgia)">🌍&emsp;Sopio Kiladze, expert in human rights, children's rights and public international law (Georgia)</option>
+                        <option disabled hidden data-tokens="suzanne aho" class="CRC" value="CRC:Suzanne Aho (Togo)" data-content="<strong>🏥&emsp;Suzanne Aho</strong>, expert in child health and girls' rights (Togo)">🏥&emsp;Suzanne Aho, expert in child health and girls' rights (Togo)</option>
+                        <option disabled hidden data-tokens="thuwayba  al barwani" class="CRC" value="CRC:Thuwayba Al Barwani (Oman)" data-content="<strong>📚&emsp;Thuwayba Al Barwani</strong>, expert in education and children's rights (Oman)">📚&emsp;Thuwayba Al Barwani, expert in education and children's rights (Oman)</option>
+                        <option disabled hidden data-tokens="velina todorova" class="CRC" value="CRC:Velina Todorova (Bulgaria)" data-content="<strong>📜&emsp;Velina Todorova</strong>, expert in civil and family law and children's rights (Bulgaria)">📜&emsp;Velina Todorova, expert in civil and family law and children's rights (Bulgaria)</option>
+                        <option disabled hidden data-tokens="zara ratou" class="CRC" value="CRC:Zara Ratou (Chad)" data-content="<strong>👶&emsp;Zara Ratou</strong>, expert in child protection and early childhood development (Chad)">👶&emsp;Zara Ratou, expert in child protection and early childhood development (Chad)</option>
+
+                        <!-- OIT -->
+                        <optgroup label="Sindicatos" class="OIT">
+                            <option disabled hidden data-tokens="amwu" class="OIT" value="OIT:Sindicato de Trabajadores Manufactureros de Australia - AMWU (Australia)">🛠️&emsp;Sindicato de Trabajadores Manufactureros de Australia - AMWU (Australia)</option>
+                            <option disabled hidden data-tokens="cgt" class="OIT" value="OIT:Confederación General del Trabajo - CGT (Francia)">🛠️&emsp;Confederación General del Trabajo - CGT (Francia)</option>
+                            <option disabled hidden data-tokens="community" class="OIT" value="OIT:Community Trade Union – Community (Reino Unido)">🛠️&emsp;Community Trade Union – Community (Reino Unido)</option>
+                            <option disabled hidden data-tokens="epmu" class="OIT" value="OIT:Sindicato de Ingeniería, Impresión y Manufactura de Nueva Zelanda - EPMU (Nueva Zelanda)">🛠️&emsp;Sindicato de Ingeniería, Impresión y Manufactura de Nueva Zelanda - EPMU (Nueva Zelanda)</option>
+                            <option disabled hidden data-tokens="filctem cgil" class="OIT" value="OIT:Federación de Trabajadores de la Química, Textiles, Energía y Manufactura - FILCTEM CGIL (Italia)">🛠️&emsp;Federación de Trabajadores de la Química, Textiles, Energía y Manufactura - FILCTEM CGIL (Italia)</option>
+                            <option disabled hidden data-tokens="fiom" class="OIT" value="OIT:Federación Italiana de Trabajadores del Metal - FIOM (Italia)">🛠️&emsp;Federación Italiana de Trabajadores del Metal - FIOM (Italia)</option>
+                            <option disabled hidden data-tokens="iam" class="OIT" value="OIT:Asociación Internacional de Maquinistas y Trabajadores Aeroespaciales - IAM (Estados Unidos)">🛠️&emsp;Asociación Internacional de Maquinistas y Trabajadores Aeroespaciales - IAM (Estados Unidos)</option>
+                            <option disabled hidden data-tokens="ig metall" class="OIT" value="OIT:Unión Industrial de Trabajadores del Metal - IG METALL (Alemania)">🛠️&emsp;Unión Industrial de Trabajadores del Metal - IG METALL (Alemania)</option>
+                            <option disabled hidden data-tokens="kctu" class="OIT" value="OIT:Confederación de Sindicatos de Corea - KCTU (Corea del Sur)">🛠️&emsp;Confederación de Sindicatos de Corea - KCTU (Corea del Sur)</option>
+                            <option disabled hidden data-tokens="kmwu" class="OIT" value="OIT:Sindicato Coreano de Trabajadores Metalúrgicos - KMWU (Corea del Sur)">🛠️&emsp;Sindicato Coreano de Trabajadores Metalúrgicos - KMWU (Corea del Sur)</option>
+                            <option disabled hidden data-tokens="uaw" class="OIT" value="OIT:Unión Sindical de Trabajadores Automotrices - UAW (Estados Unidos)">🛠️&emsp;Unión Sindical de Trabajadores Automotrices - UAW (Estados Unidos)</option>
+                            <option disabled hidden data-tokens="ugt fica" class="OIT" value="OIT:Federación de Industria, Construcción y Agro de la Unión General de Trabajadoras y Trabajadores - UGT FICA (España)">🛠️&emsp;Federación de Industria, Construcción y Agro de la Unión General de Trabajadoras y Trabajadores - UGT FICA (España)</option>
+                            <option disabled hidden data-tokens="unifor" class="OIT" value="OIT:UNIFOR (Canadá)">🛠️&emsp;UNIFOR (Canadá)</option>
+                        </optgroup>
+
+                        <optgroup label="Empresas" class="OIT">
+                            <option disabled hidden data-tokens="apple" class="OIT" value="OIT:Apple Computer, Inc.">🍏&emsp;Apple Computer, Inc.</option>
+                            <option disabled hidden data-tokens="bmw" class="OIT" value="OIT:BMW Group">🏎️&emsp;BMW Group</option>
+                            <option disabled hidden data-tokens="coca cola" class="OIT" value="OIT:The Coca-Cola Company">🥤&emsp;The Coca-Cola Company</option>
+                            <option disabled hidden data-tokens="google" class="OIT" value="OIT:Google LLC">🔍&emsp;Google LLC</option>
+                            <option disabled hidden data-tokens="hyundai" class="OIT" value="OIT:Hyundai Motor Group">🚗&emsp;Hyundai Motor Group</option>
+                            <option disabled hidden data-tokens="mars" class="OIT" value="OIT:Mars, Incorporated">🐶&emsp;Mars, Incorporated</option>
+                            <option disabled hidden data-tokens="microsoft" class="OIT" value="OIT:Microsoft Corporation">🖥️&emsp;Microsoft Corporation</option>
+                            <option disabled hidden data-tokens="nestle" class="OIT" value="OIT:Nestlé S.A. y Borden Inc.">🥛&emsp;Nestlé S.A. y Borden Inc.</option>
+                            <option disabled hidden data-tokens="pepsi" class="OIT" value="OIT:PepsiCo Inc.">🏬&emsp;PepsiCo Inc.</option>
+                            <option disabled hidden data-tokens="samsung" class="OIT" value="OIT:Samsung Electronics Co., Ltd">📱&emsp;Samsung Electronics Co., Ltd</option>
+                            <option disabled hidden data-tokens="starbucks" class="OIT" value="OIT:Starbucks Corporation">☕&emsp;Starbucks Corporation</option>
+                            <option disabled hidden data-tokens="tesla" class="OIT" value="OIT:Tesla, Inc.">🚘&emsp;Tesla, Inc.</option>
+                            <option disabled hidden data-tokens="toyota" class="OIT" value="OIT:Toyota Motor Corporation">🚚&emsp;Toyota Motor Corporation</option>
+                        </optgroup>
+
+                        <optgroup label="Países" class="OIT">
+                            <option disabled hidden data-tokens="alemania" class="OIT" value="OIT:República Federal de Alemania">🇩🇪&emsp;República Federal de Alemania</option>
+                            <option disabled hidden data-tokens="brasil" class="OIT" value="OIT:República Federativa de Brasil">🇧🇷&emsp;República Federativa de Brasil</option>
+                            <option disabled hidden data-tokens="canada" class="OIT" value="OIT:Canadá">🇨🇦&emsp;Canadá</option>
+                            <option disabled hidden data-tokens="china" class="OIT" value="OIT:República Popular de China">🇨🇳&emsp;República Popular de China</option>
+                            <option disabled hidden data-tokens="españa" class="OIT" value="OIT:Reino de España">🇪🇸&emsp;Reino de España</option>
+                            <option disabled hidden data-tokens="estados unidos" class="OIT" value="OIT:Estados Unidos de América">🇺🇸&emsp;Estados Unidos de América</option>
+                            <option disabled hidden data-tokens="francia" class="OIT" value="OIT:República Francesa">🇫🇷&emsp;República Francesa</option>
+                            <option disabled hidden data-tokens="israel" class="OIT" value="OIT:Estado de Israel">🇮🇱&emsp;Estado de Israel</option>
+                            <option disabled hidden data-tokens="italia" class="OIT" value="OIT:República Italiana">🇮🇹&emsp;República Italiana</option>
+                            <option disabled hidden data-tokens="japon" class="OIT" value="OIT:Japón">🇯🇵&emsp;Japón</option>
+                            <option disabled hidden data-tokens="mexico" class="OIT" value="OIT:Estados Unidos Mexicanos">🇲🇽&emsp;Estados Unidos Mexicanos</option>
+                            <option disabled hidden data-tokens="reino unido" class="OIT" value="OIT:Reino Unido de Gran Bretaña e Irlanda del Norte">🇬🇧&emsp;Reino Unido de Gran Bretaña e Irlanda del Norte</option>
+                            <option disabled hidden data-tokens="suecia" class="OIT" value="OIT:Reino de Suecia">🇸🇪&emsp;Reino de Suecia</option>
+                        </optgroup>
+
+                        <!-- NOBEL -->
+                        <option disabled hidden data-tokens="asociacion internacional medicos" class="NOBEL" value="NOBEL:Asociación Internacional de Médicos para la Prevención de la Guerra Nuclear" data-content="<strong>🥼&emsp;Asociación Internacional de Médicos para la Prevención de la Guerra Nuclear:</strong> Organización global de profesionales de la salud que busca crear un mundo más pacífico y seguro, libre de la violencia armada.<hr>">🥼&emsp;Asociación Internacional de Médicos para la Prevención de la Guerra Nuclear: Organización global de profesionales de la salud que busca crear un mundo más pacífico y seguro, libre de la violencia armada.</option>
+                        <option disabled hidden data-tokens="charlize theron" class="NOBEL" value="NOBEL:Charlize Theron (Sudáfrica)" data-content="<strong>🎥&emsp;Charlize Theron (Sudáfrica):</strong> Actriz nacida en Sudáfrica, ganadora de un premio Oscar y fundadora de “The Charlize Theron Africa Outreach Project”, organización dedicada a prevenir el contagio del Virus de Inmunodeficiencia Humana (VIH).<hr>">🎥&emsp;Charlize Theron (Sudáfrica): Actriz nacida en Sudáfrica, ganadora de un premio Oscar y fundadora de “The Charlize Theron Africa Outreach Project”, organización dedicada a prevenir el contagio del Virus de Inmunodeficiencia Humana (VIH).</option>
+                        <option disabled hidden data-tokens="coldplay" class="NOBEL" value="NOBEL:Coldplay (Londres)" data-content="<strong>🎼&emsp;Coldplay (Londres):</strong> Banda de rock británica que implementa prácticas ecológicas en sus giras y apoya iniciativas de conservación y cambio climático, inspirando a la industria de entretenimiento a contribuir a un mundo más sostenible.<hr>">🎼&emsp;Coldplay (Londres): Banda de rock británica que implementa prácticas ecológicas en sus giras y apoya iniciativas de conservación y cambio climático, inspirando a la industria de entretenimiento a contribuir a un mundo más sostenible.</option>
+                        <option disabled hidden data-tokens="colin rand kaepernick" class="NOBEL" value="NOBEL:Colin Rand Kaepernick (Estados Unidos)" data-content="<strong>🏈&emsp;Colin Rand Kaepernick (Estados Unidos):</strong> Reconocido jugador profesional de fútbol americano, activista de derechos humanos y fundador de la campaña “Know your rights”. En 2018 fue galardonado con el premio Ambassador of Conscience Award de Amnistía Internacional.<hr>">🏈&emsp;Colin Rand Kaepernick (Estados Unidos): Reconocido jugador profesional de fútbol americano, activista de derechos humanos y fundador de la campaña “Know your rights”. En 2018 fue galardonado con el premio Ambassador of Conscience Award de Amnistía Internacional.</option>
+                        <option disabled hidden data-tokens="cyber peace institute" class="NOBEL" value="NOBEL:CyberPeace Institute (Suiza)" data-content="<strong>📡&emsp;CyberPeace Institute (Suiza):</strong> Organización no gubernamental que apoya a organizaciones diversas y otros sectores críticos, ofreciendo asistencia gratuita en materia de ciberseguridad, detección y análisis de amenazas, al tiempo que aboga por un ciberespacio seguro y protegido.<hr>">📡&emsp;CyberPeace Institute (Suiza): Organización no gubernamental que apoya a organizaciones diversas y otros sectores críticos, ofreciendo asistencia gratuita en materia de ciberseguridad, detección y análisis de amenazas, al tiempo que aboga por un ciberespacio seguro y protegido.</option>
+                        <option disabled hidden data-tokens="ellen pao" class="NOBEL" value="NOBEL:Ellen Pao (Estados Unidos)" data-content="<strong>🏢&emsp;Ellen Pao (Estados Unidos):</strong> Informática, abogada, directiva, activista y litigante contra la discriminación de género en las empresas.<hr>">🏢&emsp;Ellen Pao (Estados Unidos): Informática, abogada, directiva, activista y litigante contra la discriminación de género en las empresas.</option>
+                        <option disabled hidden data-tokens="eufrosina cruz" class="NOBEL" value="NOBEL:Eufrosina Cruz (México)" data-content="<strong>🗣️&emsp;Eufrosina Cruz (México):</strong> Activista y política mexicana, reconocida por su lucha en favor de los derechos de las mujeres y por ser la primera mujer indígena en presidir el Congreso de Oaxaca.<hr>">🗣️&emsp;Eufrosina Cruz (México): Activista y política mexicana, reconocida por su lucha en favor de los derechos de las mujeres y por ser la primera mujer indígena en presidir el Congreso de Oaxaca.</option>
+                        <option disabled hidden data-tokens="felipe paullier" class="NOBEL" value="NOBEL:Felipe Paullier (Uruguay)" data-content="<strong>🔊&emsp;Felipe Paullier (Uruguay):</strong> Médico pediatra uruguayo con una maestría en Administración de Empresas. Conocido por ser el primer Subsecretario General de Asuntos de la Juventud de las Naciones Unidas.<hr>">🔊&emsp;Felipe Paullier (Uruguay): Médico pediatra uruguayo con una maestría en Administración de Empresas. Conocido por ser el primer Subsecretario General de Asuntos de la Juventud de las Naciones Unidas.</option>
+                        <option disabled hidden data-tokens="gavi" class="NOBEL" value="NOBEL:Alianza Mundial para Vacunas e Inmunización (GAVI)" data-content="<strong>💉&emsp;Alianza Mundial para Vacunas e Inmunización (GAVI):</strong> Organización que trabaja para mejorar el acceso a vacunas, especialmente en colaboración con la Organización Mundial de la Salud y otros organismos internacionales para combatir enfermedades prevenibles.<hr>">💉&emsp;Alianza Mundial para Vacunas e Inmunización (GAVI): Organización que trabaja para mejorar el acceso a vacunas, especialmente en colaboración con la Organización Mundial de la Salud y otros organismos internacionales para combatir enfermedades prevenibles.</option>
+                        <option disabled hidden data-tokens="global alliance" class="NOBEL" value="NOBEL:Global Alliance Office on Drugs and Crime" data-content="<strong>🚨&emsp;Global Alliance Office on Drugs and Crime:</strong> Iniciativa internacional que busca combatir el crimen organizado, la corrupción y otras formas de delincuencia transnacional.<hr>">🚨&emsp;Global Alliance Office on Drugs and Crime: Iniciativa internacional que busca combatir el crimen organizado, la corrupción y otras formas de delincuencia transnacional.</option>
+                        <option disabled hidden data-tokens="global security" class="NOBEL" value="NOBEL:Global Security Institute" data-content="<strong>🌐&emsp;Global Security Institute:</strong> Organización internacional dedicada a la promoción del desarme nuclear y la seguridad global.<hr>">🌐&emsp;Global Security Institute: Organización internacional dedicada a la promoción del desarme nuclear y la seguridad global.</option>
+                        <option disabled hidden data-tokens="global witness" class="NOBEL" value="NOBEL:Global Witness" data-content="<strong>💚&emsp;Global Witness:</strong> Organización dedicada a poner los intereses de las personas y del planeta en el centro de la agenda global, promoviendo un futuro más sostenible, justo e igualitario.<hr>">💚&emsp;Global Witness: Organización dedicada a poner los intereses de las personas y del planeta en el centro de la agenda global, promoviendo un futuro más sostenible, justo e igualitario.</option>
+                        <option disabled hidden data-tokens="hauwa ojeifo" class="NOBEL" value="NOBEL:Hauwa Ojeifo (Nigeria)" data-content="<strong>🫂&emsp;Hauwa Ojeifo (Nigeria):</strong> Activista nigeriana comprometida con la lucha contra la violencia sexual y la promoción de la salud mental, reconocida por ser la primera mujer nigeriana en recibir el premio Queen's Young Leader Award.<hr>">🫂&emsp;Hauwa Ojeifo (Nigeria): Activista nigeriana comprometida con la lucha contra la violencia sexual y la promoción de la salud mental, reconocida por ser la primera mujer nigeriana en recibir el premio Queen's Young Leader Award.</option>
+                        <option disabled hidden data-tokens="ida" class="NOBEL" value="NOBEL:Alianza Internacional de Discapacidad (IDA)" data-content="<strong>💙&emsp;Alianza Internacional de Discapacidad (IDA):</strong> <Obj></Obj>rganización paraguas centrada en promover la conciencia y los derechos de las personas con discapacidad en todo el mundo.<hr>">💙&emsp;Alianza Internacional de Discapacidad (IDA): <Obj></Obj>rganización paraguas centrada en promover la conciencia y los derechos de las personas con discapacidad en todo el mundo.</option>
+                        <option disabled hidden data-tokens="izzeldin abuelaish" class="NOBEL" value="NOBEL:Dr. Izzeldin Abuelaish (Palestina)" data-content="<strong>📣&emsp;Dr. Izzeldin Abuelaish (Palestina):</strong> Activista palestino, reconocido por ser el primer profesional médico de su país en trabajar en un hospital israelí.<hr>">📣&emsp;Dr. Izzeldin Abuelaish (Palestina): Activista palestino, reconocido por ser el primer profesional médico de su país en trabajar en un hospital israelí.</option>
+                        <option disabled hidden data-tokens="james rhodes" class="NOBEL" value="NOBEL:James Rhodes (London)" data-content="<strong>🎹&emsp;James Rhodes (London):</strong> Pianista y activista, conocido por su lucha contra los abusos sexuales en la infancia y por ser uno de los impulsores de la Ley Orgánica de Protección Integral de la Infancia y la Adolescencia.<hr>">🎹&emsp;James Rhodes (London): Pianista y activista, conocido por su lucha contra los abusos sexuales en la infancia y por ser uno de los impulsores de la Ley Orgánica de Protección Integral de la Infancia y la Adolescencia.</option>
+                        <option disabled hidden data-tokens="jihyun park" class="NOBEL" value="NOBEL:Jihyun Park (Corea del Norte)" data-content="<strong>⛓️‍ Jihyun Park (Corea del Norte):</strong> Dos veces fugitiva de Corea del Norte, activista de derechos humanos e investigadora principal en materia de seguridad humana en el Centro para la Estrategia de Asia y el Pacífico. Fue galardonada con el Premio Amnistía Brave en 2020.<hr>">⛓️‍ Jihyun Park (Corea del Norte): Dos veces fugitiva de Corea del Norte, activista de derechos humanos e investigadora principal en materia de seguridad humana en el Centro para la Estrategia de Asia y el Pacífico. Fue galardonada con el Premio Amnistía Brave en 2020.</option>
+                        <option disabled hidden data-tokens="jose ramon andres puerta" class="NOBEL" value="NOBEL:José Ramón Andrés Puerta (España)" data-content="<strong>👨‍🍳 José Ramón Andrés Puerta (España):</strong> Chef español fundador de World Central Kitchen, una organización no gubernamental sin ánimo de lucro dedicada al abastecimiento de comidas en todo el mundo después de desastres naturales.<hr>">👨‍🍳 José Ramón Andrés Puerta (España): Chef español fundador de World Central Kitchen, una organización no gubernamental sin ánimo de lucro dedicada al abastecimiento de comidas en todo el mundo después de desastres naturales.</option>
+                        <option disabled hidden data-tokens="julian assange" class="NOBEL" value="NOBEL:Julian Assange (Australia)" data-content="<strong>📰&emsp;Julian Assange (Australia):</strong> Periodista, activista y fundador de WikiLeaks, plataforma dedicada a proporcionar acceso a información confidencial sobre violaciones a los derechos humanos alrededor del mundo por parte de departamentos gubernamentales.<hr>">📰&emsp;Julian Assange (Australia): Periodista, activista y fundador de WikiLeaks, plataforma dedicada a proporcionar acceso a información confidencial sobre violaciones a los derechos humanos alrededor del mundo por parte de departamentos gubernamentales.</option>
+                        <option disabled hidden data-tokens="juliana rotich" class="NOBEL" value="NOBEL:Juliana Rotich (Kenia)" data-content="<strong>🛜&emsp;Juliana Rotich (Kenia):</strong> Activista tecnológica keniana y cofundadora de Ushahidi, una innovadora plataforma de código abierto diseñada para recopilar y visualizar información en situaciones de crisis.<hr>">🛜&emsp;Juliana Rotich (Kenia): Activista tecnológica keniana y cofundadora de Ushahidi, una innovadora plataforma de código abierto diseñada para recopilar y visualizar información en situaciones de crisis.</option>
+                        <option disabled hidden data-tokens="kenya cuevas fuentes" class="NOBEL" value="NOBEL:Kenya Cuevas Fuentes (México)" data-content="<strong>💌&emsp;Kenya Cuevas Fuentes (México):</strong> Activista mexicana, defensora de los derechos humanos y fundadora de la asociación civil “Casa de las Muñecas Tiresias”, organización dedicada a la protección de los derechos de las personas LGBTI+.<hr>">💌&emsp;Kenya Cuevas Fuentes (México): Activista mexicana, defensora de los derechos humanos y fundadora de la asociación civil “Casa de las Muñecas Tiresias”, organización dedicada a la protección de los derechos de las personas LGBTI+.</option>
+                        <option disabled hidden data-tokens="kids rights" class="NOBEL" value="NOBEL:KidsRights (Países Bajos)" data-content="<strong>📣&emsp;KidsRights (Países Bajos):</strong> Organización internacional dedicada a la promoción y protección de los derechos infantiles. Es conocida por otorgar el Premio de la Paz Infantil.<hr>">📣&emsp;KidsRights (Países Bajos): Organización internacional dedicada a la promoción y protección de los derechos infantiles. Es conocida por otorgar el Premio de la Paz Infantil.</option>
+                        <option disabled hidden data-tokens="leonardo dicaprio" class="NOBEL" value="NOBEL:Leonardo DiCaprio (Estados Unidos)" data-content="<strong>🎬&emsp;Leonardo DiCaprio (Estados Unidos):</strong> Actor de origen estadounidense, galardonado con un premio Óscar y Mensajero de la Paz de las Naciones Unidas para el cambio climático.<hr>">🎬&emsp;Leonardo DiCaprio (Estados Unidos): Actor de origen estadounidense, galardonado con un premio Óscar y Mensajero de la Paz de las Naciones Unidas para el cambio climático.</option>
+                        <option disabled hidden data-tokens="lideres jovenes mundo armas nucleares" class="NOBEL" value="NOBEL:Fondo de Líderes Jóvenes para un Mundo sin Armas Nucleares" data-content="<strong>🩶&emsp;Fondo de Líderes Jóvenes para un Mundo sin Armas Nucleares:</strong> Iniciativa que busca empoderar el liderazgo en las juventudes para trabajar por un mundo libre de armas nucleares, fue lanzado en 2023 en colaboración de la Oficina de Asuntos de Desarme de las Naciones Unidas (UNODA) como organismo organizador y el gobierno de Japón como apoyo financiero.<hr>">🩶&emsp;Fondo de Líderes Jóvenes para un Mundo sin Armas Nucleares: Iniciativa que busca empoderar el liderazgo en las juventudes para trabajar por un mundo libre de armas nucleares, fue lanzado en 2023 en colaboración de la Oficina de Asuntos de Desarme de las Naciones Unidas (UNODA) como organismo organizador y el gobierno de Japón como apoyo financiero.</option>
+                        <option disabled hidden data-tokens="lorent saleh" class="NOBEL" value="NOBEL:Lorent Saleh (Venezuela)" data-content="<strong>📃&emsp;Lorent Saleh (Venezuela):</strong> Activista venezolano. Desde 2011, ha trabajado actividades en defensa de los derechos humanos y ha sido detenido reiteradamente por las autoridades venezolanas.<hr>">📃&emsp;Lorent Saleh (Venezuela): Activista venezolano. Desde 2011, ha trabajado actividades en defensa de los derechos humanos y ha sido detenido reiteradamente por las autoridades venezolanas.</option>
+                        <option disabled hidden data-tokens="luis almagro" class="NOBEL" value="NOBEL:Luis Almagro (Uruguay)" data-content="<strong>👥&emsp;Luis Almagro (Uruguay):</strong> Ministro de Relaciones Exteriores de Uruguay y embajador en la República Popular de China. Actualmente ocupa el cargo de Secretario General de la Organización de Estados Americanos.<hr>">👥&emsp;Luis Almagro (Uruguay): Ministro de Relaciones Exteriores de Uruguay y embajador en la República Popular de China. Actualmente ocupa el cargo de Secretario General de la Organización de Estados Americanos.</option>
+                        <option disabled hidden data-tokens="miss raisa" class="NOBEL" value="NOBEL:Miss Raisa (Marruecos)" data-content="<strong>🎤&emsp;Miss Raisa (Marruecos):</strong> Estudiante de Psicología, creadora de contenido y escritora.<hr>">🎤&emsp;Miss Raisa (Marruecos): Estudiante de Psicología, creadora de contenido y escritora.</option>
+                        <option disabled hidden data-tokens="musicos paz desarme" class="NOBEL" value="NOBEL:Músicos por la Paz y el Desarme (Londres)" data-content="<strong>🎶&emsp;Músicos por la Paz y el Desarme (Londres):</strong> Grupo de artistas musicales y amantes de la música que organizan conciertos para recaudar fondos para el movimiento por la paz.<hr>">🎶&emsp;Músicos por la Paz y el Desarme (Londres): Grupo de artistas musicales y amantes de la música que organizan conciertos para recaudar fondos para el movimiento por la paz.</option>
+                        <option disabled hidden data-tokens="natalie portman" class="NOBEL" value="NOBEL:Natalie Portman (Israel)" data-content="<strong>🎞️&emsp;Natalie Portman (Israel):</strong> Actriz, directora, psicóloga y defensora de la igualdad de género en la industria del entretenimiento y el deporte, originaria de Israel.<hr>">🎞️&emsp;Natalie Portman (Israel): Actriz, directora, psicóloga y defensora de la igualdad de género en la industria del entretenimiento y el deporte, originaria de Israel.</option>
+                        <option disabled hidden data-tokens="nicole becker" class="NOBEL" value="NOBEL:Nicole Becker (Argentina)" data-content="<strong>🌎&emsp;Nicole Becker (Argentina):</strong> Activista, estudiante de Derecho Ambiental en la Universidad de Buenos Aires (UBA) y cofundadora de Jóvenes por el Clima, un movimiento que lucha contra el cambio climático y promueve la justicia ambiental.<hr>">🌎&emsp;Nicole Becker (Argentina): Activista, estudiante de Derecho Ambiental en la Universidad de Buenos Aires (UBA) y cofundadora de Jóvenes por el Clima, un movimiento que lucha contra el cambio climático y promueve la justicia ambiental.</option>
+                        <option disabled hidden data-tokens="oops unrwa" class="NOBEL" value="NOBEL:Organismo de Obras Públicas y Socorro de las Naciones Unidas para los Refugiados de Palestina en el Cercano Oriente OOPS (UNRWA)" data-content="<strong>🕊️&emsp;Organismo de Obras Públicas y Socorro de las Naciones Unidas para los Refugiados de Palestina en el Cercano Oriente OOPS (UNRWA):</strong> Rs la agencia de la ONU para las personas palestinas en situación de refugio, fue establecida por la Asamblea General en 1949.<hr>">🕊️&emsp;Organismo de Obras Públicas y Socorro de las Naciones Unidas para los Refugiados de Palestina en el Cercano Oriente OOPS (UNRWA): Rs la agencia de la ONU para las personas palestinas en situación de refugio, fue establecida por la Asamblea General en 1949.</option>
+                        <option disabled hidden data-tokens="oxfam international" class="NOBEL" value="NOBEL:Oxfam International" data-content="<strong>🔗&emsp;Oxfam International:</strong> Alianza de organizaciones no gubernamentales que trabaja para reducir y erradicar los factores que agravan las desigualdades.<hr>">🔗&emsp;Oxfam International: Alianza de organizaciones no gubernamentales que trabaja para reducir y erradicar los factores que agravan las desigualdades.</option>
+                        <option disabled hidden data-tokens="peta" class="NOBEL" value="NOBEL:PETA, Personas por el Trato Ético de los Animales (Estados Unidos)" data-content="<strong>🐶&emsp;PETA, Personas por el Trato Ético de los Animales (Estados Unidos):</strong> Organismo dedicado a establecer y defender los derechos de los animales, mediante campañas de concienciación, busca poner fin al maltrato animal.<hr>">🐶&emsp;PETA, Personas por el Trato Ético de los Animales (Estados Unidos): Organismo dedicado a establecer y defender los derechos de los animales, mediante campañas de concienciación, busca poner fin al maltrato animal.</option>
+                        <option disabled hidden data-tokens="pnud" class="NOBEL" value="NOBEL:Programa de las Naciones Unidas para el Desarrollo (PNUD)" data-content="<strong>🤲&emsp;Programa de las Naciones Unidas para el Desarrollo (PNUD):</strong> Agencia líder de las Naciones Unidas en desarrollo internacional. Se enfoca en promover el desarrollo sostenible, fortalecer la gobernanza democrática, consolidar la paz y mejorar la resiliencia climática frente a desastres.<hr>">🤲&emsp;Programa de las Naciones Unidas para el Desarrollo (PNUD): Agencia líder de las Naciones Unidas en desarrollo internacional. Se enfoca en promover el desarrollo sostenible, fortalecer la gobernanza democrática, consolidar la paz y mejorar la resiliencia climática frente a desastres.</option>
+                        <option disabled hidden data-tokens="red litigantes lgbti+" class="NOBEL" value="NOBEL:Red de Litigantes LGBTI+ de Las Américas" data-content="<strong>⚖️&emsp;Red de Litigantes LGBTI+ de Las Américas:</strong> Alianza que trabaja por la protección de los derechos de las personas LGBTI+ en el continente americano a través del litigio estratégico y estrategias de comunicaciones.<hr>">⚖️&emsp;Red de Litigantes LGBTI+ de Las Américas: Alianza que trabaja por la protección de los derechos de las personas LGBTI+ en el continente americano a través del litigio estratégico y estrategias de comunicaciones.</option>
+                        <option disabled hidden data-tokens="reinserta" class="NOBEL" value="NOBEL:Reinserta (México)" data-content="<strong>🤍&emsp;Reinserta (México):</strong> Fundación dedicada a brindar apoyo a las infancias y juventudes que crecen en las instituciones de justicia restaurativa o que han estado involucradas en actividades delictivas.<hr>">🤍&emsp;Reinserta (México): Fundación dedicada a brindar apoyo a las infancias y juventudes que crecen en las instituciones de justicia restaurativa o que han estado involucradas en actividades delictivas.</option>
+                        <option disabled hidden data-tokens="save dream" class="NOBEL" value="NOBEL:Save the Dream (Catar)" data-content="<strong>💪&emsp;Save the Dream (Catar):</strong> Iniciativa global que busca que las infancias y juventudes puedan practicar el deporte de forma segura mientras aprenden sobre respeto e inclusión.<hr>">💪&emsp;Save the Dream (Catar): Iniciativa global que busca que las infancias y juventudes puedan practicar el deporte de forma segura mientras aprenden sobre respeto e inclusión.</option>
+                        <option disabled hidden data-tokens="shaneel shavneel lal" class="NOBEL" value="NOBEL:Shaneel Shavneel Lal (Nueva Zelanda)" data-content="<strong>❤️‍🩹 Shaneel Shavneel Lal (Nueva Zelanda):</strong> Activista por los derechos de las personas queer e indígenas, persona no binaria, de nacionalidad fiyiana-neozelandésa, modelo, estudiante de derecho y psicología en la Universidad de Auckland; y joven líder de justicia del Centro de Cooperación Internacional de la Universidad de Nueva York.<hr>">❤️‍🩹 Shaneel Shavneel Lal (Nueva Zelanda): Activista por los derechos de las personas queer e indígenas, persona no binaria, de nacionalidad fiyiana-neozelandésa, modelo, estudiante de derecho y psicología en la Universidad de Auckland; y joven líder de justicia del Centro de Cooperación Internacional de la Universidad de Nueva York.</option>
+                        <option disabled hidden data-tokens="sharad vivek sagar" class="NOBEL" value="NOBEL:Sharad Vivek Sagar (India)" data-content="<strong>📓&emsp;Sharad Vivek Sagar (India):</strong> Emprendedor social y líder juvenil originario de la India. Conocido por ser el fundador y director ejecutivo de Dexterity Global, organización que impulsa el liderazgo a través de la educación.<hr>">📓&emsp;Sharad Vivek Sagar (India): Emprendedor social y líder juvenil originario de la India. Conocido por ser el fundador y director ejecutivo de Dexterity Global, organización que impulsa el liderazgo a través de la educación.</option>
+                        <option disabled hidden data-tokens="she is" class="NOBEL" value="NOBEL:She Is Foundation (Colombia)" data-content="<strong>💜&emsp;She Is Foundation (Colombia):</strong> Organización dedicada a empoderar a las mujeres jóvenes en América Latina a través de la educación, el emprendimiento y el liderazgo.<hr>">💜&emsp;She Is Foundation (Colombia): Organización dedicada a empoderar a las mujeres jóvenes en América Latina a través de la educación, el emprendimiento y el liderazgo.</option>
+                        <option disabled hidden data-tokens="simi" class="NOBEL" value="NOBEL:Fundación del Dr. Simi, A.C. (México)" data-content="<strong>🩵&emsp;Fundación del Dr. Simi, A.C. (México):</strong> Es una organización autónoma, privada, sin fines de lucro y de carácter altruista, dedicada a brindar apoyo y asistencia a grupos históricamente vulnerados.<hr>">🩵&emsp;Fundación del Dr. Simi, A.C. (México): Es una organización autónoma, privada, sin fines de lucro y de carácter altruista, dedicada a brindar apoyo y asistencia a grupos históricamente vulnerados.</option>
+                        <option disabled hidden data-tokens="specpol" class="NOBEL" value="NOBEL:Comisión de Política Especial y de Descolonización de la Asamblea General de las Naciones Unidas (SPECPOL)" data-content="<strong>🇺🇳&emsp;Comisión de Política Especial y de Descolonización de la Asamblea General de las Naciones Unidas (SPECPOL):</strong> Mantiene como principal objetivo el garantizar la autodeterminación de los territorios no autónomos.<hr>">🇺🇳&emsp;Comisión de Política Especial y de Descolonización de la Asamblea General de las Naciones Unidas (SPECPOL): Mantiene como principal objetivo el garantizar la autodeterminación de los territorios no autónomos.</option>
+                        <option disabled hidden data-tokens="tarana burke" class="NOBEL" value="NOBEL:Tarana Burke (Estados Unidos)" data-content="<strong>📲&emsp;Tarana Burke (Estados Unidos):</strong> Activista y fundadora del movimiento “Me Too”, que ha tenido un profundo impacto en la lucha contra el acoso sexual y la violencia de género.<hr>">📲&emsp;Tarana Burke (Estados Unidos): Activista y fundadora del movimiento “Me Too”, que ha tenido un profundo impacto en la lucha contra el acoso sexual y la violencia de género.</option>
+                        <option disabled hidden data-tokens="ungei" class="NOBEL" value="NOBEL:Iniciativa de las Naciones Unidas para la Educación de las Niñas (UNGEI)" data-content="<strong>📖&emsp;Iniciativa de las Naciones Unidas para la Educación de las Niñas (UNGEI):</strong> Alianza global que promueve la igualdad de género en la educación.<hr>">📖&emsp;Iniciativa de las Naciones Unidas para la Educación de las Niñas (UNGEI): Alianza global que promueve la igualdad de género en la educación.</option>
+                        <option disabled hidden data-tokens="victor navarro" class="NOBEL" value="NOBEL:Víctor Navarro (Venezuela)" data-content="<strong>💻&emsp;Víctor Navarro (Venezuela):</strong>  Periodista, activista y ex preso político. Fue detenido arbitrariamente en 2018 y recluido en El Helicoide, el centro de tortura más grande y notorio de Venezuela.<hr>">💻&emsp;Víctor Navarro (Venezuela):  Periodista, activista y ex preso político. Fue detenido arbitrariamente en 2018 y recluido en El Helicoide, el centro de tortura más grande y notorio de Venezuela.</option>
+                        <option disabled hidden data-tokens="vladimir kara murza" class="NOBEL" value="NOBEL:Vladimir Kara-Murza (Rusia)" data-content="<strong>📄&emsp;Vladimir Kara-Murza (Rusia):</strong> Periodista y activista político ruso que inició su carrera inspirado por el político Boris Nemtsov, cuyo asesinato en 2015 le impactó profundamente.<hr>">📄&emsp;Vladimir Kara-Murza (Rusia): Periodista y activista político ruso que inició su carrera inspirado por el político Boris Nemtsov, cuyo asesinato en 2015 le impactó profundamente.</option>
+                        <option disabled hidden data-tokens="yeni rosa damayanti" class="NOBEL" value="NOBEL:Yeni Rosa Damayanti (Indonesia)" data-content="<strong>🤗&emsp;Yeni Rosa Damayanti (Indonesia):</strong> Presidenta de la Asociación de Salud Mental de Indonesia y activista. Su trabajo se centra en promover y garantizar el respeto a los derechos de las personas con discapacidad psicosocial.<hr>">🤗&emsp;Yeni Rosa Damayanti (Indonesia): Presidenta de la Asociación de Salud Mental de Indonesia y activista. Su trabajo se centra en promover y garantizar el respeto a los derechos de las personas con discapacidad psicosocial.</option>
+                        <option disabled hidden data-tokens="yusra mardini" class="NOBEL" value="NOBEL:Yusra Mardini (Siria)" data-content="<strong>🏊‍♀️ Yusra Mardini (Siria):</strong> Nadadora siria y activista por los derechos de las personas en situación de refugio, reconocida por su heroica travesía al huir de los conflictos armados en Siria en 2015.<hr>">🏊‍♀️ Yusra Mardini (Siria): Nadadora siria y activista por los derechos de las personas en situación de refugio, reconocida por su heroica travesía al huir de los conflictos armados en Siria en 2015.</option>
+                        <option disabled hidden data-tokens="zainab hawa" class="NOBEL" value="NOBEL:Zainab Hawa (Sierra Leona)" data-content="<strong>📢&emsp;Zainab Hawa (Sierra Leona):</strong> Fue Ministra de Salud y Saneamiento de su país y se convirtió en la segunda mujer en asumir el cargo de Ministra de Asuntos Exteriores y Cooperación Internacional. Actualmente se desempeña como Representante Especial sobre la Violencia Sexual en Conflictos en las Naciones Unidas.<hr>">📢&emsp;Zainab Hawa (Sierra Leona): Fue Ministra de Salud y Saneamiento de su país y se convirtió en la segunda mujer en asumir el cargo de Ministra de Asuntos Exteriores y Cooperación Internacional. Actualmente se desempeña como Representante Especial sobre la Violencia Sexual en Conflictos en las Naciones Unidas.</option>
+                        <option disabled hidden data-tokens="zanagee artis" class="NOBEL" value="NOBEL:Zanagee Artis (Estados Unidos)" data-content="<strong>⛽️&emsp;Zanagee Artis (Estados Unidos):</strong> Miembro fundador y director ejecutivo de Zero Hour.  Ha trabajado en el movimiento juvenil por el clima abogando por el abandono de los combustibles fósiles.<hr>">⛽️&emsp;Zanagee Artis (Estados Unidos): Miembro fundador y director ejecutivo de Zero Hour.  Ha trabajado en el movimiento juvenil por el clima abogando por el abandono de los combustibles fósiles.</option>
+
+                        <!-- CRM -->
+                        <option disabled hidden data-tokens="argentina" class="CRM" value="CRM:República Argentina">🇦🇷&emsp;República Argentina</option>
+                        <option disabled hidden data-tokens="aruba" class="CRM" value="CRM:País de Aruba">🇦🇼&emsp;País de Aruba</option>
+                        <option disabled hidden data-tokens="bahamas" class="CRM" value="CRM:Mancomunidad de las Bahamas">🇧🇸&emsp;Mancomunidad de las Bahamas</option>
+                        <option disabled hidden data-tokens="barbados" class="CRM" value="CRM:República de Barbados">🇧🇧&emsp;República de Barbados</option>
+                        <option disabled hidden data-tokens="belice" class="CRM" value="CRM:Belice">🇧🇿&emsp;Belice</option>
+                        <option disabled hidden data-tokens="bermudas" class="CRM" value="CRM:Bermudas">🇧🇲&emsp;Bermudas</option>
+                        <option disabled hidden data-tokens="bolivia" class="CRM" value="CRM:Estado Plurinacional de Bolivia">🇧🇴&emsp;Estado Plurinacional de Bolivia</option>
+                        <option disabled hidden data-tokens="brasil" class="CRM" value="CRM:República Federativa del Brasil">🇧🇷&emsp;República Federativa del Brasil</option>
+                        <option disabled hidden data-tokens="chile" class="CRM" value="CRM:República de Chile">🇨🇱&emsp;República de Chile</option>
+                        <option disabled hidden data-tokens="colombia" class="CRM" value="CRM:República de Colombia">🇨🇴&emsp;República de Colombia</option>
+                        <option disabled hidden data-tokens="costa rica" class="CRM" value="CRM:República de Costa Rica">🇨🇷&emsp;República de Costa Rica</option>
+                        <option disabled hidden data-tokens="cuba" class="CRM" value="CRM:República de Cuba">🇨🇺&emsp;República de Cuba</option>
+                        <option disabled hidden data-tokens="curazao" class="CRM" value="CRM:País de Curazao">🇨🇼&emsp;País de Curazao</option>
+                        <option disabled hidden data-tokens="dominica" class="CRM" value="CRM:Mancomunidad de Dominica">🇩🇲&emsp;Mancomunidad de Dominica</option>
+                        <option disabled hidden data-tokens="ecuador" class="CRM" value="CRM:República del Ecuador">🇪🇨&emsp;República del Ecuador</option>
+                        <option disabled hidden data-tokens="guatemala" class="CRM" value="CRM:República de Guatemala">🇬🇹&emsp;República de Guatemala</option>
+                        <option disabled hidden data-tokens="guayana francesa" class="CRM" value="CRM:Guayana Francesa">🇬🇫&emsp;Guayana Francesa</option>
+                        <option disabled hidden data-tokens="guyana" class="CRM" value="CRM:República Cooperativa de Guyana">🇬🇾&emsp;República Cooperativa de Guyana</option>
+                        <option disabled hidden data-tokens="haiti" class="CRM" value="CRM:República de Haití">🇭🇹&emsp;República de Haití</option>
+                        <option disabled hidden data-tokens="honduras" class="CRM" value="CRM:República de Honduras">🇭🇳&emsp;República de Honduras</option>
+                        <option disabled hidden data-tokens="islas caiman" class="CRM" value="CRM:Islas Caimán">🇰🇾&emsp;Islas Caimán</option>
+                        <option disabled hidden data-tokens="islas virgenes britanicas" class="CRM" value="CRM:Islas Vírgenes Británicas">🇻🇬&emsp;Islas Vírgenes Británicas</option>
+                        <option disabled hidden data-tokens="islas virgenes estados unidos" class="CRM" value="CRM:Islas Vírgenes de los Estados Unidos">🇻🇮&emsp;Islas Vírgenes de los Estados Unidos</option>
+                        <option disabled hidden data-tokens="jamaica" class="CRM" value="CRM:Jamaica">🇯🇲&emsp;Jamaica</option>
+                        <option disabled hidden data-tokens="martinica" class="CRM" value="CRM:Martinica">🇲🇶&emsp;Martinica</option>
+                        <option disabled hidden data-tokens="mexico" class="CRM" value="CRM:Estados Unidos Mexicanos">🇲🇽&emsp;Estados Unidos Mexicanos</option>
+                        <option disabled hidden data-tokens="montserrat" class="CRM" value="CRM:Montserrat">🇲🇸&emsp;Montserrat</option>
+                        <option disabled hidden data-tokens="panama" class="CRM" value="CRM:República de Panamá">🇵🇦&emsp;República de Panamá</option>
+                        <option disabled hidden data-tokens="paraguay" class="CRM" value="CRM:República del Paraguay">🇵🇾&emsp;República del Paraguay</option>
+                        <option disabled hidden data-tokens="peru" class="CRM" value="CRM:República del Perú">🇵🇪&emsp;República del Perú</option>
+                        <option disabled hidden data-tokens="puerto rico" class="CRM" value="CRM:Estado Libre Asociado de Puerto Rico">🇵🇷&emsp;Estado Libre Asociado de Puerto Rico</option>
+                        <option disabled hidden data-tokens="republica dominicana" class="CRM" value="CRM:República Dominicana">🇩🇴&emsp;República Dominicana</option>
+                        <option disabled hidden data-tokens="san vicente" class="CRM" value="CRM:San Vicente y las Granadinas">🇻🇨&emsp;San Vicente y las Granadinas</option>
+                        <option disabled hidden data-tokens="santa lucia" class="CRM" value="CRM:Santa Lucía">🇱🇨&emsp;Santa Lucía</option>
+                        <option disabled hidden data-tokens="surinam" class="CRM" value="CRM:República de Surinam">🇸🇷&emsp;República de Surinam</option>
+                        <option disabled hidden data-tokens="trinidad y tobago" class="CRM" value="CRM:República de Trinidad y Tobago">🇹🇹&emsp;República de Trinidad y Tobago</option>
+                        <option disabled hidden data-tokens="uruguay" class="CRM" value="CRM:República Oriental del Uruguay">🇺🇾&emsp;República Oriental del Uruguay</option>
+                        <option disabled hidden data-tokens="venezuela" class="CRM" value="CRM:República Bolivariana de Venezuela">🇻🇪&emsp;República Bolivariana de Venezuela</option>
+
+                        <!-- UNFPA -->
+                        <option disabled hidden data-tokens="albania" class="UNFPA" value="UNFPA:República de Albania">🇦🇱&emsp;República de Albania</option>
+                        <option disabled hidden data-tokens="argentina" class="UNFPA" value="UNFPA:República Argentina">🇦🇷&emsp;República Argentina</option>
+                        <option disabled hidden data-tokens="armenia" class="UNFPA" value="UNFPA:República de Armenia">🇦🇲&emsp;República de Armenia</option>
+                        <option disabled hidden data-tokens="bielorrusia" class="UNFPA" value="UNFPA:República de Belarús">🇧🇾&emsp;República de Belarús</option>
+                        <option disabled hidden data-tokens="bosnia" class="UNFPA" value="UNFPA:Bosnia y Herzegovina">🇧🇦&emsp;Bosnia y Herzegovina</option>
+                        <option disabled hidden data-tokens="brasil" class="UNFPA" value="UNFPA:República Federativa de Brasil">🇧🇷&emsp;República Federativa de Brasil</option>
+                        <option disabled hidden data-tokens="cabo verde" class="UNFPA" value="UNFPA:República de Cabo Verde">🇨🇻&emsp;República de Cabo Verde</option>
+                        <option disabled hidden data-tokens="camboya" class="UNFPA" value="UNFPA:Reino de Camboya">🇰🇭&emsp;Reino de Camboya</option>
+                        <option disabled hidden data-tokens="chile" class="UNFPA" value="UNFPA:República de Chile">🇨🇱&emsp;República de Chile</option>
+                        <option disabled hidden data-tokens="china" class="UNFPA" value="UNFPA:República Popular China">🇨🇳&emsp;República Popular China</option>
+                        <option disabled hidden data-tokens="colombia" class="UNFPA" value="UNFPA:República de Colombia">🇨🇴&emsp;República de Colombia</option>
+                        <option disabled hidden data-tokens="costa rica" class="UNFPA" value="UNFPA:República de Costa Rica">🇨🇷&emsp;República de Costa Rica</option>
+                        <option disabled hidden data-tokens="ecuador" class="UNFPA" value="UNFPA:República del Ecuador">🇪🇨&emsp;República del Ecuador</option>
+                        <option disabled hidden data-tokens="egipto" class="UNFPA" value="UNFPA:República Árabe de Egipto">🇪🇬&emsp;República Árabe de Egipto</option>
+                        <option disabled hidden data-tokens="el salvador" class="UNFPA" value="UNFPA:República de El Salvador">🇸🇻&emsp;República de El Salvador</option>
+                        <option disabled hidden data-tokens="españa" class="UNFPA" value="UNFPA:Reino de España">🇪🇸&emsp;Reino de España</option>
+                        <option disabled hidden data-tokens="honduras" class="UNFPA" value="UNFPA:República de Honduras">🇭🇳&emsp;República de Honduras</option>
+                        <option disabled hidden data-tokens="india" class="UNFPA" value="UNFPA:República de la India">🇮🇳&emsp;República de la India</option>
+                        <option disabled hidden data-tokens="iran" class="UNFPA" value="UNFPA:República Islámica de Irán">🇮🇷&emsp;República Islámica de Irán</option>
+                        <option disabled hidden data-tokens="jordan" class="UNFPA" value="UNFPA:Reino Hachemita de Jordania">🇯🇴&emsp;Reino Hachemita de Jordania</option>
+                        <option disabled hidden data-tokens="kenia" class="UNFPA" value="UNFPA:República de Kenia">🇰🇪&emsp;República de Kenia</option>
+                        <option disabled hidden data-tokens="macedonia del norte" class="UNFPA" value="UNFPA:República de Macedonia del Norte">🇲🇰&emsp;República de Macedonia del Norte</option>
+                        <option disabled hidden data-tokens="malasia" class="UNFPA" value="UNFPA:Malasia">🇲🇾&emsp;Malasia</option>
+                        <option disabled hidden data-tokens="mexico" class="UNFPA" value="UNFPA:Estados Unidos Mexicanos">🇲🇽&emsp;Estados Unidos Mexicanos</option>
+                        <option disabled hidden data-tokens="moldavia" class="UNFPA" value="UNFPA:República de Moldavia">🇲🇩&emsp;República de Moldavia</option>
+                        <option disabled hidden data-tokens="mongolia" class="UNFPA" value="UNFPA:Mongolia">🇲🇳&emsp;Mongolia</option>
+                        <option disabled hidden data-tokens="nigeria" class="UNFPA" value="UNFPA:República Federal de Nigeria">🇳🇬&emsp;República Federal de Nigeria</option>
+                        <option disabled hidden data-tokens="paises bajos" class="UNFPA" value="UNFPA:Reino de los Países Bajos">🇳🇱&emsp;Reino de los Países Bajos</option>
+                        <option disabled hidden data-tokens="republica dominicana" class="UNFPA" value="UNFPA:República Dominicana">🇩🇴&emsp;República Dominicana</option>
+                        <option disabled hidden data-tokens="serbia" class="UNFPA" value="UNFPA:República de Serbia">🇲🇰&emsp;República de Serbia</option>
+                        <option disabled hidden data-tokens="sudafrica" class="UNFPA" value="UNFPA:República de Sudáfrica">🇿🇦&emsp;República de Sudáfrica</option>
+                        <option disabled hidden data-tokens="tailandia" class="UNFPA" value="UNFPA:Reino de Tailandia">🇹🇭&emsp;Reino de Tailandia</option>
+                        <option disabled hidden data-tokens="tunecina" class="UNFPA" value="UNFPA:República Tunecina">🇹🇳&emsp;República Tunecina</option>
+                        <option disabled hidden data-tokens="turkmenistan" class="UNFPA" value="UNFPA:Turkmenistán">🇹🇲&emsp;Turkmenistán</option>
+                        <option disabled hidden data-tokens="ucrania" class="UNFPA" value="UNFPA:Ucrania">🇺🇦&emsp;Ucrania</option>
+                        <option disabled hidden data-tokens="uruguay" class="UNFPA" value="UNFPA:República Oriental de Uruguay">🇺🇾&emsp;República Oriental de Uruguay</option>
+                        <option disabled hidden data-tokens="uzbekistan" class="UNFPA" value="UNFPA:República de Uzbekistán">🇺🇿&emsp;República de Uzbekistán</option>
+                        <option disabled hidden data-tokens="vietnam" class="UNFPA" value="UNFPA:República Socialista de Vietnam">🇻🇳&emsp;República Socialista de Vietnam</option>
+
+                        <!-- OSGEY -->
+                        <option disabled hidden data-tokens="afghanistan" class="OSGEY" value="OSGEY:Islamic Republic of Afghanistan">🇦🇫&emsp;Islamic Republic of Afghanistan</option>
+                        <option disabled hidden data-tokens="argentina" class="OSGEY" value="OSGEY:Argentine Republic">🇦🇷&emsp;Argentine Republic</option>
+                        <option disabled hidden data-tokens="australia" class="OSGEY" value="OSGEY:Commonwealth of Australia">🇬🇧&emsp;Commonwealth of Australia</option>
+                        <option disabled hidden data-tokens="austria" class="OSGEY" value="OSGEY:Republic of Austria">🇦🇹&emsp;Republic of Austria</option>
+                        <option disabled hidden data-tokens="brazil" class="OSGEY" value="OSGEY:Federative Republic of Brazil">🇧🇷&emsp;Federative Republic of Brazil</option>
+                        <option disabled hidden data-tokens="canada" class="OSGEY" value="OSGEY:Canada">🇨🇦&emsp;Canada</option>
+                        <option disabled hidden data-tokens="chile" class="OSGEY" value="OSGEY:Republic of Chile">🇨🇱&emsp;Republic of Chile</option>
+                        <option disabled hidden data-tokens="china" class="OSGEY" value="OSGEY:People’s Republic of China">🇨🇳&emsp;People’s Republic of China</option>
+                        <option disabled hidden data-tokens="colombia" class="OSGEY" value="OSGEY:Republic of Colombia">🇨🇴&emsp;Republic of Colombia</option>
+                        <option disabled hidden data-tokens="congo" class="OSGEY" value="OSGEY:Democratic Republic of the Congo">🇨🇩&emsp;Democratic Republic of the Congo</option>
+                        <option disabled hidden data-tokens="cuba" class="OSGEY" value="OSGEY:Republic of Cuba">🇨🇺&emsp;Republic of Cuba</option>
+                        <option disabled hidden data-tokens="denmark" class="OSGEY" value="OSGEY:Kingdom of Denmark">🇩🇰&emsp;Kingdom of Denmark</option>
+                        <option disabled hidden data-tokens="dominican republic" class="OSGEY" value="OSGEY:Dominican Republic">🇩🇴&emsp;Dominican Republic</option>
+                        <option disabled hidden data-tokens="ecuador" class="OSGEY" value="OSGEY:Republic of Ecuador">🇪🇨&emsp;Republic of Ecuador</option>
+                        <option disabled hidden data-tokens="el salvador" class="OSGEY" value="OSGEY:Republic of El Salvador">🇸🇻&emsp;Republic of El Salvador</option>
+                        <option disabled hidden data-tokens="finland" class="OSGEY" value="OSGEY:Republic of Finland">🇫🇮&emsp;Republic of Finland</option>
+                        <option disabled hidden data-tokens="france" class="OSGEY" value="OSGEY:French Republic">🇫🇷&emsp;French Republic</option>
+                        <option disabled hidden data-tokens="germany" class="OSGEY" value="OSGEY:Federal Republic of Germany">🇩🇪&emsp;Federal Republic of Germany</option>
+                        <option disabled hidden data-tokens="indonesia" class="OSGEY" value="OSGEY:Republic of Indonesia">🇮🇩&emsp;Republic of Indonesia</option>
+                        <option disabled hidden data-tokens="italy" class="OSGEY" value="OSGEY:Italian Republic">🇮🇹&emsp;Italian Republic</option>
+                        <option disabled hidden data-tokens="japan" class="OSGEY" value="OSGEY:State of Japan">🇯🇵&emsp;State of Japan</option>
+                        <option disabled hidden data-tokens="mexico" class="OSGEY" value="OSGEY:United Mexican States">🇲🇽&emsp;United Mexican States</option>
+                        <option disabled hidden data-tokens="panama" class="OSGEY" value="OSGEY:Republic of Panama">🇵🇦&emsp;Republic of Panama</option>
+                        <option disabled hidden data-tokens="paraguay" class="OSGEY" value="OSGEY:Republic of Paraguay">🇵🇾&emsp;Republic of Paraguay</option>
+                        <option disabled hidden data-tokens="peru" class="OSGEY" value="OSGEY:Republic of Peru">🇵🇪&emsp;Republic of Peru</option>
+                        <option disabled hidden data-tokens="poland" class="OSGEY" value="OSGEY:Republic of Poland">🇨🇺&emsp;Republic of Poland</option>
+                        <option disabled hidden data-tokens="russia" class="OSGEY" value="OSGEY:Russian Federation">🇷🇺&emsp;Russian Federation</option>
+                        <option disabled hidden data-tokens="saudi arabia" class="OSGEY" value="OSGEY:Kingdom of Saudi Arabia">🇸🇦&emsp;Kingdom of Saudi Arabia</option>
+                        <option disabled hidden data-tokens="spain" class="OSGEY" value="OSGEY:Kingdom of Spain">🇪🇸&emsp;Kingdom of Spain</option>
+                        <option disabled hidden data-tokens="sweden" class="OSGEY" value="OSGEY:Kingdom of Sweden">🇸🇪&emsp;Kingdom of Sweden</option>
+                        <option disabled hidden data-tokens="switzerland" class="OSGEY" value="OSGEY:Swiss Confederation">🇨🇭&emsp;Swiss Confederation</option>
+                        <option disabled hidden data-tokens="united kingdom" class="OSGEY" value="OSGEY:United Kingdom of Great Britain and Northern Ireland">🇬🇧&emsp;United Kingdom of Great Britain and Northern Ireland</option>
+                        <option disabled hidden data-tokens="united states" class="OSGEY" value="OSGEY:United States of America">🇺🇸&emsp;United States of America</option>
+                        <option disabled hidden data-tokens="venezuela" class="OSGEY" value="OSGEY:Bolivarian Republic of Venezuela">🇻🇪&emsp;Bolivarian Republic of Venezuela</option>
+                        <option disabled hidden data-tokens="vietnam" class="OSGEY" value="OSGEY:Socialist Republic of Vietnam">🇻🇳&emsp;Socialist Republic of Vietnam</option>
+
+                        <!-- CIDH -->
+                        <option disabled hidden data-tokens="antigua y barbuda" class="CIDH" value="CIDH:Antigua y Barbuda">🇦🇬&emsp;Antigua y Barbuda</option>
+                        <option disabled hidden data-tokens="argentina" class="CIDH" value="CIDH:República Argentina">🇦🇷&emsp;República Argentina</option>
+                        <option disabled hidden data-tokens="bahamas" class="CIDH" value="CIDH:Mancomunidad de las Bahamas">🇧🇸&emsp;Mancomunidad de las Bahamas</option>
+                        <option disabled hidden data-tokens="barbados" class="CIDH" value="CIDH:República de Barbados">🇧🇧&emsp;República de Barbados</option>
+                        <option disabled hidden data-tokens="belice" class="CIDH" value="CIDH:Belice">🇧🇿&emsp;Belice</option>
+                        <option disabled hidden data-tokens="bolivia" class="CIDH" value="CIDH:República Plurinacional de Bolivia">🇧🇴&emsp;República Plurinacional de Bolivia</option>
+                        <option disabled hidden data-tokens="brasil" class="CIDH" value="CIDH:República de Brasil">🇧🇷&emsp;República de Brasil</option>
+                        <option disabled hidden data-tokens="canada" class="CIDH" value="CIDH:Canadá">🇨🇦&emsp;Canadá</option>
+                        <option disabled hidden data-tokens="chile" class="CIDH" value="CIDH:República de Chile">🇨🇱&emsp;República de Chile</option>
+                        <option disabled hidden data-tokens="colombia" class="CIDH" value="CIDH:República de Colombia">🇨🇴&emsp;República de Colombia</option>
+                        <option disabled hidden data-tokens="costa rica" class="CIDH" value="CIDH:República de Costa Rica">🇨🇷&emsp;República de Costa Rica</option>
+                        <option disabled hidden data-tokens="dominica" class="CIDH" value="CIDH:Mancomunidad de Dominica">🇩🇲&emsp;Mancomunidad de Dominica</option>
+                        <option disabled hidden data-tokens="ecuador" class="CIDH" value="CIDH:República de Ecuador">🇪🇨&emsp;República de Ecuador</option>
+                        <option disabled hidden data-tokens="el salvador" class="CIDH" value="CIDH:República de El Salvador">🇸🇻&emsp;República de El Salvador</option>
+                        <option disabled hidden data-tokens="estados unidos" class="CIDH" value="CIDH:Estados Unidos de América">🇺🇸&emsp;Estados Unidos de América</option>
+                        <option disabled hidden data-tokens="granada" class="CIDH" value="CIDH:Granada">🇬🇩&emsp;Granada</option>
+                        <option disabled hidden data-tokens="guatemala" class="CIDH" value="CIDH:República de Guatemala">🇬🇹&emsp;República de Guatemala</option>
+                        <option disabled hidden data-tokens="guyana" class="CIDH" value="CIDH:República Cooperativa de Guyana">🇬🇾&emsp;República Cooperativa de Guyana</option>
+                        <option disabled hidden data-tokens="haiti" class="CIDH" value="CIDH:República de Haití">🇭🇹&emsp;República de Haití</option>
+                        <option disabled hidden data-tokens="honduras" class="CIDH" value="CIDH:República de Honduras">🇭🇳&emsp;República de Honduras</option>
+                        <option disabled hidden data-tokens="jamaica" class="CIDH" value="CIDH:Jamaica">🇯🇲&emsp;Jamaica</option>
+                        <option disabled hidden data-tokens="mexico" class="CIDH" value="CIDH:Estados Unidos Mexicanos">🇲🇽&emsp;Estados Unidos Mexicanos</option>
+                        <option disabled hidden data-tokens="panama" class="CIDH" value="CIDH:República de Panamá">🇵🇦&emsp;República de Panamá</option>
+                        <option disabled hidden data-tokens="paraguay" class="CIDH" value="CIDH:República del Paraguay">🇵🇾&emsp;República del Paraguay</option>
+                        <option disabled hidden data-tokens="peru" class="CIDH" value="CIDH:República del Perú">🇵🇪&emsp;República del Perú</option>
+                        <option disabled hidden data-tokens="republica dominicana" class="CIDH" value="CIDH:República Dominicana">🇩🇴&emsp;República Dominicana</option>
+                        <option disabled hidden data-tokens="san cristobal y nieves" class="CIDH" value="CIDH:Federación de San Cristóbal y Nieves">🇰🇳&emsp;Federación de San Cristóbal y Nieves</option>
+                        <option disabled hidden data-tokens="san vicente y las granadinas" class="CIDH" value="CIDH:San Vicente y las Granadinas">🇻🇨&emsp;San Vicente y las Granadinas</option>
+                        <option disabled hidden data-tokens="santa lucia" class="CIDH" value="CIDH:Santa Lucía">🇱🇨&emsp;Santa Lucía</option>
+                        <option disabled hidden data-tokens="surinam" class="CIDH" value="CIDH:República de Surinam">🇸🇷&emsp;República de Surinam</option>
+                        <option disabled hidden data-tokens="trinidad y tobago" class="CIDH" value="CIDH:República de Trinidad y Tobago">🇹🇹&emsp;República de Trinidad y Tobago</option>
+                        <option disabled hidden data-tokens="uruguay" class="CIDH" value="CIDH:República Oriental del Uruguay">🇺🇾&emsp;República Oriental del Uruguay</option>
+                        <option disabled hidden data-tokens="venezuela" class="CIDH" value="CIDH:República Bolivariana de Venezuela">🇻🇪&emsp;República Bolivariana de Venezuela</option>
+
+                        <!-- CIJ -->
+                        <option disabled hidden data-tokens="sudafrica" class="CIJ" value="CIJ:Agencia Demandante - Sudáfrica">🇿🇦&ensp;⚖️&emsp;Agencia Demandante: Sudáfrica (8 personas)</option>
+                        <option disabled hidden data-tokens="israel" class="CIJ" value="CIJ:Agencia Demandada - Israel">🇮🇱&ensp;⚖️&emsp;Agencia Demandada: Israel (8 personas)</option>
+
+                        <!-- COI -->
+                        <option disabled hidden data-tokens="alemania" class="COI" value="COI:República Federal de Alemania">🇩🇪&emsp;República Federal de Alemania</option>
+                        <option disabled hidden data-tokens="argentina" class="COI" value="COI:República Argentina">🇦🇷&emsp;República Argentina</option>
+                        <option disabled hidden data-tokens="aruba" class="COI" value="COI:País de Aruba">🇦🇼&emsp;País de Aruba</option>
+                        <option disabled hidden data-tokens="australia" class="COI" value="COI:Mancomunidad de Australia">🇦🇺&emsp;Mancomunidad de Australia</option>
+                        <option disabled hidden data-tokens="belgica" class="COI" value="COI:Reino de Bélgica">🇧🇪&emsp;Reino de Bélgica</option>
+                        <option disabled hidden data-tokens="belice" class="COI" value="COI:Belice">🇧🇿&emsp;Belice</option>
+                        <option disabled hidden data-tokens="brasil" class="COI" value="COI:República Federativa de Brasil">🇧🇷&emsp;República Federativa de Brasil</option>
+                        <option disabled hidden data-tokens="burundi" class="COI" value="COI:República de Burundi">🇧🇮&emsp;República de Burundi</option>
+                        <option disabled hidden data-tokens="canada" class="COI" value="COI:Canadá">🇨🇦&emsp;Canadá</option>
+                        <option disabled hidden data-tokens="chile" class="COI" value="COI:República de Chile">🇨🇱&emsp;República de Chile</option>
+                        <option disabled hidden data-tokens="china" class="COI" value="COI:República Popular China">🇨🇳&emsp;República Popular China</option>
+                        <option disabled hidden data-tokens="colombia" class="COI" value="COI:República de Colombia">🇨🇴&emsp;República de Colombia</option>
+                        <option disabled hidden data-tokens="corea del sur" class="COI" value="COI:República de Corea">🇰🇷&emsp;República de Corea</option>
+                        <option disabled hidden data-tokens="crocacia" class="COI" value="COI:República de Croacia">🇭🇷&emsp;República de Croacia</option>
+                        <option disabled hidden data-tokens="españa" class="COI" value="COI:Reino de España">🇪🇸&emsp;Reino de España</option>
+                        <option disabled hidden data-tokens="estados unidos" class="COI" value="COI:Estados Unidos de América">🇺🇸&emsp;Estados Unidos de América</option>
+                        <option disabled hidden data-tokens="finlandia" class="COI" value="COI:República de Finlandia">🇫🇮&emsp;República de Finlandia</option>
+                        <option disabled hidden data-tokens="francia" class="COI" value="COI:República Francesa">🇫🇷&emsp;República Francesa</option>
+                        <option disabled hidden data-tokens="grecia" class="COI" value="COI:República Helénica">🇬🇷&emsp;República Helénica</option>
+                        <option disabled hidden data-tokens="italia" class="COI" value="COI:República de Italia">🇮🇹&emsp;República de Italia</option>
+                        <option disabled hidden data-tokens="japon" class="COI" value="COI:Japón">🇯🇵&emsp;Japón</option>
+                        <option disabled hidden data-tokens="marruecos" class="COI" value="COI:Reino de Marruecos">🇲🇦&emsp;Reino de Marruecos</option>
+                        <option disabled hidden data-tokens="mexico" class="COI" value="COI:Estados Unidos Mexicanos">🇲🇽&emsp;Estados Unidos Mexicanos</option>
+                        <option disabled hidden data-tokens="noruega" class="COI" value="COI:Reino de Noruega">🇳🇴&emsp;Reino de Noruega</option>
+                        <option disabled hidden data-tokens="nueva zelanda" class="COI" value="COI:Nueva Zelanda">🇳🇿&emsp;Nueva Zelanda</option>
+                        <option disabled hidden data-tokens="paises bajos" class="COI" value="COI:Reino de los Países Bajos">🇳🇱&emsp;Reino de los Países Bajos</option>
+                        <option disabled hidden data-tokens="pakistan" class="COI" value="COI:República Islámica de Pakistán">🇵🇰&emsp;República Islámica de Pakistán</option>
+                        <option disabled hidden data-tokens="polonia" class="COI" value="COI:República de Polonia">🇵🇱&emsp;República de Polonia</option>
+                        <option disabled hidden data-tokens="qatar" class="COI" value="COI:Estado de Qatar">🇶🇦&emsp;Estado de Qatar</option>
+                        <option disabled hidden data-tokens="reino unido" class="COI" value="COI:Reino Unido de Gran Bretaña e Irlanda del Norte">🇬🇧&emsp;Reino Unido de Gran Bretaña e Irlanda del Norte</option>
+                        <option disabled hidden data-tokens="rusia" class="COI" value="COI:Federación de Rusia">🇷🇺&emsp;Federación de Rusia</option>
+                        <option disabled hidden data-tokens="singapur" class="COI" value="COI:República de Singapur">🇸🇬&emsp;República de Singapur</option>
+                        <option disabled hidden data-tokens="sudafrica" class="COI" value="COI:República de Sudáfrica">🇿🇦&emsp;República de Sudáfrica</option>
+                        <option disabled hidden data-tokens="suecia" class="COI" value="COI:Reino de Suecia">🇸🇪&emsp;Reino de Suecia</option>
+                        <option disabled hidden data-tokens="suiza" class="COI" value="COI:Confederación Suiza">🇨🇭&emsp;Confederación Suiza</option>
+                        <option disabled hidden data-tokens="tailandia" class="COI" value="COI:Reino de Tailandia">🇹🇭&emsp;Reino de Tailandia</option>
+                        <option disabled hidden data-tokens="ucrania" class="COI" value="COI:Ucrania">🇺🇦&emsp;Ucrania</option>
+                        <option disabled hidden data-tokens="zimbabue" class="COI" value="COI:República de Zimbabue">🇿🇼&emsp;República de Zimbabue</option>
+                    </select>
+                    <div class="invalid-feedback">Debes seleccionar una opción.</div>
+                </div>
+            {% endfor %}
+
+            {% if i == 2 %}
+                <p>
+                    <strong>NOTA:</strong> Si ninguna de las opciones seleccionadas está disponible, queda a consideración del Modelo la asignación, alineada a las opciones que escogió.
+                </p>
+            {% endif %}
+        </div>
+    {% endfor %}
+
+    <!-- Subir pago -->
+    <article class="titulo">
+        <div class="oval">
+            <h2>
+                Pago
+            </h2>
+        </div>
+    </article>
+
+    <div class="mb-3">
+        <img id="img-pago" src="/assets/img/images/bbva.webp" alt="Datos bancarios. Tarjeta: 4152 3139 9013 9227; Banco: BBVA" width="1748" height="1240">
+
+        <p id="costo-inscripcion">
+            <strong>Costo de inscripción:</strong> $300 MXN
+        </p>
+
+        <p>
+            <i>
+                En caso de que exista algún error con el pago, nos pondremos en contacto contigo.
+            </i>
+        </p>
+
+        <div>
+            <label for="comprobante" class="form-label">Sube tu comprobante de pago (máx 5 MB)<span style="color: red;">*</span></label>
+            <input class="form-control" required name="comprobante" type="file" id="input-comprobante" accept="image/*,.pdf">
+            <div class="invalid-feedback">Debes subir un archivo.</div>
+        </div>
+    </div>
+
+    <article class="titulo">
+        <div class="oval">
+            <h2>
+                Reglamento
+            </h2>
+        </div>
+    </article>
+
+    <div class="mb-3">
+        <div class="form-check">
+            <input required class="form-check-input" autocomplete="off" name="aceptar_reglamento" type="checkbox">
+            <label for="aceptar-reglamento" class="form-check-label">Al dar click en la casilla, se comparte el compromiso por respeto y mostrar conformidad con el reglamento y protocolo del SMMUN 2025: Legado de Líderes.</label>
+            <div class="invalid-feedback">Debes aceptar el reglamento.</div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <!-- Enviar -->
+        <input class="form-control" type="submit" value="Enviar">
+    </div>
+</form>
+
+<!-- Toasts para errores y contacto -->
+<div style="position: fixed; bottom: 1%; right: 2%;">
+    <div class="toast align-items-center text-bg-primary border-0 bg-danger bg-gradient position-relative bottom-0 end-0" role="alert" aria-live="assertive" aria-atomic="true" id="toast-comprobante" style="position: relative; z-index: 1; width: auto; margin: 1vh 0;">
+        <div class="d-flex">
+          <div class="toast-body">
+            El archivo es demasiado grande.
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <div class="toast align-items-center text-bg-primary border-0 bg-danger bg-gradient position-relative bottom-0 end-0" role="alert" aria-live="assertive" aria-atomic="true" id="toast-enviar" style="position: relative; z-index: 1; width: auto; margin: 1vh 0;">
+        <div class="d-flex">
+          <div class="toast-body">
+            Existen errores en el formulario.
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <a target="_blank" rel="noopener noreferrer" href="https://wa.me/529991975309?text=Hola%20%F0%9F%98%81,%20mi%20*nombre*%20es:%0A%0A*Tengo%20dudas%20sobre:*%0A%5B%5D%20%F0%9F%92%BC%20Modalidad%20de%20participaci%C3%B3n%0A%5B%5D%20%F0%9F%A4%9D%20Delegaci%C3%B3n%20oficial%0A%5B%5D%20%F0%9F%91%A4%20Datos%20personales%0A%5B%5D%20%F0%9F%8C%8E%20Comit%C3%A9s%20y/o%20pa%C3%ADses%0A%5B%5D%20%F0%9F%92%B3%20Proceso%20de%20pago%0A" style="text-decoration: none;">
+        <div class="toast align-items-center text-bg-primary border-0 bg-success bg-gradient position-relative bottom-0 end-0" role="alert" aria-live="assertive" aria-atomic="true" id="toast-whatsapp" data-bs-autohide="false" style="position: relative; z-index: 1; width: auto; margin: 1vh 0; cursor: pointer;">
+            <div class="d-flex">
+              <div class="toast-body">
+                <i class="fa-brands fa-whatsapp fa-xl" style="font-size: 1.5rem;"></i>
+                &ensp;
+                ¿Dudas? ¡Contáctanos!
+              </div>
+
+              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </a>
+</div>
+
+<!-- Validación de teléfono -->
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.7.0/build/js/intlTelInput.min.js"></script>
+<script type="module" defer>
+    import es from "https://cdn.jsdelivr.net/npm/intl-tel-input@24.7.0/build/js/i18n/es/index.js";
+
+    let celularInputs = document.getElementsByClassName("input-celular");
+    for (let i = 0; i < celularInputs.length; i++) {
+        let celInput = celularInputs.item(i);
+        let intl = window.intlTelInput(celInput, {
+            loadUtilsOnInit: "https://cdn.jsdelivr.net/npm/intl-tel-input@24.7.0/build/js/utils.js",
+            i18n: es,
+            initialCountry: "mx",
+            hiddenInput: function() {
+                return {
+                    phone: celInput.dataset.name
+                };
+            }
+        });
+
+        celInput.addEventListener("input", function(e) {
+            if (intl.isValidNumber()) {
+                this.setCustomValidity("");
+                this.classList.remove("is-invalid");
+            }
+            else if (this.value) {
+                this.setCustomValidity("El número de celular no es válido.");
+                this.classList.add("is-invalid");
+            }
+        });
+
+        celInput.dispatchEvent(new Event("input", { bubbles: true }));
+    }
+
+    $(".iti__search-input").addClass("form-control");
+    $("<div class='invalid-feedback'>El número de celular no es válido.</div>").insertAfter($(".iti__tel-input"));
+</script>
