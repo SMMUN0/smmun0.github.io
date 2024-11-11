@@ -74,8 +74,8 @@ nav_color_mobile: "#6f75d5cf"
 
         <div>
             <label for="celular_faculty" class="form-label">Número de celular <span style="color: red;">*</span></label>
-            <input class="form-control input-celular" required autocomplete="off" name="celular_faculty" placeholder="999 123 4567" type="tel" maxlength="30">
-            <div class="invalid-feedback">Debes llenar este campo.</div>
+            <input class="form-control input-celular" id="input-celular-faculty" required autocomplete="off" placeholder="999 123 4567" type="tel" maxlength="30">
+            <div class="invalid-feedback">La edad no es válida.</div>
         </div>
 
         <div>
@@ -387,7 +387,7 @@ nav_color_mobile: "#6f75d5cf"
 
         <p style="text-align: justify;">
             Una vez realizada la transferencia por el total de las personas de la Delegación Oficial, los pasos a seguir son los siguientes: 
-            
+
             <ol style="text-align: justify; line-height: 1.6rem; margin-bottom: 0;">
                 <li>Subir el comprobante de la transferencia.</li>
                 <li>Enviar el formulario.</li>
@@ -490,3 +490,35 @@ nav_color_mobile: "#6f75d5cf"
         </div>
     </a>
 </div>
+
+<!-- Validación de teléfono -->
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.7.0/build/js/intlTelInput.min.js"></script>
+<script type="module" defer>
+    import es from "https://cdn.jsdelivr.net/npm/intl-tel-input@24.7.0/build/js/i18n/es/index.js";
+
+    let celInput = document.getElementById("input-celular-faculty");
+    let intl = window.intlTelInput(celInput, {
+        loadUtilsOnInit: "https://cdn.jsdelivr.net/npm/intl-tel-input@24.7.0/build/js/utils.js",
+        i18n: es,
+        initialCountry: "mx",
+        hiddenInput: function() {
+            return {
+                phone: "celular_faculty"
+            };
+        }
+    });
+
+    celInput.addEventListener("input", function() {
+        if (intl.isValidNumber()) {
+            this.setCustomValidity("");
+            this.classList.remove("is-invalid");
+        }
+        else {
+            this.setCustomValidity("El número de celular no es válido.");
+            this.classList.add("is-invalid");
+        }
+    });
+
+    $(".iti__search-input").addClass("form-control");
+    $("<div class='invalid-feedback'>El número de celular no es válido.</div>").insertAfter($(".iti__tel-input"));
+</script>

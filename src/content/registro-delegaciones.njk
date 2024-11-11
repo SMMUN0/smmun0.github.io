@@ -141,18 +141,10 @@ nav_color_mobile: "#6f75d5cf"
                 <div class="invalid-feedback">La edad no es válida.</div>
             </div>
 
-            <label for="celular_{{ i }}" class="form-label">Número de celular <span style="color: red;">*</span></label>
-            <div class="row g-3">
-                <div class="col-md-3">
-                    <select autocomplete="off" data-width="100%" class="selectpicker select-codigo-pais" required name="codigo_pais_{{ i }}">
-                        <option selected disabled value="">Selecciona una opción</option>
-                    </select>
-                    <div class="invalid-feedback">Debes llenar este campo.</div>
-                </div>
-                <div class="col-md-9">
-                    <input class="form-control input-celular" required autocomplete="off" name="celular_{{ i }}" placeholder="999 123 4567" type="tel" maxlength="30">
-                    <div class="invalid-feedback">Debes llenar este campo.</div>
-                </div>
+            <div>
+                <label for="celular_{{ i }}" class="form-label">Número de celular <span style="color: red;">*</span></label>
+                <input class="form-control input-celular" data-name="celular_{{ i }}" required autocomplete="off" placeholder="999 123 4567" type="tel" maxlength="30">
+                <div class="invalid-feedback">El número de celular no es válido.</div>
             </div>
 
             <div>
@@ -442,8 +434,8 @@ nav_color_mobile: "#6f75d5cf"
                     <div class="invalid-feedback">Debes llenar este campo.</div>
                 </div>
                 <div class="col">
-                    <input class="form-control input-celular" required autocomplete="off" name="celular_contacto_{{ i }}" placeholder="Celular" type="tel" maxlength="30">
-                    <div class="invalid-feedback">Debes llenar este campo.</div>
+                    <input class="form-control input-celular" required autocomplete="off" data-name="celular_contacto_{{ i }}" placeholder="Celular" type="tel" maxlength="30">
+                    <div class="invalid-feedback">El número de celular no es válido.</div>
                 </div>
                 <div class="col">
                     <input class="form-control" required autocomplete="off" name="relacion_contacto_{{ i }}" placeholder="Parentesco" type="text" maxlength="150">
@@ -973,3 +965,40 @@ nav_color_mobile: "#6f75d5cf"
         </div>
     </a>
 </div>
+
+<!-- Validación de teléfono -->
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.7.0/build/js/intlTelInput.min.js"></script>
+<script type="module" defer>
+    import es from "https://cdn.jsdelivr.net/npm/intl-tel-input@24.7.0/build/js/i18n/es/index.js";
+
+    let celularInputs = document.getElementsByClassName("input-celular");
+    for (let i = 0; i < celularInputs.length; i++) {
+        let celInput = celularInputs.item(i);
+        let intl = window.intlTelInput(celInput, {
+            loadUtilsOnInit: "https://cdn.jsdelivr.net/npm/intl-tel-input@24.7.0/build/js/utils.js",
+            i18n: es,
+            initialCountry: "mx",
+            hiddenInput: function() {
+                return {
+                    phone: celInput.dataset.name
+                };
+            }
+        });
+
+        celInput.addEventListener("input", function(e) {
+            if (intl.isValidNumber()) {
+                this.setCustomValidity("");
+                this.classList.remove("is-invalid");
+            }
+            else {
+                this.setCustomValidity("El número de celular no es válido.");
+                this.classList.add("is-invalid");
+            }
+        });
+
+        celInput.dispatchEvent(new Event("input", { bubbles: true }));
+    }
+
+    $(".iti__search-input").addClass("form-control");
+    $("<div class='invalid-feedback'>El número de celular no es válido.</div>").insertAfter($(".iti__tel-input"));
+</script>

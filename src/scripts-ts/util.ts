@@ -23,7 +23,12 @@ function guardarCookiesInputs(inputs: HTMLCollectionOf<HTMLInputElement>) {
         }
 
         input.addEventListener("input", function() {
-            setCookie(this.name, this.value);
+            if (this.name) {
+                setCookie(this.name, this.value);
+            }
+            else if (this.dataset.name) {
+                setCookie(this.dataset.name, this.value);
+            }
         });
     }
 }
@@ -46,7 +51,15 @@ function reestablecerCookiesInputs(inputs: HTMLCollectionOf<HTMLInputElement>) {
             continue;
         }
 
-        let cookieValue = getCookie(input.name);
+        let cookieValue = null;
+
+        if (input.name) {
+            cookieValue = getCookie(input.name);
+        }
+        else if (input.dataset.name) {
+            cookieValue = getCookie(input.dataset.name);
+        }
+
         if (cookieValue) {
             input.value = cookieValue;
             input.dispatchEvent(new Event("input", { bubbles: true }));
@@ -98,7 +111,7 @@ function validarEdades(edadInputs: HTMLCollectionOf<HTMLInputElement>) {
     for (let i = 0; i < edadInputs.length; i++) {
         edadInputs.item(i)!.addEventListener("input", function() {
             this.value = this.value.replace(/[^\d]/gi, "");
-        
+
             if (this.value.length != 0) {
                 try {
                     let num = parseInt(this.value);

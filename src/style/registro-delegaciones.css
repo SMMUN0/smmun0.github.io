@@ -112,6 +112,32 @@ div:has(#img-pago) {
     flex-direction: column;
 }
 
+.iti {
+    width: 100%;
+    margin-bottom: 1.5vh;
+}
+
+.iti__search-input {
+    height: 2rem;
+}
+
+.iti__country-container {
+    height: 2.4rem;
+}
+
+.iti__country {
+    margin: 1rem 0;
+}
+
+.iti__selected-country-primary {
+    margin: 0 0.5vw;
+}
+
+.iti__dropdown-content {
+    border-radius: var(--bs-border-radius);
+    padding: 2vh 1.5vw !important;
+}
+
 #img-pago {
     width: 30rem;
     height: auto;

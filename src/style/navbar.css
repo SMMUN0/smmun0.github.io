@@ -2,7 +2,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +20,7 @@ nav {
 }
 
 .navbar-logo {
-    z-index: 2;
+    z-index: 3;
 }
 
 nav figure {
@@ -90,7 +90,7 @@ nav figure {
     }
 
     nav ul {
-        z-index: 3;
+        z-index: 4;
         padding: 0;
     }
 
