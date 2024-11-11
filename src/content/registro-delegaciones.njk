@@ -141,10 +141,18 @@ nav_color_mobile: "#6f75d5cf"
                 <div class="invalid-feedback">La edad no es válida.</div>
             </div>
 
-            <div>
-                <label for="celular_{{ i }}" class="form-label">Número de celular <span style="color: red;">*</span></label>
-                <input class="form-control input-celular" required autocomplete="off" name="celular_{{ i }}" placeholder="999 123 4567" type="tel" maxlength="30">
-                <div class="invalid-feedback">Debes llenar este campo.</div>
+            <label for="celular_{{ i }}" class="form-label">Número de celular <span style="color: red;">*</span></label>
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <select autocomplete="off" data-width="100%" class="selectpicker select-codigo-pais" required name="codigo_pais_{{ i }}">
+                        <option selected disabled value="">Selecciona una opción</option>
+                    </select>
+                    <div class="invalid-feedback">Debes llenar este campo.</div>
+                </div>
+                <div class="col-md-9">
+                    <input class="form-control input-celular" required autocomplete="off" name="celular_{{ i }}" placeholder="999 123 4567" type="tel" maxlength="30">
+                    <div class="invalid-feedback">Debes llenar este campo.</div>
+                </div>
             </div>
 
             <div>
