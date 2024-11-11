@@ -70,7 +70,7 @@ modalidadSelect.addEventListener("change", function() {
 
         // Requerir todos los campos de codelegación
         for (let i = 0; i < datosPersonalesCodelegacionInputs.length; i++) {
-            if (datosPersonalesCodelegacionInputs.item(i)!.name != "info_extra_1") {
+            if (datosPersonalesCodelegacionInputs.item(i)!.name != "info_extra_1" && !datosPersonalesCodelegacionInputs.item(i)!.classList.contains("iti__search-input")) {
                 datosPersonalesCodelegacionInputs.item(i)!.required = true;
             }
         }
