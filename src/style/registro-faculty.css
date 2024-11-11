@@ -221,3 +221,8 @@ form input {
 #aceptar-reglamento {
     margin-top: 1vh;
 }
+
+.accordion-button:not(.collapsed), .accordion-button.collapsed {
+    color: #fffdfd;
+    background-color: #6f75d5cf;
+}
