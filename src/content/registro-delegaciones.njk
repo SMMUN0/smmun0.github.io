@@ -416,13 +416,14 @@ nav_color_mobile: "#6f75d5cf"
                     <option value="Preparatoria">Preparatoria</option>
                     <option value="Universidad">Universidad</option>
                     <option value="Egresado">Egresado</option>
+                    <option value="No estudio">No estudio</option>
                 </select>
                 <div class="invalid-feedback">Debes seleccionar una opción.</div>
             </div>
 
             <div>
-                <label for="escuela_{{ i }}" class="form-label">Nombre completo de tu escuela de procedencia (en caso de ser egresado, de donde te graduaste) <span style="color: red;">*</span></label>
-                <input class="form-control" required autocomplete="off" name="escuela_{{ i }}" placeholder="Ejemplo: Facultad de Derecho UADY" type="text" maxlength="150">
+                <label for="escuela_{{ i }}" id="label-escuela-{{ i }}" class="form-label">Nombre completo de tu escuela de procedencia (en caso de ser egresado, de donde te graduaste) <span style="color: red;">*</span></label>
+                <input class="form-control" required autocomplete="off" name="escuela_{{ i }}" id="input-escuela-{{ i }}" placeholder="Ejemplo: Facultad de Derecho UADY" type="text" maxlength="150">
                 <div class="invalid-feedback">Debes llenar este campo.</div>
             </div>
 

@@ -128,6 +128,25 @@ modalidadSelect.addEventListener("change", function() {
     comiteSelects.selectpicker("refresh");
 });
 
+// Manejar escolaridad
+for (let i = 0; i < 2; i++) {
+    let escuelaInput = document.getElementById(`input-escuela-${i}`) as HTMLInputElement;
+    let escuelaLabel = document.getElementById(`label-escuela-${i}`) as HTMLLabelElement;
+    (document.getElementById(`select-escolaridad-${i}`) as HTMLSelectElement).addEventListener("change", function() {
+        if (this.value == "No estudio") {
+            escuelaInput.required = false;
+            escuelaInput.style.display = "none";
+            escuelaInput.value = "";
+            escuelaLabel.style.display = "none";
+        }
+        else {
+            escuelaInput.required = true;
+            escuelaInput.style.display = "initial";
+            escuelaLabel.style.display = "initial";
+        }
+    });
+}
+
 let previousComite0 = 0;
 let comite0Topicos = document.getElementById("comite-0-topicos") as HTMLDivElement;
 let comite0PaisSelects = $("select.select-comite-0-pais") as JQuery<HTMLSelectElement>;
