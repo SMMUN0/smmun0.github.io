@@ -70,7 +70,9 @@ modalidadSelect.addEventListener("change", function() {
 
         // Requerir todos los campos de codelegación
         for (let i = 0; i < datosPersonalesCodelegacionInputs.length; i++) {
-            if (datosPersonalesCodelegacionInputs.item(i)!.name != "info_extra_1" && !datosPersonalesCodelegacionInputs.item(i)!.classList.contains("iti__search-input")) {
+            if (datosPersonalesCodelegacionInputs.item(i)!.name != "info_extra_1"
+                && !datosPersonalesCodelegacionInputs.item(i)!.classList.contains("iti__search-input")
+                && !(datosPersonalesCodelegacionInputs.item(i)!.name == "input-escuela-1" && (document.getElementById("select-escolaridad-1") as HTMLSelectElement).value == "No estudio")) {
                 datosPersonalesCodelegacionInputs.item(i)!.required = true;
             }
         }
@@ -139,7 +141,7 @@ for (let i = 0; i < 2; i++) {
             escuelaInput.value = "";
             escuelaLabel.style.display = "none";
         }
-        else {
+        else if (i == 0 || modalidadSelect.value == "si") {
             escuelaInput.required = true;
             escuelaInput.style.display = "initial";
             escuelaLabel.style.display = "initial";
