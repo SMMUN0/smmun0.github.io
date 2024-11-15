@@ -6,6 +6,7 @@ let delegacionOficialSelect = document.getElementById("select-delegacion-oficial
 let imgPago = document.getElementById("img-pago") as HTMLImageElement;
 let costoInscripcion = document.getElementById("costo-inscripcion") as HTMLParagraphElement;
 let modalidadSelect = document.getElementById("select-modalidad") as HTMLSelectElement;
+let notaDelegacionOficial = document.getElementById("delegacion-oficial-nota") as HTMLParagraphElement;
 
 delegacionOficialSelect.addEventListener("change", function() {
     if (this.value == "si") {
@@ -14,11 +15,14 @@ delegacionOficialSelect.addEventListener("change", function() {
         responsableDelegacionOficialInput.required = true;
         responsableDelegacionOficialInput.style.display = "initial";
 
+        // Mostrar nota para delegación oficial
+        notaDelegacionOficial.style.display = "initial";
+
         // Quitar imagen de pago
         imgPago.style.display = "none";
 
         // Poner mensaje en vez de costo
-        costoInscripcion.innerHTML = `<strong>Delegación oficial:</strong> como comprobante de pago, solamente se aceptará la imagen que se compartió a su Faculty después de su inscripción. Si no la tiene aún, por favor <a href="https://wa.me/529991975309?text=Hola%20%F0%9F%98%81,%20mi%20*nombre*%20es:%0A%0A*Tengo%20dudas%20sobre:*%0A%5B%5D%20%F0%9F%92%BC%20Modalidad%20de%20participaci%C3%B3n%0A%5B%5D%20%F0%9F%A4%9D%20Delegaci%C3%B3n%20oficial%0A%5B%5D%20%F0%9F%91%A4%20Datos%20personales%0A%5B%5D%20%F0%9F%8C%8E%20Comit%C3%A9s%20y/o%20pa%C3%ADses%0A%5B%5D%20%F0%9F%92%B3%20Proceso%20de%20pago%0A" target="_blank" rel="noopener noreferrer">contáctanos</a>.`
+        costoInscripcion.innerHTML = `<strong>Delegación oficial:</strong> como comprobante de pago, solamente se aceptará la imagen que se compartió a su Faculty después de su inscripción. Si no la tiene aún, por favor <a href="https://wa.me/529991975309?text=Hola%20%F0%9F%98%81,%20mi%20*nombre*%20es:%0A%0A*Tengo%20dudas%20sobre:*%0A%5B%5D%20%F0%9F%92%BC%20Modalidad%20de%20participaci%C3%B3n%0A%5B%5D%20%F0%9F%A4%9D%20Delegaci%C3%B3n%20oficial%0A%5B%5D%20%F0%9F%91%A4%20Datos%20personales%0A%5B%5D%20%F0%9F%8C%8E%20Comit%C3%A9s%20y/o%20pa%C3%ADses%0A%5B%5D%20%F0%9F%92%B3%20Proceso%20de%20pago%0A" target="_blank" rel="noopener noreferrer">contáctanos</a>.`;
     }
     else {
         responsableDelegacionOficialInput.style.display = "none";
@@ -27,6 +31,9 @@ delegacionOficialSelect.addEventListener("change", function() {
         delegacionOficialInput.style.display = "none";
         delegacionOficialInput.required = false;
         delegacionOficialInput.value = "";
+
+        // Ocultar nota para delegación oficial
+        notaDelegacionOficial.style.display = "none";
 
         // Mostrar imagen de pago
         imgPago.style.display = "initial";
