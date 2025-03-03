@@ -89,13 +89,11 @@ modalidadSelect.addEventListener("change", function() {
         }
 
         // Deshabilitar CRC, NOBEL, CIJ (solo permiten delegación individual)
-        //$(comiteSelects).find("option[value='CRC'], option[value='NOBEL'], option[value='CIJ']").prop("disabled", true);
-        $(comiteSelects).find("option[value='CRC']").prop("disabled", true);
+        $(comiteSelects).find("option[value='CRC'], option[value='NOBEL'], option[value='CIJ']").prop("disabled", true);
 
         // Deseleccionar comité si está entre los deshabilitados
         comiteSelects.each(function() {
-            // if (["CRC", "NOBEL", "CIJ"].includes(this.value)) {
-            if (["CRC"].includes(this.value)) {
+            if (["CRC", "NOBEL", "CIJ"].includes(this.value)) {
                 this.selectedIndex = 0;
                 this.dispatchEvent(new Event("change", { bubbles: true }));
             }
@@ -127,8 +125,7 @@ modalidadSelect.addEventListener("change", function() {
         }
 
         // Re-habilitar CRC, NOBEL, CIJ
-        //$(comiteSelects).find("option[value='CRC'], option[value='NOBEL'], option[value='CIJ']").prop("disabled", false);
-        $(comiteSelects).find("option[value='CRC']").prop("disabled", false);
+        $(comiteSelects).find("option[value='CRC'], option[value='NOBEL'], option[value='CIJ']").prop("disabled", false);
 
         // Poner el costo de inscripción para delegación
         if (delegacionOficialSelect.value != "si") {
