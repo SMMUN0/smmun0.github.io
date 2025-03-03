@@ -1,3 +1,8 @@
+// Toast de contacto en WhatsApp
+bootstrap.Toast.getOrCreateInstance(document.getElementById("toast-whatsapp") as HTMLDivElement).show();
+
+/*
+
 {
 // Mostrar input de delegación oficial
 let delegacionOficialInput = document.getElementById("input-nombre-delegacion-oficial") as HTMLInputElement;
@@ -531,3 +536,5 @@ let observador = new IntersectionObserver(function(entries: IntersectionObserver
 
 observador.observe(document.getElementById("titulo-registro") as HTMLElement);
 }
+
+*/
