@@ -132,8 +132,12 @@
     {% else %}
         <!-- Copyright footer -->
         <footer id="normal-footer">
-            &copy; 2024 SMMUN
+            &copy; 2016 - <span id="footer-year"></span> SMMUN
         </footer>
+
+        <script>
+            document.getElementById("footer-year").innerHTML = new Date().getFullYear();
+        </script>
     {% endif %}
 
     <!-- Scripts -->
