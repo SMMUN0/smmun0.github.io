@@ -3,7 +3,7 @@
         position: fixed;
         top: 56%;
         transform: translateY(-56%);
-        right: 8vw;
+        right: 3.5vw;
         z-index: 5;
         display: flex;
         flex-direction: column;
@@ -19,7 +19,7 @@
     }
 }
 
-#titulo-carta {
+#titulo-carta, #titulo-manuales {
     background-color: #042654;
     padding: 3.5vh 0 2vh 0;
     color: #fffdfd;
@@ -27,10 +27,49 @@
     font-size: 2.5rem;
 }
 
-#titulo-carta h1 {
+#titulo-manuales {
+    background-color: #95b897;
+}
+
+#titulo-carta h1, #titulo-manuales h1 {
     margin: 0;
     font-weight: normal;
     padding: 0.5vh 9vw;
+}
+
+#comites-manuales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 0 9vw;
+}
+
+#comites-manuales div {
+    flex: 40%;
+}
+
+#comites-manuales a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #3e4176;
+}
+
+#comites-manuales figure {
+    margin: 0;
+}
+
+#comites-manuales img {
+    height: 8rem;
+    width: auto;
+}
+
+#comites-manuales span {
+    font-family: "Glacial Indifference Bold";
+    font-size: 1.2rem;
+    color: #3e4176;
+    margin: 0 2vw;
 }
 
 #texto-carta {
@@ -39,6 +78,12 @@
     color: #000000;
     padding: 0 20vw 0 9vw;
     text-align: justify;
+}
+
+@media screen and (max-width: 820px) {
+    #texto-carta {
+        padding: 0 9vw;
+    }
 }
 
 #texto-carta strong {

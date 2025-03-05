@@ -6,6 +6,7 @@
         right: 1vw;
         display: flex;
         flex-direction: column;
+        z-index: 9;
     }
 
     .dot {

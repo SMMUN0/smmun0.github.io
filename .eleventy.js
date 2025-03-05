@@ -152,6 +152,21 @@ module.exports = function (eleventyConfig) {
         </div>`;
     });
 
+    // Committees shortcode for recursos
+    eleventyConfig.addShortcode("manual_comite", function(nombre, siglas) {
+        return `<div>
+            <a target="_blank" href="/manuales/MANUAL%20${siglas}.pdf">
+                <figure>
+                    <img src="/assets/img/logos/${siglas.toLowerCase()}.png" width="1024" height="1024" alt="${siglas}">
+                </figure>
+
+                <span>
+                    ${nombre}
+                </span>
+            </a>
+        </div>`;
+    });
+
     return {
         dir: {
             input: "src",
