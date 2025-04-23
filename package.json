@@ -1,0 +1,40 @@
+{
+    "name": "smmun0.github.io",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite dev",
+        "build": "vite build",
+        "preview": "vite preview",
+        "prepare": "svelte-kit sync || echo ''",
+        "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+        "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+        "postbuild": "npx svelte-sitemap --domain https://smmun.com -c monthly -r -i 'registro/confirmacion' -i 'registro/error'"
+    },
+    "devDependencies": {
+        "@fortawesome/fontawesome-free": "^6.7.2",
+        "@sveltejs/adapter-static": "^3.0.8",
+        "@sveltejs/enhanced-img": "^0.4.4",
+        "@sveltejs/kit": "^2.16.0",
+        "@sveltejs/vite-plugin-svelte": "^5.0.0",
+        "@types/bootstrap": "^5.2.10",
+        "@types/html-minifier-terser": "^7.0.2",
+        "@types/jquery": "^3.5.32",
+        "html-minifier-terser": "^7.2.0",
+        "svelte": "^5.0.0",
+        "svelte-check": "^4.0.0",
+        "svelte-sitemap": "^2.7.0",
+        "typescript": "^5.0.0",
+        "vite": "^6.2.5"
+    },
+    "dependencies": {
+        "@behold/svelte": "github:brunoanc/behold-svelte",
+        "@popperjs/core": "^2.11.8",
+        "bootstrap": "^5.3.5",
+        "bootstrap-select": "github:brunoanc/bootstrap-select#dev",
+        "country-flag-emoji-polyfill": "^0.1.8",
+        "intl-tel-input": "^25.3.1",
+        "jquery": "^3.7.1"
+    }
+}

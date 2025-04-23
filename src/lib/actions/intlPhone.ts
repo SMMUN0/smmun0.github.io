@@ -1,0 +1,58 @@
+import type { Action } from "svelte/action";
+import intlTelInput from "intl-tel-input";
+import es from "intl-tel-input/i18n/es";
+
+// Acción para validar celulares con intl
+export const intlPhone: Action<HTMLInputElement> = (node, name) => {
+    // Inicializar intl
+    const intl = intlTelInput(node, {
+        loadUtils: () => import("intl-tel-input/utils"),
+        initialCountry: "mx",
+        i18n: es,
+        hiddenInput: function() {
+            return {
+                phone: node.dataset.name!
+            };
+        }
+    });
+
+    // Función para validar
+    function validarCelular() {
+        node.value = node.value.replace(/[^\d\(\)\s\+\-]/gi, "");
+
+        if (intl.isValidNumber()) {
+            node.setCustomValidity("");
+            node.classList.remove("is-invalid");
+        }
+        else if (node.value) {
+            node.setCustomValidity("El número de celular no es válido.");
+            node.classList.add("is-invalid");
+        }
+    };
+
+    // Agregar como event handler y validar de una vez
+    node.addEventListener("input", validarCelular);
+    validarCelular();
+
+    // Agregar estilos CSS con form-control al search input
+    for (const el of node.parentElement!.getElementsByClassName("iti__search-input")) {
+        el.classList.add("form-control");
+    }
+
+    // Agregar feedback cuando el celular no es válido
+    const invalidFeedbackCelular = document.createElement("div");
+    invalidFeedbackCelular.innerHTML = "El número de celular no es válido.";
+    invalidFeedbackCelular.classList.add("invalid-feedback");
+
+    for (const el of node.parentElement!.getElementsByClassName("iti__tel-input")) {
+        el.parentNode?.insertBefore(invalidFeedbackCelular, el.nextSibling);
+    }
+
+    // Destruir
+    return {
+        destroy() {
+            node.removeEventListener("input", validarCelular);
+            intl.destroy();
+        }
+    };
+};
