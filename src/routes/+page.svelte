@@ -135,19 +135,16 @@
             }
         }
     </script>
-
-    <!-- Workaround para aplicar estilos especiales a <body> -->
-    <style>
-        body {
-            margin-top: 0 !important;
-            background-color: #8e98ac !important;
-            background-image: url("/assets/img/backgrounds/blue_bg.webp") !important;
-            height: auto;
-        }
-    </style>
 </svelte:head>
 
 <style>
+    :global(body:has(main.set-index-style)) {
+        margin-top: 0 !important;
+        background-color: #8e98ac !important;
+        background-image: url("/assets/img/backgrounds/blue_bg.webp") !important;
+        height: auto;
+    }
+
     section {
         width: 100%;
         display: flex;

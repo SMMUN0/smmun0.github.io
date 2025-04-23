@@ -78,7 +78,7 @@
     <ProgressDots></ProgressDots>
 {/if}
 
-<main>
+<main class:set-index-style={page.url.pathname == "/"}>
     {@render children()}
 </main>
 
