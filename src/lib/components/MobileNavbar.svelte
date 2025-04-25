@@ -145,7 +145,7 @@
 </style>
 
 <nav class={navClass}>
-    <a href="/">
+    <a href="/" onclick={() => menuOpen = false}>
         <figure class="navbar-logo">
             {#if page.url.pathname == "/"}
                 <enhanced:img src="/static/assets/img/logos/smmun_dorado.webp" alt="Logo del SMMUN." />
