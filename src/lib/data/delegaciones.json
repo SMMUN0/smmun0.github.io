@@ -166,12 +166,7 @@
             "nombre": "República de Colombia",
             "abreviacion": "colombia",
             "emoji": "🇨🇴"
-        },
-        {
-            "nombre": "República de Corea",
-            "abreviacion": "corea del sur",
-            "emoji": "🇰🇷"
-        },
+        }
         {
             "nombre": "República de Costa Rica",
             "abreviacion": "costa rica",
@@ -203,29 +198,9 @@
             "emoji": "🇺🇸"
         },
         {
-            "nombre": "República Francesa",
-            "abreviacion": "francia",
-            "emoji": "🇫🇷"
-        },
-        {
-            "nombre": "Granada",
-            "abreviacion": "granada",
-            "emoji": "🇬🇩"
-        },
-        {
             "nombre": "República de Guatemala",
             "abreviacion": "guatemala",
             "emoji": "🇬🇹"
-        },
-        {
-            "nombre": "República Cooperativa de Guyana",
-            "abreviacion": "guyana",
-            "emoji": "🇬🇾"
-        },
-        {
-            "nombre": "República de Haití",
-            "abreviacion": "haiti",
-            "emoji": "🇭🇹"
         },
         {
             "nombre": "República de Honduras",
@@ -233,19 +208,9 @@
             "emoji": "🇭🇳"
         },
         {
-            "nombre": "República Italiana",
-            "abreviacion": "italia",
-            "emoji": "🇮🇹"
-        },
-        {
             "nombre": "Jamaica",
             "abreviacion": "jamaica",
             "emoji": "🇯🇲"
-        },
-        {
-            "nombre": "Japón",
-            "abreviacion": "japon",
-            "emoji": "🇯🇵"
         },
         {
             "nombre": "Estados Unidos Mexicanos",
@@ -258,19 +223,9 @@
             "emoji": "🇳🇮"
         },
         {
-            "nombre": "Reino de Noruega",
-            "abreviacion": "noruega",
-            "emoji": "🇳🇴"
-        },
-        {
             "nombre": "Reino de los Países Bajos",
             "abreviacion": "paises bajos",
             "emoji": "🇳🇱"
-        },
-        {
-            "nombre": "República de Panamá",
-            "abreviacion": "panama",
-            "emoji": "🇵🇦"
         },
         {
             "nombre": "República del Paraguay",
@@ -286,11 +241,6 @@
             "nombre": "República Portuguesa",
             "abreviacion": "portugal",
             "emoji": "🇵🇹"
-        },
-        {
-            "nombre": "Reino Unido de Gran Bretaña e Irlanda del Norte",
-            "abreviacion": "reino unido",
-            "emoji": "🇬🇧"
         },
         {
             "nombre": "República Dominicana",
