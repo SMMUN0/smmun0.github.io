@@ -6,5 +6,10 @@ export default defineConfig({
     plugins: [
         enhancedImages(),
         sveltekit()
-    ]
+    ],
+    server: {
+        allowedHosts: [
+            "abcf50ea61cb.ngrok-free.app"
+        ]
+    }
 });

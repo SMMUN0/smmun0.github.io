@@ -1,7 +1,3 @@
-<!--<script lang="ts">
-    let index = $props();
-</script>-->
-
 <script lang="ts">
     import { onMount } from "svelte";
     import { intlPhone } from "$lib/actions/intlPhone";
@@ -56,6 +52,9 @@
         // Reestablecer los valores de los inputs en las cookies
         resetValuesFromCookies(delegacionFieldSet.elements);
         loadedCookies = true;
+
+        // Refresh selects
+        window.$(".selectpicker").selectpicker("refresh");
     });
 </script>
 
@@ -65,26 +64,19 @@
     }
 
     .titulo {
-        background-color: #6f75d5cf;
+        background-color: #ea6880;
         padding: 2vh 0 2vh 0;
-        color: #fffdfd;
-        font-family: "Glacial Indifference Regular";
+        color: #f0f0f0;
+        font-family: "Catchy Mager";
         margin-bottom: 2vh;
     }
 
     .titulo h2 {
         margin: 0;
-        font-weight: normal;
         padding: 0.5vh 3vw;
         font-size: 2.3rem;
-    }
-
-    .oval {
-        max-width: fit-content;
-        border: solid #fffdfd;
-        border-radius: 120px / 70px;
         text-align: center;
-        margin: auto;
+        font-weight: bold;
     }
 
     .mb-3 {
@@ -94,41 +86,45 @@
     input {
         margin-bottom: 1.5vh;
     }
+
+    label {
+        color: #44372b;
+    }
 </style>
 
 <fieldset bind:this={delegacionFieldSet}>
     <article class="titulo">
-        <div class="oval"><h2>Datos de la persona #{index + 1}</h2></div>
+        <h2>Datos de la persona #{index + 1}</h2>
     </article>
     <div class="mb-3">
         <label class="form-label" for="nombre_d{index}">Nombre completo <span style="color: red">*</span></label>
         <div class="g-3 row">
             <div class="col">
-                <input oninput={onChangeSaveCookie} autocomplete="off" class="form-control" maxlength="150" name="nombre_d{index}" placeholder="Nombre(s)" required>
+                <input oninput={onChangeSaveCookie} autocomplete="off" class="form-control focus-ring focus-ring-danger focus-ring focus-ring-danger" maxlength="150" name="nombre_d{index}" placeholder="Nombre(s)" required>
                 <div class="invalid-feedback">Debes llenar este campo.</div>
             </div>
 
             <div class="col">
-                <input oninput={onChangeSaveCookie} autocomplete="off" class="form-control" maxlength="150" name="apellido_d{index}" placeholder="Apellidos" required>
+                <input oninput={onChangeSaveCookie} autocomplete="off" class="form-control focus-ring focus-ring-danger focus-ring focus-ring-danger" maxlength="150" name="apellido_d{index}" placeholder="Apellidos" required>
                 <div class="invalid-feedback">Debes llenar este campo.</div>
             </div>
         </div>
 
         <div>
             <label class="form-label" for="edad_d{index}">Edad <span style="color: red">*</span></label>
-            <input oninput={(ev) => onChangeEdad(ev)} bind:value={edadValue} autocomplete="off" class="form-control input-edad" maxlength="2" name="edad_d{index}" placeholder="11-26 años" required inputmode="numeric" class:is-invalid={!validateNumInput(edadValue, 11, 26)}>
+            <input oninput={(ev) => onChangeEdad(ev)} bind:value={edadValue} autocomplete="off" class="form-control focus-ring focus-ring-danger focus-ring focus-ring-danger input-edad" maxlength="2" name="edad_d{index}" placeholder="11-26 años" required inputmode="numeric" class:is-invalid={!validateNumInput(edadValue, 11, 26)}>
             <div class="invalid-feedback">La edad no es válida.</div>
         </div>
 
         <div>
             <label class="form-label" for="celular_d{index}">Número de celular <span style="color: red">*</span></label>
-            <input oninput={onChangeSaveCookie} use:intlPhone autocomplete="off" class="form-control" maxlength="30" name="celular_d{index}" placeholder="999 123 4567" required type="tel">
+            <input oninput={onChangeSaveCookie} use:intlPhone autocomplete="off" class="form-control focus-ring focus-ring-danger focus-ring focus-ring-danger" maxlength="30" name="celular_d{index}" placeholder="999 123 4567" required type="tel">
             <div class="invalid-feedback">Debes llenar este campo.</div>
         </div>
 
         <div>
             <label class="form-label" for="correo_d{index}">Correo electrónico <span style="color: red">*</span></label>
-            <input oninput={(ev) => onChangeCorreo(ev)} autocomplete="off" class="form-control input-correo" maxlength="150" name="correo_d{index}" placeholder="ejemplo@dominio.com" required type="email" class:is-invalid={!correoValidity}>
+            <input oninput={(ev) => onChangeCorreo(ev)} autocomplete="off" class="form-control focus-ring focus-ring-danger focus-ring focus-ring-danger input-correo" maxlength="150" name="correo_d{index}" placeholder="ejemplo@dominio.com" required type="email" class:is-invalid={!correoValidity}>
             <div class="invalid-feedback">El correo no es válido.</div>
         </div>
 
@@ -150,7 +146,7 @@
             </div>
 
             <div class="col">
-                <input oninput={onChangeSaveCookie} autocomplete="off" class="form-control" maxlength="150" name="ciudad_estado_d{index}" placeholder="Ciudad y estado" required>
+                <input oninput={onChangeSaveCookie} autocomplete="off" class="form-control focus-ring focus-ring-danger focus-ring focus-ring-danger" maxlength="150" name="ciudad_estado_d{index}" placeholder="Ciudad y estado" required>
                 <div class="invalid-feedback">Debes llenar este campo.</div>
             </div>
         </div>
@@ -170,7 +166,7 @@
 
         {#if escolaridadValue != "No estudio" || !loadedCookies} <!-- No mostrar si se eligió "no estudio" -->
             <div>
-                <label class="form-label" for="escuela_d{index}">Nombre completo de su escuela de procedencia (en caso de ser egresado, de donde se graduó) <span style="color: red">*</span></label> <input oninput={onChangeSaveCookie} autocomplete="off" class="form-control" maxlength="150" name="escuela_d{index}" placeholder="Ejemplo: Facultad de Derecho UADY" required>
+                <label class="form-label" for="escuela_d{index}">Nombre completo de su escuela de procedencia (en caso de ser egresado, de donde se graduó) <span style="color: red">*</span></label> <input oninput={onChangeSaveCookie} autocomplete="off" class="form-control focus-ring focus-ring-danger focus-ring focus-ring-danger" maxlength="150" name="escuela_d{index}" placeholder="Ejemplo: Escuela Modelo" required>
                 <div class="invalid-feedback">Debes llenar este campo.</div>
             </div>
         {/if}

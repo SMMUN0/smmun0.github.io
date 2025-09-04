@@ -19,8 +19,9 @@ export const intlPhone: Action<HTMLInputElement> = (node, name) => {
     // Función para validar
     function validarCelular() {
         node.value = node.value.replace(/[^\d\(\)\s\+\-]/gi, "");
+        let validity = intl.isValidNumber();
 
-        if (intl.isValidNumber()) {
+        if (validity === null || validity) {
             node.setCustomValidity("");
             node.classList.remove("is-invalid");
         }
@@ -34,9 +35,9 @@ export const intlPhone: Action<HTMLInputElement> = (node, name) => {
     node.addEventListener("input", validarCelular);
     validarCelular();
 
-    // Agregar estilos CSS con form-control al search input
+    // Agregar estilos CSS con form-control focus-ring focus-ring-danger al search input
     for (const el of node.parentElement!.getElementsByClassName("iti__search-input")) {
-        el.classList.add("form-control");
+        el.classList.add("form-control", "focus-ring", "focus-ring-danger");
     }
 
     // Agregar feedback cuando el celular no es válido

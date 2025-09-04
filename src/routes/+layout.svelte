@@ -2,11 +2,7 @@
     import { page } from "$app/state";
     import { onMount } from "svelte";
     import "@fortawesome/fontawesome-free/css/all.min.css";
-    import DesktopNavbar from "$lib/components/DesktopNavbar.svelte";
-    import MobileNavbar from "$lib/components/MobileNavbar.svelte";
     import TituloRegistro from "$lib/components/TituloRegistro.svelte";
-    import ProgressDots from "$lib/components/ProgressDots.svelte";
-    import Footer from "$lib/components/Footer.svelte";
     import { registroTitleNav } from "$lib/stores/registro-title-nav";
 
     let { children } = $props();
@@ -24,7 +20,7 @@
 <svelte:head>
     <!-- Metadatos -->
     <title>{page.data.title}</title>
-    <link rel="canonical" href="https://smmun.com{page.url.pathname == "/" ? "" : page.url.pathname}">
+    <link rel="canonical" href="https://rlmmun.smmun.com{page.url.pathname == "/" ? "" : page.url.pathname}">
     <meta name="description" content={page.data.description}>
 
     <meta property="og:title" content={page.data.title}>
@@ -36,18 +32,6 @@
         overflow-x: hidden;
     }
 
-    @media (min-width: 820px) {
-        #mobile-nav {
-            display: none;
-        }
-    }
-
-    @media (max-width: 820px) {
-        #desktop-nav {
-            display: none;
-        }
-    }
-
     header {
         position: fixed;
         top: 0;
@@ -57,29 +41,27 @@
         flex-direction: column;
         justify-content: center;
     }
+
+    #normal-footer {
+        font-family: "Catchy Mager";
+        font-weight: bold;
+        font-size: 0.6rem;
+        color: #44372b;
+        text-align: center;
+        margin: 2vh 0 1vh 0;
+    }
 </style>
 
-{#if !page.url.pathname.includes("/registro/") || !$registroTitleNav}
-
-    <header id="desktop-nav">
-        <DesktopNavbar></DesktopNavbar>
-    </header>
-
-    <header id="mobile-nav">
-        <MobileNavbar color={page.data.mobileNavColor}></MobileNavbar>
-    </header>
-{:else}
+{#if page.url.pathname.includes("/registro/") && $registroTitleNav}
     <header>
-        <TituloRegistro text={page.url.pathname == "/registro/delegaciones" ? "Registro de delegaciones" : "Registro de faculty"}></TituloRegistro>
+        <TituloRegistro text={page.url.pathname == "/registro/delegaciones/" ? "Registro de delegaciones" : "Registro de faculty"}></TituloRegistro>
     </header>
-{/if}
-
-{#if displayDots}
-    <ProgressDots></ProgressDots>
 {/if}
 
 <main class:set-index-style={page.url.pathname == "/"}>
     {@render children()}
 </main>
 
-<Footer full={page.url.pathname == "/"}></Footer>
+<footer id="normal-footer">
+    &copy; 2016 - {new Date().getFullYear()} SMMUN
+</footer>

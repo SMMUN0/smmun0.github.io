@@ -17,11 +17,11 @@
         </mj-attributes>
     </mj-head>
 
-    <mj-body background-color="#eee">
+    <mj-body background-color="#fce8ec">
         <mj-hero
             background-width="600px"
-            background-url="https://smmun.com/assets/img/images/header.png"
-            background-color="#8d7abb"
+            background-url="https://rlmmun.smmun.com/assets/img/images/header.png"
+            background-color="#ea6880"
             padding="12% 0"
         >
         </mj-hero>
@@ -31,8 +31,6 @@
                 <mj-text align="left">
                     <h1>¡Muchas gracias!</h1>
                     Hemos recibido la inscripción. Le haremos llegar cuanto antes la confirmación de los datos de la Delegación Oficial por medio de correo electrónico, así como la imagen que las delegaciones necesitarán para realizar su registro.
-                    <br><br>
-                    ¡Cada vez más cerca de la Décima Edición del SMMUN: Legado de Líderes!
                     <br><br>
                     Gracias por su confianza.
                 </mj-text>
@@ -275,9 +273,9 @@
         <mj-section background-color="#fff">
             <mj-column>
                 <mj-button
-                    background-color="#8d7abb"
+                    background-color="#ea6880"
                     color="white"
-                    href="https://wa.me/529991975309"
+                    href="https://wa.me/529999033025"
                 >
                     ¿Dudas? ¡Contáctanos!
                 </mj-button>
@@ -287,18 +285,9 @@
         <mj-section>
             <mj-column>
                 <mj-text line-height="16px">
-                    Modelo de Naciones Unidas del Sureste Mexicano (SMMUN®)
-                    2025
+                    Modelo de Naciones Unidas de la Secundaria Ricardo López Méndez (RLM-MUN) 2025
                     <br />
-                    Instagram:
-                    <a href="https://www.instagram.com/smmunoficial/"
-                        >@smmunoficial</a
-                    >
-                    <br />
-                    Facebook:
-                    <a href="https://www.facebook.com/smmunoficial">SMMUN</a>
-                    <br />
-                    Web: <a href="https://smmun.com">https://smmun.com</a>
+                    <a href="https://rlmmun.smmun.com">https://rlmmun.smmun.com</a>
                 </mj-text>
             </mj-column>
         </mj-section>

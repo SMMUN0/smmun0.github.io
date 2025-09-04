@@ -1,4 +1,0 @@
-Sitemap: https://smmun.com/sitemap.xml
-
-User-agent: *
-Allow: /

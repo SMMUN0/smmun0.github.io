@@ -4,16 +4,15 @@
 
 <style>
     #titulo-registro {
-        background-color: #7872a1;
-        background-image: url("/assets/img/backgrounds/blue_bg_darker.webp");
+        background-color: #ea6880;
         background-repeat: repeat;
         background-size: cover;
         padding: 2vh 0;
-        color: #fffdfd;
-        font-family: "The Seasons Bold";
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5vh;
     }
 
     #titulo-registro {
@@ -24,27 +23,52 @@
         margin: 0;
     }
 
-    #titulo-registro img {
+    #rlm-logo {
+        margin: 0 1vw 0 3vw;
+    }
+
+    #rlm-logo img {
         width: auto;
         height: 9vh;
-        margin-left: 3vw;
     }
 
     #titulo-registro h1 {
+        flex: 1;
+        text-align: center;
+        color: #f0f0f0;
+        font-family: "Catchy Mager";
+        font-weight: bold;
         margin: 1vh 0 0 0;
-        font-weight: normal;
         padding: 0.5vh 1vw;
         font-size: 2.8rem;
+    }
+
+    #smmun-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        margin-right: 3vw;
+    }
+
+    #smmun-logo img {
+        width: auto;
+        height: 10vh;
     }
 </style>
 
 <!-- Título -->
 <article id="titulo-registro">
-    <div class="navbar-logo logo-registro">
+    <div id="rlm-logo" class="navbar-logo">
         <figure>
-            <enhanced:img src="/static/assets/img/logos/smmun_dorado.webp" alt="Logo del SMMUN." />
+            <img src="/assets/img/logos/rlm.svg" alt="Logo del RLM-MUN.">
         </figure>
     </div>
 
-    <h1>{text}</h1>
+    <h1>{text.toUpperCase()}</h1>
+
+    <div id="smmun-logo" class="navbar-logo">
+        <figure>
+            <img src="/assets/img/logos/smmun_blanco.svg" alt="Logo del SMMUN.">
+        </figure>
+    </div>
 </article>
