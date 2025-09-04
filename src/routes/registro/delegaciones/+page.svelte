@@ -369,7 +369,7 @@
 <TituloRegistro text="Registro de delegaciones"></TituloRegistro>
 
 <!-- Forms -->
-<form bind:this={formDelegaciones} method="POST" action="https://rlmmun-inscripciones-endpoint-otqml.ondigitalocean.app/registro/delegaciones" name="registro-delegaciones" enctype="multipart/form-data" class="col g-3" novalidate onsubmit={onSubmitForm}>
+<form bind:this={formDelegaciones} method="POST" action="https://rlmmun-inscripciones-endpoint-otqml.ondigitalocean.app/api/registro/delegaciones" name="registro-delegaciones" enctype="multipart/form-data" class="col g-3" novalidate onsubmit={onSubmitForm}>
     <!-- Selección de delegación oficial -->3
     <article class="titulo">
         <h2>Delegación oficial</h2>
