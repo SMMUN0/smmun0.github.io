@@ -370,7 +370,7 @@
 
 <!-- Forms -->
 <form bind:this={formDelegaciones} method="POST" action="/api/registro/delegaciones" name="registro-delegaciones" enctype="multipart/form-data" class="col g-3" novalidate onsubmit={onSubmitForm}>
-    <!-- Selección de delegación oficial -->3
+    <!-- Selección de delegación oficial -->
     <article class="titulo">
         <h2>Delegación oficial</h2>
     </article>
