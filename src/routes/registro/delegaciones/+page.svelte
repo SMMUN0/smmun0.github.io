@@ -169,6 +169,7 @@
     // Actualizar selects cuando se cambien datos
     $effect(() => {
         // Dependencias
+        escolaridadValue?.length;
         for (const comite of comiteValues) comite?.length;
         for (const comite of comitePaisValues) for (const pais of comite) pais?.length;
 
