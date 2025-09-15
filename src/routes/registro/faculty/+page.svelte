@@ -280,6 +280,13 @@
 
 <!-- Forms -->
 <form bind:this={formFaculty} method="POST" action="/api/registro/faculty" name="registro-faculty" enctype="multipart/form-data" class="col g-3" novalidate onsubmit={onSubmitForm}>
+    <!-- Descripción -->
+    <div class="mb-3">
+        <p style="text-align: justify;">
+            El RLM-MUN es el <b>Modelo de Naciones Unidas de la Escuela Secundaria Ricardo López Méndez</b>. La segunda edición se llevará a cabo el <b>sábado 4 de octubre de 2025</b>, de <b>8:00 a 17:00 horas</b>, en las instalaciones de la propia secundaria, ubicada en la ciudad de <b>Valladolid, Yucatán</b>. Esta actividad está dirigida a estudiantes de entre 11 y 26 años de edad, provenientes principalmente de la zona oriente del estado, interesados en el debate, la diplomacia y el aprendizaje sobre temas internacionales.
+        </p>
+    </div>
+
     <!-- Información de contacto -->
     <article class="titulo">
         <h2>Información de contacto</h2>
