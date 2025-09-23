@@ -21,18 +21,18 @@
             nombre: "Organización Panamericana de la Salud (OPS)",
             siglas: "OPS"
         },
-        {
+        /*{
             nombre: "Comisión Económica para América Latina y el Caribe (CEPAL)",
             siglas: "CEPAL"
-        },
+        },*/
         {
             nombre: "Organización de los Estados Americanos (OEA)",
             siglas: "OEA"
         },
-        {
+        /*{
             nombre: "Conferencia Regional sobre la Mujer de América Latina y el Caribe (CRM)",
             siglas: "CRM"
-        },
+        },*/
         {
             nombre: "Comisión Nacional de los Derechos Humanos (CNDH)",
             siglas: "CNDH"
