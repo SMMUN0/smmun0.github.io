@@ -1,11 +1,6 @@
 {
     "ops": [
         {
-            "nombre": "República Argentina",
-            "abreviacion": "argentina",
-            "emoji": "🇦🇷"
-        },
-        {
             "nombre": "Barbados",
             "abreviacion": "barbados",
             "emoji": "🇧🇧"
@@ -21,44 +16,9 @@
             "emoji": "🇧🇷"
         },
         {
-            "nombre": "República de Chile",
-            "abreviacion": "chile",
-            "emoji": "🇨🇱"
-        },
-        {
-            "nombre": "República de Colombia",
-            "abreviacion": "colombia",
-            "emoji": "🇨🇴"
-        },
-        {
-            "nombre": "República de Costa Rica",
-            "abreviacion": "costa rica",
-            "emoji": "🇨🇷"
-        },
-        {
-            "nombre": "República de Cuba",
-            "abreviacion": "cuba",
-            "emoji": "🇨🇺"
-        },
-        {
-            "nombre": "República del Ecuador",
-            "abreviacion": "ecuador",
-            "emoji": "🇪🇨"
-        },
-        {
             "nombre": "República de El Salvador",
             "abreviacion": "el salvador",
             "emoji": "🇸🇻"
-        },
-        {
-            "nombre": "Granada",
-            "abreviacion": "granada",
-            "emoji": "🇬🇩"
-        },
-        {
-            "nombre": "República de Guatemala",
-            "abreviacion": "guatemala",
-            "emoji": "🇬🇹"
         },
         {
             "nombre": "República Cooperativa de Guyana",
@@ -81,11 +41,6 @@
             "emoji": "🇯🇲"
         },
         {
-            "nombre": "Estados Unidos Mexicanos",
-            "abreviacion": "mexico",
-            "emoji": "🇲🇽"
-        },
-        {
             "nombre": "República de Nicaragua",
             "abreviacion": "nicaragua",
             "emoji": "🇳🇮"
@@ -99,11 +54,6 @@
             "nombre": "República del Paraguay",
             "abreviacion": "paraguay",
             "emoji": "🇵🇾"
-        },
-        {
-            "nombre": "República del Perú",
-            "abreviacion": "peru",
-            "emoji": "🇵🇪"
         },
         {
             "nombre": "Santa Lucía",
@@ -255,49 +205,9 @@
     ],
     "oea": [
         {
-            "nombre": "República Argentina",
-            "abreviacion": "argentina",
-            "emoji": "🇦🇷"
-        },
-        {
             "nombre": "Belice",
             "abreviacion": "belice",
             "emoji": "🇧🇿"
-        },
-        {
-            "nombre": "Estado Plurinacional de Bolivia",
-            "abreviacion": "bolivia",
-            "emoji": "🇧🇴"
-        },
-        {
-            "nombre": "República Federativa del Brasil",
-            "abreviacion": "brasil",
-            "emoji": "🇧🇷"
-        },
-        {
-            "nombre": "Canadá",
-            "abreviacion": "canada",
-            "emoji": "🇨🇦"
-        },
-        {
-            "nombre": "República de Chile",
-            "abreviacion": "chile",
-            "emoji": "🇨🇱"
-        },
-        {
-            "nombre": "República de Colombia",
-            "abreviacion": "colombia",
-            "emoji": "🇨🇴"
-        },
-        {
-            "nombre": "República de Costa Rica",
-            "abreviacion": "costa rica",
-            "emoji": "🇨🇷"
-        },
-        {
-            "nombre": "República del Ecuador",
-            "abreviacion": "ecuador",
-            "emoji": "🇪🇨"
         },
         {
             "nombre": "República de El Salvador",
@@ -308,11 +218,6 @@
             "nombre": "Estados Unidos de América",
             "abreviacion": "estados unidos",
             "emoji": "🇺🇸"
-        },
-        {
-            "nombre": "República de Guatemala",
-            "abreviacion": "guatemala",
-            "emoji": "🇬🇹"
         },
         {
             "nombre": "República Cooperativa de Guyana",
@@ -328,11 +233,6 @@
             "nombre": "República de Honduras",
             "abreviacion": "honduras",
             "emoji": "🇭🇳"
-        },
-        {
-            "nombre": "Estados Unidos Mexicanos",
-            "abreviacion": "mexico",
-            "emoji": "🇲🇽"
         },
         {
             "nombre": "República de Nicaragua",
@@ -514,11 +414,6 @@
             "emoji": "🕊️"
         },
         {
-            "nombre": "Persona Experta en Perspectiva de Género",
-            "abreviacion": "perspectiva de genero",
-            "emoji": "⚧️"
-        },
-        {
             "nombre": "Persona Experta Jurídica",
             "abreviacion": "juridica",
             "emoji": "⚖️"
@@ -536,46 +431,6 @@
     ],
     "ced": [
         {
-            "nombre": "Especialista Mexicana en Cooperación Internacional y DD. HH.",
-            "abreviacion": "especialista mexicana en cooperacion internacional y derechos humanos dd hh",
-            "emoji": "🇲🇽🕊️"
-        },
-        {
-            "nombre": "Especialista Mexicana en Finanzas y Crimen Organizado",
-            "abreviacion": "especialista mexicana en finanzas y crimen organizado",
-            "emoji": "🇲🇽🕵️"
-        },
-        {
-            "nombre": "Especialista Mexicana en Género y Migración",
-            "abreviacion": "especialista mexicana en genero y migracion",
-            "emoji": "🇲🇽👣"
-        },
-        {
-            "nombre": "Especialista Mexicana en Psicología y Violencia de Género",
-            "abreviacion": "especialista mexicana en psicologia y violencia de genero",
-            "emoji": "🇲🇽🧠"
-        },
-        {
-            "nombre": "Especialista Mexicana en Tecnología y Ciberseguridad",
-            "abreviacion": "especialista mexicana en tecnologia y ciberseguridad",
-            "emoji": "🇲🇽👩‍💻"
-        },
-        {
-            "nombre": "Especialista Colombiana en Cooperación Internacional y DD. HH.",
-            "abreviacion": "especialista colombiana en cooperacion internacional y derechos humanos dd hh",
-            "emoji": "🇨🇴🕊️"
-        },
-        {
-            "nombre": "Especialista Colombiana en Finanzas y Crimen Organizado",
-            "abreviacion": "especialista colombiana en finanzas y crimen organizado",
-            "emoji": "🇨🇴🕵️"
-        },
-        {
-            "nombre": "Especialista Colombiana en Género y Migración",
-            "abreviacion": "especialista colombiana en genero y migracion",
-            "emoji": "🇨🇴👣"
-        },
-        {
             "nombre": "Especialista Colombiana en Psicología y Violencia de Género",
             "abreviacion": "especialista colombiana en psicologia y violencia de genero",
             "emoji": "🇨🇴🧠"
@@ -584,11 +439,6 @@
             "nombre": "Especialista Colombiana en Tecnología y Ciberseguridad",
             "abreviacion": "especialista colombiana en tecnologia y ciberseguridad",
             "emoji": "🇨🇴👩‍💻"
-        },
-        {
-            "nombre": "Especialista Cubana en Cooperación Internacional y DD. HH.",
-            "abreviacion": "especialista cubana en cooperacion internacional y derechos humanos dd hh",
-            "emoji": "🇨🇺🕊️"
         },
         {
             "nombre": "Especialista Cubana en Finanzas y Crimen Organizado",
@@ -601,34 +451,9 @@
             "emoji": "🇨🇺👣"
         },
         {
-            "nombre": "Especialista Cubana en Psicología y Violencia de Género",
-            "abreviacion": "especialista cubana en psicologia y violencia de genero",
-            "emoji": "🇨🇺🧠"
-        },
-        {
             "nombre": "Especialista Cubana en Tecnología y Ciberseguridad",
             "abreviacion": "especialista cubana en tecnologia y ciberseguridad",
             "emoji": "🇨🇺👩‍💻"
-        },
-        {
-            "nombre": "Especialista Guatemalteca en Cooperación Internacional y DD. HH.",
-            "abreviacion": "especialista guatemalteca en cooperacion internacional y derechos humanos dd hh",
-            "emoji": "🇬🇹🕊️"
-        },
-        {
-            "nombre": "Especialista Guatemalteca en Finanzas y Crimen Organizado",
-            "abreviacion": "especialista guatemalteca en finanzas y crimen organizado",
-            "emoji": "🇬🇹🕵️"
-        },
-        {
-            "nombre": "Especialista Guatemalteca en Género y Migración",
-            "abreviacion": "especialista guatemalteca en genero y migracion",
-            "emoji": "🇬🇹👣"
-        },
-        {
-            "nombre": "Especialista Guatemalteca en Psicología y Violencia de Género",
-            "abreviacion": "especialista guatemalteca en psicologia y violencia de genero",
-            "emoji": "🇬🇹🧠"
         },
         {
             "nombre": "Especialista Guatemalteca en Tecnología y Ciberseguridad",
@@ -639,21 +464,6 @@
             "nombre": "Especialista Panameña en Cooperación Internacional y DD. HH.",
             "abreviacion": "especialista panameña en cooperacion internacional y derechos humanos dd hh",
             "emoji": "🇵🇦🕊️"
-        },
-        {
-            "nombre": "Especialista Panameña en Finanzas y Crimen Organizado",
-            "abreviacion": "especialista panameña en finanzas y crimen organizado",
-            "emoji": "🇵🇦🕵️"
-        },
-        {
-            "nombre": "Especialista Panameña en Género y Migración",
-            "abreviacion": "especialista panameña en genero y migracion",
-            "emoji": "🇵🇦👣"
-        },
-        {
-            "nombre": "Especialista Panameña en Psicología y Violencia de Género",
-            "abreviacion": "especialista panameña en psicologia y violencia de genero",
-            "emoji": "🇵🇦🧠"
         },
         {
             "nombre": "Especialista Panameña en Tecnología y Ciberseguridad",
