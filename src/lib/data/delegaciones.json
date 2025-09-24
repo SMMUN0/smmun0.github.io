@@ -1,26 +1,6 @@
 {
     "ops": [
         {
-            "nombre": "Barbados",
-            "abreviacion": "barbados",
-            "emoji": "🇧🇧"
-        },
-        {
-            "nombre": "Estado Plurinacional de Bolivia",
-            "abreviacion": "bolivia",
-            "emoji": "🇧🇴"
-        },
-        {
-            "nombre": "República Federativa de Brasil",
-            "abreviacion": "brasil",
-            "emoji": "🇧🇷"
-        },
-        {
-            "nombre": "República de El Salvador",
-            "abreviacion": "el salvador",
-            "emoji": "🇸🇻"
-        },
-        {
             "nombre": "República Cooperativa de Guyana",
             "abreviacion": "guyana",
             "emoji": "🇬🇾"
@@ -46,11 +26,6 @@
             "emoji": "🇳🇮"
         },
         {
-            "nombre": "República de Panamá",
-            "abreviacion": "panama",
-            "emoji": "🇵🇦"
-        },
-        {
             "nombre": "República del Paraguay",
             "abreviacion": "paraguay",
             "emoji": "🇵🇾"
@@ -66,67 +41,12 @@
             "emoji": "🇹🇹"
         },
         {
-            "nombre": "República Oriental del Uruguay",
-            "abreviacion": "uruguay",
-            "emoji": "🇺🇾"
-        },
-        {
             "nombre": "República Bolivariana de Venezuela",
             "abreviacion": "venezuela",
             "emoji": "🇻🇪"
         }
     ],
     "cepal": [
-        {
-            "nombre": "República Federal de Alemania",
-            "abreviacion": "alemania",
-            "emoji": "🇩🇪"
-        },
-        {
-            "nombre": "República Argentina",
-            "abreviacion": "argentina",
-            "emoji": "🇦🇷"
-        },
-        {
-            "nombre": "Belice",
-            "abreviacion": "belice",
-            "emoji": "🇧🇿"
-        },
-        {
-            "nombre": "Estado Plurinacional de Bolivia",
-            "abreviacion": "bolivia",
-            "emoji": "🇧🇴"
-        },
-        {
-            "nombre": "República Federativa de Brasil",
-            "abreviacion": "brasil",
-            "emoji": "🇧🇷"
-        },
-        {
-            "nombre": "Canadá",
-            "abreviacion": "canada",
-            "emoji": "🇨🇦"
-        },
-        {
-            "nombre": "República de Chile",
-            "abreviacion": "chile",
-            "emoji": "🇨🇱"
-        },
-        {
-            "nombre": "República de Colombia",
-            "abreviacion": "colombia",
-            "emoji": "🇨🇴"
-        },
-        {
-            "nombre": "República de Costa Rica",
-            "abreviacion": "costa rica",
-            "emoji": "🇨🇷"
-        },
-        {
-            "nombre": "República de Cuba",
-            "abreviacion": "cuba",
-            "emoji": "🇨🇺"
-        },
         {
             "nombre": "República del Ecuador",
             "abreviacion": "ecuador",
@@ -138,16 +58,6 @@
             "emoji": "🇸🇻"
         },
         {
-            "nombre": "Reino de España",
-            "abreviacion": "españa",
-            "emoji": "🇪🇸"
-        },
-        {
-            "nombre": "Estados Unidos de América",
-            "abreviacion": "estados unidos",
-            "emoji": "🇺🇸"
-        },
-        {
             "nombre": "República de Guatemala",
             "abreviacion": "guatemala",
             "emoji": "🇬🇹"
@@ -156,16 +66,6 @@
             "nombre": "República de Honduras",
             "abreviacion": "honduras",
             "emoji": "🇭🇳"
-        },
-        {
-            "nombre": "Jamaica",
-            "abreviacion": "jamaica",
-            "emoji": "🇯🇲"
-        },
-        {
-            "nombre": "Estados Unidos Mexicanos",
-            "abreviacion": "mexico",
-            "emoji": "🇲🇽"
         },
         {
             "nombre": "República de Nicaragua",
@@ -215,11 +115,6 @@
             "emoji": "🇸🇻"
         },
         {
-            "nombre": "Estados Unidos de América",
-            "abreviacion": "estados unidos",
-            "emoji": "🇺🇸"
-        },
-        {
             "nombre": "República Cooperativa de Guyana",
             "abreviacion": "guyana",
             "emoji": "🇬🇾"
@@ -228,16 +123,6 @@
             "nombre": "República de Haití",
             "abreviacion": "haiti",
             "emoji": "🇭🇹"
-        },
-        {
-            "nombre": "República de Honduras",
-            "abreviacion": "honduras",
-            "emoji": "🇭🇳"
-        },
-        {
-            "nombre": "República de Nicaragua",
-            "abreviacion": "nicaragua",
-            "emoji": "🇳🇮"
         },
         {
             "nombre": "República de Panamá",
@@ -250,11 +135,6 @@
             "emoji": "🇵🇾"
         },
         {
-            "nombre": "República del Perú",
-            "abreviacion": "peru",
-            "emoji": "🇵🇪"
-        },
-        {
             "nombre": "República Dominicana",
             "abreviacion": "republica dominicana",
             "emoji": "🇩🇴"
@@ -265,16 +145,6 @@
             "emoji": "🇸🇷"
         },
         {
-            "nombre": "República de Trinidad y Tobago",
-            "abreviacion": "trinidad y tobago",
-            "emoji": "🇹🇹"
-        },
-        {
-            "nombre": "República Oriental del Uruguay",
-            "abreviacion": "uruguay",
-            "emoji": "🇺🇾"
-        },
-        {
             "nombre": "República Bolivariana de Venezuela",
             "abreviacion": "venezuela",
             "emoji": "🇻🇪"
@@ -282,94 +152,9 @@
     ],
     "crm": [
         {
-            "nombre": "República Argentina",
-            "abreviacion": "argentina",
-            "emoji": "🇦🇷"
-        },
-        {
-            "nombre": "Mancomunidad de las Bahamas",
-            "abreviacion": "bahamas",
-            "emoji": "🇧🇸"
-        },
-        {
-            "nombre": "Barbados",
-            "abreviacion": "barbados",
-            "emoji": "🇧🇧"
-        },
-        {
-            "nombre": "Belice",
-            "abreviacion": "belice",
-            "emoji": "🇧🇿"
-        },
-        {
-            "nombre": "Estado Plurinacional de Bolivia",
-            "abreviacion": "bolivia",
-            "emoji": "🇧🇴"
-        },
-        {
-            "nombre": "República Federativa del Brasil",
-            "abreviacion": "brasil",
-            "emoji": "🇧🇷"
-        },
-        {
-            "nombre": "República de Chile",
-            "abreviacion": "chile",
-            "emoji": "🇨🇱"
-        },
-        {
-            "nombre": "República de Colombia",
-            "abreviacion": "colombia",
-            "emoji": "🇨🇴"
-        },
-        {
-            "nombre": "República de Costa Rica",
-            "abreviacion": "costa rica",
-            "emoji": "🇨🇷"
-        },
-        {
             "nombre": "República de Cuba",
             "abreviacion": "cuba",
             "emoji": "🇨🇺"
-        },
-        {
-            "nombre": "República del Ecuador",
-            "abreviacion": "ecuador",
-            "emoji": "🇪🇨"
-        },
-        {
-            "nombre": "República de El Salvador",
-            "abreviacion": "el salvador",
-            "emoji": "🇸🇻"
-        },
-        {
-            "nombre": "República de Guatemala",
-            "abreviacion": "guatemala",
-            "emoji": "🇬🇹"
-        },
-        {
-            "nombre": "República de Haití",
-            "abreviacion": "haiti",
-            "emoji": "🇭🇹"
-        },
-        {
-            "nombre": "República de Honduras",
-            "abreviacion": "honduras",
-            "emoji": "🇭🇳"
-        },
-        {
-            "nombre": "Jamaica",
-            "abreviacion": "jamaica",
-            "emoji": "🇯🇲"
-        },
-        {
-            "nombre": "Estados Unidos Mexicanos",
-            "abreviacion": "mexico",
-            "emoji": "🇲🇽"
-        },
-        {
-            "nombre": "República de Nicaragua",
-            "abreviacion": "nicaragua",
-            "emoji": "🇳🇮"
         },
         {
             "nombre": "República de Panamá",
@@ -377,34 +162,9 @@
             "emoji": "🇵🇦"
         },
         {
-            "nombre": "República del Perú",
-            "abreviacion": "peru",
-            "emoji": "🇵🇪"
-        },
-        {
-            "nombre": "Estado Libre Asociado de Puerto Rico",
-            "abreviacion": "puerto rico",
-            "emoji": "🇵🇷"
-        },
-        {
-            "nombre": "República Dominicana",
-            "abreviacion": "republica dominicana",
-            "emoji": "🇩🇴"
-        },
-        {
             "nombre": "San Vicente y las Granadinas",
             "abreviacion": "san vicente y las granadinas",
             "emoji": "🇻🇨"
-        },
-        {
-            "nombre": "República Oriental del Uruguay",
-            "abreviacion": "uruguay",
-            "emoji": "🇺🇾"
-        },
-        {
-            "nombre": "República Bolivariana de Venezuela",
-            "abreviacion": "venezuela",
-            "emoji": "🇻🇪"
         }
     ],
     "cndh": [
@@ -412,11 +172,6 @@
             "nombre": "Persona Experta en Derechos Humanos",
             "abreviacion": "derechos humanos",
             "emoji": "🕊️"
-        },
-        {
-            "nombre": "Persona Experta Jurídica",
-            "abreviacion": "juridica",
-            "emoji": "⚖️"
         },
         {
             "nombre": "Persona Experta Sociopolítica",
@@ -431,39 +186,14 @@
     ],
     "ced": [
         {
-            "nombre": "Especialista Colombiana en Psicología y Violencia de Género",
-            "abreviacion": "especialista colombiana en psicologia y violencia de genero",
-            "emoji": "🇨🇴🧠"
-        },
-        {
-            "nombre": "Especialista Colombiana en Tecnología y Ciberseguridad",
-            "abreviacion": "especialista colombiana en tecnologia y ciberseguridad",
-            "emoji": "🇨🇴👩‍💻"
-        },
-        {
             "nombre": "Especialista Cubana en Finanzas y Crimen Organizado",
             "abreviacion": "especialista cubana en finanzas y crimen organizado",
             "emoji": "🇨🇺🕵️"
         },
         {
-            "nombre": "Especialista Cubana en Género y Migración",
-            "abreviacion": "especialista cubana en genero y migracion",
-            "emoji": "🇨🇺👣"
-        },
-        {
             "nombre": "Especialista Cubana en Tecnología y Ciberseguridad",
             "abreviacion": "especialista cubana en tecnologia y ciberseguridad",
             "emoji": "🇨🇺👩‍💻"
-        },
-        {
-            "nombre": "Especialista Guatemalteca en Tecnología y Ciberseguridad",
-            "abreviacion": "especialista guatemalteca en tecnologia y ciberseguridad",
-            "emoji": "🇬🇹👩‍💻"
-        },
-        {
-            "nombre": "Especialista Panameña en Cooperación Internacional y DD. HH.",
-            "abreviacion": "especialista panameña en cooperacion internacional y derechos humanos dd hh",
-            "emoji": "🇵🇦🕊️"
         },
         {
             "nombre": "Especialista Panameña en Tecnología y Ciberseguridad",
