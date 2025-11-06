@@ -1,4 +1,4 @@
-<script lang="ts">
+<!--<script lang="ts">
     let { full }: { full: boolean } = $props();
 </script>
 
@@ -151,9 +151,9 @@
 </style>
 
 {#if full}
-    <!-- Footer completo -->
+    <!-- Footer completo
     <footer id="extended-footer">
-        <!-- Logo y nombre -->
+        <!-- Logo y nombre
         <div id="logo-name">
             <figure>
                 <enhanced:img src="/static/assets/img/logos/smmun_dorado.webp" alt="Logo del SMMUN." />
@@ -163,7 +163,7 @@
             </p>
         </div>
 
-        <!-- Correos y redes sociales -->
+        <!-- Correos y redes sociales
         <div id="contact-info">
             <div id="contact-email">
                 <span id="email-title">¡Contáctanos!</span>
@@ -184,8 +184,9 @@
         </div>
     </footer>
 {:else}
-    <!-- Footer con copyright -->
+    <!-- Footer con copyright
     <footer id="normal-footer">
         &copy; 2016 - {new Date().getFullYear()} SMMUN
     </footer>
 {/if}
+-->

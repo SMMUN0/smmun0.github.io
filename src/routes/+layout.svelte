@@ -4,13 +4,20 @@
     import "@fortawesome/fontawesome-free/css/all.min.css";
     import DesktopNavbar from "$lib/components/DesktopNavbar.svelte";
     import MobileNavbar from "$lib/components/MobileNavbar.svelte";
-    import TituloRegistro from "$lib/components/TituloRegistro.svelte";
+    import IndexNavbar from "$lib/components/IndexNavbar.svelte";
     import ProgressDots from "$lib/components/ProgressDots.svelte";
     import Footer from "$lib/components/Footer.svelte";
-    import { registroTitleNav } from "$lib/stores/registro-title-nav";
 
     let { children } = $props();
     let displayDots = $state(false);
+
+    let pageName = page.url.pathname.toString();
+    if (pageName == "/") {
+        pageName = "index"
+    }
+    else {
+        pageName = pageName.slice(1, -1);
+    }
 
     onMount(() => {
         // Calcular altura de la página
@@ -59,27 +66,29 @@
     }
 </style>
 
-{#if !page.url.pathname.includes("/registro/") || !$registroTitleNav}
+<header id="desktop-nav">
+    {#if page.url.pathname == "/"}
+        <IndexNavbar></IndexNavbar>
+    {:else}
+        <DesktopNavbar color={page.data.navColor}></DesktopNavbar>
+    {/if}
+</header>
 
-    <header id="desktop-nav">
-        <DesktopNavbar></DesktopNavbar>
-    </header>
+<!--<header id="desktop-nav">
+    <DesktopNavbar></DesktopNavbar>
+</header>
 
-    <header id="mobile-nav">
-        <MobileNavbar color={page.data.mobileNavColor}></MobileNavbar>
-    </header>
-{:else}
-    <header>
-        <TituloRegistro text={page.url.pathname == "/registro/delegaciones" ? "Registro de delegaciones" : "Registro de faculty"}></TituloRegistro>
-    </header>
-{/if}
+<header id="mobile-nav">
+    <MobileNavbar color={page.data.navColor}></MobileNavbar>
+</header>
+-->
 
 {#if displayDots}
     <ProgressDots></ProgressDots>
 {/if}
 
-<main class:set-index-style={page.url.pathname == "/"}>
+<main class={pageName}>
     {@render children()}
 </main>
 
-<Footer full={page.url.pathname == "/"}></Footer>
+<!--<Footer full={page.url.pathname == "/"}></Footer>-->

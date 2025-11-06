@@ -1,12 +1,11 @@
-<script lang="ts">
+<!--<script lang="ts">
     import { page } from "$app/state";
-    import { indexNavTransparent } from "$lib/stores/index-nav-transparent";
 
     let { color }: { color: string } = $props();
     let menuOpen = $state(false);
 
     // Tipo de nav: transparente, index o normal
-    const navClass = $derived(page.url.pathname == "/" ? ($indexNavTransparent ? "transparent-index-variant" : "index-variant") : "");
+    const navClass = $derived(page.url.pathname == "/" ? "index-variant" : "");
 </script>
 
 <style>
@@ -26,10 +25,6 @@
     .navbar-logo {
         z-index: 5;
         padding-left: 5vw;
-    }
-
-    nav figure {
-        margin: 0;
     }
 
     .navbar-logo img {
@@ -150,7 +145,7 @@
             {#if page.url.pathname == "/"}
                 <enhanced:img src="/static/assets/img/logos/smmun_dorado.webp" alt="Logo del SMMUN." />
             {:else}
-                <enhanced:img src="/static/assets/img/logos/smmun_deg.webp" alt="Logo del SMMUN." />
+                <enhanced:img src="/static/assets/img/logos/smmun_deg.svg" alt="Logo del SMMUN." />
             {/if}
         </figure>
     </a>
@@ -174,3 +169,4 @@
         <span class="bar" style="background-color: {color};"></span>
     </button>
 </nav>
+-->
