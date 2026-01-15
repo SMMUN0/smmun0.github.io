@@ -19,7 +19,9 @@
         "@sveltejs/kit": "^2.16.0",
         "@sveltejs/vite-plugin-svelte": "^5.0.0",
         "@types/bootstrap": "^5.2.10",
+        "@types/bootstrap-select": "^1.13.7",
         "@types/html-minifier-terser": "^7.0.2",
+        "@types/jquery": "^3.5.33",
         "html-minifier-terser": "^7.2.0",
         "svelte": "^5.0.0",
         "svelte-check": "^4.0.0",
@@ -28,6 +30,12 @@
         "vite": "^6.2.5"
     },
     "dependencies": {
-        "@leveluptuts/svelte-fit": "^1.0.3"
+        "@leveluptuts/svelte-fit": "^1.0.3",
+        "@popperjs/core": "^2.11.8",
+        "bootstrap": "^5.3.8",
+        "bootstrap-select": "github:brunoanc/bootstrap-select#dev",
+        "country-flag-emoji-polyfill": "^0.1.8",
+        "intl-tel-input": "^25.12.4",
+        "jquery": "^3.7.1"
     }
 }

@@ -1,6 +1,8 @@
 <script lang="ts">
     import { onMount, onDestroy } from "svelte";
 
+    let { color }: { color: string } = $props();
+
     let dotOpacityArray = Array(5).fill(0.5);
 
     // Actualiza los valores alpha basado en la posición de la página
@@ -43,7 +45,6 @@
         height: 1.5vh;
         width: 1.5vh;
         margin: 1vh 0;
-        background-color: #053a80;
         border-radius: 50%;
         display: inline-block;
     }
@@ -51,6 +52,6 @@
 
 <aside>
     {#each dotOpacityArray as dotOpacity}
-        <span style="opacity: {dotOpacity};"></span>
+        <span style="opacity: {dotOpacity}; background-color: {color};"></span>
     {/each}
 </aside>

@@ -1,22 +1,34 @@
-<!--<script lang="ts">
-    let { full }: { full: boolean } = $props();
+<script lang="ts">
+    let { full, color }: { full: boolean, color:string } = $props();
 </script>
 
 <style>
     #normal-footer {
-        font-family: "Glacial Indifference Bold";
+        font-family: "The Seasons";
+        font-weight: bold;
         font-size: 0.6rem;
-        color: #063372;
         text-align: center;
         margin: 2vh 0 1vh 0;
     }
 
     #extended-footer {
         width: 100%;
-        background-color: #6d659a;
-        background-image: url("/assets/img/backgrounds/blue_bg_darkest.webp");
+        background-image: url("/assets/img/footer/gradient.png");
         background-repeat: no-repeat;
         background-size: cover;
+        background: linear-gradient(
+            330deg,
+            rgba(247, 203, 172, 0.91) 0%,
+            rgba(234, 104, 128, 0.615) 14.29%,
+            rgba(234, 104, 128, 0.485) 28.57%,
+            rgba(246, 163, 183, 0.69) 42.86%,
+            rgba(254, 165, 187, 0.675) 57.14%,
+            rgba(247, 152, 137, 0.595) 71.43%,
+            rgba(244, 184, 147, 0.59) 85.71%,
+            rgba(252, 233, 221, 0.645) 100%
+        );
+        background-size: 141%;
+        background-position: center;
         display: flex;
         flex-direction: column;
     }
@@ -42,9 +54,10 @@
     }
 
     #logo-name p {
-        font-family: "The Seasons Bold";
+        font-family: "The Seasons";
+        font-weight: bold;
         font-size: 1.5rem;
-        color: #fffdfd;
+        color: #e33d73;
     }
 
     #contact-info {
@@ -71,7 +84,7 @@
         margin: 0 3vw;
         text-align: left;
         flex-grow: 1;
-        color: #fffdfd;
+        color: #e33d73;
     }
 
     @media screen and (min-width: 820px) {
@@ -81,12 +94,13 @@
     }
 
     #email-title {
-        font-family: "The Seasons Bold";
+        font-family: "The Seasons";
+        font-weight: bold;
         font-size: 1.3rem;
     }
 
     #email-list {
-        font-family: "The Seasons Regular";
+        font-family: "The Seasons";
         font-size: 1rem;
         list-style-position: inside;
         padding-left: 0;
@@ -98,11 +112,11 @@
     }
 
     #contact-email a {
-        color: #fffdfd;
+        color: #e33d73;
     }
 
     #contact-email a:visited {
-        color: #fffdfd;
+        color: #e33d73;
     }
 
     #social-media {
@@ -118,7 +132,9 @@
     }
 
     #social-title {
-        font-family: "The Seasons Bold";
+        font-family: "The Seasons";
+        font-weight: bold;
+        color: #e33d73;
     }
 
     @media screen and (max-width: 820px) {
@@ -128,7 +144,7 @@
     }
 
     #social-icons {
-        font-family: "The Seasons Regular";
+        font-family: "The Seasons";
         margin: 1.3vh 0 2vh 0;
     }
 
@@ -140,30 +156,30 @@
 
     #social-icons a {
         text-decoration: none;
-        color: #fffdfd;
+        color: #e33d73;
         padding: 0 0.5vw;
     }
 
     #social-icons a:visited {
-        color: #fffdfd;
+        color: #e33d73;
     }
 
 </style>
 
 {#if full}
-    <!-- Footer completo
+    <!-- Footer completo -->
     <footer id="extended-footer">
-        <!-- Logo y nombre
+        <!-- Logo y nombre -->
         <div id="logo-name">
             <figure>
-                <enhanced:img src="/static/assets/img/logos/smmun_dorado.webp" alt="Logo del SMMUN." />
+                <img src="/assets/img/logos/smmun_deg.svg" alt="Logo del SMMUN." />
             </figure>
             <p>
                 Modelo de Naciones Unidas del Sureste Mexicano
             </p>
         </div>
 
-        <!-- Correos y redes sociales
+        <!-- Correos y redes sociales -->
         <div id="contact-info">
             <div id="contact-email">
                 <span id="email-title">¡Contáctanos!</span>
@@ -184,9 +200,8 @@
         </div>
     </footer>
 {:else}
-    <!-- Footer con copyright
-    <footer id="normal-footer">
+    <!-- Footer con copyright -->
+    <footer id="normal-footer" style="color: {color};">
         &copy; 2016 - {new Date().getFullYear()} SMMUN
     </footer>
 {/if}
--->

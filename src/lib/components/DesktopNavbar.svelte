@@ -95,21 +95,30 @@
 
     // Tipo de nav: transparente, index o normal
     //const navClass = $derived(page.url.pathname == "/" ? "index-variant" : "");
-    let { color }: { color: string } = $props();
+    let {
+        backgroundColor,
+        textColor,
+        highlightColor,
+        highlightTextColor
+    }: {
+        backgroundColor: string;
+        textColor: string;
+        highlightColor: string;
+        highlightTextColor: string;
+    } = $props();
 
     const pages = {
         "/": "Inicio",
         "/quienes-somos/": "¿Quiénes somos?",
         "/registro/": "Registro",
-        "/recursos/": "Recursos",
-        "/merch/": "Merch"
+        "/recursos/": "Recursos"
     };
 </script>
 
 <style>
     nav {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         /*row-gap: 10vh;
         column-gap: 2vw;*/
         grid-auto-rows: auto;
@@ -118,6 +127,7 @@
         justify-content: space-evenly;
         padding: 4vh 0;
         text-align: center;
+        background-color: var(--nav-background-color);
     }
 
     div:has(> div) {
@@ -139,7 +149,7 @@
         cursor: pointer;
         font-family: "The Seasons";
         font-size: 1rem;
-        color: #ffffff;
+        color: var(--nav-text-color);
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -154,7 +164,7 @@
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #ffffff;
+        background-color: var(--nav-text-color);
         transition: transform 0.25s ease-out;
         transform-origin: bottom center;
     }
@@ -166,16 +176,24 @@
     }
 
     .active-page div {
-        background-color: black !important;
+        background-color: var(--nav-highlight-color) !important;
         border-radius: 24px;
+    }
+
+    .active-page a {
+        color: var(--nav-highlight-text-color) !important;
+    }
+
+    .active-page a::after {
+        background-color: var(--nav-highlight-text-color) !important;
     }
 </style>
 
-<nav style="background-color: {color};">
+<nav style="--nav-background-color: {backgroundColor};">
     {#each Object.entries(pages) as [slug, name]}
-        <div class:active-page={page.url.pathname == slug}>
+        <div class:active-page={slug == "/" ? page.url.pathname == slug : page.url.pathname.includes(slug)} style="--nav-highlight-color: {highlightColor}">
             <div>
-                <a href={slug}>
+                <a href={slug} style="--nav-text-color: {textColor}; --nav-highlight-text-color: {highlightTextColor}">
                     {name}
                 </a>
             </div>

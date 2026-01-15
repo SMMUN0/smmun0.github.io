@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        ref: 2025-svelte
+        ref: 2026-svelte
 
     - name: Build page
       run: |
@@ -19,6 +19,6 @@ jobs:
     - name: Publish github pages
       run: |
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/SMMUN0/smmun0.github.io.git
-        npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>" --nojekyll -b do-pages
+        npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>" --nojekyll -b railway
       env:
         GITHUB_TOKEN: ${{ secrets.ACTIONS_TOKEN }}

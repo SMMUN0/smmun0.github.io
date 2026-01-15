@@ -2,11 +2,11 @@ import type { PageLoad } from "./$types";
 
 export const load: PageLoad = () => {
     return {
-        title: "¿Quiénes somos? - SMMUN",
+        title: "Registro Faculty - SMMUN",
         description: "",
-        navBackgroundColor: "#ef7b98",
-        navTextColor: "#ffffff",
-        navHighlightColor: "#000000",
+        navBackgroundColor: "#ffffff",
+        navTextColor: "#454140",
+        navHighlightColor: "#ea6880",
         navHighlightTextColor: "#ffffff"
     };
 };

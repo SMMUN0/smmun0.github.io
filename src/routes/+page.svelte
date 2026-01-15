@@ -26,48 +26,13 @@
             "email": "secretariageneral@smmun.com"
         }
     </script>
-
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Event",
-            "name": "Modelo de Naciones Unidas del Sureste Mexicano",
-            "startDate": "2025-04-01",
-            "endDate": "2025-04-05",
-            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-            "eventStatus": "https://schema.org/EventScheduled",
-            "location": {
-                "@type": "Place",
-                "name": "Campus De Ciencias Sociales, Económicas-Administrativas y Humanidades UADY",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "Km. 1 Carretera Mérida-Tizimín",
-                    "addressLocality": "Mérida",
-                    "postalCode": "97305",
-                    "addressRegion": "Yucatán",
-                    "addressCountry": "México"
-                }
-            },
-            "image": [
-                "https://smmun.com/assets/img/ediciones/2024/img3.webp",
-                "https://smmun.com/assets/img/ediciones/2023/img3.webp",
-                "https://smmun.com/assets/img/ediciones/2023/img2.webp"
-            ],
-            "description": "La Décima Edición del Modelo de Naciones Unidas de soñadores, estrellas y líderes.",
-            "organizer": {
-                "@type": "EducationalOrganization",
-                "name": "SMMUN",
-                "url": "https://smmun.com/"
-            }
-        }
-    </script>
 </svelte:head>
 
 <style>
     :global(body:has(main.index)) {
         margin-top: 0 !important;
         height: auto;
-        background-image: url("/assets/img/index/fondo.webp");
+        background-image: url("/assets/img/index/fondo.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center top;
