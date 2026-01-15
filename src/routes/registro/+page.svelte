@@ -100,7 +100,7 @@
     <div class="convocatorias">
         <article class="convocatoria">
             <figure>
-                <img src="/assets/img/registro/1.png" alt="Convocatoria de delegaciones." />
+                <img src="/assets/img/registro/1.webp" alt="Convocatoria de delegaciones." />
             </figure>
             <h2 class="convocatoria-title">
                 <a href="/registro/delegaciones">Convocatoria de delegaciones</a>
@@ -109,7 +109,7 @@
 
         <article class="convocatoria">
             <figure>
-                <img src="/assets/img/registro/2.png" alt="Convocatoria de faculty." />
+                <img src="/assets/img/registro/2.webp" alt="Convocatoria de faculty." />
             </figure>
             <h2 class="convocatoria-title">
                 <a href="/registro/faculty">Convocatoria de faculty</a>
@@ -118,7 +118,7 @@
 
         <article class="convocatoria">
             <figure>
-                <img src="/assets/img/registro/3.png" alt="Convocatoria de staff." />
+                <img src="/assets/img/registro/3.webp" alt="Convocatoria de staff." />
             </figure>
             <h2 class="convocatoria-title">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOeD_QRVnQkeZk8SlzDmNoIuuC1gf3e7WyDj1ylHg8ouzbgw/viewform">
