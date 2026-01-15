@@ -571,7 +571,7 @@
 <TituloRegistro text="Registro de delegaciones"></TituloRegistro>
 
 <!-- Forms -->
-<form bind:this={formDelegaciones} method="POST" action="/api/registro/delegaciones" name="registro-delegaciones" enctype="multipart/form-data" class="col g-3" novalidate onsubmit={onSubmitForm}>
+<form bind:this={formDelegaciones} method="POST" action="https://smmun-inscripcion-endpoint-production.up.railway.app/api/registro/delegaciones" name="registro-delegaciones" enctype="multipart/form-data" class="col g-3" novalidate onsubmit={onSubmitForm}>
     <!-- Selección de modalidad -->
     <article class="titulo">
         <div class="oval">
