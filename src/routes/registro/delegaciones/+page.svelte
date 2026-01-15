@@ -18,24 +18,24 @@
     // Lista de comités
     let comites = [
         {
-            nombre: "Tercera Comisión de la Asamblea General referente a lo Social, Cultural, Humanitario y de Derechos Humanos [bilingüe: español/inglés]",
+            nombre: "Tercera Comisión de la Asamblea General referente a lo Social, Cultural, Humanitario y de Derechos Humanos (SOCHUM) [bilingüe: español/inglés]",
             siglas: "SOCHUM"
         },
         {
-            nombre: "Programa Conjunto de las Naciones Unidas para el VIH-SIDA",
+            nombre: "Programa Conjunto de las Naciones Unidas para el VIH-SIDA (ONU SIDA)",
             siglas: "ONU SIDA"
         },
         {
-            nombre: "Programa de las Naciones Unidas para los Asentamientos Humanos",
+            nombre: "Programa de las Naciones Unidas para los Asentamientos Humanos (ONU-Hábitat)",
             siglas: "ONU-Hábitat"
         },
         {
-            nombre: "Comisión de prevención del delito y Justicia Penal de las Naciones Unidas",
+            nombre: "Comisión de prevención del delito y Justicia Penal de las Naciones Unidas (CCPCJ)",
             siglas: "CCPCJ"
         },
         
         {
-            nombre: "Agencia de las Naciones Unidas para los Refugiados de Palestina en Oriente Próximo",
+            nombre: "Agencia de las Naciones Unidas para los Refugiados de Palestina en Oriente Próximo (UNRWA)",
             siglas: "UNRWA"
         },
         {
@@ -43,11 +43,11 @@
             siglas: "Cumbre"
         },
         {
-            nombre: "Administración Nacional de Aeronáutica y del Espacio",
+            nombre: "Administración Nacional de Aeronáutica y del Espacio (NASA)",
             siglas: "NASA"
         },
         {
-            nombre: "World Wildlife Fund for Nature [inglés]",
+            nombre: "World Wildlife Fund for Nature (WWF) [inglés]",
             siglas: "WWF"
         },
         {
@@ -55,11 +55,11 @@
             siglas: "Crisis"
         },
         {
-            nombre: "Federación Internacional del Automóvil",
+            nombre: "Federación Internacional del Automóvil (FIA)",
             siglas: "FIA"
         },
         {
-            nombre: "Federación de Alta Costura y Moda",
+            nombre: "Federación de Alta Costura y Moda (FHCM)",
             siglas: "FHCM"
         }
     ];
@@ -171,7 +171,7 @@
     }
 
     function comiteSiglasToKey(siglas: string): keyof Delegaciones {
-        const normalizado = siglas.toLowerCase().replace(" ", "_").replace("-", "_");
+        const normalizado = siglas.toLowerCase().replace(" ", "_").replace("-", "_").replace("á", "a");
 
         if (normalizado === "cumbre") {
             return "cumbre_futuro";
