@@ -1,4 +1,5 @@
 <script lang="ts">
+    import BeholdWidget from "@behold/svelte";
 </script>
 
 <svelte:head>
@@ -36,14 +37,13 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center top;
-        height: 100vh;
     }
 
     :global(main.index) {
         position: relative;
     }
 
-    section {
+    #principal {
         background-image: url("/assets/img/index/fondo-2.webp");
         background-size: cover;
         background-repeat: no-repeat;
@@ -51,9 +51,6 @@
         width: 100vw;
         height: 77vh;
         justify-self: end;
-        position: absolute;
-        bottom: 0;
-        left: 0;
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -118,9 +115,31 @@
         50%  { transform: translateX(5px); }
         100% { transform: translateX(0); }
     }
+
+    #insta-feed {
+        padding: 2vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 820px) {
+        #insta-feed div {
+            width: 70vw;
+        }
+    }
+
+    @media screen and (max-width: 820px) {
+        #insta-feed div {
+            width: 90vw;
+        }
+    }
 </style>
 
-<section>
+<section style="height: 23vh;"></section>
+
+<section id="principal">
     <article id="conoce">
         <h3>
             Conoce los nuevos capítulos
@@ -134,4 +153,10 @@
             </figure>
         </a>
     </article>
+</section>
+
+<section id="insta-feed" aria-hidden="true">
+    <div>
+        <BeholdWidget feedId="Cj9y7jXZhXrNjkJj2O91"></BeholdWidget>
+    </div>
 </section>
