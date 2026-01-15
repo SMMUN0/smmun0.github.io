@@ -19,7 +19,7 @@
         {
             "@context": "https://schema.org",
             "@type": "EducationalOrganization",
-            "image": "https://smmun.com/assets/img/images/greeting.webp",
+            "image": "https://smmun.com/assets/img/images/fondo.png",
             "url": "https://smmun.com/",
             "logo": "https://smmun.com/assets/img/logos/smmun_deg.svg",
             "name": "SMMUN",
