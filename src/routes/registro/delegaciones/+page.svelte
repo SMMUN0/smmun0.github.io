@@ -2,6 +2,7 @@
 <script lang="ts">
     import { onMount, onDestroy } from "svelte";
     import TituloRegistro from "$lib/components/TituloRegistro.svelte";
+    import ComiteCarousel from "$lib/components/ComiteCarousel.svelte";
     import { intlPhone } from "$lib/actions/intlPhone";
     import { polyfillCountryFlagEmojis } from "country-flag-emoji-polyfill";
     import { onChangeSaveCookie, resetValuesFromCookies, validateNumInput } from "$lib/util";
@@ -788,21 +789,9 @@
                 <div class="invalid-feedback">Debes seleccionar una opción.</div>
 
                 {#if comiteValues[i]}
-                    {#if Array.isArray(topicos[comiteValues[i] as keyof (typeof topicos)])}
-                        {#each (topicos[comiteValues[i] as keyof (typeof topicos)] as string[]) as topico, idx}
-                            <div class="comite-topico-div">
-                                <p>
-                                    <strong>Tópico {idx === 0 ? "A" : "B"}:</strong> {topico}
-                                </p>
-                            </div>
-                        {/each}
-                    {:else}
-                        <div class="comite-topico-div">
-                            <p>
-                                <strong>Tópico:</strong> {topicos[comiteValues[i] as keyof (typeof topicos)] as string}
-                            </p>
-                        </div>
-                    {/if}
+                    <div class="comite-topico-div">
+                        <ComiteCarousel comite={comiteSiglasToKey(comiteValues[i])} index={i}></ComiteCarousel>
+                    </div>
                 {/if}
             </div>
 

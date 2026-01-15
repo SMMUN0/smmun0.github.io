@@ -21,17 +21,17 @@
 
     // Número de imágenes por comité
     let numeroImagenes: NumeroImagenes = {
-        sochum: 1,
-        onu_sida: 1,
-        onu_habitat: 1,
-        ccpcj: 1,
-        unrwa: 1,
-        cumbre_futuro: 1,
-        nasa: 1,
-        wwf: 1,
-        crisis: 1,
-        fia: 1,
-        fhcm: 1
+        sochum: 5,
+        onu_sida: 5,
+        onu_habitat: 5,
+        ccpcj: 5,
+        unrwa: 4,
+        cumbre_futuro: 4,
+        nasa: 5,
+        wwf: 5,
+        crisis: 4,
+        fia: 4,
+        fhcm: 4
     };
 
     let carouselDiv = $state();
@@ -51,7 +51,7 @@
 
 <style>
     #comite-topico-div {
-        border: solid #7872a1;
+        border: solid #ea6880;
         border-width: thin;
         border-radius: 12px;
         flex-direction: column;
@@ -71,11 +71,11 @@
     }
 
     .carousel .carousel-control-prev-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238d7abb'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ea6880'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
     }
 
     .carousel .carousel-control-next-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238d7abb'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ea6880'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     }
 
     @media screen and (max-width: 820px) {
