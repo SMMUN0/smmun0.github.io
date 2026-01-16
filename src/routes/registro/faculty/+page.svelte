@@ -550,7 +550,7 @@
                             <br><br>
                             Cualquier corrección o sugerencia sobre el protocolo debe ser canalizada únicamente a la Secretaría Académica, evitando interacciones directas con la Mesa Directiva.</li>
                             <br>
-                            <li><strong>Influenciar las decisiones de la Mesa Directiva.</strong> No tienen autoridad para intervenir en las decisiones de ninguna de las personas integrantes de la Mesa Directiva (Presidencia, Vicepresidencia, Secretaría y Relatorías de Sala, para el caso del Comité Noruego del Nobel; Juez Presidente, Jueza Vicepresidenta, Juez Auxiliar Supremo y Secretario de Audiencias, para el caso de la Corte Internacional de Justicia; y, Presidencia, Moderación, Oficialía de Conferencias y Oficialías de Sala, para el resto de los comités en español e inglés que forman parte de la décima edición) ni para opinar sobre el desempeño o decisiones tomadas en el comité.</li>
+                            <li><strong>Influenciar las decisiones de la Mesa Directiva.</strong> No tienen autoridad para intervenir en las decisiones de ninguna de las personas integrantes de la Mesa Directiva ni para opinar sobre el desempeño o decisiones tomadas en el comité.</li>
                             <br>
                             <li><strong>Incentivar a realizar acciones de nepotismo a alguna persona que conoce y que integra alguna Mesa Directiva.</strong> Queda estrictamente prohibido hablar de forma oral, escrita o por cualquier otro medio de comunicación sobre asuntos de darle preferencia o ventaja a alguna delegación, dar la palabra de forma más recurrente, tomar en cuenta para premiaciones o realizar algún otro apoyo más personalizado a alguna delegación para crear ventaja con alguna persona integrante de una Mesa Directiva que conozca el Faculty Advisor por medio de alguna relación personal, profesional o académica.
                             <br><br>
@@ -571,9 +571,7 @@
                         <ol style="margin: 1rem 0;" type="I">
                             <li><strong>Acceso a los salones.</strong> Los Faculty Advisors podrán ingresar de forma respetuosa y silenciosa a los salones donde se estén realizando capacitaciones y/o simulaciones, con el fin de poder observar a sus delegaciones y darles una retroalimentación al finalizar. Sin embargo, no se encuentra en orden acercarse o comunicarse de forma oral o escrita con sus delegaciones durante la capacitación o simulación.</li>
                             <br>
-                            <li><strong>Acceso a simulaciones de las capacitaciones.</strong> Durante las simulaciones de capacitaciones de todos los comités, incluidos la Corte Internacional de Justicia y el Comité Noruego del Nobel, los Faculty Advisor podrán ingresar y permanecer dentro del salón en todo momento y en cualquier procedimiento protocolario, manteniendo silencio y respeto; sin importar si se están llevando a cabo caucus moderados, caucus inmoderados, procesos de votación o espera de aprobación del documento resolutivo. Esto con el fin de que puedan observar el desempeño de sus delegaciones y brindarles una retroalimentación posteriormente.</li>
-                            <br>
-                            <li><strong>Excepción de acceso para el Comité Noruego del Nobel.</strong> Únicamente existe una excepción y es con un procedimiento protocolario del Comité Noruego del Nobel, donde en los conteos de votos de las nominaciones por parte de la Mesa Directiva, todas las personas dentro del salón se deberán retirar un momento acompañados de una Relatoría de Sala. Asimismo, durante este conteo de votos y mientras las personas especialistas se encuentran afuera del salón esperando los resultados, se ruega que ningún Faculty Advisor se acerque o mantenga comunicación con alguna persona especialista. Si este lineamiento se incumple, la Relatoría de Sala que se encuentra afuera tiene la facultad de pedirle al Faculty Advisor que respete este lineamiento y no vuelva a incurrir en la falta.</li>
+                            <li><strong>Acceso a simulaciones de las capacitaciones.</strong> Durante las simulaciones de capacitaciones de todos los comités, los Faculty Advisor podrán ingresar y permanecer dentro del salón en todo momento y en cualquier procedimiento protocolario, manteniendo silencio y respeto; sin importar si se están llevando a cabo caucus moderados, caucus inmoderados, procesos de votación o espera de aprobación del documento resolutivo. Esto con el fin de que puedan observar el desempeño de sus delegaciones y brindarles una retroalimentación posteriormente.</li>
                             <br>
                             <li><strong>Nuevos posibles lineamientos.</strong> Cualquier lineamiento nuevo que se establezca para los días de capacitaciones, el Faculty Advisor será previamente notificado.</li>
                         </ol>
@@ -600,51 +598,6 @@
                             <br>
                             <li><strong>Nuevos posibles lineamientos.</strong> Cualquier lineamiento nuevo que se establezca para los días de sesiones de debate, el Faculty Advisor será previamente notificado.</li>
                             <br>
-                            <li>
-                                <strong>Especificaciones de ingreso y salida para el Comité Noruego del Nobel.</strong>
-                                <ol style="margin: 1rem 0;" type="a">
-                                    <li>Durante los caucus moderados e inmoderados de las sesiones de debate se mantienen los mismos lineamientos antes mencionados.
-                                    <br><br>
-                                    <li>Todos los Faculty Advisors, sin distinción alguna, no tendrán que ser reconocidos públicamente a foro abierto por la Mesa Directiva para poder ingresar a la sala durante los caucus moderados.</li>
-                                    <br>
-                                    <li>Este comité, además de tener un proceso de votación de su informe final, tiene además tres procesos de votaciones para la filtración y eliminación de nominaciones. Los Faculty Advisors no pueden mantenerse dentro o ingresar a la sala durante estos tres procesos de votación de las nominaciones. Para esta situación, no se encuentra en orden realizar una solicitud previa para poder ingresar.</li>
-                                    <br>
-                                    <li>Además se tienen previstos tres conteos de votos por parte de la Mesa Directiva. Estos conteos podrán realizarse al finalizar la jornada de sesiones cuando las personas especialistas ya se hayan retirado o durante las sesiones, si este último caso se da, se pedirá a las personas especialistas salir de la sala durante el conteo de votos mientras alguna Relatoría de Sala les acompaña en todo momento afuera del recinto.
-                                    <br><br>
-                                    Los Faculty Advisor no pueden ingresar a la sala durante ninguno de los tres procesos de conteo de votos y no se encuentra en orden realizar una solicitud previa para poder ingresar. Asimismo, si durante el conteo de votos las personas especialistas se encuentran afuera de la sala esperando los resultados, se ruega que ningún Faculty Advisor se acerque o mantenga comunicación con alguna persona especialista. Si este lineamiento se incumple, la Relatoría de Sala que se encuentra afuera tiene la facultad de pedirle al Faculty Advisor que respete este lineamiento y no vuelva a incurrir en la falta.</li>
-                                    <br>
-                                    <li>Los Faculty Advisors no pueden ingresar a la sala o mantenerse dentro durante el proceso de votación del informe final. Para esta situación, no se encuentra en orden realizar una solicitud previa para poder ingresar.</li>
-                                    <br>
-                                    <li>Durante la etapa del proceso de espera del comité donde la Presidencia se retira de la sala para llevar a la aprobación del Informe a la Secretaría General y Secretaría Académica, queda estrictamente prohibido entrar o mantenerse durante la sala, por cualquier motivo o circunstancia.</li>
-                                    <br>
-                                    <li>Al regresar la Presidencia y habiendo entrado primero a la sala para anunciar el resultado de la aprobación, el Faculty Advisor tendrá la oportunidad de ingresar a la sala en silencio.</li>
-                                    <br>
-                                    <li>En dado caso de que no se apruebe el informe y se tengan que hacer adecuaciones, el Faculty Advisor podrá mantenerse dentro de la sala mientras se realizan las correcciones, pero deberá retirarse cuando salga la presidencia para la segunda revisión y podrá reingresar hasta que la presidencia regrese y entre para dar el segundo veredicto.</li>
-                                    <br>
-                                    <li>En las sesiones de caucus inmoderados, procesos de votaciones, conteo de votos y espera de aprobación del informe, la Mesa Directiva colocará un letrero en la puerta de la sala indicando el estatus del debate. Este letrero permite a los Faculty Advisors identificar cuándo se encuentra la sesión en caucus inmoderado, en votaciones, conteo de votos o en espera de aprobación del informe, para respetar los momentos en los que no se permite su ingreso.</li>
-                                </ol>
-                            </li>
-
-                            <li>
-                                <strong>Especificaciones de ingreso y salida para la Corte Internacional de Justicia.</strong>
-                                <ol style="margin: 1rem 0;" type="a">
-                                    <li>Para este comité, al contar con un procedimiento protocolario distinto y no tener caucus moderados e inmoderados, no se permiten las entradas y salidas en cualquier momento de las sesiones, para evitar interrumpir los procesos judiciales que se realizan dentro del comité.</li>
-                                    <br>
-                                    <li>Para poder ingresar a la sala, el Faculty Advisor deberá hacerlo antes de iniciar la sesión y permanecer durante toda el tiempo que dure la sesión en la sala, es decir, no podrá salir de la sala en ningún momento hasta que el Juez Presidente declare finalizada la sesión.</li>
-                                    <br>
-                                    <li>Si el Faculty Advisor necesita retirarse por alguna emergencia antes de finalizar la sesión, deberá notificarlo por nota diplomática al Secretario de Audiencias y deberá salir de la sala de forma respetuosa y silenciosa; tampoco se tendrá que reconocer la salida de forma pública y a foro abierto. Se ruega abstenerse de utilizar este recurso de salida por emergencia y en dado caso de emplearlo, hacerlo solo una vez durante todo el Modelo.</li>
-                                    <br>
-                                    <li>El Secretario de Audiencias colocará un letrero en la puerta de la sala con un número telefónico de contacto para solicitar las entradas extraordinarias habiendo ya iniciadas las sesiones, sin embargo, este recurso solo opera para la Secretaría General, Secretaría Académica y demás personas integrantes del Comité Organizador; es decir, no aplica para Faculty Advisors.</li>
-                                    <br>
-                                    <li>Para la etapa final de deliberación de la sentencia y la apelación de la sentencia, los Faculty Advisors podrán permanecer en la sala.</li>
-                                    <br>
-                                    <li>Cuando el Juez Presidente tenga que retirarse de la sala para llevar la sentencia a aprobación de la Secretaría General y Secretaría Académica, el Faculty Advisor no podrá quedarse en la sala o entrar al comité.</li>
-                                    <br>
-                                    <li>Al regresar el Juez Presidente y habiendo entrado primero a la sala para anunciar el resultado de la aprobación de la sentencia, el Faculty Advisor tendrá la oportunidad de ingresar a la sala en silencio.</li>
-                                    <br>
-                                    <li>En cualquier momento del proceso protocolario de la Corte Internacional de Justicia, la Mesa Directiva tendrá la facultad de notificar de manera oral o escrita a través de una nota diplomática alguna instrucción de salida a algún Faculty Advisor, siempre y cuando la Mesa Directiva lo realice de forma respetuosa y argumentando el porqué de la decisión extraordinaria.</li>
-                                </ol>
-                            </li>
                         </ol>
                     </div>
                 </div>
