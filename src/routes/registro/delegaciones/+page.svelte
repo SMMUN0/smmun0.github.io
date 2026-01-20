@@ -606,7 +606,7 @@
     </article>
 
     <div class="mb-3">
-        <p>Una delegación oficial es un grupo que representa a una agrupación y tiene a una persona que lo asesora.</p>
+        <p>Una delegación oficial es un grupo que representa a una agrupación y tiene a una persona que lo asesora, el cual recibeel nombre de Faculty Advisor.</p>
 
         <div>
             <label for="delegacion_oficial" class="form-label">¿Perteneces a una delegación oficial? <span style="color: red;">*</span></label>

@@ -432,7 +432,7 @@
         <br><br>
         - Todas las personas Faculty Advisor deben tener un número de celular en funcionamiento registrado en el SMMUN durante el Modelo.
         <br><br>
-        - Las Faculty deben asegurarse de estar accesibles por teléfono en todo momento durante la conferencia, para casos como el informe por mal comportamiento de las delegaciones o para ayudar al personal del SMMUN a localizarles en casos de emergencia.
+        - Las Faculty deben asegurarse de estar accesibles por teléfono en todo momento durante la conferencia, para casos como el informe por mal comportamiento de las delegaciones o localizarles en casos de emergencia.
         <br><br>
         - También alentamos a observar el trabajo dentro de los comités y explorar la sede principal. Nuestra capacidad para manejar el mal comportamiento y garantizar el correcto decoro durante el evento depende de nuestra capacidad para comunicarnos y trabajar asertivamente con ustedes como faculty advisors.
         <br><br>
