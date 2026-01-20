@@ -157,6 +157,6 @@
 
 <section id="insta-feed" aria-hidden="true">
     <div>
-        <BeholdWidget feedId="Cj9y7jXZhXrNjkJj2O91"></BeholdWidget>
+        <BeholdWidget feedId="Lf9sgrB1b0m8PfiPiGH1"></BeholdWidget>
     </div>
 </section>
