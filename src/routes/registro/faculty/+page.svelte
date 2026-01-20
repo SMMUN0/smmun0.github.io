@@ -502,7 +502,7 @@
                             <li>Otorga su consentimiento expreso para el uso de su imagen y voz en los términos descritos anteriormente.</li>
                             <li>Renuncia a cualquier reclamación o derecho que pueda tener respecto al uso de su imagen y voz por parte del SMMUN.</li>
                         </ol>
-                        Si tiene alguna pregunta o inquietud, por favor comuníquese con <a href="mailto:secretariadedifusion.smmun@gmail.com">secretariadedifusion.smmun@gmail.com</a>.
+                        Si tiene alguna pregunta o inquietud, por favor comuníquese con <a href="mailto:difusion.smmun@gmail.com">difusion.smmun@gmail.com</a>.
                     </div>
                 </div>
             </div>
