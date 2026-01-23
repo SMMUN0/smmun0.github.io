@@ -527,6 +527,21 @@
         color: #44372b;
     }
 
+    div:has(#img-modalidad) {
+        width: 86%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #img-modalidad {
+        width: 100%;
+        height: auto;
+        margin: 1vh 0;
+        border-radius: 12px;
+    }
+
     div:has(#img-pago) {
         display: flex;
         flex-direction: column;
@@ -581,6 +596,10 @@
             </h2>
         </div>
     </article>
+
+    <div>
+        <enhanced:img id="img-modalidad" src="/static/assets/img/registro/modalidad.png" alt="Modalidades permitidas para cada comité." />
+    </div>
 
     <div class="mb-3">
         <div>
