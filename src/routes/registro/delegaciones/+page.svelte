@@ -910,7 +910,7 @@
 
         {#if delegacionOficialValue != "si"}
             <p>
-                <strong>Concepto sugerido:</strong> Nombre y apellido
+                <strong>Concepto:</strong> Nombre y apellido
             </p>
 
             <p>
