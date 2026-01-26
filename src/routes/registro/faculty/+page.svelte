@@ -382,7 +382,7 @@
     </article>
 
     <div class="mb-3">
-        <enhanced:img id="img-pago" src="/static/assets/img/registro/mifel.webp" alt="Datos bancarios. CLABE: 042 180 01004083209 6; Banco: Mifel" />
+        <enhanced:img id="img-pago" src="/static/assets/img/registro/mifel.png" alt="Datos bancarios. CLABE: 042 180 01004083209 6; Banco: Mifel" />
 
         <p style="text-align: justify;">
             <i>

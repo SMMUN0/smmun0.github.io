@@ -895,7 +895,7 @@
 
     <div class="mb-3">
         {#if delegacionOficialValue != "si"}
-            <enhanced:img id="img-pago" src="/static/assets/img/registro/mifel.webp" alt="Datos bancarios. CLABE: 042 180 01004083209 6; Banco: Mifel" />
+            <enhanced:img id="img-pago" src="/static/assets/img/registro/mifel.png" alt="Datos bancarios. CLABE: 042 180 01004083209 6; Banco: Mifel" />
         {/if}
 
         <p>
@@ -909,6 +909,10 @@
         </p>
 
         {#if delegacionOficialValue != "si"}
+            <p>
+                <strong>Concepto sugerido:</strong> Nombre y apellido
+            </p>
+
             <p>
                 <i>
                     Una vez realizado el pago, no se emite reembolso alguno.
