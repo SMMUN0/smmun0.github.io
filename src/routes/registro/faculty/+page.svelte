@@ -424,17 +424,17 @@
     </article>
 
     <div class="mb-3" style="line-height: 1.6rem; text-align: justify;">
-        Se recuerda que cada Faculty Advisor es responsable de los términos estipulados en el presente documento, el cual debe ser de conocimiento por todas aquellas personas responsables del cargo que se encuentren registradas en el Modelo de Naciones Unidas del Sureste Mexicano (SMMUN).
+        Se recuerda que cada Faculty Advisor es responsable de los términos estipulados en el presente documento, el cual debe ser de conocimiento por todas aquellas personas responsables del cargo que se encuentren registradas en el Modelo de Naciones Unidas del Sureste Mexicano (SMMUN), asi como de las instituciones que representan.
         <br><br>
-        Nuestro objetivo es trabajar de la mano para hacer cumplir las reglas y regulaciones del evento, y en caso de su violación por parte de las delegaciones, el SMMUN se encargará de estipular las sanciones e informárselas a los responsables académicos correspondientes. Por lo tanto, las personas Faculty son responsables de supervisar a sus delegaciones en todo momento y de asegurarse de que sigan las reglas del MUN, incluidas, entre otras, las descritas en los puntos anteriores.
+        Nuestro objetivo es <strong>trabajar de la mano</strong> para hacer cumplir las reglas y regulaciones del evento, y en caso de su violación por parte de las delegaciones, el SMMUN se encargará de estipular las sanciones e informárselas a los responsables académicos correspondientes. Por lo tanto, las personas Faculty son responsables de supervisar a sus delegaciones en todo momento y de asegurarse de que sigan las reglas del modelo, incluidas, entre otras, las descritas en los puntos siguientes.
         <br><br>
         A continuación, se anexa una lista de responsabilidades que cada persona asesora debe tener en cuenta para garantizar el correcto decoro y la seguridad durante el Modelo:
         <br><br>
         - Todas las personas Faculty Advisor deben tener un número de celular en funcionamiento registrado en el SMMUN durante el Modelo.
         <br><br>
-        - Las Faculty deben asegurarse de estar accesibles por teléfono en todo momento durante la conferencia, para casos como el informe por mal comportamiento de las delegaciones o localizarles en casos de emergencia.
+        - Las Faculty deben asegurarse de estar accesibles por teléfono en todo momento durante la conferencia, para casos como el informe por mal comportamiento de las delegaciones o para localizarles en casos de emergencia.
         <br><br>
-        - También alentamos a observar el trabajo dentro de los comités y explorar la sede principal. Nuestra capacidad para manejar el mal comportamiento y garantizar el correcto decoro durante el evento depende de nuestra capacidad para comunicarnos y trabajar asertivamente con ustedes como faculty advisors.
+        - También, alentamos a observar el trabajo dentro de los comités y explorar la sede principal. Nuestra habilidad para manejar el mal comportamiento y garantizar el correcto decoro durante el evento depende de nuestra capacidad para comunicarnos y trabajar asertivamente con ustedes como faculty advisors.
         <br><br>
 
         <div class="accordion">
@@ -450,17 +450,17 @@
                         El costo del evento cuenta con diferentes cuotas de recuperación dependiendo de la modalidad de participación. Tales como:
                         <br>
                         <ul style="margin: 1rem 0;">
-                            <li>Delegación (Individual): $300.00 MX (TRESCIENTOS PESOS MEXICANOS)</li>
-                            <li>Codelegación (En binas): $280.00 MX por persona (DOSCIENTOS OCHENTA PESOS MEXICANOS)</li>
-                            <li>Formar parte de una Delegación Oficial (Mínimo 4 personas): $260.00 MX por persona (DOSCIENTOS SESENTA PESOS MEXICANOS)</li>
+                            <li>Delegación (Individual): $320.00 MX (TRESCIENTOS VEINTE PESOS MEXICANOS)</li>
+                            <li>Codelegación (En binas): $300.00 MX por persona (TRESCIENTOS PESOS MEXICANOS)</li>
+                            <li>Formar parte de una Delegación Oficial (Mínimo 4 personas): $280.00 MX por persona (DOSCIENTOS OCHENTA PESOS MEXICANOS)</li>
                         </ul>
-                        Esto incluye diferentes beneficios como: seguimiento por parte de Secretaría de Vinculación correspondiente, previo y durante el Modelo, acceso a la inauguración y clausura del evento, coffee break, kit de participación (libreta, pluma, vaso, etc.) y más sorpresas.
+                        Esto incluye diferentes <strong>beneficios</strong> como: seguimiento por parte de Secretaría de Vinculación correspondiente, previo y durante el Modelo; acceso a la inauguración, sesiones y clausura del evento, coffee breaks, kit de participación (libreta, pluma, vaso, etc.) y más sorpresas.
                         <br><br>
-                        <strong>Nota importante:</strong> TODAS las delegaciones deben realizar su inscripción individual POSTERIOR al envío de este formulario. La razón de esto es para que el SMMUN pueda cotejar los pagos con la información otorgada tanto por la persona Faculty Advisor como por la delegación, en caso de existir una contradicción, el equipo SMMUN se encargará de contactarse con usted. Por otro lado, las delegaciones deberán adjuntar como comprobante de pago la IMAGEN que será enviada por la Secretaría de Finanzas al correo que usted registró.
+                        <strong>Nota importante:</strong> TODAS las delegaciones deben realizar su inscripción individual POSTERIOR al envío del formulario de registro de Faculty Advisor. Esto es para que el SMMUN pueda cotejar los pagos con la información otorgada tanto por la persona Faculty Advisor como por la delegación, y en caso de existir una contradicción, el Equipo SM se encargará de contactarse con usted. Por otro lado, las delegaciones deberán adjuntar como comprobante de pago la IMAGEN que será enviada por la Secretaría de Finanzas al correo que usted registró.
                         <br><br>
                         El Modelo de Naciones Unidas del Sureste Mexicano se exime de cualquier responsabilidad relacionada con el uso indebido de la cuota de recuperación fuera de los fines a este modelo. Solo haciéndose responsable una vez que el monto total haya sido exitosamente depositado y confirmado por las autoridades pertinentes.
                         <br><br>
-                        Una vez que se haya completado el formulario de inscripción de la delegación, se le enviará un correo electrónico de confirmación tanto a la misma como a la persona faculty.
+                        Una vez que se haya completado el formulario de inscripción de la Delegación, se le enviará un correo electrónico de confirmación a la persona Faculty.
                         <br><br>
                         Cualquier duda, comunicarse con <a href="mailto:secretariadefinanzas@smmun.com">secretariadefinanzas@smmun.com</a>.
                     </div>
@@ -475,11 +475,14 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        La organización SMMUN 2026 "Una Nueva Historia" está comprometida con la promoción de la equidad y la inclusión en el MUN. Nuestro objetivo es alentar a personas de diversos orígenes y experiencias variadas a reunirse y participar en debates claves sobre temas críticos. SMMUN prohíbe estrictamente cualquier forma de discriminación o prejuicio basado en sexo, género, identidad de género, orientación sexual, discapacidad, edad, religión, etnia, raza, estatus socioeconómico o cualquier otro factor que pueda obstaculizar nuestro compromiso con la equidad.
+                        La organización del SMMUN 2026 "Una Nueva Historia" está comprometida con la promoción de la equidad y la inclusión en el MUN. Nuestro objetivo es alentar a personas de diversos orígenes y experiencias variadas a reunirse y participar en debates claves sobre temas críticos. El SMMUN prohíbe estrictamente cualquier forma de discriminación o prejuicio basado en sexo, género, identidad de género, orientación sexual, discapacidad, edad, religión, etnia, raza, estatus socioeconómico o cualquier otro factor que pueda obstaculizar nuestro compromiso con la equidad.
                         <br><br>
                         En consecuencia, cualquier incidente que involucre violencia sexual, acoso, intimidación o discriminación relacionada con cualquiera de los factores antes mencionados será objeto de las medidas disciplinarias correspondientes. Estas medidas pueden incluir la descalificación automática, la posible expulsión del evento o el externar la situación a las autoridades internas y externas pertinentes, según la gravedad de la infracción.
                         <br><br>
-                        Al registrar su delegación para SMMUN, usted reconoce y acepta cumplir con los procedimientos de equidad establecidos y el Protocolo de las Delegaciones del comité asignado. Si tiene alguna pregunta o inquietud con respecto a la declaración anterior, no dude en comunicarse con <a href="mailto:vinculacion@smmun.com">vinculacion@smmun.com</a>.
+                        Al registrar su delegación para el SMMUN, usted reconoce y acepta cumplir con los procedimientos de equidad establecidos y el Protocolo de las Delegaciones del comité asignado. 
+                        <br><br>
+                        Si tiene alguna pregunta o inquietud con respecto a la declaración anterior, no dude en comunicarse con <a href="mailto:vinculacion@smmun.com">vinculacion@smmun.com</a>.
+
                     </div>
                 </div>
             </div>
@@ -492,7 +495,7 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Al inscribirse en el SMMUN 2026, usted y/o su delegación oficial (en adelante, "la Delegación Participante") otorgan su consentimiento expreso para que el equipo de comunicación del SMMUN capture y utilice imágenes y videos del evento, incluyendo pero sin limitarse a fotografías y grabaciones de video que puedan incluir al Participante.
+                        Al inscribirse en el SMMUN 2026, usted y/o su delegación oficial (en adelante, "la Delegación Participante") otorgan su consentimiento expreso para que el equipo de comunicación del SMMUN capture y utilice imágenes y videos del evento, incluyendo pero sin limitarse a fotografías y grabaciones de video que puedan incluir al participante.
                         <br><br>
                         La Delegación Participante reconoce y acepta que dichas imágenes y videos pueden ser utilizados por el SMMUN en sus sitios web, materiales promocionales y otros medios de comunicación, con fines de divulgación y promoción del evento.
                         <br><br>
@@ -502,7 +505,7 @@
                             <li>Otorga su consentimiento expreso para el uso de su imagen y voz en los términos descritos anteriormente.</li>
                             <li>Renuncia a cualquier reclamación o derecho que pueda tener respecto al uso de su imagen y voz por parte del SMMUN.</li>
                         </ol>
-                        Si tiene alguna pregunta o inquietud, por favor comuníquese con <a href="mailto:difusion.smmun@gmail.com">difusion.smmun@gmail.com</a>.
+                        Si tiene alguna pregunta o inquietud, por favor comuníquese con <a href="mailto:secretariageneral.smmun@gmail.com">secretariageneral.smmun@gmail.com</a>.
                     </div>
                 </div>
             </div>
@@ -519,84 +522,86 @@
                         <ol style="margin: 1rem 0;" type="I">
                             <li><strong>Asesoría académica.</strong> Guiar a sus delegaciones en la comprensión de los temas a discutir, profundizar en el contexto internacional y reforzar la metodología de resolución de conflictos, investigación y argumentación.</li>
                             <br>
-                            <li><strong>Comunicación de necesidades y peticiones.</strong> Para cualquier petición, requerimiento o necesidad de sus delegaciones, el Faculty Advisor deberá comunicarlo siempre con la Secretaría Académica, Secretaría General, Secretaría de Finanzas, alguna Secretaría de Vinculación o alguna otra persona del Comité Organizador, dependiendo de la situación o el asunto.</li>
+                            <li><strong>Comunicación de necesidades y peticiones.</strong> Para cualquier petición, requerimiento o necesidad de sus delegaciones, el Faculty Advisor deberá comunicarlo siempre con la Secretaría Académica, Secretaría General, Secretaría de Finanzas, Secretaría de Vinculación o alguna otra persona del Comité Organizador, dependiendo de la situación o naturaleza del asunto.</li>
                             <br>
-                            <li><strong>Desarrollo de habilidades de debate.</strong> Pueden aconsejar a sus delegaciones en técnicas de debate, negociación, manejo del tiempo y oratoria para ayudarles a expresarse con claridad y precisión, siempre y cuando se haga fuera de los salones de capacitaciones o salas de las sesiones.</li>
+                            <li><strong>Desarrollo de habilidades de debate.</strong> Pueden aconsejar a sus delegaciones en técnicas de debate, negociación, manejo del tiempo y oratoria con el fin de ayudarles a expresarse con claridad y precisión, siempre y cuando se haga fuera de los salones de capacitaciones o salas de las sesiones.</li>
                             <br>
-                            <li><strong>Soporte en preparación de documentos.</strong> Antes del evento, pueden revisar papeles de posición, discursos y propuestas de solución a mencionar dentro del debate, sugiriendo mejoras o correcciones en la redacción y contenido a sus delegaciones.
+                            <li><strong>Soporte en preparación de documentos.</strong> Antes del evento, podrán revisar papeles de posición, discursos, participaciones y propuestas de solución a mencionar dentro del debate, sugiriendo mejoras o correcciones en la redacción y contenido a sus delegaciones.
                             <br><br>
-                            Sin embargo, queda estrictamente prohibido revisar, redactar, sugerir mejoras, suprimir contenido o hacer comentarios de las Hojas de Trabajo o Resoluciones, Informes, Observancias Generales, Convenios o Sentencias que se realizan dentro de cada comité por todas las delegaciones participantes. Las únicas autoridades facultadas para realizar dichas acciones son las personas de la Mesa Directiva y la Secretaría Académica y Secretaría General del SMMUN.</li>
+                            Sin embargo, queda estrictamente prohibido revisar, redactar, sugerir mejoras, suprimir contenido o hacer comentarios de las Hojas de Trabajo y/o Documentos Resolutivos (Resoluciones, Informes, Comunicados, Policy Brief, Pacto para el futuro y Directivas) que se realizan dentro de cada comité por todas las delegaciones participantes. Las únicas autoridades facultadas para realizar dichas acciones son las personas de la Mesa Directiva y la Secretaría Académica y Secretaría General del SMMUN.</li>
                             <br>
                             <li><strong>Motivación y apoyo emocional.</strong> Pueden proporcionar motivación, recordando a sus delegaciones la importancia de su participación y alentándoles a dar lo mejor de sí, siempre y cuando se haga fuera de los salones de capacitaciones o salas de las sesiones.</li>
                             <br>
                             <li><strong>Apoyo técnico fuera del debate.</strong> Pueden resolver dudas y brindar retroalimentación a sus delegaciones fuera de las capacitaciones y/o sesiones, fortaleciendo sus habilidades sin intervenir directamente en el desarrollo del debate.
                             <br><br>
-                            El tiempo de coffee break cuenta como un receso de las sesiones para  poder realizar retroalimentaciones a sus delegaciones, sin embargo, el Faculty Advisor deberá mantener discreción y mucho respeto al momento de comunicarse con sus delegaciones.</li>
+                            El tiempo de coffee break cuenta como un receso de las sesiones para poder realizar retroalimentaciones a sus delegaciones, sin embargo, el Faculty Advisor deberá mantener discreción y mucho respeto al momento de comunicarse con sus delegaciones participantes.</li>
                             <br>
-                            <li><strong>Asesoría en protocolos.</strong> Ayudan a sus delegaciones a comprender y prepararse para las reglas de procedimiento, mociones y el flujo general del debate en el Modelo. De igual forma, cualquier Faculty Advisor podrá acercarse a la Secretaría Académica del SMMUN para resolver dudas o comentarios respecto al protocolo y/o funcionamiento interno de cada comité.</li>
+                            <li><strong>Asesoría en protocolos.</strong> Ayudan a sus delegaciones a comprender y prepararse para las reglas de procedimiento, mociones y el flujo general del debate en el modelo. De igual forma, cualquier Faculty Advisor podrá acercarse a la Secretaría Académica del SMMUN para resolver dudas o comentarios respecto al protocolo y/o funcionamiento interno de cada comité.</li>
                             <br>
-                            <li><strong>Mantener el respeto.</strong> Independiente de cualquier situación, el Faculty Advisor deberá mantener respeto hacia cualquier persona integrante del SMMUN, incluyendo delegaciones que no integran su Delegación Oficial; todas las Mesas Directivas, sin importar si estas son o no Mesas de sus delegaciones; todas las personas del Comité Organizador; todas las personas que se desempeñan como Faculty Advisors y el personal académico, administrativo y manual de las instalaciones donde se llevará a cabo el SMMUN.</li>
+                            <li><strong>Mantener el respeto.</strong> Independiente de cualquier situación, el Faculty Advisor deberá mantener respeto hacia cualquier persona integrante del SMMUN, incluyendo delegaciones que no integran su Delegación Oficial; Mesas Directivas, sin importar si estas son o no Mesas de sus delegaciones; todas las personas del Comité Organizador; todas las personas que se desempeñan como Faculty Advisors y el personal académico, administrativo y manual de las instalaciones donde se llevará a cabo el SMMUN.</li>
                             <br>
                             <li><strong>Apertura al diálogo.</strong> La Secretaría General y Secretaría Académica siempre estarán dispuestas a escuchar recomendaciones, sugerencias y comentarios sobre cualquier situación, por lo que se le exhorta al Faculty Advisor de tener la confianza de acercarse siempre que lo desee a externar sus dudas y comentarios.</li>
                         </ol>
 
                         <strong>SOBRE SUS LIMITACIONES ACADÉMICAS DENTRO DEL SMMUN:</strong>
                         <br>
-                        <i>(Estas limitaciones solo son requeridas dentro de los horarios e instalaciones donde se llevará a cabo el SMMUN, considerando que cada Faculty Advisor tiene libertad académica de acuerdo a los propios lineamientos de su escuela u organización del cual forma parte)</i>
+                        <i>(Estas limitaciones solo son requeridas dentro de los horarios e instalaciones donde se llevará a cabo el SMMUN, considerando que cada Faculty Advisor tiene libertad académica de acuerdo a los propios lineamientos de la escuela u organización del cual forma parte).</i>
                         <ol style="margin: 1rem 0;" type="I">
                             <li><strong>Intervenir directamente en el Debate.</strong> No pueden participar en las capacitaciones y/o sesiones de debate, ya sea haciendo preguntas, brindando argumentos o representando a sus delegaciones durante las capacitaciones y/o sesiones.</li>
                             <br>
-                            <li><strong>Hablar con las Mesas Directivas.</strong> Para asuntos académicos, protocolarios o logísticos, queda estrictamente prohibido realizar cualquier petición, requerimiento o necesidad de sus delegaciones de forma oral o escrita en cualquier medio con alguna persona integrante de las Mesas Directivas, ya sea fuera o dentro de la inauguración, capacitaciones y/o sesiones de debate. En caso de ser necesario, el Faculty Advisor deberá de comunicarse primero con la Secretaría Académica o Secretaría General y estas serán las encargadas de transmitir el mensaje con la Mesa Directiva.
+                            <li><strong>Hablar con las Mesas Directivas.</strong> Para asuntos académicos, protocolarios o logísticos, queda estrictamente prohibido realizar cualquier petición, requerimiento o necesidad de sus delegaciones de forma oral o escrita en cualquier medio con alguna persona integrante de las Mesas Directivas, ya sea fuera o dentro de la inauguración, capacitaciones y/o sesiones de debate. En caso de ser necesario, el Faculty Advisor deberá de comunicarse primero con la Secretaría Académica o Secretaría General y estas serán las encargadas de transmitir el mensaje con la Mesa Directiva correspondiente. 
                             <br><br>
                             Cualquier corrección o sugerencia sobre el protocolo debe ser canalizada únicamente a la Secretaría Académica, evitando interacciones directas con la Mesa Directiva.</li>
                             <br>
-                            <li><strong>Influenciar las decisiones de la Mesa Directiva.</strong> No tienen autoridad para intervenir en las decisiones de ninguna de las personas integrantes de la Mesa Directiva ni para opinar sobre el desempeño o decisiones tomadas en el comité.</li>
+                            <li><strong>Influenciar las decisiones de la Mesa Directiva.</strong> No tienen autoridad para intervenir en las decisiones de ninguna de las personas integrantes de la Mesa Directiva (Presidencia, Moderación, Oficialía de Conferencias y Oficialías de Sala) ni para opinar sobre el desempeño o decisiones tomadas en el comité por parte de estas; en caso de que se desease alguna aclaración respectiva a una desición tomada por alguna Mesa Directiva, la persona faculty deberá acercarse a la Secretariá Académica para resolver esta.</li>
                             <br>
                             <li><strong>Incentivar a realizar acciones de nepotismo a alguna persona que conoce y que integra alguna Mesa Directiva.</strong> Queda estrictamente prohibido hablar de forma oral, escrita o por cualquier otro medio de comunicación sobre asuntos de darle preferencia o ventaja a alguna delegación, dar la palabra de forma más recurrente, tomar en cuenta para premiaciones o realizar algún otro apoyo más personalizado a alguna delegación para crear ventaja con alguna persona integrante de una Mesa Directiva que conozca el Faculty Advisor por medio de alguna relación personal, profesional o académica.
                             <br><br>
-                            Se pide de forma exhaustiva que el Faculty Advisor se abstenga de realizar estas acciones en todo momento, ya sea fuera o dentro de las instalaciones y horarios del Modelo, incluyendo los eventos previos, inauguración, capacitaciones o sesiones de debate.</li>
+                            Se pide de manera puntual que el Faculty Advisor se abstenga de realizar estas acciones en todo momento, ya sea fuera o dentro de las instalaciones y horarios del Modelo, incluyendo los eventos previos, inauguración, capacitaciones o sesiones de debate.</li>
                             <br>
-                            <li><strong>Redactar Documentos, Papeles de Posición, Discursos, Hojas de Trabajo o Resoluciones, Informes, Observancias Generales, Convenios o Sentencias.</strong> No deben escribir ni proponer en nombre de sus delegaciones ideas para la redacción de los documentos antes mencionados. Cada documento debe ser elaborado y creado por todas las delegaciones del comité.
+                            <li><strong>Realizar o participar directamente en la redacción de Documentos, Papeles de Posición, Discursos, Hojas de Trabajo o Documentos Resolutivos correspondientes a alguno de los 11 comités de la edición.</strong> No deben escribir ni proponer en nombre de sus delegaciones ideas para la redacción de los documentos antes mencionados. Cada documento debe ser elaborado y creado exclusivamente por todas las delegaciones del comité.
                             <br><br>
-                            Se pide de forma exhaustiva que el Faculty Advisor se abstenga de realizar estas acciones en todo momento, ya sea fuera o dentro de las instalaciones y horarios del Modelo.</li>
+                            Se solicita encarecidamente que el Faculty Advisor se abstenga de realizar estas acciones en todo momento, ya sea fuera o dentro de las instalaciones y horarios del Modelo.</li>
                             <br>
-                            <li><strong>Sancionar o regañar públicamente a sus delegaciones.</strong> La persona Faculty Advisor debe limitarse a la asesoría, evitando reprimendas públicas durante capacitaciones, sesiones y coffee breaks, especialmente en presencia de otras delegaciones o Mesas Directivas.</li>
+                            <li><strong>Sancionar o regañar públicamente a sus delegaciones.</strong> La persona Faculty Advisor debe limitarse a la asesoría, evitando reprimendas públicas durante capacitaciones, sesiones y coffee breaks, especialmente en presencia de otras delegaciones o Mesas Directivas o persona participante del SMMUN.</li>
                             <br>
                             <li><strong>Acceso a reuniones internas de la Mesa Directiva o Comité.</strong> No tienen permitido estar en reuniones cerradas de la Mesa Directiva, ni participar en discusiones internas sobre la evaluación de delegaciones.</li>
                             <br>
-                            <li><strong>Nuevas posibles limitaciones.</strong> Cualquier limitación nueva que se establezca, el Faculty Advisor será previamente notificado.</li>
+                            <li><strong>Limitaciones adicionales.</strong> Cualquier limitación que se establezca con posterioridad  a este Reglamento será notificada previamente al Faculty Advisor</li>
                         </ol>
 
                         <strong>SOBRE LOS ACCESOS Y SALIDAS A LAS SALAS DURANTE LAS CAPACITACIONES Y SIMULACIONES:</strong>
                         <ol style="margin: 1rem 0;" type="I">
-                            <li><strong>Acceso a los salones.</strong> Los Faculty Advisors podrán ingresar de forma respetuosa y silenciosa a los salones donde se estén realizando capacitaciones y/o simulaciones, con el fin de poder observar a sus delegaciones y darles una retroalimentación al finalizar. Sin embargo, no se encuentra en orden acercarse o comunicarse de forma oral o escrita con sus delegaciones durante la capacitación o simulación.</li>
+                            <li><strong>Acceso a los salones.</strong> Los Faculty Advisors podrán ingresar de forma respetuosa y silenciosa a los salones donde se estén realizando capacitaciones y/o simulaciones, con el fin de poder observar a sus delegaciones y darles una retroalimentación al finalizar. Sin embargo, no se encuentra en orden acercarse o comunicarse de forma oral o escrita con sus delegaciones durante la capacitación o simulación, ni interrumpir el flujo de esta.</li>
                             <br>
-                            <li><strong>Acceso a simulaciones de las capacitaciones.</strong> Durante las simulaciones de capacitaciones de todos los comités, los Faculty Advisor podrán ingresar y permanecer dentro del salón en todo momento y en cualquier procedimiento protocolario, manteniendo silencio y respeto; sin importar si se están llevando a cabo caucus moderados, caucus inmoderados, procesos de votación o espera de aprobación del documento resolutivo. Esto con el fin de que puedan observar el desempeño de sus delegaciones y brindarles una retroalimentación posteriormente.</li>
+                            <li><strong>Acceso a simulaciones de las capacitaciones.</strong> Durante las simulaciones de capacitaciones de todos los comités, los Faculty Advisor podrán ingresar y permanecer dentro del salón en todo momento durante cualquier procedimiento protocolario, manteniendo silencio y respeto; sin importar si se están llevando a cabo caucus moderados, caucus inmoderados, procesos de votación o espera de aprobación del documento resolutivo. Esto con el fin de que puedan observar el desempeño completo de sus delegaciones y brindarles una retroalimentación posteriormente.</li>
                             <br>
-                            <li><strong>Nuevos posibles lineamientos.</strong> Cualquier lineamiento nuevo que se establezca para los días de capacitaciones, el Faculty Advisor será previamente notificado.</li>
+                            <li><strong>Lineamientos adicionales.</strong> Cualquier lineamiento que se establezca con posterioridad a este Reglamento será notificada previamente al Faculty Advisor.</li>
                         </ol>
 
                         <strong>SOBRE LOS ACCESOS Y SALIDAS A LAS SALAS DURANTE LAS SESIONES DE DEBATE:</strong>
                         <ol style="margin: 1rem 0;" type="I">
-                            <li><strong>Entrada en caucus moderado.</strong> Durante los caucus moderados, los Faculty Advisors tienen la facultad de entrar y salir de la sala, siempre que lo hagan en silencio, para evitar interrumpir la dinámica del debate.</li>
+                            <li><strong>Reconocimiento de la entrada.</strong> Ningun Faculty Advisor, sin distinción alguna, será reconocido públicamente a foro abierto por la Mesa Directiva correspondiente al momento de su ingreso a la sala, en ningún momento durante el desarrollo del comité.</li>
                             <br>
-                            <li><strong>Reconocimiento de la entrada.</strong> Todos los Faculty Advisors, sin distinción alguna, no tendrán que ser reconocidos públicamente a foro abierto por la Mesa Directiva para poder ingresar a la sala durante los caucus moderados.</li>
+                            <li><strong>Entrada en caucus moderado.</strong> Durante los caucus moderados, los Faculty Advisors tienen la facultad de entrar y salir de la sala, siempre y cuando lo hagan en silencio, para evitar interrumpir la dinámica del debate y el flujo del comité.</li>
                             <br>
-                            <li><strong>Prohibición de ingreso a sesiones de caucus inmoderados.</strong> Los Faculty Advisors no pueden ingresar a los caucus inmoderados a menos que sea una emergencia o la Secretaría Académica o Secretaría General les haya otorgado permiso de entrada mediante una solicitud previa.
+                            <li><strong>Prohibición de ingreso a sesiones de caucus inmoderado.</strong> Los Faculty Advisors no pueden ingresar a los caucus inmoderados, salvo en caso de emergencia o cuando cuenten con autorización previa por parte de la Secretaría Académica o la Secretaría General.
                             <br><br>
-                            Sin embargo, si el Faculty Advisor se encuentra dentro de la sesión cuando inicie el caucus inmoderado, podrá permanecer dentro y salir hasta que el caucus inmoderado termine.</li>
+                            Sin embargo, si el Faculty Advisor se encuentra dentro de la sesión cuando inicie el caucus inmoderado, podrá permanecer dentro y salir hasta que dicho caucus inmoderado termine.</li>
                             <br>
-                            <li><strong>Prohibición de ingreso a sesiones durante la votación de Resoluciones, Informes, Observancias Generales o Convenios.</strong> Los Faculty Advisors no pueden ingresar a la sala o mantenerse dentro durante el proceso de votación de los documentos antes mencionados. Para esta situación, no se encuentra en orden realizar una solicitud previa para poder ingresar.</li>
+                            <li><strong>Prohibición de ingreso a sesiones durante la votación y adopción de Resoluciones, Informes, Comunicados, Policy Brief, Pacto para el futuro y Directivas.</strong> Los Faculty Advisors no pueden ingresar a la sala o permanecer dentro de esta, durante el proceso de votación de los documentos antes mencionados. Para esta situación, no se encuentra en orden realizar una solicitud previa para poder ingresar a las autoridades correspondientes.</li>
                             <br>
-                            <li><strong>Proceso de espera del comité donde la Presidencia se retira de la sala para llevar a la aprobación del documento resolutivo a la Secretaría General y Secretaría Académica.</strong> Durante esta etapa queda estrictamente prohibido entrar o mantenerse durante la sala, por cualquier motivo o circunstancia.
+                            <li><strong>Proceso de espera durante la revisión del Documento Resolutivo.</strong> Durante el proceso en el que la Presidencia se retira de la sala para llevar el documento resolutivo a la aprobación de la Secretaría General y la Secretaría Académica, queda estrictamente prohibido el ingreso o la permanencia en la sala, por cualquier motivo o circunstancia.
                             <br><br>
-                            Al regresar la Presidencia y habiendo entrado primero a la sala para anunciar el resultado de la aprobación, el Faculty Advisor tendrá la oportunidad de ingresar a la sala en silencio.
+                            Una vez que la Presidencia haya regresado a la sala y haya ingresado previamente para anunciar el resultado de la aprobación, el Faculty Advisor podrá ingresar a la sala en silencio.
                             <br>
-                            En dado caso de que no se apruebe el documento resolutivo y se tengan que hacer adecuaciones, el Faculty Advisor podrá mantenerse dentro de la sala mientras se realizan las correcciones, pero deberá retirarse cuando salga la presidencia para la segunda revisión y podrá reingresar hasta que la presidencia regrese y entre para dar el segundo veredicto.</li>
+                            En caso de que el Documento Resolutivo requiera adecuaciones, el Faculty Advisor podrá permanecer dentro de la sala mientras se llevan a cabo dichas correcciones. No obstante, deberá retirarse una vez la Presidencia salga de la sala para la segunda revisión repitiendo el proceso anteriormente establecido.
                             <br>
-                            <li><strong>Supervisión del estatus en caucus inmoderados, procesos de votación y espera de aprobación del documento resolutivo.</strong> En las sesiones de caucus inmoderados, procesos de votaciones y espera de aprobación del documento resolutivo, la Mesa Directiva colocará un letrero en la puerta de la sala indicando el estatus del debate. Este letrero permite a los Faculty Advisors identificar cuándo se encuentra la sesión en caucus inmoderado, en votaciones o en espera de aprobación, para respetar los momentos en los que no se permite su ingreso.</li>
+                            <strong>Observación:</strong> En el Comité de Crisis Futura, el Documento Resolutivo se estructura a través de Directivas, las cuales funcionan como documentos resolutivos independientes. Por lo tanto, el proceso de elaboración, votación y aprobación descrito en el presente apartado podrá repetirse en más de una ocasión, conforme a la dinámica y funcionamiento del Comité.</li>
                             <br>
-                            <li><strong>Nuevos posibles lineamientos.</strong> Cualquier lineamiento nuevo que se establezca para los días de sesiones de debate, el Faculty Advisor será previamente notificado.</li>
+                            <li><strong>Supervisión del estatus en caucus inmoderados, procesos de votación y espera de aprobación del documento resolutivo.</strong> En las sesiones de caucus inmoderados, procesos de votaciones y espera de aprobación del documento resolutivo, la Mesa Directiva colocará un letrero en la puerta de la sala indicando el estatus del debate. Este letrero permite a los Faculty Advisors identificar cuándo se encuentra la sesión en caucus inmoderado, en votaciones o en espera de aprobación, para respetar los momentos en los que no se permite su ingreso y estar informado del la evolución del debate.</li>
+                            <br>
+                            <li><strong>Lineamientos adicionales.</strong> Cualquier lineamiento que se establezca con posterioridad a este Reglamento será notificada previamente al Faculty Advisor.</li>
                             <br>
                         </ol>
                     </div>
