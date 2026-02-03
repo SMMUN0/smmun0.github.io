@@ -404,7 +404,7 @@
 
         {#if numeroDelegacionesValidity}
             <p>
-                <strong>Costo total de inscripción:</strong> {(260 * parseInt(numeroDelegacionesValue!)).toLocaleString()} MXN ($260 MXN por {numeroDelegacionesValue} personas)
+                <strong>Costo total de inscripción:</strong> {(280 * parseInt(numeroDelegacionesValue!)).toLocaleString()} MXN ($280 MXN por {numeroDelegacionesValue} personas)
             </p>
         {/if}
 
