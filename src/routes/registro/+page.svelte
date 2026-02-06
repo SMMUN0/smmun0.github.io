@@ -40,6 +40,10 @@
         max-width: 560px;
     }
 
+    .image-a:hover {
+        opacity: 0.8;
+    }
+
     .convocatoria img {
         width: 100%;
         height: auto;
@@ -79,7 +83,7 @@
     }
 
     @media (prefers-reduced-motion: no-preference) {
-        a:hover::after {
+        .convocatoria-title a:hover::after {
             transform: scaleX(1);
         }
     }
@@ -99,29 +103,39 @@
 <section>
     <div class="convocatorias">
         <article class="convocatoria">
-            <figure>
-                <img src="/assets/img/registro/1.webp" alt="Convocatoria de delegaciones." />
-            </figure>
+
+            <a class="image-a" href="/registro/delegaciones">
+                <figure>
+                    <img src="/assets/img/registro/1.webp" alt="Convocatoria de delegaciones." />
+                </figure>
+            </a>
+
             <h2 class="convocatoria-title">
                 <a href="/registro/delegaciones">Convocatoria de delegaciones</a>
             </h2>
         </article>
 
         <article class="convocatoria">
-            <figure>
-                <img src="/assets/img/registro/2.webp" alt="Convocatoria de faculty." />
-            </figure>
+            <a class="image-a" href="/registro/faculty">
+                <figure>
+                    <img src="/assets/img/registro/2.webp" alt="Convocatoria de faculty." />
+                </figure>
+            </a>
+
             <h2 class="convocatoria-title">
                 <a href="/registro/faculty">Convocatoria de faculty</a>
             </h2>
         </article>
 
         <article class="convocatoria">
-            <figure>
-                <img src="/assets/img/registro/3.webp" alt="Convocatoria de staff." />
-            </figure>
+            <a class="image-a" href="#" onclick={() => alert('¡Próximamente!')}>
+                <figure>
+                    <img src="/assets/img/registro/3.webp" alt="Convocatoria de staff." />
+                </figure>
+            </a>
+
             <h2 class="convocatoria-title">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOeD_QRVnQkeZk8SlzDmNoIuuC1gf3e7WyDj1ylHg8ouzbgw/viewform">
+                <a href="#" onclick={() => alert('¡Próximamente!')}>
                     Convocatoria de staff
                 </a>
             </h2>
