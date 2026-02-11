@@ -187,7 +187,7 @@
                     <li><a href="mailto:secretariageneral@smmun.com">secretariageneral@smmun.com</a></li>
                     <li><a href="mailto:contacto@smmun.com">contacto@smmun.com</a></li>
                     <li><a href="mailto:secretariadefinanzas@smmun.com">secretariadefinanzas@smmun.com</a></li>
-                    <li>Para más contactos: <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/4bHj52i">link</a></li>
+                    <!-- <li>Para más contactos: <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/4bHj52i">link</a></li> -->
                 </ul>
             </div>
             <div id="social-media">
