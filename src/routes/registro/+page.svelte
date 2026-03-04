@@ -128,14 +128,14 @@
         </article>
 
         <article class="convocatoria">
-            <a class="image-a" href="#" onclick={() => alert('¡Próximamente!')}>
+            <a class="image-a" href="https://docs.google.com/forms/d/e/1FAIpQLSeiqQqbGhnpURvTsp43gH3CuMtaJprV1fdSGgjBT2JRETrHtg/viewform" target="_blank" rel="noopener noreferrer">
                 <figure>
                     <img src="/assets/img/registro/3.webp" alt="Convocatoria de staff." />
                 </figure>
             </a>
 
             <h2 class="convocatoria-title">
-                <a href="#" onclick={() => alert('¡Próximamente!')}>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiqQqbGhnpURvTsp43gH3CuMtaJprV1fdSGgjBT2JRETrHtg/viewform" target="_blank" rel="noopener noreferrer">
                     Convocatoria de staff
                 </a>
             </h2>
