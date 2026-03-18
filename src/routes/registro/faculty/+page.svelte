@@ -296,7 +296,7 @@
 <TituloRegistro text="Registro de faculty"></TituloRegistro>
 
 <!-- Forms -->
-<form bind:this={formFaculty} method="POST" action="https://smmun-api-e2ixoqxjga-uc.a.run.app/registro/faculty" name="registro-faculty" enctype="multipart/form-data" class="col g-3" novalidate onsubmit={onSubmitForm}>
+<form bind:this={formFaculty} method="POST" action="https://api.smmun.com/registro/faculty" name="registro-faculty" enctype="multipart/form-data" class="col g-3" novalidate onsubmit={onSubmitForm}>
     <!-- Información de contacto -->
     <article class="titulo">
         <h2>Información de contacto</h2>
