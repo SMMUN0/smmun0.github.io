@@ -99,6 +99,20 @@
         "FHCM": "Estrategias para mitigar los efectos sociales y económicos derivados de las condiciones laborales en la industria de la moda."
     };
 
+    const horariosComites: Record<string, string> = {
+        "SOCHUM": "Matutino (9 am a 2 pm)",
+        "ONU-Hábitat": "Matutino (9 am a 2 pm)",
+        "CCPCJ": "Matutino (9 am a 2 pm)",
+        "FHCM": "Matutino (9 am a 2 pm)",
+        "NASA": "Matutino (9 am a 2 pm)",
+        "Cumbre": "Vespertino (3 pm a 8 pm)",
+        "UNRWA": "Vespertino (3 pm a 8 pm)",
+        "ONU SIDA": "Vespertino (3 pm a 8 pm)",
+        "Crisis": "Vespertino (3 pm a 8 pm)",
+        "FIA": "Vespertino (3 pm a 8 pm)",
+        "WWF": "Vespertino (3 pm a 8 pm)"
+    };
+
     // Interfaces para leer JSON de delegaciones
     interface Delegacion {
         nombre: string;
@@ -198,6 +212,10 @@
         }
 
         return undefined;
+    }
+
+    function getHorarioComite(siglas: string) {
+        return horariosComites[siglas] ?? "";
     }
 
     // Observador para cambiar el nav
@@ -578,6 +596,20 @@
         color: #44372b;
         font-weight: bold;
     }
+
+    .comite-topico-div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .comite-horario {
+        margin: 0;
+        color: #44372b;
+        font-family: "Catchy Mager";
+        font-size: 1rem;
+        line-height: 1.4;
+    }
 </style>
 
 <!-- Sentinel para cambiar el navbar -->
@@ -810,6 +842,11 @@
                 {#if comiteValues[i]}
                     <div class="comite-topico-div">
                         <ComiteCarousel comite={comiteSiglasToKey(comiteValues[i])} index={i}></ComiteCarousel>
+                        <p class="comite-horario">
+                            <strong>Horario:</strong> {getHorarioComite(comiteValues[i])}
+                            <br>
+                            <br>
+                        </p>
                     </div>
                 {/if}
             </div>
