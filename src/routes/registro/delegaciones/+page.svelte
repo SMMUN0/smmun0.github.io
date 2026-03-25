@@ -412,6 +412,7 @@
 
         ensureIdempotencyKey();
         pageShowHandler = () => {
+            isSubmitting = false;
             ensureIdempotencyKey();
         };
         window.addEventListener("pageshow", pageShowHandler);
