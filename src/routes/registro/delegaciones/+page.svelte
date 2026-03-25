@@ -237,6 +237,26 @@
     let comiteValues: string[] = $state(Array(3));
     let comitePaisValues: string[][] = $state(Array(3).fill(Array(3)));
     let loadedCookies = $state(false);
+    let idempotencyKey = $state("");
+    let isSubmitting = $state(false);
+    const IDEMPOTENCY_STORAGE_KEY = "registro-delegaciones-idempotency-key";
+    let pageShowHandler: ((event: Event) => void) | undefined;
+
+    function createIdempotencyKey() {
+        return crypto.randomUUID().replace(/-/g, "");
+    }
+
+    function ensureIdempotencyKey() {
+        const storedKey = sessionStorage.getItem(IDEMPOTENCY_STORAGE_KEY);
+        if (storedKey) {
+            idempotencyKey = storedKey;
+            return idempotencyKey;
+        }
+
+        idempotencyKey = createIdempotencyKey();
+        sessionStorage.setItem(IDEMPOTENCY_STORAGE_KEY, idempotencyKey);
+        return idempotencyKey;
+    }
 
     // Event handlers
     function onChangeModalidad(ev: Event) {
@@ -347,9 +367,18 @@
         if (!form.checkValidity()) {
             ev.preventDefault();
             ev.stopPropagation();
+            isSubmitting = false;
 
             // Mostrar error
             window.bootstrap.Toast.getOrCreateInstance(enviarToastDiv).show();
+        }
+        else if (isSubmitting) {
+            ev.preventDefault();
+            ev.stopPropagation();
+        }
+        else {
+            ensureIdempotencyKey();
+            isSubmitting = true;
         }
 
         form.classList.add("was-validated");
@@ -381,6 +410,11 @@
         // Inicializar toast de contacto en WhatsApp
         window.bootstrap.Toast.getOrCreateInstance(whatsappToastDiv).show();
 
+        ensureIdempotencyKey();
+        pageShowHandler = () => {
+            ensureIdempotencyKey();
+        };
+        window.addEventListener("pageshow", pageShowHandler);
         resetValuesFromCookies(formDelegaciones.elements);
         loadedCookies = true;
 
@@ -400,6 +434,9 @@
     });
 
     onDestroy(() => {
+        if (pageShowHandler) {
+            window.removeEventListener("pageshow", pageShowHandler);
+        }
         if (navObserver) {
             navObserver.disconnect();
         }
@@ -620,6 +657,7 @@
 
 <!-- Forms -->
 <form bind:this={formDelegaciones} method="POST" action="https://api.smmun.com/registro/delegaciones" name="registro-delegaciones" enctype="multipart/form-data" class="col g-3" novalidate onsubmit={onSubmitForm}>
+    <input type="hidden" name="idempotency_key" bind:value={idempotencyKey}>
     <!-- Selección de modalidad -->
     <article class="titulo">
         <div class="oval">
@@ -980,7 +1018,9 @@
 
     <div class="mb-3">
         <!-- Enviar -->
-        <input class="form-control focus-ring focus-ring-danger" style="background-color: #ea6880; color: #f0f0f0; font-weight: bold;" type="submit" value="Enviar">
+        <button class="form-control focus-ring focus-ring-danger" style="background-color: #ea6880; color: #f0f0f0; font-weight: bold;" type="submit" disabled={isSubmitting}>
+            {isSubmitting ? "Enviando..." : "Enviar"}
+        </button>
     </div>
 </form>
 

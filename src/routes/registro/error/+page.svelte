@@ -1,3 +1,15 @@
+<script lang="ts">
+    import { onMount } from "svelte";
+
+    onMount(() => {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get("rotate_idempotency_key") === "1") {
+            sessionStorage.removeItem("registro-delegaciones-idempotency-key");
+            sessionStorage.removeItem("registro-faculty-idempotency-key");
+        }
+    });
+</script>
+
 <style>
     #section-error {
         height: calc(100vh - 8vh - 2rem);

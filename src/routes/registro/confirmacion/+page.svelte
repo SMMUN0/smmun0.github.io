@@ -9,6 +9,9 @@
             const name = eqPos > -1 ? cookie.substring(0, eqPos) : cookie;
             document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;`;
         });
+
+        sessionStorage.removeItem("registro-delegaciones-idempotency-key");
+        sessionStorage.removeItem("registro-faculty-idempotency-key");
     })
 </script>
 
