@@ -35,14 +35,14 @@
     }
 
     function ensureIdempotencyKey() {
-        const storedKey = localStorage.getItem(IDEMPOTENCY_STORAGE_KEY);
+        const storedKey = sessionStorage.getItem(IDEMPOTENCY_STORAGE_KEY);
         if (storedKey) {
             idempotencyKey = storedKey;
             return idempotencyKey;
         }
 
         idempotencyKey = createIdempotencyKey();
-        localStorage.setItem(IDEMPOTENCY_STORAGE_KEY, idempotencyKey);
+        sessionStorage.setItem(IDEMPOTENCY_STORAGE_KEY, idempotencyKey);
         return idempotencyKey;
     }
 

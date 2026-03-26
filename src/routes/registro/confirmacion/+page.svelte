@@ -1,14 +1,12 @@
 <script lang="ts">
     import { onMount } from "svelte";
 
-    function getStorageKeyFromReferrer() {
-        const referrer = document.referrer;
-
-        if (referrer.includes("/registro/delegaciones")) {
+    function getStorageKeyFromForm(form: string | null) {
+        if (form === "delegaciones") {
             return "registro-delegaciones-idempotency-key";
         }
 
-        if (referrer.includes("/registro/faculty")) {
+        if (form === "faculty") {
             return "registro-faculty-idempotency-key";
         }
 
@@ -16,6 +14,8 @@
     }
 
     onMount(() => {
+        const params = new URLSearchParams(window.location.search);
+
         // Eliminar cookies
         document.cookie.split(";").forEach(cookie_untrimmed => {
             let cookie = cookie_untrimmed.trim();
@@ -24,9 +24,9 @@
             document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;`;
         });
 
-        const storageKey = getStorageKeyFromReferrer();
+        const storageKey = getStorageKeyFromForm(params.get("form"));
         if (storageKey) {
-            localStorage.removeItem(storageKey);
+            sessionStorage.removeItem(storageKey);
         }
     })
 </script>
