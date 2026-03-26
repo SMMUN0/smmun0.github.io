@@ -28,7 +28,9 @@
     let idempotencyKey = $state("");
     let isSubmitting = $state(false);
     const IDEMPOTENCY_STORAGE_KEY = "registro-faculty-idempotency-key";
+    const SUBMIT_FALLBACK_TIMEOUT_MS = 10000;
     let pageShowHandler: ((event: Event) => void) | undefined;
+    let submitFallbackTimeout: ReturnType<typeof setTimeout> | undefined;
 
     function createIdempotencyKey() {
         if (crypto.randomUUID) {
@@ -89,6 +91,11 @@
     function onSubmitForm(ev: Event) {
         let form = ev.target as HTMLFormElement;
 
+        if (submitFallbackTimeout) {
+            clearTimeout(submitFallbackTimeout);
+            submitFallbackTimeout = undefined;
+        }
+
         if (!form.checkValidity()) {
             ev.preventDefault();
             ev.stopPropagation();
@@ -104,6 +111,10 @@
         else {
             ensureIdempotencyKey();
             isSubmitting = true;
+            submitFallbackTimeout = setTimeout(() => {
+                isSubmitting = false;
+                submitFallbackTimeout = undefined;
+            }, SUBMIT_FALLBACK_TIMEOUT_MS);
         }
 
         form.classList.add("was-validated");
@@ -149,6 +160,9 @@
     onDestroy(() => {
         if (pageShowHandler) {
             window.removeEventListener("pageshow", pageShowHandler);
+        }
+        if (submitFallbackTimeout) {
+            clearTimeout(submitFallbackTimeout);
         }
         if (navObserver) {
             navObserver.disconnect();
