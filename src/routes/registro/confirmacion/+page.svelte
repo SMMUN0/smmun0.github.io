@@ -1,6 +1,20 @@
 <script lang="ts">
     import { onMount } from "svelte";
 
+    function getStorageKeyFromReferrer() {
+        const referrer = document.referrer;
+
+        if (referrer.includes("/registro/delegaciones")) {
+            return "registro-delegaciones-idempotency-key";
+        }
+
+        if (referrer.includes("/registro/faculty")) {
+            return "registro-faculty-idempotency-key";
+        }
+
+        return null;
+    }
+
     onMount(() => {
         // Eliminar cookies
         document.cookie.split(";").forEach(cookie_untrimmed => {
@@ -10,8 +24,10 @@
             document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;`;
         });
 
-        sessionStorage.removeItem("registro-delegaciones-idempotency-key");
-        sessionStorage.removeItem("registro-faculty-idempotency-key");
+        const storageKey = getStorageKeyFromReferrer();
+        if (storageKey) {
+            localStorage.removeItem(storageKey);
+        }
     })
 </script>
 

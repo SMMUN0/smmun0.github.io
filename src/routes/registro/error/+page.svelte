@@ -1,11 +1,26 @@
 <script lang="ts">
     import { onMount } from "svelte";
 
+    function getStorageKeyFromReferrer() {
+        const referrer = document.referrer;
+
+        if (referrer.includes("/registro/delegaciones")) {
+            return "registro-delegaciones-idempotency-key";
+        }
+
+        if (referrer.includes("/registro/faculty")) {
+            return "registro-faculty-idempotency-key";
+        }
+
+        return null;
+    }
+
     onMount(() => {
         const params = new URLSearchParams(window.location.search);
-        if (params.get("rotate_idempotency_key") === "1") {
-            sessionStorage.removeItem("registro-delegaciones-idempotency-key");
-            sessionStorage.removeItem("registro-faculty-idempotency-key");
+        const storageKey = getStorageKeyFromReferrer();
+
+        if (params.get("rotate_idempotency_key") === "1" && storageKey) {
+            localStorage.removeItem(storageKey);
         }
     });
 </script>
