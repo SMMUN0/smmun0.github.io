@@ -372,12 +372,11 @@
     function onSubmitForm(ev: Event) {
         let form = ev.target as HTMLFormElement;
 
-        if (submitFallbackTimeout) {
-            clearTimeout(submitFallbackTimeout);
-            submitFallbackTimeout = undefined;
-        }
-
         if (!form.checkValidity()) {
+            if (submitFallbackTimeout) {
+                clearTimeout(submitFallbackTimeout);
+                submitFallbackTimeout = undefined;
+            }
             ev.preventDefault();
             ev.stopPropagation();
             isSubmitting = false;
@@ -390,6 +389,10 @@
             ev.stopPropagation();
         }
         else {
+            if (submitFallbackTimeout) {
+                clearTimeout(submitFallbackTimeout);
+                submitFallbackTimeout = undefined;
+            }
             ensureIdempotencyKey();
             isSubmitting = true;
             submitFallbackTimeout = setTimeout(() => {
