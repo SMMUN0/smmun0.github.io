@@ -418,6 +418,8 @@
     });
 
     onMount(async () => {
+        ensureIdempotencyKey();
+
         // Importar librerías dinámicamente
         window.$ = (await import("jquery")).default;
         await import("@popperjs/core");
@@ -430,7 +432,6 @@
         // Inicializar toast de contacto en WhatsApp
         window.bootstrap.Toast.getOrCreateInstance(whatsappToastDiv).show();
 
-        ensureIdempotencyKey();
         pageShowHandler = () => {
             isSubmitting = false;
             ensureIdempotencyKey();
