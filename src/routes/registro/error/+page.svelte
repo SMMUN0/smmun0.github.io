@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
+    const IDEMPOTENCY_TAB_NAME_PREFIX = "smmun-registro-tab:";
 
     function getStorageKeyFromForm(form: string | null) {
         if (form === "delegaciones") {
@@ -13,12 +14,25 @@
         return null;
     }
 
+    function getTabScopedStorageKey(storageKey: string) {
+        if (!window.name || !window.name.startsWith(IDEMPOTENCY_TAB_NAME_PREFIX)) {
+            return null;
+        }
+
+        return `${storageKey}:${window.name.slice(IDEMPOTENCY_TAB_NAME_PREFIX.length)}`;
+    }
+
     onMount(() => {
         const params = new URLSearchParams(window.location.search);
         const storageKey = getStorageKeyFromForm(params.get("form"));
 
         if (params.get("rotate_idempotency_key") === "1" && storageKey) {
+            const tabScopedStorageKey = getTabScopedStorageKey(storageKey);
             sessionStorage.removeItem(storageKey);
+
+            if (tabScopedStorageKey) {
+                sessionStorage.removeItem(tabScopedStorageKey);
+            }
         }
     });
 </script>

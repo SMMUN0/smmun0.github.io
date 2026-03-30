@@ -240,6 +240,7 @@
     let idempotencyKey = $state("");
     let isSubmitting = $state(false);
     const IDEMPOTENCY_STORAGE_KEY = "registro-delegaciones-idempotency-key";
+    const IDEMPOTENCY_TAB_NAME_PREFIX = "smmun-registro-tab:";
     const SUBMIT_FALLBACK_TIMEOUT_MS = 10000;
     let pageShowHandler: ((event: Event) => void) | undefined;
     let submitFallbackTimeout: ReturnType<typeof setTimeout> | undefined;
@@ -254,15 +255,34 @@
         return Array.from(randomBytes, (byte) => byte.toString(16).padStart(2, "0")).join("");
     }
 
+    function ensureIdempotencyTabKey() {
+        if (!window.name || !window.name.startsWith(IDEMPOTENCY_TAB_NAME_PREFIX)) {
+            window.name = `${IDEMPOTENCY_TAB_NAME_PREFIX}${createIdempotencyKey()}`;
+        }
+
+        return `${IDEMPOTENCY_STORAGE_KEY}:${window.name.slice(IDEMPOTENCY_TAB_NAME_PREFIX.length)}`;
+    }
+
     function ensureIdempotencyKey() {
-        const storedKey = sessionStorage.getItem(IDEMPOTENCY_STORAGE_KEY);
+        const storageKey = ensureIdempotencyTabKey();
+        const storedKey = sessionStorage.getItem(storageKey);
+
         if (storedKey) {
             idempotencyKey = storedKey;
             return idempotencyKey;
         }
 
+        const legacyStoredKey = sessionStorage.getItem(IDEMPOTENCY_STORAGE_KEY);
+
+        if (legacyStoredKey) {
+            idempotencyKey = legacyStoredKey;
+            sessionStorage.setItem(storageKey, idempotencyKey);
+            sessionStorage.removeItem(IDEMPOTENCY_STORAGE_KEY);
+            return idempotencyKey;
+        }
+
         idempotencyKey = createIdempotencyKey();
-        sessionStorage.setItem(IDEMPOTENCY_STORAGE_KEY, idempotencyKey);
+        sessionStorage.setItem(storageKey, idempotencyKey);
         return idempotencyKey;
     }
 
