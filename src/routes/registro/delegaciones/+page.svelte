@@ -44,10 +44,6 @@
             siglas: "Cumbre"
         },
         {
-            nombre: "Administración Nacional de Aeronáutica y del Espacio (NASA)",
-            siglas: "NASA"
-        },
-        {
             nombre: "World Wildlife Fund for Nature (WWF) [inglés]",
             siglas: "WWF"
         },
@@ -86,10 +82,6 @@
         ],
         "UNRWA": "Medidas para la protección de las garantías humanitarias y civiles en los Territorios Palestinos Ocupados derivada de la privación de recursos esenciales.",
         "Cumbre": "Consolidación de un nuevo Pacto para el Futuro para responder a los desafíos globales del siglo XX.",
-        "NASA": [
-            "Acciones para garantizar el enfoque ético en las recientes expediciones a Marte.",
-            "Medidas para garantizar la garantizar la inclusión de las mujeres en las ciencias con el fin de desarrollar las carreras especiales."
-        ],
         "WWF": [
             "Measures to strengthen the regulation and traceability of wildlife trade and its biological derivatives.",
             "Actions to safeguard genetic diversity and ensure equitable access to genetic resources, addressing the accelerating loss of ecological variety."
@@ -104,7 +96,6 @@
         "ONU-Hábitat": "Matutino (9 am a 2 pm)",
         "CCPCJ": "Matutino (9 am a 2 pm)",
         "FHCM": "Matutino (9 am a 2 pm)",
-        "NASA": "Matutino (9 am a 2 pm)",
         "Cumbre": "Vespertino (3 pm a 8 pm)",
         "UNRWA": "Vespertino (3 pm a 8 pm)",
         "ONU SIDA": "Vespertino (3 pm a 8 pm)",
@@ -133,7 +124,6 @@
         unrwa: Delegacion[];
         fhcm: DelegacionGrupo;
         crisis: Delegacion[];
-        nasa: DelegacionGrupo;
         fia: DelegacionGrupo;
         wwf: Delegacion[];
         cumbre_futuro: DelegacionGrupo;
@@ -149,9 +139,6 @@
         casas: "Casas de Alta Costura",
         sindicatos: "Sindicatos",
         disenadores_emergentes: "Diseñadoras y empresas emergentes",
-        agencias_espaciales: "Agencias espaciales",
-        astronautas: "Astronautas",
-        representantes_nasa: "Representantes de la NASA",
         activistas: "Activistas",
         ongs: "Organizaciones No Gubernamentales",
         agencias_onu: "Agencias de las Naciones Unidas",
@@ -160,12 +147,10 @@
 
     const delegacionTiposSoloIndividual = new Set([
         "pilotos",
-        "disenadores_emergentes",
-        "astronautas",
-        "representantes_nasa"
+        "disenadores_emergentes"
     ]);
 
-    const comitesConTipos = new Set<keyof Delegaciones>(["fia", "fhcm", "nasa", "cumbre_futuro"]);
+    const comitesConTipos = new Set<keyof Delegaciones>(["fia", "fhcm", "cumbre_futuro"]);
 
     function getDelegacionTipoLabel(tipo: string, modalidad?: string) {
         const baseLabel = delegacionTiposLabels[tipo] ?? tipo;
@@ -950,7 +935,7 @@
                         <option selected disabled value="">Selecciona una opción</option>
 
                         {#if comiteValues[i]}
-                            {#if ["FIA", "FHCM", "NASA", "Cumbre"].includes(comiteValues[i])}
+                            {#if ["FIA", "FHCM", "Cumbre"].includes(comiteValues[i])}
                                 {#each Object.entries(delegaciones[comiteSiglasToKey(comiteValues[i])]) as [tipo, lista]}
                                     {#if isDelegacionTipoDisponibleEnModalidad(tipo, modalidadValue)}
                                         <optgroup label={getDelegacionTipoLabel(tipo, modalidadValue)}>
@@ -981,7 +966,7 @@
                         {:else}
                             <!-- Mostrar todas para cargar correctamente las cookies -->
                             {#each comites as { nombre: nombreComite, siglas }}
-                                {#if ["FIA", "FHCM", "NASA", "Cumbre"].includes(siglas)}
+                                {#if ["FIA", "FHCM", "Cumbre"].includes(siglas)}
                                     {#each Object.entries(delegaciones[comiteSiglasToKey(siglas)]) as [tipo, lista]}
                                         {#each lista as { nombre }}
                                             <option value="{siglas}:{nombre}"></option>
