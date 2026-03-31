@@ -910,11 +910,11 @@
                 {#if comiteValues[i]}
                     <div class="comite-topico-div">
                         <ComiteCarousel comite={comiteSiglasToKey(comiteValues[i])} index={i}></ComiteCarousel>
-                        <p class="comite-horario">
+                        <!--<p class="comite-horario">
                             <strong>Horario:</strong> {getHorarioComite(comiteValues[i])}
                             <br>
                             <br>
-                        </p>
+                        </p>-->
                     </div>
                 {/if}
             </div>
