@@ -76,11 +76,6 @@
             "emoji": "🇰🇿"
         },
         {
-            "nombre": "República de Kenia",
-            "abreviacion": "kenia",
-            "emoji": "🇰🇪"
-        },
-        {
             "nombre": "Estado de Kuwait",
             "abreviacion": "kuwait",
             "emoji": "🇰🇼"
@@ -139,11 +134,6 @@
             "nombre": "República de Rumanía",
             "abreviacion": "rumania",
             "emoji": "🇷🇴"
-        },
-        {
-            "nombre": "Federación de Rusia",
-            "abreviacion": "rusia",
-            "emoji": "🇷🇺"
         },
         {
             "nombre": "República de Sierra Leona",
@@ -243,11 +233,6 @@
             "emoji": "🇪🇨"
         },
         {
-            "nombre": "Reino de España",
-            "abreviacion": "espana",
-            "emoji": "🇪🇸"
-        },
-        {
             "nombre": "República de Filipinas",
             "abreviacion": "filipinas",
             "emoji": "🇵🇭"
@@ -333,11 +318,6 @@
             "emoji": "🇷🇴"
         },
         {
-            "nombre": "Federación de Rusia",
-            "abreviacion": "rusia",
-            "emoji": "🇷🇺"
-        },
-        {
             "nombre": "República de Sierra Leona",
             "abreviacion": "sierra leona",
             "emoji": "🇸🇱"
@@ -398,11 +378,6 @@
             "nombre": "República Federativa de Brasil",
             "abreviacion": "brasil",
             "emoji": "🇧🇷"
-        },
-        {
-            "nombre": "República Checa",
-            "abreviacion": "chequia",
-            "emoji": "🇨🇿"
         },
         {
             "nombre": "República de Chile",
@@ -538,11 +513,6 @@
             "nombre": "Reino de Tailandia",
             "abreviacion": "tailandia",
             "emoji": "🇹🇭"
-        },
-        {
-            "nombre": "República de Turquía",
-            "abreviacion": "turquia",
-            "emoji": "🇹🇷"
         },
         {
             "nombre": "República Bolivariana de Venezuela",
@@ -759,11 +729,6 @@
             "emoji": "🇧🇴"
         },
         {
-            "nombre": "República Federativa de Brasil",
-            "abreviacion": "brasil",
-            "emoji": "🇧🇷"
-        },
-        {
             "nombre": "Canadá",
             "abreviacion": "canada",
             "emoji": "🇨🇦"
@@ -797,11 +762,6 @@
             "nombre": "República Democrática Federal de Etiopía",
             "abreviacion": "etiopia",
             "emoji": "🇪🇹"
-        },
-        {
-            "nombre": "República Francesa",
-            "abreviacion": "francia",
-            "emoji": "🇫🇷"
         },
         {
             "nombre": "Georgia",
@@ -847,11 +807,6 @@
             "nombre": "República de las Islas Marshall",
             "abreviacion": "islas marshall",
             "emoji": "🇲🇭"
-        },
-        {
-            "nombre": "Estado de Israel",
-            "abreviacion": "israel",
-            "emoji": "🇮🇱"
         },
         {
             "nombre": "República Italiana",
@@ -947,29 +902,14 @@
     "cumbre_futuro": {
         "activistas": [
             {
-                "nombre": "Autumn Peltier (defensora del agua)",
-                "abreviacion": "autumn peltier (defensora del agua)",
-                "emoji": "💧"
-            },
-            {
                 "nombre": "Greta Thunberg (acción climática)",
                 "abreviacion": "greta thunberg (accion climatica)",
                 "emoji": "🌍"
             },
             {
-                "nombre": "Helen Clark (gobernanza y equidad)",
-                "abreviacion": "helen clark (gobernanza y equidad)",
-                "emoji": "⚖️"
-            },
-            {
                 "nombre": "Kailash Satyarthi (infancia)",
                 "abreviacion": "kailash satyarthi (infancia)",
                 "emoji": "🧒"
-            },
-            {
-                "nombre": "Malala Yousafzai (educación y derechos de niñas)",
-                "abreviacion": "malala yousafzai (educacion y derechos de ninas)",
-                "emoji": "📚"
             },
             {
                 "nombre": "Vandana Shiva (agroecología)",
@@ -1024,11 +964,6 @@
                 "nombre": "Fondo de las Naciones Unidas para la Infancia (UNICEF)",
                 "abreviacion": "fondo de las naciones unidas para la infancia (unicef)",
                 "emoji": "🧒"
-            },
-            {
-                "nombre": "Entidad de las Naciones Unidas para la Igualdad de Género y el Empoderamiento de las Mujeres (ONU Mujeres)",
-                "abreviacion": "onu mujeres",
-                "emoji": "♀️"
             },
             {
                 "nombre": "Organización Internacional del Trabajo (OIT)",
@@ -1196,11 +1131,6 @@
             "emoji": "🇲🇻"
         },
         {
-            "nombre": "United Mexican States",
-            "abreviacion": "mexico",
-            "emoji": "🇲🇽"
-        },
-        {
             "nombre": "Republic of Namibia",
             "abreviacion": "namibia",
             "emoji": "🇳🇦"
@@ -1303,11 +1233,6 @@
             "emoji": "🤝"
         },
         {
-            "nombre": "Secretaría de Economía",
-            "abreviacion": "secretaria de economia",
-            "emoji": "💼"
-        },
-        {
             "nombre": "Secretaría de Educación",
             "abreviacion": "secretaria de educacion",
             "emoji": "🎓"
@@ -1326,11 +1251,6 @@
             "nombre": "Secretaría de Salud Mental",
             "abreviacion": "secretaria de salud mental",
             "emoji": "🧠"
-        },
-        {
-            "nombre": "Secretaría de Seguridad Pública",
-            "abreviacion": "secretaria de seguridad publica",
-            "emoji": "🚓"
         },
         {
             "nombre": "Secretaría de Tecnología e Innovación",
@@ -1448,11 +1368,6 @@
                 "emoji": "🏎️"
             },
             {
-                "nombre": "Iron Dames (Ferrari / Porsche)",
-                "abreviacion": "iron dames ferrari porsche",
-                "emoji": "🏎️"
-            },
-            {
                 "nombre": "Jaguar TCS Racing",
                 "abreviacion": "jaguar tcs racing",
                 "emoji": "🏎️"
@@ -1470,11 +1385,6 @@
             {
                 "nombre": "PREMA Racing",
                 "abreviacion": "prema racing",
-                "emoji": "🏎️"
-            },
-            {
-                "nombre": "Red Bull Racing / RB",
-                "abreviacion": "red bull racing rb",
                 "emoji": "🏎️"
             },
             {
