@@ -31,11 +31,6 @@
             siglas: "ONU-Hábitat"
         },
         {
-            nombre: "Comisión de prevención del delito y Justicia Penal de las Naciones Unidas (CCPCJ)",
-            siglas: "CCPCJ"
-        },
-        
-        {
             nombre: "Agencia de las Naciones Unidas para los Refugiados de Palestina en Oriente Próximo (UNRWA)",
             siglas: "UNRWA"
         },
@@ -76,10 +71,6 @@
             "Estrategias de prevención para la urbanización acelerada con el fin de mejorar la calidad de vida en los asentamientos humanos.",
             "Acciones para combatir la falta de accesibilidad, seguridad y adaptación en la infraestructura urbana para la autonomía de las personas con discapacidad."
         ],
-        "CCPCJ": [
-            "Medidas para garantizar la reinserción social integral a través de programas penitenciarios y seguimiento postpenitenciario.",
-            "Medidas para salvaguardar los derechos humanos de las personas en situación de pobreza ante el tráfico ilícito de órganos y tejidos humanos."
-        ],
         "UNRWA": "Medidas para la protección de las garantías humanitarias y civiles en los Territorios Palestinos Ocupados derivada de la privación de recursos esenciales.",
         "Cumbre": "Consolidación de un nuevo Pacto para el Futuro para responder a los desafíos globales del siglo XX.",
         "WWF": [
@@ -94,7 +85,6 @@
     const horariosComites: Record<string, string> = {
         "SOCHUM": "Matutino (9 am a 2 pm)",
         "ONU-Hábitat": "Matutino (9 am a 2 pm)",
-        "CCPCJ": "Matutino (9 am a 2 pm)",
         "FHCM": "Matutino (9 am a 2 pm)",
         "Cumbre": "Vespertino (3 pm a 8 pm)",
         "UNRWA": "Vespertino (3 pm a 8 pm)",
@@ -119,7 +109,6 @@
     interface Delegaciones {
         sochum: Delegacion[];
         onu_sida: Delegacion[];
-        ccpcj: Delegacion[];
         onu_habitat: Delegacion[];
         unrwa: Delegacion[];
         fhcm: DelegacionGrupo;
