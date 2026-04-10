@@ -1,6 +1,11 @@
 {
     "sochum": [
         {
+            "nombre": "República Federal de Alemania",
+            "abreviacion": "alemania",
+            "emoji": "🇩🇪"
+        },
+        {
             "nombre": "Reino de Arabia Saudita",
             "abreviacion": "arabia saudita",
             "emoji": "🇸🇦"
@@ -9,11 +14,6 @@
             "nombre": "Bosnia y Herzegovina",
             "abreviacion": "bosnia y herzegovina",
             "emoji": "🇧🇦"
-        },
-        {
-            "nombre": "República Federativa de Brasil",
-            "abreviacion": "brasil",
-            "emoji": "🇧🇷"
         },
         {
             "nombre": "República de Colombia",
@@ -552,6 +552,11 @@
             "emoji": "🇲🇭"
         },
         {
+            "nombre": "Estado de Israel",
+            "abreviacion": "israel",
+            "emoji": "🇮🇱"
+        },
+        {
             "nombre": "Reino Hachemita de Jordania",
             "abreviacion": "jordania",
             "emoji": "🇯🇴"
@@ -638,6 +643,11 @@
                 "nombre": "Kailash Satyarthi (infancia)",
                 "abreviacion": "kailash satyarthi (infancia)",
                 "emoji": "🧒"
+            },
+            {
+                "nombre": "Malala Yousafzai (educación y derechos de niñas)",
+                "abreviacion": "malala yousafzai (educacion y derechos de ninas)",
+                "emoji": "📚"
             },
             {
                 "nombre": "Vandana Shiva (agroecología)",
@@ -1051,11 +1061,6 @@
                 "nombre": "Dell Technologies",
                 "abreviacion": "dell technologies",
                 "emoji": "💻"
-            },
-            {
-                "nombre": "Petronas",
-                "abreviacion": "petronas",
-                "emoji": "💼"
             },
             {
                 "nombre": "Pirelli",
