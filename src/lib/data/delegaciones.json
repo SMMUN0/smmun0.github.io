@@ -1,11 +1,6 @@
 {
     "sochum": [
         {
-            "nombre": "República Federal de Alemania",
-            "abreviacion": "alemania",
-            "emoji": "🇩🇪"
-        },
-        {
             "nombre": "Reino de Arabia Saudita",
             "abreviacion": "arabia saudita",
             "emoji": "🇸🇦"
@@ -21,19 +16,9 @@
             "emoji": "🇧🇷"
         },
         {
-            "nombre": "Canadá",
-            "abreviacion": "canada",
-            "emoji": "🇨🇦"
-        },
-        {
             "nombre": "República de Colombia",
             "abreviacion": "colombia",
             "emoji": "🇨🇴"
-        },
-        {
-            "nombre": "República de Corea",
-            "abreviacion": "corea del sur",
-            "emoji": "🇰🇷"
         },
         {
             "nombre": "República de Costa de Marfil",
@@ -64,11 +49,6 @@
             "nombre": "República Islámica de Irán",
             "abreviacion": "iran",
             "emoji": "🇮🇷"
-        },
-        {
-            "nombre": "Japón",
-            "abreviacion": "japon",
-            "emoji": "🇯🇵"
         },
         {
             "nombre": "República de Kazajistán",
@@ -114,11 +94,6 @@
             "nombre": "Estado de Palestina",
             "abreviacion": "palestina",
             "emoji": "🇵🇸"
-        },
-        {
-            "nombre": "Reino Unido de Gran Bretaña e Irlanda del Norte",
-            "abreviacion": "reino unido",
-            "emoji": "🇬🇧"
         },
         {
             "nombre": "República Democrática del Congo",
@@ -178,19 +153,9 @@
     ],
     "onu_sida": [
         {
-            "nombre": "República Federal de Alemania",
-            "abreviacion": "alemania",
-            "emoji": "🇩🇪"
-        },
-        {
             "nombre": "Reino de Arabia Saudita",
             "abreviacion": "arabia saudita",
             "emoji": "🇸🇦"
-        },
-        {
-            "nombre": "República Argentina",
-            "abreviacion": "argentina",
-            "emoji": "🇦🇷"
         },
         {
             "nombre": "Mancomunidad de Australia",
@@ -201,21 +166,6 @@
             "nombre": "Bosnia y Herzegovina",
             "abreviacion": "bosnia y herzegovina",
             "emoji": "🇧🇦"
-        },
-        {
-            "nombre": "República Federativa de Brasil",
-            "abreviacion": "brasil",
-            "emoji": "🇧🇷"
-        },
-        {
-            "nombre": "Canadá",
-            "abreviacion": "canada",
-            "emoji": "🇨🇦"
-        },
-        {
-            "nombre": "República de Colombia",
-            "abreviacion": "colombia",
-            "emoji": "🇨🇴"
         },
         {
             "nombre": "República de Corea",
@@ -271,11 +221,6 @@
             "nombre": "Federación de Malasia",
             "abreviacion": "malasia",
             "emoji": "🇲🇾"
-        },
-        {
-            "nombre": "Estados Unidos Mexicanos",
-            "abreviacion": "mexico",
-            "emoji": "🇲🇽"
         },
         {
             "nombre": "República de la Unión de Myanmar",
@@ -355,11 +300,6 @@
     ],
     "onu_habitat": [
         {
-            "nombre": "República Federal de Alemania",
-            "abreviacion": "alemania",
-            "emoji": "🇩🇪"
-        },
-        {
             "nombre": "República de Angola",
             "abreviacion": "angola",
             "emoji": "🇦🇴"
@@ -370,29 +310,14 @@
             "emoji": "🇦🇷"
         },
         {
-            "nombre": "República Popular de Bangladés",
-            "abreviacion": "banglades",
-            "emoji": "🇧🇩"
-        },
-        {
             "nombre": "República Federativa de Brasil",
             "abreviacion": "brasil",
             "emoji": "🇧🇷"
         },
         {
-            "nombre": "República de Chile",
-            "abreviacion": "chile",
-            "emoji": "🇨🇱"
-        },
-        {
             "nombre": "República de Colombia",
             "abreviacion": "colombia",
             "emoji": "🇨🇴"
-        },
-        {
-            "nombre": "República de Corea",
-            "abreviacion": "corea del sur",
-            "emoji": "🇰🇷"
         },
         {
             "nombre": "República de Croacia",
@@ -468,11 +393,6 @@
             "nombre": "Federación de Malasia",
             "abreviacion": "malasia",
             "emoji": "🇲🇾"
-        },
-        {
-            "nombre": "Estados Unidos Mexicanos",
-            "abreviacion": "mexico",
-            "emoji": "🇲🇽"
         },
         {
             "nombre": "República Federal de Nigeria",
@@ -562,11 +482,6 @@
             "emoji": "🇧🇴"
         },
         {
-            "nombre": "Canadá",
-            "abreviacion": "canada",
-            "emoji": "🇨🇦"
-        },
-        {
             "nombre": "Estado de Catar",
             "abreviacion": "catar",
             "emoji": "🇶🇦"
@@ -580,11 +495,6 @@
             "nombre": "República Popular Democrática de Corea",
             "abreviacion": "corea del norte",
             "emoji": "🇰🇵"
-        },
-        {
-            "nombre": "República Árabe de Egipto",
-            "abreviacion": "egipto",
-            "emoji": "🇪🇬"
         },
         {
             "nombre": "Estados Unidos de América",
@@ -642,11 +552,6 @@
             "emoji": "🇲🇭"
         },
         {
-            "nombre": "República Italiana",
-            "abreviacion": "italia",
-            "emoji": "🇮🇹"
-        },
-        {
             "nombre": "Reino Hachemita de Jordania",
             "abreviacion": "jordania",
             "emoji": "🇯🇴"
@@ -687,11 +592,6 @@
             "emoji": "🇵🇰"
         },
         {
-            "nombre": "Estado de Palestina",
-            "abreviacion": "palestina",
-            "emoji": "🇵🇸"
-        },
-        {
             "nombre": "Reino Unido de Gran Bretaña e Irlanda del Norte",
             "abreviacion": "reino unido",
             "emoji": "🇬🇧"
@@ -710,11 +610,6 @@
             "nombre": "República Árabe Siria",
             "abreviacion": "siria",
             "emoji": "🇸🇾"
-        },
-        {
-            "nombre": "República de Sudáfrica",
-            "abreviacion": "sudafrica",
-            "emoji": "🇿🇦"
         },
         {
             "nombre": "República de Turquía",
@@ -757,29 +652,14 @@
         ],
         "ongs": [
             {
-                "nombre": "Amnistía Internacional",
-                "abreviacion": "amnistia internacional",
-                "emoji": "⚖️"
-            },
-            {
                 "nombre": "Fondo Mundial para la Naturaleza (WWF)",
                 "abreviacion": "fondo mundial para la naturaleza (wwf)",
                 "emoji": "🐼"
             },
             {
-                "nombre": "Human Rights Watch",
-                "abreviacion": "human rights watch",
-                "emoji": "👁️"
-            },
-            {
                 "nombre": "Oxfam International",
                 "abreviacion": "oxfam international",
                 "emoji": "🌍"
-            },
-            {
-                "nombre": "Save the Children",
-                "abreviacion": "save the children",
-                "emoji": "🧒"
             },
             {
                 "nombre": "The Elders",
@@ -804,11 +684,6 @@
                 "emoji": "🛠️"
             },
             {
-                "nombre": "Programa de las Naciones Unidas para el Medio Ambiente (PNUMA)",
-                "abreviacion": "programa de las naciones unidas para el medio ambiente (pnuma)",
-                "emoji": "🌱"
-            },
-            {
                 "nombre": "Unión Internacional de Telecomunicaciones (UIT)",
                 "abreviacion": "union internacional de telecomunicaciones (uit)",
                 "emoji": "📡"
@@ -819,11 +694,6 @@
                 "nombre": "Presidente Donald John Trump (Estados Unidos de América)",
                 "abreviacion": "presidente donald john trump (estados unidos)",
                 "emoji": "🇺🇸"
-            },
-            {
-                "nombre": "Presidente Emmanuel Macron (República Francesa)",
-                "abreviacion": "presidente emmanuel macron (francia)",
-                "emoji": "🇫🇷"
             },
             {
                 "nombre": "Presidente Luiz Inacio Lula da Silva (República Federativa del Brasil)",
@@ -839,39 +709,19 @@
                 "nombre": "Canciller Olaf Scholz (República Federal de Alemania)",
                 "abreviacion": "canciller olaf scholz (alemania)",
                 "emoji": "🇩🇪"
-            },
-            {
-                "nombre": "Presidente Vladimir Putin (Federación de Rusia)",
-                "abreviacion": "presidente vladimir putin (rusia)",
-                "emoji": "🇷🇺"
             }
         ]
     },
     "wwf": [
-        {
-            "nombre": "Commonwealth of Australia",
-            "abreviacion": "australia",
-            "emoji": "🇦🇺"
-        },
         {
             "nombre": "People's Republic of Bangladesh",
             "abreviacion": "bangladesh",
             "emoji": "🇧🇩"
         },
         {
-            "nombre": "Kingdom of Bhutan",
-            "abreviacion": "bhutan",
-            "emoji": "🇧🇹"
-        },
-        {
             "nombre": "Plurinational State of Bolivia",
             "abreviacion": "bolivia",
             "emoji": "🇧🇴"
-        },
-        {
-            "nombre": "Federative Republic of Brazil",
-            "abreviacion": "brazil",
-            "emoji": "🇧🇷"
         },
         {
             "nombre": "People’s Republic of China",
@@ -1041,21 +891,6 @@
     ],
     "crisis": [
         {
-            "nombre": "Secretaría de Alimentación y Agricultura",
-            "abreviacion": "secretaria de alimentacion y agricultura",
-            "emoji": "🌾"
-        },
-        {
-            "nombre": "Secretaría de Avances Científicos",
-            "abreviacion": "secretaria de avances cientificos",
-            "emoji": "🔬"
-        },
-        {
-            "nombre": "Secretaría de Comunicación y Medios",
-            "abreviacion": "secretaria de comunicacion y medios",
-            "emoji": "📡"
-        },
-        {
             "nombre": "Secretaría de Cultura y Patrimonio",
             "abreviacion": "secretaria de cultura y patrimonio",
             "emoji": "🏛️"
@@ -1071,34 +906,14 @@
             "emoji": "🎓"
         },
         {
-            "nombre": "Secretaría de Integración Cultural y Social",
-            "abreviacion": "secretaria de integracion cultural y social",
-            "emoji": "🌐"
-        },
-        {
             "nombre": "Secretaría de Localización y Protección de Personas Refugiadas",
             "abreviacion": "secretaria de localizacion y proteccion de personas refugiadas",
             "emoji": "🕊️"
         },
         {
-            "nombre": "Secretaría de Salud Mental",
-            "abreviacion": "secretaria de salud mental",
-            "emoji": "🧠"
-        },
-        {
-            "nombre": "Secretaría de Tecnología e Innovación",
-            "abreviacion": "secretaria de tecnologia e innovacion",
-            "emoji": "💡"
-        },
-        {
             "nombre": "Secretaría de Transportes",
             "abreviacion": "secretaria de transportes",
             "emoji": "🚆"
-        },
-        {
-            "nombre": "Secretaría de Uso de Recursos Naturales",
-            "abreviacion": "secretaria de uso de recursos naturales",
-            "emoji": "🌎"
         }
     ],
     "fia": {
@@ -1112,11 +927,6 @@
                 "nombre": "Beitske Visser",
                 "abreviacion": "beitske visser",
                 "emoji": "👩‍🏁"
-            },
-            {
-                "nombre": "Charles Leclerc",
-                "abreviacion": "charles leclerc",
-                "emoji": "👨‍🏁"
             },
             {
                 "nombre": "Jamie Chadwick",
@@ -1137,11 +947,6 @@
                 "nombre": "Luna Fluxá",
                 "abreviacion": "luna fluxa",
                 "emoji": "👩‍🏁"
-            },
-            {
-                "nombre": "Max Verstappen",
-                "abreviacion": "max verstappen",
-                "emoji": "👨‍🏁"
             },
             {
                 "nombre": "Michelle Gatting",
@@ -1175,11 +980,6 @@
             }
         ],
         "escuderias": [
-            {
-                "nombre": "Arrow McLaren IndyCar Team",
-                "abreviacion": "arrow mclaren indycar team",
-                "emoji": "🏎️"
-            },
             {
                 "nombre": "Campos Racing",
                 "abreviacion": "campos racing",
@@ -1253,11 +1053,6 @@
                 "emoji": "💻"
             },
             {
-                "nombre": "Michelin",
-                "abreviacion": "michelin",
-                "emoji": "🛞"
-            },
-            {
                 "nombre": "Petronas",
                 "abreviacion": "petronas",
                 "emoji": "💼"
@@ -1266,11 +1061,6 @@
                 "nombre": "Pirelli",
                 "abreviacion": "pirelli",
                 "emoji": "🛞"
-            },
-            {
-                "nombre": "Santander",
-                "abreviacion": "santander",
-                "emoji": "🏦"
             },
             {
                 "nombre": "Shell",

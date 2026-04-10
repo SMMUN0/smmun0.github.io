@@ -88,7 +88,7 @@
         "FHCM": "Matutino (9 am a 2 pm)",
         "Cumbre": "Vespertino (3 pm a 8 pm)",
         "UNRWA": "Vespertino (3 pm a 8 pm)",
-        "ONU SIDA": "Vespertino (3 pm a 8 pm)",
+        "ONU SIDA": "Matutino (9 am a 2 pm)",
         "Crisis": "Vespertino (3 pm a 8 pm)",
         "FIA": "Vespertino (3 pm a 8 pm)",
         "WWF": "Vespertino (3 pm a 8 pm)"
@@ -899,11 +899,11 @@
                 {#if comiteValues[i]}
                     <div class="comite-topico-div">
                         <ComiteCarousel comite={comiteSiglasToKey(comiteValues[i])} index={i}></ComiteCarousel>
-                        <!--<p class="comite-horario">
+                        <p class="comite-horario">
                             <strong>Horario:</strong> {getHorarioComite(comiteValues[i])}
                             <br>
                             <br>
-                        </p>-->
+                        </p>
                     </div>
                 {/if}
             </div>
