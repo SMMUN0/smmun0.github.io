@@ -1259,11 +1259,6 @@
             "nombre": "Secretaría de Localización y Protección de Personas Refugiadas",
             "abreviacion": "secretaria de localizacion y proteccion de personas refugiadas",
             "emoji": "🕊️"
-        },
-        {
-            "nombre": "Secretaría de Transportes",
-            "abreviacion": "secretaria de transportes",
-            "emoji": "🚆"
         }
     ],
     "fia": {
@@ -1272,6 +1267,11 @@
                 "nombre": "Beitske Visser",
                 "abreviacion": "beitske visser",
                 "emoji": "👩‍🏁"
+            },
+            {
+                "nombre": "Charles Leclerc",
+                "abreviacion": "charles leclerc",
+                "emoji": "👨‍🏁"
             },
             {
                 "nombre": "Jamie Chadwick",
@@ -1406,11 +1406,6 @@
                 "nombre": "Shell",
                 "abreviacion": "shell",
                 "emoji": "⛽"
-            },
-            {
-                "nombre": "Visa",
-                "abreviacion": "visa",
-                "emoji": "💳"
             }
         ]
     },
