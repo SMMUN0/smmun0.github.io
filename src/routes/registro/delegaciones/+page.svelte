@@ -224,8 +224,8 @@
         ".jpg": ["image/jpeg", "image/pjpeg"],
         ".jpeg": ["image/jpeg", "image/pjpeg"],
         ".webp": ["image/webp"],
-        ".heic": ["image/heic", "image/heif", "image/heic-sequence"],
-        ".heif": ["image/heif", "image/heic", "image/heif-sequence"],
+        ".heic": ["", "application/octet-stream", "image/heic", "image/heif", "image/heic-sequence"],
+        ".heif": ["", "application/octet-stream", "image/heif", "image/heic", "image/heif-sequence"],
     };
     let pageShowHandler: ((event: Event) => void) | undefined;
     let submitFallbackTimeout: ReturnType<typeof setTimeout> | undefined;
