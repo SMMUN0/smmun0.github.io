@@ -143,11 +143,6 @@
     ],
     "onu_sida": [
         {
-            "nombre": "Reino de Arabia Saudita",
-            "abreviacion": "arabia saudita",
-            "emoji": "🇸🇦"
-        },
-        {
             "nombre": "Bosnia y Herzegovina",
             "abreviacion": "bosnia y herzegovina",
             "emoji": "🇧🇦"
@@ -188,11 +183,6 @@
             "emoji": "🇰🇿"
         },
         {
-            "nombre": "República de Kenia",
-            "abreviacion": "kenia",
-            "emoji": "🇰🇪"
-        },
-        {
             "nombre": "Estado de Kuwait",
             "abreviacion": "kuwait",
             "emoji": "🇰🇼"
@@ -216,11 +206,6 @@
             "nombre": "República Democrática Federal de Nepal",
             "abreviacion": "nepal",
             "emoji": "🇳🇵"
-        },
-        {
-            "nombre": "República Federal de Nigeria",
-            "abreviacion": "nigeria",
-            "emoji": "🇳🇬"
         },
         {
             "nombre": "República Islámica de Pakistán",
@@ -271,16 +256,6 @@
             "nombre": "República de Uzbekistán",
             "abreviacion": "uzbekistan",
             "emoji": "🇺🇿"
-        },
-        {
-            "nombre": "República Bolivariana de Venezuela",
-            "abreviacion": "venezuela",
-            "emoji": "🇻🇪"
-        },
-        {
-            "nombre": "República Socialista de Vietnam",
-            "abreviacion": "vietnam",
-            "emoji": "🇻🇳"
         }
     ],
     "onu_habitat": [
@@ -288,11 +263,6 @@
             "nombre": "República de Angola",
             "abreviacion": "angola",
             "emoji": "🇦🇴"
-        },
-        {
-            "nombre": "República Argentina",
-            "abreviacion": "argentina",
-            "emoji": "🇦🇷"
         },
         {
             "nombre": "República Federativa de Brasil",
@@ -305,19 +275,9 @@
             "emoji": "🇭🇷"
         },
         {
-            "nombre": "República Árabe de Egipto",
-            "abreviacion": "egipto",
-            "emoji": "🇪🇬"
-        },
-        {
             "nombre": "Reino de España",
             "abreviacion": "espana",
             "emoji": "🇪🇸"
-        },
-        {
-            "nombre": "Estados Unidos de América",
-            "abreviacion": "estados unidos",
-            "emoji": "🇺🇸"
         },
         {
             "nombre": "República de Filipinas",
@@ -664,11 +624,6 @@
             "emoji": "🇰🇵"
         },
         {
-            "nombre": "Estados Unidos de América",
-            "abreviacion": "estados unidos",
-            "emoji": "🇺🇸"
-        },
-        {
             "nombre": "República Democrática Federal de Etiopía",
             "abreviacion": "etiopia",
             "emoji": "🇪🇹"
@@ -777,11 +732,6 @@
             "nombre": "República Árabe Siria",
             "abreviacion": "siria",
             "emoji": "🇸🇾"
-        },
-        {
-            "nombre": "República de Turquía",
-            "abreviacion": "turquia",
-            "emoji": "🇹🇷"
         },
         {
             "nombre": "República de Uganda",
@@ -1356,11 +1306,6 @@
                 "emoji": "🏎️"
             },
             {
-                "nombre": "Porsche Penske Motorsport",
-                "abreviacion": "porsche penske motorsport",
-                "emoji": "🏎️"
-            },
-            {
                 "nombre": "PREMA Racing",
                 "abreviacion": "prema racing",
                 "emoji": "🏎️"
@@ -1424,16 +1369,6 @@
             {
                 "nombre": "Gauchère",
                 "abreviacion": "gauchere",
-                "emoji": "👗"
-            },
-            {
-                "nombre": "Givenchy",
-                "abreviacion": "givenchy",
-                "emoji": "👗"
-            },
-            {
-                "nombre": "Maison Margiela",
-                "abreviacion": "maison margiela",
                 "emoji": "👗"
             }
         ],
