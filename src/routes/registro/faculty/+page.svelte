@@ -30,6 +30,17 @@
     const IDEMPOTENCY_STORAGE_KEY = "registro-faculty-idempotency-key";
     const IDEMPOTENCY_TAB_NAME_PREFIX = "smmun-registro-tab:";
     const SUBMIT_FALLBACK_TIMEOUT_MS = 10000;
+    const MAX_COMPROBANTE_SIZE_BYTES = 5 * 1024 * 1024;
+    const COMPROBANTE_ACCEPT = ".pdf,.png,.jpg,.jpeg,.webp,.heic,.heif";
+    const COMPROBANTE_MIME_TYPES_BY_EXTENSION: Record<string, string[]> = {
+        ".pdf": ["application/pdf"],
+        ".png": ["image/png"],
+        ".jpg": ["image/jpeg", "image/pjpeg"],
+        ".jpeg": ["image/jpeg", "image/pjpeg"],
+        ".webp": ["image/webp"],
+        ".heic": ["image/heic", "image/heif", "image/heic-sequence"],
+        ".heif": ["image/heif", "image/heic", "image/heif-sequence"],
+    };
     let pageShowHandler: ((event: Event) => void) | undefined;
     let submitFallbackTimeout: ReturnType<typeof setTimeout> | undefined;
 
@@ -100,9 +111,17 @@
     function onChangeComprobante(ev: Event) {
         let input = ev.target as HTMLInputElement;
         let comprobanteToast = window.bootstrap.Toast.getOrCreateInstance(comprobanteToastDiv);
+        let file = input.files?.[0];
 
-        // Mostrar error si el archivo excede los 5 MB
-        if (input.files![0].size > 5242880) {
+        if (!file) {
+            return;
+        }
+
+        const extensionStart = file.name.lastIndexOf(".");
+        const extension = extensionStart === -1 ? "" : file.name.slice(extensionStart).toLowerCase();
+        const allowedMimeTypes = COMPROBANTE_MIME_TYPES_BY_EXTENSION[extension];
+
+        if (!allowedMimeTypes || !allowedMimeTypes.includes(file.type) || file.size > MAX_COMPROBANTE_SIZE_BYTES) {
             comprobanteToast.show();
             input.value = "";
         }
@@ -493,7 +512,7 @@
 
         <div>
             <label for="comprobante" class="form-label">Suba el comprobante de pago (máx 5 MB)<span style="color: red;">*</span></label>
-            <input oninput={onChangeComprobante} class="form-control" required autocomplete="off" name="comprobante" type="file" accept="image/*,.pdf">
+            <input oninput={onChangeComprobante} class="form-control" required autocomplete="off" name="comprobante" type="file" accept={COMPROBANTE_ACCEPT}>
             <div class="invalid-feedback">Debes subir un archivo.</div>
         </div>
     </div>
@@ -714,7 +733,7 @@
     <div class="toast align-items-center text-bg-primary border-0 bg-danger bg-gradient position-relative bottom-0 end-0" role="alert" aria-live="assertive" aria-atomic="true" style="position: relative; z-index: 1; width: auto; margin: 1vh 0;" bind:this={comprobanteToastDiv}>
         <div class="d-flex">
           <div class="toast-body">
-            El archivo es demasiado grande.
+            El archivo debe ser PDF, PNG, JPG, WEBP, HEIC o HEIF y pesar máximo 5 MB.
           </div>
           <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
