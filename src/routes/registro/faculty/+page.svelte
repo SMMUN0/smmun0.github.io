@@ -35,8 +35,8 @@
     const COMPROBANTE_MIME_TYPES_BY_EXTENSION: Record<string, string[]> = {
         ".pdf": ["application/pdf"],
         ".png": ["image/png"],
-        ".jpg": ["image/jpeg", "image/pjpeg"],
-        ".jpeg": ["image/jpeg", "image/pjpeg"],
+        ".jpg": ["image/jpeg", "image/jpg", "image/pjpeg"],
+        ".jpeg": ["image/jpeg", "image/jpg", "image/pjpeg"],
         ".webp": ["image/webp"],
         ".heic": ["", "application/octet-stream", "image/heic", "image/heif", "image/heic-sequence"],
         ".heif": ["", "application/octet-stream", "image/heif", "image/heic", "image/heif-sequence"],
