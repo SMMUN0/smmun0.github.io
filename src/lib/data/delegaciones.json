@@ -624,6 +624,11 @@
             "emoji": "🇰🇵"
         },
         {
+            "nombre": "República Árabe de Egipto",
+            "abreviacion": "egipto",
+            "emoji": "🇪🇬"
+        },
+        {
             "nombre": "República Democrática Federal de Etiopía",
             "abreviacion": "etiopia",
             "emoji": "🇪🇹"
