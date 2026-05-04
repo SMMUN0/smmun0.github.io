@@ -116,11 +116,6 @@
             "emoji": "🇿🇦"
         },
         {
-            "nombre": "Reino de Tailandia",
-            "abreviacion": "tailandia",
-            "emoji": "🇹🇭"
-        },
-        {
             "nombre": "Ucrania",
             "abreviacion": "ucrania",
             "emoji": "🇺🇦"
@@ -343,11 +338,6 @@
             "nombre": "Reino Unido de Gran Bretaña e Irlanda del Norte",
             "abreviacion": "reino unido",
             "emoji": "🇬🇧"
-        },
-        {
-            "nombre": "Federación de Rusia",
-            "abreviacion": "rusia",
-            "emoji": "🇷🇺"
         },
         {
             "nombre": "República del Senegal",
