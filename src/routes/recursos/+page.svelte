@@ -1,19 +1,80 @@
 <script lang="ts">
+    import { tick } from "svelte";
     import { comites, getNombreModalComite, getNombreTarjetaComite, type Comite } from "$lib/data/comites";
 
     let manualSeleccionado: Comite | null = $state(null);
+    let modalDiv: HTMLDivElement | undefined = $state();
+    let closeButton: HTMLButtonElement | undefined = $state();
+    let lastFocusedElement: HTMLElement | null = null;
 
-    function abrirManual(manual: Comite) {
+    async function abrirManual(manual: Comite) {
+        lastFocusedElement = document.activeElement instanceof HTMLElement ? document.activeElement : null;
         manualSeleccionado = manual;
+
+        await tick();
+        (closeButton ?? modalDiv)?.focus();
     }
 
-    function cerrarManual() {
+    async function cerrarManual() {
         manualSeleccionado = null;
+
+        await tick();
+        if (lastFocusedElement?.isConnected) {
+            lastFocusedElement.focus();
+        }
+        lastFocusedElement = null;
     }
 
-    function cerrarConEscape(ev: KeyboardEvent) {
+    function getFocusableElements() {
+        if (!modalDiv) {
+            return [];
+        }
+
+        const focusableSelectors = [
+            "a[href]",
+            "button",
+            "input",
+            "select",
+            "textarea",
+            "[tabindex]:not([tabindex='-1'])"
+        ].join(",");
+
+        return Array.from(modalDiv.querySelectorAll<HTMLElement>(focusableSelectors))
+            .filter((el) => !el.hasAttribute("disabled") && el.tabIndex >= 0);
+    }
+
+    function trapTabFocus(ev: KeyboardEvent) {
+        const focusableElements = getFocusableElements();
+
+        if (focusableElements.length === 0) {
+            ev.preventDefault();
+            modalDiv?.focus();
+            return;
+        }
+
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+
+        if (ev.shiftKey && document.activeElement === firstElement) {
+            ev.preventDefault();
+            lastElement.focus();
+        }
+        else if (!ev.shiftKey && document.activeElement === lastElement) {
+            ev.preventDefault();
+            firstElement.focus();
+        }
+    }
+
+    function onWindowKeydown(ev: KeyboardEvent) {
+        if (!manualSeleccionado) {
+            return;
+        }
+
         if (ev.key === "Escape") {
             cerrarManual();
+        }
+        else if (ev.key === "Tab") {
+            trapTabFocus(ev);
         }
     }
 
@@ -28,7 +89,7 @@
     }
 </script>
 
-<svelte:window onkeydown={cerrarConEscape} />
+<svelte:window onkeydown={onWindowKeydown} />
 
 <style>
     :global(body:has(main.recursos)) {
@@ -359,13 +420,14 @@
             aria-modal="true"
             aria-labelledby="manual-title"
             tabindex="-1"
+            bind:this={modalDiv}
         >
             <div class="modal-header">
                 <div>
                     <h2 id="manual-title">{manualSeleccionado.siglas}</h2>
                     <p>{getNombreModalComite(manualSeleccionado)}</p>
                 </div>
-                <button class="close-button" type="button" aria-label="Cerrar" onclick={cerrarManual}>
+                <button class="close-button" type="button" aria-label="Cerrar" onclick={cerrarManual} bind:this={closeButton}>
                     ×
                 </button>
             </div>
