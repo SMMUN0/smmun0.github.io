@@ -8,6 +8,7 @@
     import { onChangeSaveCookie, resetValuesFromCookies, validateNumInput } from "$lib/util";
     import { registroTitleNav } from "$lib/stores/registro-title-nav";
     import delegacionesUntyped from "$lib/data/delegaciones.json";
+    import { comites, getHorarioComite } from "$lib/data/comites";
     import { paises } from "$lib/data/paises.json";
     import "intl-tel-input/build/css/intlTelInput.css";
     import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,84 +16,6 @@
 
     // Workaround para emojis de banderas en algunos navegadores
     polyfillCountryFlagEmojis();
-
-    // Lista de comités
-    let comites = [
-        {
-            nombre: "Tercera Comisión de la Asamblea General referente a lo Social, Cultural, Humanitario y de Derechos Humanos (SOCHUM) [bilingüe: español/inglés]",
-            siglas: "SOCHUM"
-        },
-        {
-            nombre: "Programa Conjunto de las Naciones Unidas para el VIH-SIDA (ONU SIDA)",
-            siglas: "ONU SIDA"
-        },
-        {
-            nombre: "Programa de las Naciones Unidas para los Asentamientos Humanos (ONU-Hábitat)",
-            siglas: "ONU-Hábitat"
-        },
-        {
-            nombre: "Agencia de las Naciones Unidas para los Refugiados de Palestina en Oriente Próximo (UNRWA)",
-            siglas: "UNRWA"
-        },
-        {
-            nombre: "Cumbre del Futuro [solo delegación individual]",
-            siglas: "Cumbre"
-        },
-        {
-            nombre: "World Wildlife Fund for Nature (WWF) [inglés]",
-            siglas: "WWF"
-        },
-        {
-            nombre: "Crisis Futura [solo delegación individual]",
-            siglas: "Crisis"
-        },
-        {
-            nombre: "Federación Internacional del Automóvil (FIA)",
-            siglas: "FIA"
-        },
-        {
-            nombre: "Federación de Alta Costura y Moda (FHCM)",
-            siglas: "FHCM"
-        }
-    ];
-
-    type Topico = string | [string, string];
-
-    let topicos: Record<string, Topico> = {
-        "SOCHUM": [
-            "Medidas para reducir los casos de apatridia, un seguimiento al Plan de Acción Mundial 2014-2024 adoptado por ACNUR.",
-            "Estrategias para promover el derecho a la privacidad en la era digital, un seguimiento a la Resolución 68/167 adoptada por la Asamblea General."
-        ],
-        "ONU SIDA": [
-            "Estrategias para brindar un acceso justo a los servicios de salud a las personas trabajadoras sexuales seropositivas.",
-            "Estrategias para garantizar a mujeres seropositivas la terapia antirretroviral durante y después del embarazo."
-        ],
-        "ONU-Hábitat": [
-            "Estrategias de prevención para la urbanización acelerada con el fin de mejorar la calidad de vida en los asentamientos humanos.",
-            "Acciones para combatir la falta de accesibilidad, seguridad y adaptación en la infraestructura urbana para la autonomía de las personas con discapacidad."
-        ],
-        "UNRWA": "Medidas para la protección de las garantías humanitarias y civiles en los Territorios Palestinos Ocupados derivada de la privación de recursos esenciales.",
-        "Cumbre": "Consolidación de un nuevo Pacto para el Futuro para responder a los desafíos globales del siglo XX.",
-        "WWF": [
-            "Measures to strengthen the regulation and traceability of wildlife trade and its biological derivatives.",
-            "Actions to safeguard genetic diversity and ensure equitable access to genetic resources, addressing the accelerating loss of ecological variety."
-        ],
-        "Crisis": "Año 2076: evitar un conflicto armado en una sociedad que empieza a renacer.",
-        "FIA": "Medidas para garantizar la participación de las mujeres en deportes automovilísticos para la promoción de la igualdad y eliminación de la brecha de género.",
-        "FHCM": "Estrategias para mitigar los efectos sociales y económicos derivados de las condiciones laborales en la industria de la moda."
-    };
-
-    const horariosComites: Record<string, string> = {
-        "SOCHUM": "Matutino (9 am a 2 pm)",
-        "ONU-Hábitat": "Matutino (9 am a 2 pm)",
-        "FHCM": "Matutino (9 am a 2 pm)",
-        "Cumbre": "Vespertino (3 pm a 8 pm)",
-        "UNRWA": "Vespertino (3 pm a 8 pm)",
-        "ONU SIDA": "Matutino (9 am a 2 pm)",
-        "Crisis": "Vespertino (3 pm a 8 pm)",
-        "FIA": "Vespertino (3 pm a 8 pm)",
-        "WWF": "Vespertino (3 pm a 8 pm)"
-    };
 
     // Interfaces para leer JSON de delegaciones
     interface Delegacion {
@@ -186,10 +109,6 @@
         }
 
         return undefined;
-    }
-
-    function getHorarioComite(siglas: string) {
-        return horariosComites[siglas] ?? "";
     }
 
     // Observador para cambiar el nav
