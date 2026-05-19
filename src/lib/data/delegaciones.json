@@ -116,6 +116,11 @@
             "emoji": "🇿🇦"
         },
         {
+            "nombre": "Reino de Tailandia",
+            "abreviacion": "tailandia",
+            "emoji": "🇹🇭"
+        },
+        {
             "nombre": "Ucrania",
             "abreviacion": "ucrania",
             "emoji": "🇺🇦"
@@ -338,6 +343,11 @@
             "nombre": "Reino Unido de Gran Bretaña e Irlanda del Norte",
             "abreviacion": "reino unido",
             "emoji": "🇬🇧"
+        },
+        {
+            "nombre": "Federación de Rusia",
+            "abreviacion": "rusia",
+            "emoji": "🇷🇺"
         },
         {
             "nombre": "República del Senegal",
@@ -1204,6 +1214,11 @@
             "nombre": "Secretaría de Localización y Protección de Personas Refugiadas",
             "abreviacion": "secretaria de localizacion y proteccion de personas refugiadas",
             "emoji": "🕊️"
+        },
+        {
+            "nombre": "Secretaría de Salud Mental",
+            "abreviacion": "secretaria de salud mental",
+            "emoji": "🧠"
         }
     ],
     "fia": {
@@ -1298,6 +1313,11 @@
             {
                 "nombre": "MP Motorsport",
                 "abreviacion": "mp motorsport",
+                "emoji": "🏎️"
+            },
+            {
+                "nombre": "Porsche Penske Motorsport",
+                "abreviacion": "porsche penske motorsport",
                 "emoji": "🏎️"
             },
             {
